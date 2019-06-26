@@ -1,5 +1,5 @@
 # Open Applied Calculus
-This is an open textbook (OER) for Applied Calculus for business, education, and the social and life sciences.
+This is an open textbook (OER) for Applied Calculus for business, education, and the social and life sciences and released under a Creative Commons Attribution Share Alike 4.0 (CC-BY-SA 4.0) license..
 
 Read below for some unique ways that you can help support this project.
 
