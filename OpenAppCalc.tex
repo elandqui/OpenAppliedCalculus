@@ -1,0 +1,115 @@
+% Big to-dos:
+% 1. Finish the text.
+% 2. Create Excel and/or LibreOffice Calc examples.
+% 3. Finish homework sets.
+% 4. Create MyOpenMath homework sets.
+% 5. Enhance with color.
+
+\documentclass{book}
+\usepackage{amssymb, amsmath, amsthm, graphicx, makeidx, url, longtable, booktabs, wrapfig} %hyperref, tcolorbox, xcolor, wrapfigure
+%\usepackage{eso-pic}
+\usepackage[margin=1in]{geometry}
+
+\newcommand{\<}{\left\langle}
+\renewcommand{\>}{\right\rangle}
+\newcommand{\C}{{\mathbb C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\NP}{\mathcal{NP}}
+\newcommand{\OO}{\mathcal{O}}
+\newcommand{\ppmod}[1]{\mbox{\ $\left(\mathrm{mod}\ {#1}\right)$}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\solution}{\noindent{\bf Solution: }}
+\newcommand{\st}{\mid}
+\newcommand{\veca}{\vec{a}}
+\newcommand{\vecb}{\vec{b}}
+\newcommand{\xor}{\oplus}
+\newcommand{\Z}{\mathbb{Z}}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{note}{Note}[section]
+\newtheorem{theorem}{Theorem}[section]
+
+\makeindex
+
+% Possible color bases: #ac3800 (Sorbus in Gpick), #800000
+
+
+%\newcommand\BackgroundPic{\put(0,0){\parbox[b][\paperheight]{\paperwidth}{\vfill
+%\centering
+%\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{img/cover.jpg}%
+%\vfill
+%}}}
+\begin{document}
+%\AddToShipoutPicture*{\BackgroundPic}
+
+\title{Open Applied Calculus}
+\author{Eric Landquist}
+%\date{\today}
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+
+%\newpage
+%~\vfill
+\thispagestyle{empty}
+The textbook is adapted from {\em Modeling, Functions, and Graphs: Algebra for College Students} by Katherine Yoshiwara, {\em Business Calculus} by Shana Calaway, and {\em Applied Calculus} by Shana Calaway, Dale Hoffman, and David Lippman. The latter two texts were adapted from {\em Precalculus: An Investigation of Functions} by David Lippman and Melonie Rasmussen and {\em Contemporary Calculus}, by Dale Hoffman.
+
+\noindent Copyright \copyright\ 2019 Eric Landquist CC-BY-SA 4.0\\ % Copyright notice
+
+\noindent This text is licensed under a Creative Commons Attribution-Share Alike 4.0 United
+States License.\\
+
+To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+You are free:
+\begin{itemize}
+	\item {\bf to Share} — to copy, distribute, display, and perform the work
+	\item {\bf to Remix} — to make derivative works
+\end{itemize}
+Under the following conditions:
+\begin{itemize}
+	\item {\bf Attribution.} You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work).
+	\item {\bf Share Alike.} If you alter, transform, or build upon this work, you may distribute the resulting work only under the same, similar or a compatible license.
+\end{itemize}
+With the understanding that:
+\begin{itemize}
+	\item {\bf Waiver.} Any of the above conditions can be waived if you get permission from the copyright holder.
+	\item {\bf Other Rights.} In no way are any of the following rights affected by the license:
+		\begin{itemize}
+			\item Your fair dealing or fair use rights;
+			\item Apart from the remix rights granted under this license, the author's moral rights;
+			\item Rights other persons may have either in the work itself or in how the work is used, such as publicity or privacy rights.
+			\item Notice — For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to this web page:
+http://creativecommons.org/licenses/by-sa/4.0/us/
+\end{itemize}
+\end{itemize}
+\noindent {\bf Acknowledgments.} I gratefully acknowledge support for the initial development of this book with a grant from the Pennsylvania State System of Higher Education (PASSHE) Faculty Professional Development Committee. \\ % License information
+
+\noindent \textit{First release, August 2019} % Printing/edition date
+
+\tableofcontents
+\setcounter{chapter}{-1}
+\input{tex/chap0-whatiscalculus}
+\input{tex/chap1-models}
+\input{tex/chap2-derivatives}
+\input{tex/chap3-derivapps}
+\input{tex/chap4-integrals}
+\input{tex/chap5-multivariable}
+
+\backmatter
+\bibliographystyle{plain}
+\bibliography{openappcalc}
+\addcontentsline{toc}{chapter}{References}
+
+\clearpage
+\addcontentsline{toc}{chapter}{Index}
+\printindex
+
+%\appendix
+
+\end{document}
