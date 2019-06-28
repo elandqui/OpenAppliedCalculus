@@ -66,4 +66,4 @@ The following is a rough **task list** for this project.
  ## Thank You!
  **Acknowledgements:** I offer my gratitude to the following supporters of this project.
   * <a href="http://www.passhe.edu">Pennsylvania State System of Higher Education (PASSHE)</a> Faculty Professional Development Committee Grant (05/2019 - 10/2020)
-  * Dan Stafford, OER Librarian, Kutztown University
+  * Dan Stafford, OER Librarian, <a href="https://library.kutztown.edu/">Rohrbach Library</a>, <a href="https://www.kutztown.edu/">Kutztown University</a>
