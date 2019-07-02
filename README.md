@@ -8,6 +8,8 @@ Read below for some unique ways that you can help support this project. There is
 **Open Educational Resources (OERs)** are free and open educational materials for students and teachers designed to:
  * eliminate the high costs of textbooks,
  * reduce the overall financial burden on students in higher education,
+ * increase students' grades and learning in courses,
+ * reduce "DFW" (D grade, failure, and withdrawal) rates,
  * provide greater and equal access to education, and
  * provide the ability for teachers to adopt and adapt educational materials for their purposes.
  
