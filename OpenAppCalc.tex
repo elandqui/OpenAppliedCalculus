@@ -6,9 +6,10 @@
 % 5. Enhance with color.
 
 \documentclass{book}
-\usepackage{amssymb, amsmath, amsthm, graphicx, makeidx, url, longtable, booktabs, wrapfig} %hyperref, tcolorbox, xcolor, wrapfigure
+\usepackage{amssymb, amsmath, amsthm, graphicx, makeidx, url, longtable, booktabs, wrapfig, subcaption} %hyperref, tcolorbox, xcolor, wrapfigure
 %\usepackage{eso-pic}
 \usepackage[margin=1in]{geometry}
+\usepackage[rflt]{floatflt}
 
 \newcommand{\<}{\left\langle}
 \renewcommand{\>}{\right\rangle}
@@ -19,7 +20,7 @@
 \newcommand{\ppmod}[1]{\mbox{\ $\left(\mathrm{mod}\ {#1}\right)$}}
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\R}{\mathbb{R}}
-\newcommand{\solution}{\noindent{\bf Solution: }}
+\newenvironment{solution}{\noindent{\bf Solution: }}{\hfill$\blacksquare$}
 \newcommand{\st}{\mid}
 \newcommand{\veca}{\vec{a}}
 \newcommand{\vecb}{\vec{b}}
@@ -88,7 +89,7 @@ With the understanding that:
 http://creativecommons.org/licenses/by-sa/4.0/us/
 \end{itemize}
 \end{itemize}
-\noindent {\bf Acknowledgments.} I gratefully acknowledge support for the initial development of this book with a grant from the Pennsylvania State System of Higher Education (PASSHE) Faculty Professional Development Committee. \\ % License information
+\noindent {\bf Acknowledgements.} I gratefully acknowledge support for the initial development of this book with a grant from the Pennsylvania State System of Higher Education (PASSHE) Faculty Professional Development Committee. \\ % License information
 
 \noindent \textit{First release, August 2019} % Printing/edition date
 
