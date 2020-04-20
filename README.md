@@ -1,7 +1,7 @@
 # Open Applied Calculus
 This is an open textbook (OER) for Applied Calculus for business, education, and the social and life sciences and released under a Creative Commons Attribution Share Alike 4.0 (CC-BY-SA 4.0) license..
 
-Read below for some unique ways that you can help support this project. There is also a <a href="https://www.gofundme.com/manage/oac-textbook">GoFundMe page to support Open Applied Calculus</a>.
+Read below for some unique ways that you can help [**support**](#support) this project. There is also a <a href="https://www.gofundme.com/manage/oac-textbook">GoFundMe page to support Open Applied Calculus</a>.
 
 ## What are Open Educational Resources?
 
@@ -53,8 +53,13 @@ The following is a rough **task list** for this project.
  * Create a **print edition** of the textbook, either giving it away for free or selling it at or near cost.
  * Create lecture **videos** to accompny the textbook.
  
- ## Support Open Applied Calculus
- You can support this project in some unique ways that will be a win-win-win situation for you, students, and me.
+## Support Open Applied Calculus <a name="support"></a>
+You can support this project in some unique ways that will be a win-win-win situation for you, students, and me.
+ 
+ * Invest in Bitcoin, cryptocurrencies, or US Dollar-pegged *stablecoins* via an exchange through my referral links.
+   - <a href="https://www.coinbase.com/join/landqu_e">Coinbase</a>: a very user-friendly crypto exchange.
+   - <a href="https://www.binance.us/?ref=35061022">Binance.US</a>: another great crypto exchange with low trading fees.
+   - <a href="https://blockfi.com/?ref=12bd8405">BlockFi</a>: a crypto and stablecoin savings account with phenomenal interest rates.
  
  * <a href="https://www.gofundme.com/oac-textbook">Go to the GoFundMe page for Open Applied Calculus</a> to support the development of the textbook and ancillary materials.
  
