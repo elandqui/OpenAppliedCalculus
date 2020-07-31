@@ -1,6 +1,8 @@
 # Open Applied Calculus
 This is an open textbook (OER) for Applied Calculus for business, education, and the social and life sciences and released under a Creative Commons Attribution Share Alike 4.0 (CC-BY-SA 4.0) license..
 
+Support OER by downloading the <a href=" https://brave.com/ela242">Brave internet browser</a>, a privacy-minded browser that earns you Basic Attention Tokens (BAT) for browsing. If you have the Brave browser, you can click on the BAT icon to "tip" me in BAT.
+
 Read below for some unique ways that you can help [**support**](#support) this project, like **advertising** and **investing in Bitcoin**! There is also a <a href="https://www.gofundme.com/manage/oac-textbook">GoFundMe page to support Open Applied Calculus</a>.
 
 ## What are Open Educational Resources?
@@ -67,6 +69,7 @@ You can support this project in some unique ways that will be a win-win-win situ
    - **Litecoin** LKd2QWwVBJkJXrLH4qbbr4gXDxDHFdRTzH
    - **Bitcoin Cash** bitcoincash:qzkln5aeqsnk5qsrwda4757v3578g9lmsuy073dcsq
    - **Tezos** tz1bJjiguDmWACvmXkyTUqVMjx1wSwNnZfcP
+   - **BAT** <a href=" https://brave.com/ela242">Brave browser</a>
    - Other cryptos? Ask me and I'll send you my receiving address.
 
  Please contact me if you would like any of the following in return for a donation to the project.
