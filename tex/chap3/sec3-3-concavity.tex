@@ -1,2 +1,68 @@
 \section{Concavity and Inflection Points}
 \label{sec:concavity}
+
+Second Derivative and Concavity
+Graphically, a function is concave up if its graph is curved with the opening upward (Figure 1a). Similarly, a function is concave down if its graph opens downward (Figure 1b).
+
+concavity
+Figure 1
+This figure shows the concavity of a function at several points. Notice that a function can be concave up regardless of whether it is increasing or decreasing.
+
+concavity
+For example, an epidemic: Suppose an epidemic has started, and you, as a member of congress, must decide whether the current methods are effectively fighting the spread of the disease or whether more drastic measures and more money are needed. In Figure 2 below, f(x) is the number of people who have the disease at time x, and two different situations are shown. In both Figure 2a and Figure 2b, the number of people with the disease, f(now), and the rate at which new people are getting sick, f′(now), are the same. The difference in the two situations is the concavity of f, and that difference in concavity might have a big effect on your decision.
+
+graph
+Figure 2
+In Figure 2a, f is concave down at "now", the slopes are decreasing, and it looks as if it is tailing off. We can say "f is increasing at a decreasing rate." It appears that the current methods are starting to bring the epidemic under control.
+
+In Figure 2b, f is concave up, the slopes are increasing, and it looks as if it will keep increasing faster and faster. It appears that the epidemic is still out of control.
+
+The differences between the graphs come from whether the derivative is increasing or decreasing
+
+The derivative of a function f is a function that gives information about the slope of f. The derivative tells us if the original function is increasing or decreasing.
+
+Because f′ is a function, we can take its derivative. This second derivative also gives us information about our original function f. The second derivative gives us a mathematical way to tell how the graph of a function is curved. The second derivative tells us if the original function is concave up or down.
+
+
+Inflection Points
+Definition (Inflection Point)
+An inflection point is a point on the graph of a function where the concavity of the function changes, from concave up to down or from concave down to up.
+
+\begin{example}
+Which of the labeled points in the graph below are inflection points?
+
+graph
+\begin{solution} The concavity changes at points b and g. At points a and h, the graph is concave up on both sides, so the concavity does not change. At points c and f, the graph is concave down on both sides. At point e, even though the graph looks strange there, the graph is concave down on both sides – the concavity does not change.
+\end{solution}\end{example}
+
+Inflection points happen when the concavity changes. Because we know the connection between the concavity of a function and the sign of its second derivative, we can use this to find inflection points.
+
+Working Definition
+An inflection point is a point on the graph where the second derivative changes sign.
+
+In order for the second derivative to change signs, it must either be zero or be undefined. So to find the inflection points of a function we only need to check the points where f′′(x) is 0 or undefined.
+
+Note that it is not enough for the second derivative to be zero or undefined. We still need to check that the sign of f′′ changes sign. The functions in the next example illustrate what can happen.
+
+\begin{example}
+Let f(x)=x3, g(x)=x4 and h(x)=x1/3. For which of these functions is the point (0,0) an inflection point?
+
+graphs
+\begin{solution} Graphically, it is clear that the concavity of f(x)=x3 and h(x)=x1/3 changes at (0,0), so (0,0) is an inflection point for f and h. The function g(x)=x4 is concave up everywhere so (0,0) is not an inflection point of g.
+
+We can also compute the second derivatives and check the sign change.
+
+If f(x)=x3, then f′(x)=3x2 and f′′(x)=6x. The only point at which f′′(x)=0 or is undefined (f′ is not differentiable) is at x=0. If x<0, then f′′(x)<0 so f is concave down. If x>0, then f′′(x)>0 so f is concave up. At x=0 the concavity changes so the point (0,f(0))=(0,0) is an inflection point of f(x)=x3.
+
+If g(x)=x4, then g′(x)=4x3 and g′′(x)=12x2. The only point at which g′′(x)=0 or is undefined is at x=0. If x<0, then g′′(x)>0 so g is concave up. If x>0, then g′′(x)>0 so g is also concave up. At x=0 the concavity does not change so the point (0,g(0))=(0,0) is not an inflection point of g(x)=x4. Keep this example in mind!
+
+If h(x)=x1/3, then h′(x)=13x-2/3 and h′′(x)=-29x-5/3. h′′ is not defined if x=0, but h′′(negative number)>0 and h′′(positive number)<0 so h changes concavity at (0,0) and (0,0) is an inflection point of h.
+\end{solution}\end{example}
+
+\begin{example}
+Sketch the graph of a function with f(2)=3, f′(2)=1, and an inflection point at (2,3).
+
+\begin{solution} Two possible solutions are shown here.
+
+graphs
+\end{solution}\end{example}

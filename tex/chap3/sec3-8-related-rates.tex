@@ -1,2 +1,21 @@
 \section{Related Rates}
 \label{sec:related-rates}
+
+Related Rates
+When working with a related rates problem,
+
+Draw a picture (if possible).
+Identify the quantities that are changing, and assign them variables.
+Find an equation that relates those quantities.
+Differentiate both sides of that equation with respect to time.
+Plug in any known values for the variables or rates of change.
+Solve for the desired rate.
+\begin{example}
+A company has determined the demand curve for their product is q=5000-p2--------√, where p is the price in dollars, and q is the quantity in millions. If weather conditions are driving the price up \$2 a week, find the rate at which demand is changing when the price is \$40.
+
+\begin{solution} The quantities changing are p and q, and we assume they are both functions of time, t, in weeks. We already have an equation relating the quantities, so we can implicitly differentiate it.
+ddt(q)=dqdt=dqdt=ddt(5000-p2)1/212(5000-p2)-1/2ddt(5000-p2)12(5000-p2)-1/2(-2pdpdt)
+Using the given information, we know the price is increasing by \$2 per week when the price is \$40, giving dpdt=2 when p=40. Plugging in these values,
+dqdt=12(5000-402)-1/2(-2(40)(2))\approx   -1.37
+Demand is falling by 1.37 million items per week.
+\end{solution}\end{example}

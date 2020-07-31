@@ -1,2 +1,228 @@
 \section{Maximum and Minimum Function Values}
 \label{sec:optimization}
+
+In theory and applications, we often want to maximize or minimize some quantity. An engineer may want to maximize the speed of a new computer or minimize the heat produced by an appliance. A manufacturer may want to maximize profits and market share or minimize waste. A student may want to maximize a grade in calculus or minimize the hours of study needed to earn a particular grade.
+
+Without calculus, we only know how to find the optimum points in a few specific examples (for example, we know how to find the vertex of a parabola). But what if we need to optimize an unfamiliar function?
+
+The best way we have without calculus is to examine the graph of the function, perhaps using technology. But our view depends on the viewing window we choose – we might miss something important. In addition, we’ll probably only get an approximation this way. (In some cases, that will be good enough.)
+
+Calculus provides ways of drastically narrowing the number of points we need to examine to find the exact locations of maximums and minimums, while at the same time ensuring that we haven’t missed anything important.
+
+Local Maxima and Minima
+Before we examine how calculus can help us find maximums and minimums, we need to define the concepts we will develop and use.
+
+Definitions (Local Maxima and Minima)
+f(x) has a local maximum at x=a if f(a)≥f(x) for all x near a.
+
+f(x) has a local minimum at x=a if f(a)≤f(x) for all x near a.
+
+f(x) has a local extreme at x=a if f(a) is a local maximum or minimum.
+
+The plurals of these are maxima and minima. We often simply say "max" or "min;" it saves a lot of syllables.
+
+Some books say "relative" instead of "local."
+
+The process of finding maxima or minima is called optimization.
+
+A point is a local max (or min) if it is higher (lower) than all the nearby points. These points come from the shape of the graph.
+
+Definitions (Global Maxima and Minima)
+f(x) has a global maximum at x=a if f(a)≥f(x) for all x in the domain of f(x).
+
+f(x) has a global minimum at x=a if f(a)≤f(x) for all x in the domain of f(x).
+
+f(x) has a global extreme at x=a if f(a) is a global maximum or minimum.
+
+Some books say "absolute" instead of "global."
+
+A point is a global max (or min) if it is higher (lower) than every point on the graph. These points come from the shape of the graph and the window through which we view the graph.
+
+The local and global extremes of the function in Figure 1 are labeled. You should notice that every global extreme is also a local extreme, but there are local extremes that are not global extremes.
+
+graph
+Figure 1
+If h(x) is the height of the earth above sea level at the location x, then the global maximum of h is h(summit of Mt. Everest) = 29,028 feet. The local maximum of h for the United States is h(summit of Mt. McKinley) = 20,320 feet. The local minimum of h for the United States is h(Death Valley) = -282 feet.
+
+\begin{example}
+The table shows the annual calculus enrollments at a large university. Which years had local maximum or minimum calculus enrollments? What were the global maximum and minimum enrollments in calculus?
+
+Year	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	Enrollment	1257	1324	1378	1336	1389	1450	1523	1582	1567	1545	1571
+\begin{solution} There were local maxima in 2002 and 2007; the global maximum was 1582 students in 2007. There were local minima in 2003 and 2009; the global minimum was 1257 students in 2000. We choose not to think of 2000 as a local minimum or 2010 as a local maximum; however, some books would include the endpoints. We are allowed to have a global maximum or global minimum at an endpoint.
+\end{example}
+
+Finding Maxima and Minima of a Function
+What must the tangent line look like at a local max or min? Look at these two graphs again – you’ll see that at all the extreme points, the tangent line is horizontal (so f′=0). There is one cusp in the blue graph – the tangent line is vertical there (so f′ is undefined).
+
+blue graphred graph
+That gives us the clue how to find extreme values.
+
+Definitions
+A critical number for a function f is a value x=a in the domain of f where either f′(a)=0 or f′(a) is undefined.
+
+A critical point for a function f is a point (a, f(a)) where a is a critical number of f.
+
+A local max or min of f can only occur at a critical point.
+
+\begin{example}
+Find the critical points of f(x)=x3-6x2+9x+2.
+
+\begin{solution} A critical number of f can occur only where f′(x)=0 or where f′ does not exist.
+
+f′(x)=3x2-12x+9=3(x2-4x+3)=3(x-1)(x-3)
+So f′(x)=0 at x=1 and x=3 (and no other values of x). There are no places where f′ is undefined.
+
+The critical numbers are x=1 and x=3. So the critical points are (1, 6) and (3, 2).
+
+These are the only possible locations of local extremes of f. We haven’t discussed yet how to tell whether either of these points is actually a local extreme of f, or which kind it might be. But we can be certain that no other point is a local extreme.
+
+The graph of f below shows that (1,f(1))=(1,6) is a local maximum and (3,f(3))=(3,2) is a local minimum. This function does not have a global maximum or minimum.
+
+graph
+\end{example}
+
+\begin{example}
+Find all local extremes of f(x)=x3.
+
+\begin{solution} f(x)=x3 is differentiable for all x, and f′(x)=3x2. The only place where f′(x)=0 is at x=0, so the only candidate is the critical point (0,0).
+
+If x>0 then f(x)=x3>0=f(0), so f(0) is not a local maximum.
+
+Similarly, if x<0 then f(x)=x3<0=f(0) so f(0) is not a local minimum.
+
+The critical point (0,0) is the only candidate to be a local extreme of f, and, based on the graph, this candidate did not turn out to be a local extreme of f. The function f(x)=x3 does not have any local extremes.
+
+graph
+\end{example}
+
+Remember this example! It is not enough to find the critical points – we can only say that f might have a local extreme at the critical points.
+
+First and Second Derivative Tests
+Is that critical point a Maximum or Minimum (or Neither)?
+Once we have found the critical points of f, we still have the problem of determining whether these points are maxima, minima or neither.
+
+All of the graphs in the figure below have a critical point at (2, 3). It is clear from the graphs that the point (2,3) is a local maximum in (a) and (d), (2,3) is a local minimum in (b) and (e), and (2,3) is not a local extreme in (c) and (f).
+
+graphs
+The critical numbers only give the possible locations of extremes, and some critical numbers are not the locations of extremes. The critical numbers are the candidates for the locations of maxima and minima.
+
+f′ and Extreme Values of f
+Four possible shapes of graphs are shown here – in each graph, the point marked by an arrow is a critical point, where f′(x)=0. What happens to the derivative near the critical point?
+
+graphs
+At a local max, such as in the graph on the left, the function increases on the left of the local max, then decreases on the right. The derivative is first positive, then negative at a local max. At a local min, the function decreases to the left and increases to the right, so the derivative is first negative, then positive. When there isn’t a local extreme, the function continues to increase (or decrease) right past the critical point – the derivative doesn’t change sign.
+
+The First Derivative Test for Extremes
+Find the critical points of f.
+
+For each critical number c, examine the sign of f’ to the left and to the right of c. What happens to the sign as you move from left to right?
+
+If f′(x) changes from positive to negative at x=c, then f has a local maximum at (c,f(c)).
+If f′(x) changes from negative to positive at x=c, then f has a local minimum at (c,f(c)).
+If f′(x) does not change sign at x=c, then (c,f(c)) is neither a local maximum nor a local minimum.
+\begin{example}
+Find the critical points of f(x)=x3-6x2+9x+2 and classify them as local max, local min, or neither.
+
+\begin{solution} We already found the critical points; they are (1, 6) and (3, 2).
+
+Now we can use the first derivative test to classify each. Recall that f′(x)=3x2-12x+9=3(x2-4x+3)=3(x-1)(x-3). The factored form is easiest to work with here, so let’s use that.
+
+At (1, 6) we could choose a number slightly less than 1 to plug into the formula for f′ – perhaps use x=0, or x=0.9. Then we could examine its sign. But we don’t care about the numerical value, all we are interested in is its sign. And for that, we don’t have to do any plugging in:
+
+If x is a little less than 1, then x-1 is negative, and x-3 is negative. So f′=3(x-1)(x-3) will be pos(neg)(neg) = positive.
+For x a little more than 1, we can evaluate f′ at a number more than 1 (but less than 3, we don’t want to go past the next critical point!) – perhaps x=2. Or we can make a quick sign argument like what we did above: for x a little more than 1, f′=3(x-1)(x-3) will be pos(pos)(neg) = negative.
+So f′ changes from positive to negative, which means there is a local max at (1, 6).
+
+As another approach, we could draw a number line, and mark the critical numbers:
+
+number line
+We already know the derivative is zero or undefined at the critical numbers. On each interval between these values, the derivative will stay the same sign. To determine the sign, we could pick a test value in each interval, and evaluate the derivative at those points (or use the sign approach used above).
+
+number line
+At (3, 2) f′ changes from negative to positive, so there is a local min at (3, 2). This confirms what we saw before in the graph.
+
+graph
+\end{example}
+
+f′′ and Extreme Values of f
+The concavity of a function can also help us determine whether a critical point is a maximum or minimum or neither. For example, if a point is at the bottom of a concave up function, then the point is a minimum.
+
+graphs
+The Second Derivative Test for Extremes
+Find all critical points of f. For those critical points where f′(c)=0, find f′′(c).
+
+If f′′(c)<0 (negative) then f is concave down and has a local maximum at x=c.
+If f′′(c)>0 (positive) then f is concave up and has a local minimum at x=c.
+If f′′(c)=0 then f may have a local maximum, a minimum or neither at x=c.
+The cartoon faces can help you remember the Second Derivative Test.
+
+creepy faces
+\begin{example}
+f(x)=2x3-15x2+24x-7 has critical numbers x= 1 and 4. Use the Second Derivative Test for Extremes to determine whether f(1) and f(4) are maximums or minimums or neither.
+
+\begin{solution} We need to find the second derivative:
+f(x)=f′(x)=f′′(x)=2x3-15x2+24x-76x2-30x+2412x-30
+Then we just need to evaluate f′′ at each critical number:
+
+x=1: f′′(1)=12(1)-30<0, so there is a local maximum at x=1.
+
+x=4: f′′(4)=12(4)-30>0, so there is a local minimum at x=4.
+\end{example}
+
+Many students like the Second Derivative Test. The Second Derivative Test is often easier to use than the First Derivative Test. You only have to find the sign of one number for each critical number rather than two. And if your function is a polynomial, its second derivative will probably be a simpler function than the derivative.
+
+However, if you needed a product rule, quotient rule, or chain rule to find the first derivative, finding the second derivative can be a lot of work. Also, even if the second derivative is easy, the Second Derivative Test doesn’t always give an answer. The First Derivative Test will always give you an answer.
+
+Use whichever test you want to. But remember – you have to do some test to be sure that your critical point actually is a local max or min.
+
+Global Maxima and Minima
+In applications, we often want to find the global extreme; knowing that a critical point is a local extreme is not enough.
+
+For example, if we want to make the greatest profit, we want to make the absolutely greatest profit of all. How do we find global max and min?
+
+There are just a few additional things to think about.
+
+Endpoint Extremes
+The local extremes of a function occur at critical points – these are points in the function that we can find by thinking about the shape (and using the derivative to help us). But if we’re looking at a function on a closed interval, the endpoints could be extremes. These endpoint extremes are not related to the shape of the function; they have to do with the interval, the window through which we’re viewing the function.
+
+graph
+In the graph above, it appears that there are three critical points – one local min, one local max, and one that is neither one. But the global max, the highest point of all, is at the left endpoint. The global min, the lowest point of all, is at the right endpoint.
+
+How do we decide if endpoints are global max or min? It’s easier than you expected – simply plug in the endpoints, along with all the critical numbers, and compare y-values.
+
+\begin{example}
+Find the global max and min of f(x)=x3-3x2-9x+5 for -2≤x≤6.
+
+\begin{solution} f′(x)=3x2-6x-9=3(x+1)(x-3). We need to find critical points, and we need to check the endpoints.
+
+f′(x)=3(x+1)(x-3)=0 when x=-1 and x=3. The endpoints of the interval are x=-2 and x=6.
+
+Now we simply compare the values of f at these four values of x:
+
+x	f(x)	-2	3	-1	10	3	-22	6	59
+The global minimum of f on [-2,6] is -22, when x=3, and the global maximum of f on [-2,6] is 59, when x=6.
+\end{example}
+
+If there's only one critical point
+If the function has only one critical point and it’s a local max (or min), then it must be the global max (or min). To see this, think about the geometry. Look at the graph on the left – there is a local max, and the graph goes down on either side of the critical point. Suppose there was some other point that was higher – then the graph would have to turn around. But that turning point would have shown up as another critical point. If there’s only one critical point, then the graph can never turn back around.
+
+graph
+When in doubt, graph it and look.
+If you are trying to find a global max or min on an open interval (or the whole real line), and there is more than one critical point, then you need to look at the graph to decide whether there is a global max or min. Be sure that all your critical points show in your graph, and that you graph beyond them – that will tell you what you want to know.
+
+\begin{example}
+Find the global max and min of f(x)=x3-6x2+9x+2.
+
+\begin{solution} We have previously found that (1, 6) is a local max and (3, 2) is a local min. This is not a closed interval, and there are two critical points, so we must turn to the graph of the function to find global max and min.
+
+The graph of f shows that points to the left of x=4 have y-values greater than 6, so (1, 6) is not a global max. Likewise, if x is negative, y is less than 2, so (3, 2) is not a global min. There are no endpoints, so we’ve exhausted all the possibilities. This function does not have a global maximum or minimum.
+
+graph
+\end{example}
+
+To find Global Extremes
+The only places where a function can have a global extreme are critical points or endpoints.
+
+If the function has only one critical point, and it's a local extreme, then it is also the global extreme.
+If there are endpoints, find the global extremes by comparing y-values at all the critical points and at the endpoints.
+When in doubt, graph the function to be sure. (However, unless the problem explicitly tells you otherwise, it is not enough to just use the graph to get your answer.)

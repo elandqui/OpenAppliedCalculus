@@ -1,2 +1,157 @@
 \section{Curve Sketching}
 \label{sec:sketching}
+
+This section examines some of the interplay between the shape of the graph of f and the behavior of f′. If we have a graph of f, we will see what we can conclude about the values of f′. If we know values of f′, we will see what we can conclude about the graph of f. We will also utilize the information from f′′ that we learning in the last section.
+
+First Derivative Information
+Definitions
+The function f(x) is increasing on (a,b) if a<x1<x2<b implies f(x1)<f(x2).
+
+The function f(x) is decreasing on (a,b) if a<x1<x2<b implies f(x1)>f(x2).
+
+Graphically, f is increasing (decreasing) if, as we move from left to right along the graph of f, the height of the graph increases (decreases).
+
+These same ideas make sense if we consider h(t) to be the height (in feet) of a rocket at time t seconds. We naturally say that the rocket is rising or that its height is increasing if the height h(t) increases over a period of time, as t increases.
+
+\begin{example}
+List the intervals on which the function shown is increasing or decreasing.
+
+graph
+\begin{solution} f is increasing on the intervals [0,0.5], [2,3] and [4,6].
+
+f is decreasing on [0.5,2] and [6,8].
+
+On the interval [3,4] the function is not increasing or decreasing – it is constant.
+\end{solution}\end{example}
+
+First Derivative Information about Shape
+For a function f which is differentiable on an interval (a,b);
+
+if f is increasing on (a,b), then f′(x)≥0 for all x in (a,b).
+if f is decreasing on (a,b), then f′(x)≤0 for all x in (a,b).
+if f is constant on (a,b), then f′(x)=0 for all x in (a,b).
+\begin{example}
+The graph shows the height of a helicopter during a period of time. Sketch the graph of the upward velocity of the helicopter, dhdt.
+
+height graph
+\begin{solution} Notice that the h(t) has a local maximum when t=2 and t=5, and so v(2)=0 and v(5)=0. Similarly, h(t) has a local minimum when t=3, so v(3)=0.
+
+When h is increasing, v is positive. When h is decreasing, v is negative.
+
+Using this information, we can sketch a graph of v(t)=dhdt.
+
+velocity graph
+\end{solution}\end{example}
+
+The next theorem is almost the converse of the First Shape Theorem and explains the relationship between the values of the derivative and the graph of a function from a different perspective. It says that if we know something about the values of f′, then we can draw some conclusions about the shape of the graph of f.
+
+First Derivative Information about Shape (part 2)
+For a function f which is differentiable on an interval I;
+
+if f′(x)>0 for all x in the interval I, then f is increasing on I.
+if f′(x)<0 for all x in the interval I, then f is decreasing on I.
+if f′(x)=0 for all x in the interval I, then f is constant on I.
+\begin{example}
+Use information about the values of f′ to help graph f(x)=x3-6x2+9x+1.
+
+\begin{solution} f′(x)=3x2-12x+9=3(x-1)(x-3) so f′(x)=0 only when x=1 or x=3. f′ is a polynomial so it is always defined.
+
+The only critical numbers for f are x=1 and x=3, and they divide the real number line into three intervals: (-∞,1), (1,3), and (3,∞). On each of these intervals, the function is either always increasing or always decreasing.
+
+If x<1, then f′(x)= 3(negative number)(negative number) >0 so f is increasing.
+
+If 1<x<3, then f′(x)= 3(positive number)(negative number) <0 so f is decreasing.
+
+If x>3, then f′(x)= 3(positive number)(positive number) >0 so f is increasing.
+
+Even though we don't know the value of f anywhere yet, we do know a lot about the shape of the graph of f: as we move from left to right along the x-axis, the graph of f increases until x=1, then the graph decreases until x=3, and then the graph increases again. The graph of f makes "turns" when x=1 and x=3; it has a local maximum at x=1, and a local minimum at x=3.
+
+sign chart
+To plot the graph of f, we still need to evaluate f at a few values of x, but only at a very few values. f(1)=5, and (1,5) is a local maximum of f. f(3)=1, and (3,1) is a local minimum of f. The resulting graph of f is shown here.
+
+graph
+\end{solution}\end{example}
+
+Second Derivative Information
+Until now, we've only used first derivative information, but we could also use information from the second derivative to provide more information about the shape of the function.
+
+Second Derivative Information about Shape
+If f is concave up on (a,b), then f′′(x)≥0 for all x in (a,b).
+If f is concave down on (a,b), then f′′(x)≤0 for all x in (a,b).
+The converse of both of these are also true:
+
+If f′′(x)≥0 for all x in (a,b), then f is concave up on (a,b).
+If f′′(x)≤0 for all x in (a,b), then f is concave down on (a,b).
+\begin{example}
+Use information about the values of f′′ to help determine the intervals on which the function f(x)=x3-6x2+9x+1 is concave up and concave down.
+
+\begin{solution} For concavity, we need the second derivative: f′(x)=3x2-12x+9, so f′′(x)=6x-12.
+
+To find possible inflection points, set the second derivative equal to zero. 6x-12=0, so x=2. This divides the real number line into two intervals: (-∞,2) and (2,∞).
+
+For x<2, the second derivative is negative (for example, f′′(0)=6(0)-12=-12), so f is concave down. For x>2, the second derivative is positive, so f is concave up.
+
+We could have incorporated this concavity information when sketching the graph for the previous example, and indeed we can see the concavity reflected in the graph shown.
+\end{solution}\end{example}
+
+\begin{example}
+Use information about the values of f′ and f′′ to help graph f(x)=x2/3.
+
+\begin{solution} f′(x)=23x-1/3. This is undefined at x=0.
+
+f′′(x)=-29x-4/3. This is also undefined at x=0.
+
+This creates two intervals: x<0, and x>0.
+
+On the interval x<0, we could test out a value like x=-1:
+f′(-1)=23(-1)-1/3=-23
+and
+f′′(-1)=-29(-1)-4/3=-29.
+f′(x) is negative and f′′(x) is negative, so we can conclude that the function is decreasing and concave down on this interval.
+
+On the interval x>0, we could test out a value like x=1:
+f′(1)=23(1)-1/3=23
+and
+f′′(1)=-29(1)-4/3=-29.
+f′(x) is positive and f′′(x) is negative, so we can conclude that the function is increasing and concave down on this interval.
+
+We can also calculate that f(0)=0, giving us a base point for the graph. Using this information, we can conclude the graph must look like this:
+
+graph
+\end{solution}\end{example}
+
+Sketching without an Equation
+Of course, graphing calculators and computers are great at graphing functions. Calculus provides a way to illuminate what may be hidden or out of view when we graph using technology. More importantly, calculus gives us a way to look at the derivatives of functions for which there is no equation given. We already saw the idea of this back in Section 2.3 where we sketched the derivative of two graphs by estimating slopes on the curves.
+
+We can summarize all the derivative information about shape in a table.
+
+Summary of Derivative Information about the Graph
+f(x)	Increasing	Decreasing	Concave Up	Concave Down	f′(x)	+	-	Increasing	Decreasing	f′′(x)			+	-
+When f′(x)=0, the graph of f may have a local max or min.
+
+When f′′(x)=0, the graph of f may have an inflection point.
+
+\begin{example}
+A company's bank balance, B, in millions of dollars, t weeks after releasing a new product is shown in the graph below. Sketch a graph of the marginal balance – the rate at which the bank balance was changing over time.
+
+graph
+\begin{solution} Notice that since the tangent line will be horizontal at about t=0.6 and t=3.2, the derivative will be 0 at those points.
+
+We can then identifying intervals on which the original function is increasing or decreasing. This will tell us when the derivative function is positive or negative.
+
+Interval	B(t)	B′(t)	0<t<0.6	Decreasing	Negative	0.6<t<3.2	Increasing	Positive	t>3.2	Decreasing	Negative
+There appear to be inflection points at about t=1.5 and t=5.5. At these points, the derivative will be changing from increasing to decreasing or vice versa, so the derivative will have a local max or min at those points.
+
+Looking at the intervals of concavity:
+
+Interval	B(t)	B′(t)	0<t<1.5	Concave Up	Increasing	1.5<t<5.5	Concave Down	Decreasing	t>5.5	Concave Up	Increasing
+If we wanted a more accurate sketch of the derivative function, we could also estimate the derivative at a few points:
+
+t	B′(t)	0	-10	1.5	3	6	-1 graph with some derivative values
+Now we can sketch the derivative. We know a few values for the derivative function, and on each interval we know the shape we need. We can use this to create a rough idea of what the graph should look like.
+
+derivative intervals
+Smoothing this out gives us a good estimate for the graph of the derivative.
+
+derivative graph
+\end{solution}\end{example}

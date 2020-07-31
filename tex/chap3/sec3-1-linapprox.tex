@@ -1,2 +1,29 @@
 \section{Linear Approximations}
 \label{sec:linapprox}
+
+Tangent Line Approximation
+Back when we first thought about the derivative, we used the slope of secant lines over tiny intervals to approximate the derivative:
+f′(a)\approx   ΔyΔx=f(x)-f(a)x-a
+Now that we have other ways to find derivatives, we can exploit this approximation to go the other way. Solve the expression above for f(x), and you’ll get the tangent line approximation:
+
+The Tangent Line Approximation (TLA) (or Linear Approximation)
+To approximate the value of f(x) using TLA, find some a where
+
+a and x are close, and
+You know the exact values of both f(a) and f′(a).
+Then
+f(x)\approx   f(a)+f′(a)(x-a).
+Another way to look at the same formula:
+Δy\approx   f′(a)Δx
+How close is close? It depends on the shape of the graph of f. In general, the closer the better.
+
+graph
+Try it for yourself using this applet (click the button next to L(x) if the line isn't showing up):
+
+\begin{example}
+Suppose we know that g(20)=5 and g′(20)=1.4. Use this information to approximate g(23) and g(18).
+
+\begin{solution} Using the tangent line approximation:
+g(23)\approx   g(18)\approx   5+(1.4)(23-20)=9.25+(1.4)(18-20)=2.2
+Note that we don't know if these approximations are close – but they're the best we can do with the limited information we have to start with. Note also that 18 and 23 are sort of close to 20, so we can hope these approximations are pretty good. We would feel more confident using this information to approximate g(20.003). We would feel very unsure using this information to approximate g(55).
+\end{solution}\end{example}

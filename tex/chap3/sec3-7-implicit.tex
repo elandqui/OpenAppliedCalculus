@@ -1,2 +1,66 @@
 \section{Implicit Differentiation}
 \label{sec:implicit}
+
+Implicit Differentiation
+In our work up until now, the functions we needed to differentiate were either given explicitly, such as y=x2+ex, or it was possible to get an explicit formula for them, such as solving y3-3x2=5 to get y=5+3x2------√3. Sometimes, however, we will have an equation relating x and y which is either difficult or impossible to solve explicitly for y, such as y+ey=x2. In any case, we can still find y′=f′(x) by using implicit differentiation.
+
+The key idea behind implicit differentiation is to assume that y is a function of x even if we cannot explicitly solve for y. This assumption does not require any work, but we need to be very careful to treat y as a function when we differentiate and to use the Chain Rule.
+
+\begin{example}
+Assume that y is a function of x. Calculate
+
+ddx(y3)
+ddx(x3y2)
+ddx(ln(y))
+\begin{solution} We need the chain rule since y is a function of x:
+ddx(y3)=3y2dydx=or3y2y′
+We need to use the product rule and the Chain Rule:
+ddx(x3y2)===orx3ddx(y2)+y2ddx(x3)x32ydydx+y23x22x3yy′+3y2x2
+We know ddx(ln(x))=1x, so we use that and the Chain Rule:
+ddx(ln(y))=1y⋅y′
+\end{solution}\end{example}
+
+Implicit Differentiation
+To determine y′, differentiate each side of the defining equation, treating y as a funct\begin{example} x, and then algebraically solve for y′.
+
+(The last example in the following video gets rather messy – don't worry too much if you can't follow all of the simplifications at the end.)
+
+\begin{example}
+Find the slope of the tangent line to the circle x2+y2=25 at the point (3,4) using implicit differentiation.
+
+\begin{solution} We differentiate each side of the equation x2+y2=25 and then solve for y′:
+ddx(x2+y2)=2x+2yy′=ddx(25)0
+Solving for y′, we have y′=-2x2y=-xy, and, at the point (3,4),
+y′=-34.
+tangent to circle
+\end{solution}\end{example}
+
+In the previous example, it would have been easy to explicitly solve for y, and then we could differentiate y to get y′. Because we could explicitly solve for y, we had a choice of methods for calculating y′. Sometimes, however, we cannot explicitly solve for y, and the only way of determining y′ is to use implicit differentiation.
+
+Related Rates
+If several variables or quantities are related to each other and some of the variables are changing at a known rate, then we can use derivatives to determine how rapidly the other variables must be changing.
+
+Here is a link to the examples used in the videos in this section: Related Rates.
+
+\begin{example}
+Suppose the border of a town is roughly circular, and the radius of that circle has been increasing at a rate of 0.1 miles each year. Find how fast the area of the town has been increasing when the radius is 5 miles.
+
+picture
+\begin{solution} We could get an approximate answer by calculating the area of the circle when the radius is 5 miles (A=πr2=π(5 miles)2\approx   78.6 miles2 ) and 1 year later when the radius is 0.1 feet larger than before (A=πr2=π(5.1 miles)2\approx   81.7 miles2 ) and then finding
+ΔAreaΔtime=81.7 mi2-78.6 mi21 year=3.1 mi2/yr.
+This approximate answer represents the average change in area during the 1 year period when the radius increased from 5 miles to 5.1 miles, and would correspond to the secant slope on the area graph.
+
+To find the exact answer, though, we need derivatives. In this case both radius and area are functions of time:
+r(t)= radius at time tA(t)= area at time t
+We know how fast the radius is changing, which is a statement about the derivative: drdt=0.1mileyear. We also know that r=5 at our moment of interest.
+
+We are looking for how fast the area is increasing, which is dAdt.
+
+Now we need an equation relating our variables, which is the area equation:
+A=πr2.
+Taking the derivative of both sides of that equation with respect to t, we can use implicit differentiation:
+ddt(A)=dAdt=ddt(πr2)π2rdrdt
+Plugging in the values we know for r and drdt,
+dAdt=π2(5 miles)(0.1milesyear)=πmiles2year
+So the area of the town is increasing by approximately 3.14 square miles per year when the radius is 5 miles.
+\end{solution}\end{example}

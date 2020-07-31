@@ -1,2 +1,56 @@
 \section{Elasticity of Demand}
 \label{sec:demand}
+
+Elasticity
+We know that demand functions are decreasing, so when the price increases, the quantity demanded goes down. But what about revenue = price × quantity? When the price increases will revenue go down because the demand dropped so much? Or will revenue increase because demand didn't drop very much?
+
+Elasticity of demand is a measure of how demand reacts to price changes. It’s normalized – that means the particular prices and quantities don't matter, and everything is treated as a percent change. The formula for elasticity of demand involves a derivative, which is why we’re discussing it here.
+
+
+
+Elasticity of Demand
+Given a demand function that gives q in terms of p (so q=D(p)), the elasticity of demand is
+E=∣∣∣pq⋅dqdp∣∣∣=∣∣∣p⋅D′(p)D(p)∣∣∣
+Note that since demand is [normally] a decreasing function of p, the derivative is [normally] negative. That's why we have the absolute value: so that E will always be positive. This means we can also write E as -pq⋅dqdp or -p⋅D′(p)D(p). These forms can be easier to work with when solving for when E=1.
+
+If E<1, we say demand is inelastic. In this case, raising prices increases revenue.
+If E>1, we say demand is elastic. In this case, raising prices decreases revenue.
+If E=1, we say demand is unitary. E=1 at critical points of the revenue function.
+Interpretation of elasticity
+If the price increases by 1%, the demand will decrease by E%.
+
+\begin{example}
+A company sells q ribbon winders per year at \$p per ribbon winder. The demand function for ribbon winders is given by p=300-0.02q. Find the elasticity of demand when the price is \$70 apiece. Will an increase in price lead to an increase in revenue?
+
+\begin{solution} First, we need to solve the demand equation so it gives q in terms of p, so that we can find dqdp: p=300-0.02q, so q=15000-50p. Then dqdp=-50.
+
+We need to find q when p=70:
+q=11500.
+Now compute
+E=∣∣∣pq⋅dqdp∣∣∣=∣∣∣7011500⋅(-50)∣∣∣\approx   0.3
+E<1, so demand is inelastic. Increasing the price by 1\% would only cause a 0.3\% drop in demand. Increasing the price would lead to an increase in revenue, so it seems that the company should increase its price.
+\end{solution}\end{example}
+
+The demand for products that people have to buy, such as onions, tends to be inelastic. Even if the price goes up, people still have to buy about the same amount of onions, and revenue will not go down. The demand for products that people can do without, or put off buying, such as cars, tends to be elastic. If the price goes up, people will just not buy cars right now, and revenue will drop.
+
+\begin{example}
+A company finds the demand q, in thousands, for their kites to be q=400-p2 at a price of p dollars. Find the elasticity of demand when the price is \$5 and when the price is \$15. Then find the price that will maximize revenue.
+
+\begin{solution} Calculating the derivative, dqdp=-2p. The elasticity equation as a function of p will be:
+E=∣∣∣pq⋅dqdp∣∣∣=∣∣∣p400-p2⋅(-2p)∣∣∣=∣∣∣-2p2400-p2∣∣∣
+Evaluating this to find the elasticity at \$5 and at \$15:
+
+E=∣∣∣-2(5)2400-(5)2∣∣∣\approx   0.133
+So the demand is inelastic when the price is \$5.
+
+At a price of \$5, a 1\% increase in price would decrease demand by only 0.133\%. Revenue could be raised by increasing prices.
+
+E=∣∣∣-2(15)2400-(15)2∣∣∣\approx   2.571
+So the demand is elastic when the price is \$15.
+
+At a price of \$15, a 1\% increase in price would decrease demand by 2.571\%. Revenue could be raised by decreasing prices.
+
+To maximize the revenue, we could solve for when E=1:
+∣∣∣-2p2400-p2∣∣∣=2p2=3p2=p=1400-p24004003----√\approx   11.55.
+A price of \$11.55 will maximize the revenue.
+\end{solution}\end{example}
