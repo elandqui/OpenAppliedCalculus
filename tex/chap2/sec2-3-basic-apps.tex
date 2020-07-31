@@ -1,2 +1,64 @@
 \section{Basic Applications of Slope}
 \label{sec:basic-apps}
+
+Business and Economics Terms
+Next we will delve more deeply into some business applications. To do that, we first need to review some terminology.
+
+Suppose you are producing and selling some item. The profit you make is the amount of money you take in minus what you have to pay to produce the items. Both of these quantities depend on how many you make and sell. (So we have functions here.) Here is a list of definitions for some of the terminology, together with their meaning in algebraic terms and in graphical terms.
+
+Cost
+Your cost is the money you have to spend to produce your items.
+
+Fixed Cost
+The Fixed Cost (FC) is the amount of money you have to spend regardless of how many items you produce. FC can include things like rent, purchase costs of machinery, and salaries for office staff. You have to pay the fixed costs even if you don’t produce anything.
+
+Total Variable Cost
+The Total Variable Cost (TVC) for q items is the amount of money you spend to actually produce them. TVC includes things like the materials you use, the electricity to run the machinery, gasoline for your delivery vans, maybe the wages of your production workers. These costs will vary according to how many items you produce.
+
+Total Cost
+The Total Cost (TC, or sometimes just C) for q items is the total cost of producing them. It’s the sum of the fixed cost and the total variable cost for producing q items.
+
+Average Cost
+The Average Cost (AC) for q items is the total cost divided by q, or TCq. You can also talk about the average fixed cost, FCq, or the average variable cost, TVCq.
+
+Marginal Cost
+The Marginal Cost (MC) at q items is the cost of producing the next item. Really, it’s
+MC(q)=TC(q+1)-TC(q).
+In many cases, though, it’s easier to approximate this difference using calculus (see Example \ref{ex:2-7-11} below). And some sources define the marginal cost directly as the derivative,
+MC(q)=TC′(q).
+In this course, we will use both of these definitions as if they were interchangeable.
+
+The units on marginal cost is cost per item.
+
+Why is it okay that there are two definitions for Marginal Cost (and Marginal Revenue, and Marginal Profit)?
+
+We have been using slopes of secant lines over tiny intervals to approximate derivatives. In this example, we’ll turn that around – we’ll use the derivative to approximate the slope of the secant line.
+
+Notice that the “cost of the next item” definition is actually the slope of a secant line, over an interval of 1 unit:
+MC(q)=C(q+1)-1=C(q+1)-11.
+So this is approximately the same as the derivative of the cost function at q:
+MC(q)=C′(q).
+In practice, these two numbers are so close that there’s no practical reason to make a distinction. For our purposes, the marginal cost is the derivative is the cost of the next item.
+
+\begin{example}
+The table shows the total cost (TC) of producing q items.
+
+Items, q	TC	0	\$20,000	100	\$35,000	200	\$45,000	300	\$53,000
+What is the fixed cost?
+When 200 items are made, what is the total variable cost? The average variable cost?
+When 200 items are made, estimate the marginal cost.
+
+\begin{solution}
+  The fixed cost is \$20,000, the cost even when no items are made.
+When 200 items are made, the total cost is \$45,000. Subtracting the fixed cost, the total variable cost is \$45,000 - \$20,000 = \$25,000.
+
+The average variable cost is the total variable cost divided by the number of items, so we would divide the \$25,000 total variable cost by the 200 items made. \$25,000/200 = \$125. On average, each item had a variable cost of \$125.
+
+We need to estimate the value of the derivative, or the slope of the tangent line at q=200. Finding the secant line from q=100 to q=200 gives a slope of
+45,000-35,000200-100=100.
+Finding the secant line from q=200 to q=300 gives a slope of
+53,000-45,000300-200=80.
+We could estimate the tangent slope by averaging these secant slopes, giving us an estimate of \$90/item.
+
+This tells us that after 200 items have been made, it will cost about \$90 to make one more item.
+\end{solution}\end{example}
