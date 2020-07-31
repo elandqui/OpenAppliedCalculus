@@ -47,9 +47,9 @@ We could instead name the function $h$ and write $h(a)$, which is read ``$h$ of 
 
 We can use any variable to name the function; the notation $h(a)$ shows us that $h$ depends on $a$. The value ``$a$'' must be put into the function ``$h$'' to get a result.
 
-\begin{note}
+\begin{remark}
 Be careful! The parentheses indicate that age is the input into the function. Do not confuse these parentheses with multiplication!
-\end{note}
+\end{remark}
 
 \begin{example}
 A function $N = f(y)$ gives the number of police officers, $N$, in a town in year $y$. What does $f(2005) = 300$ tell us?
@@ -154,18 +154,23 @@ As an example, Figure \ref{fig:heightplot} is a plot of the data from Table \ref
 \begin{example}
 \label{ex:1-2-graphs}
 Which of these graphs defines a function $y=f(x)$?
-\begin{table}[ht!]
-\begin{centering}
-\begin{tabular}{ccc}
-\includegraphics[width=0.3\textwidth]{img/chap1/sec1-2/ex114a.png}
-&
-\includegraphics[width=0.3\textwidth]{img/chap1/sec1-2/ex114b.png}
-&
-\includegraphics[width=0.3\textwidth]{img/chap1/sec1-2/ex114c.png}\\
-Graph A. & Graph B. & Graph C.\\
-\end{tabular}
-\end{centering}
-\end{table}
+\begin{figure}[!ht]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{img/chap1/sec1-2/ex114a.png}
+        \caption{Graph A}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{img/chap1/sec1-2/ex114b.png}
+        \caption{Graph B}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{img/chap1/sec1-2/ex114c.png}
+        \caption{Graph C}
+    \end{subfigure}
+\end{figure}
 
 \begin{solution} Looking at the graphs above, Graphs A and B define a function $y=f(x)$, since for each input value along the horizontal ($x$) axis, there is exactly one corresponding output value, determined by the $y$-value of the graph. Graph C does not define a function $y=f(x)$ since some input values, such as
 $x=2$, correspond with more than one output value.
@@ -194,8 +199,8 @@ the relationship where $p$ is a function of $N$, which means
 writing it as $p = $ something involving $N$, or $p$ in terms of $N$. We proceed using algebra.
 
 \begin{align*}
-&2N + 6p = 12&\enspace &\mbox{Subtract $2N$ from both sides.}\\
-&6p = 12 - 2N&\enspace  &\mbox{Divide both sides by 6 and simplify.}\\
+&2N + 6p = 12& &\mbox{Subtract $2N$ from both sides.}\\
+&6p = 12 - 2N& &\mbox{Divide both sides by 6 and simplify.}\\
 &p = \frac{12-2N}{6}& & \\
 &p = \frac{12}{6} - \frac{2N}{6} & &\\
 &p = 2 - \frac{1}{3}N & &
@@ -214,9 +219,9 @@ The fundamental use of a function is to {\bf evaluate} the function: ``plugging 
 
 Another related use is to determine the input or inputs of a function, given an output of the function. This is called {\bf solving} an equation and could produce more than one solution, since different inputs can produce the same output.
 
-\begin{note}
+\begin{remark}
 The concepts of evaluating and solving often get confused. When we use the word {\em solve}, we will be {\em solving a problem} or {\em solving an equation for an unknown quantity or variable}. It does not make sense to solve a function, since a function is merely a mathematical expression and not an equation.
-\end{note}
+\end{remark}
 
 \begin{example}
 Let $Q=g(n)$ and use the table shown.
@@ -239,12 +244,12 @@ Let $Q=g(n)$ and use the table shown.
 \end{solution}
     \item[(b)] Solve $g(n) = 6$ for $n$.
 
-\begin{solution} Solving $g(n) = 6$ means we need to determine what input values, $n$, produce an output value of 6. Looking at the table we see there are two solutions: $n = 2$ and $n = 4$.
+    \begin{solution} Solving $g(n) = 6$ means we need to determine what input values, $n$, produce an output value of 6. Looking at the table we see there are two solutions: $n = 2$ and $n = 4$.
 
-When we evaluate $g(n)$ at 2, our output is $Q = 6$.
+      When we evaluate $g(n)$ at 2, our output is $Q = 6$.
 
-When we evaluate $g(n)$ at 4, our output is also $Q= 6$.
-\end{solution}
+      When we evaluate $g(n)$ at 4, our output is also $Q= 6$.
+    \end{solution}
     \end{itemize}
 \end{example}
 
@@ -299,10 +304,10 @@ Let $k(t) = t^3 + 2$.
 
         \begin{solution} To solve $k(t) = 1$, we set the formula for $k(t)$ equal to 1, and solve for the input value that will produce that output.
         \begin{align*}
-            k(t)    &=  1 &\, \mbox{Substitute the original formula } k(t) = t^3 + 2.\\
-            t^3 + 2 &=  1 &\, \mbox{Subtract 2 from each side}. \\
-            t^3     &= -1 &\, \mbox{Evaluate the cube root of each side.}\\
-            t       &= \sqrt[3]{-1} = -1
+            k(t)    &=  1 & &\mbox{Substitute the original formula } k(t) = t^3 + 2.\\
+            t^3 + 2 &=  1 & &\mbox{Subtract 2 from each side}. \\
+            t^3     &= -1 & &\mbox{Evaluate the cube root of each side.}\\
+            t       &= \sqrt[3]{-1} = -1& &
         \end{align*}
 
 When solving an equation using formulas, you can check your answer by using your solution in the original equation to see if your calculated answer is correct.
@@ -375,9 +380,9 @@ n &= \frac{50}{10} = 5
 \end{align*}
 So you need to sell at least five T-shirts in order to break even.
 
-\begin{note}
+\begin{remark}
 Note the distinction between $P(0)$ and $P(n)=0$. $P(0)$ is the profit from selling 0 items, while $P(n)=0$ is an equation whose solution tells you the number of items that must be sold in order to have no profit.
-\end{note}
+\end{remark}
 
 \begin{definition}
 In summary, the {\bf total cost}\index{Cost!total} to produce $n$ items, $C(n)$, is the combination of {\bf fixed costs}\index{Cost!fixed} ($F(n)$) and {\bf variable costs}\index{Cost!variable} ($V(n)$). The fixed costs are also called {\bf overhead costs} and is constant regardless of the number of items made, while the variable costs depend on the number of items being made. So
