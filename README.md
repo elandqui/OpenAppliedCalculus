@@ -55,7 +55,7 @@ The following is a rough **task list** for this project.
 ## Support Open Applied Calculus <a name="support"></a>
 You can support this project in some unique ways that will be a win-win-win situation for you, students, and me. A portion will be redonated for local COVID-19 relief.
  
- * The halving is quickly approaching! **Invest in Bitcoin**, cryptocurrencies, or US Dollar-pegged *stablecoins* via an exchange through my referral links.
+ * The halving has passed! **Invest in Bitcoin**, cryptocurrencies, or US Dollar-pegged *stablecoins* via an exchange through my referral links.
    - <a href="https://www.coinbase.com/join/landqu_e">**Coinbase**</a>: a very user-friendly crypto exchange.
    - <a href="https://www.binance.us/?ref=35061022">**Binance.US**</a>: another great crypto exchange with low trading fees.
    - <a href="https://blockfi.com/?ref=12bd8405">**BlockFi**</a>: a crypto and stablecoin savings account with phenomenal interest rates.
