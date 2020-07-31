@@ -1,0 +1,428 @@
+\protect\hyperlink{main-nav}{≡} \protect\hyperlink{close-nav}{×}
+
+\hypertarget{section-3.4-substitution}{%
+\section{Section 3.4: Substitution}\label{section-3.4-substitution}}
+
+We don't have many integration rules. For quite a few of the problems we
+see, the rules won't directly apply; we'll have to do some algebraic
+manipulation first. In practice, it is much harder to write down the
+antiderivative of a function than it is to find a derivative. (In fact,
+it's very easy to write a function that doesn't have any antiderivative
+you can find with algebra, although \emph{proving} that it doesn't have
+an antiderivative is much more difficult.)
+
+The Substitution Method (also called \textbackslash{}( u
+\textbackslash{})-Substitution) is one way of algebraically manipulating
+an integrand so that the rules apply. This is a way to unwind or undo
+the Chain Rule for derivatives. When you find the derivative of a
+function using the Chain Rule, you end up with a product of something
+like the original function \emph{times} a derivative. We can reverse
+this to write an integral: \textbackslash{}{[}
+\textbackslash{}frac\{d\}\{dx\} f\textbackslash{}left( g(x)
+\textbackslash{}right) = f'\textbackslash{}left( g(x)
+\textbackslash{}right)g'(x) \textbackslash{}{]} so \textbackslash{}{[}
+f\textbackslash{}left( g(x) \textbackslash{}right) =\textbackslash{}int
+f'\textbackslash{}left( g(x)
+\textbackslash{}right)g'(x)\textbackslash{}, dx\textbackslash{}{]}
+
+With substitution, we will substitute \textbackslash{}( u=g(x)
+\textbackslash{}) (hence the name ``\textbackslash{}( u
+\textbackslash{})-substitution''). This means \textbackslash{}(
+\textbackslash{}frac\{du\}\{dx\}=g'(x) \textbackslash{}), so
+\textbackslash{}( du=g'(x)dx \textbackslash{}). Making these
+substitutions, \textbackslash{}( \textbackslash{}int
+f'\textbackslash{}left( g(x)
+\textbackslash{}right)g'(x)\textbackslash{}, dx \textbackslash{})
+becomes \textbackslash{}( \textbackslash{}int f'(u)\textbackslash{}, du
+\textbackslash{}), which will probably be easier to integrate.
+
+Try \textbackslash{}( u \textbackslash{})-Substitution when you see a
+product in your integral, especially if you recognize one factor as the
+derivative of some part of the other factor.
+
+To view this video please enable JavaScript, and consider upgrading to a
+web browser that \href{http://videojs.com/html5-video-support/}{supports
+HTML5 video}
+
+\hypertarget{the-u--substitution-method-for-antiderivatives}{%
+\paragraph{The \textbackslash{}( u \textbackslash{})-Substitution Method
+for
+Antiderivatives}\label{the-u--substitution-method-for-antiderivatives}}
+
+The goal is to turn \textbackslash{}( \textbackslash{}int
+f\textbackslash{}left( g(x) \textbackslash{}right)\textbackslash{}, dx
+\textbackslash{}) into \textbackslash{}( \textbackslash{}int
+f(u)\textbackslash{}, du \textbackslash{}), where
+\textbackslash{}(f(u)\textbackslash{}) is much less messy than
+\textbackslash{}(f\textbackslash{}left(g(x)\textbackslash{}right)\textbackslash{}).
+
+\begin{enumerate}
+\tightlist
+\item
+  Let \textbackslash{}(u\textbackslash{}) be some part of the integrand.
+  A good first choice is ``one step inside the messiest bit.''
+\item
+  Compute \textbackslash{}( du=\textbackslash{}frac\{du\}\{dx\}dx
+  \textbackslash{}).
+\item
+  Translate all your \textbackslash{}(x\textbackslash{})'s into
+  \textbackslash{}(u\textbackslash{})'s everywhere in the integral,
+  including the \textbackslash{}(dx\textbackslash{}). When you're done,
+  you should have a new integral that is entirely in
+  \textbackslash{}(u\textbackslash{}). If you have any
+  \textbackslash{}(x\textbackslash{})'s left, then that's an indication
+  that the substitution didn't work or isn't complete; you may need to
+  go back to step 1 and try a different choice for
+  \textbackslash{}(u\textbackslash{}).
+\item
+  Integrate the new \textbackslash{}(u\textbackslash{})-integral, if
+  possible. If you still can't integrate it, go back to step 1 and try a
+  different choice for \textbackslash{}(u\textbackslash{}).
+\item
+  Finally, substitute back \textbackslash{}(x\textbackslash{})'s for
+  \textbackslash{}(u\textbackslash{})'s everywhere in your answer.
+\end{enumerate}
+
+\hypertarget{example-1}{%
+\paragraph{Example 1}\label{example-1}}
+
+Evaluate \textbackslash{}( \textbackslash{}int
+\textbackslash{}frac\{x\}\{\textbackslash{}sqrt\{4-x\^{}2\}\}\textbackslash{},
+dx \textbackslash{}).
+
+This integrand is more complicated than anything in our list of basic
+integral formulas, so we'll have to try something else. The only tool we
+have is substitution, so let's try that!
+
+\begin{enumerate}
+\item
+  Let \textbackslash{}(u\textbackslash{}) be some part of the integrand.
+  A good first choice is ``one step inside the messiest bit'':
+
+  Let \textbackslash{}( u=4-x\^{}2 \textbackslash{}).
+\item
+  Compute \textbackslash{}( du=\textbackslash{}frac\{du\}\{dx\}dx
+  \textbackslash{}):
+
+  \textbackslash{}( du=-2x\textbackslash{}, dx \textbackslash{}). There
+  is \textbackslash{}(x\textbackslash{}, dx\textbackslash{}) in the
+  integrand, so that's a good sign; that will be
+  \textbackslash{}(-\textbackslash{}frac\{1\}\{2\}du\textbackslash{}).
+\item
+  Translate all your \textbackslash{}(x\textbackslash{})'s into
+  \textbackslash{}(u\textbackslash{})'s everywhere in the integral,
+  including the \textbackslash{}(dx\textbackslash{}):
+
+  \textbackslash{}{[} \textbackslash{}begin\{align*\}
+  \textbackslash{}int\textbackslash{}frac\{x\}\{\textbackslash{}sqrt\{4-x\^{}2\}\}\textbackslash{},
+  dx=\&
+  \textbackslash{}int\textbackslash{}frac\{1\}\{\textbackslash{}sqrt\{4-x\^{}2\}\}(x\textbackslash{},
+  dx) \textbackslash{}\textbackslash{} =\&
+  \textbackslash{}int\textbackslash{}frac\{1\}\{\textbackslash{}sqrt\{u\}\}\textbackslash{}left(-\textbackslash{}frac\{1\}\{2\}du\textbackslash{}right)
+  \textbackslash{}\textbackslash{} =\&
+  -\textbackslash{}frac\{1\}\{2\}\textbackslash{}int\textbackslash{}frac\{1\}\{\textbackslash{}sqrt\{u\}\}\textbackslash{},
+  du \textbackslash{}\textbackslash{} =\&
+  -\textbackslash{}frac\{1\}\{2\}\textbackslash{}int
+  u\^{}\{-1/2\}\textbackslash{}, du \textbackslash{}end\{align*\}
+  \textbackslash{}{]}
+
+  Alternatively, we could have solved for dx and substituted that and
+  simplified: \textbackslash{}( dx=\textbackslash{}frac\{du\}\{-2x\}
+  \textbackslash{}), so \textbackslash{}{[}
+  \textbackslash{}begin\{align*\}
+  \textbackslash{}int\textbackslash{}frac\{x\}\{\textbackslash{}sqrt\{4-x\^{}2\}\}\textbackslash{},
+  dx=\&
+  \textbackslash{}int\textbackslash{}frac\{x\}\{\textbackslash{}sqrt\{u\}\}\textbackslash{}left(\textbackslash{}frac\{du\}\{-2x\}\textbackslash{}right)
+  \textbackslash{}\textbackslash{} =\&
+  \textbackslash{}int\textbackslash{}frac\{1\}\{\textbackslash{}sqrt\{u\}\}\textbackslash{}left(-\textbackslash{}frac\{1\}\{2\}du\textbackslash{}right)
+  \textbackslash{}\textbackslash{} =\&
+  -\textbackslash{}frac\{1\}\{2\}\textbackslash{}int\textbackslash{}frac\{1\}\{\textbackslash{}sqrt\{u\}\}\textbackslash{},
+  du \textbackslash{}\textbackslash{} =\&
+  -\textbackslash{}frac\{1\}\{2\}\textbackslash{}int
+  u\^{}\{-1/2\}\textbackslash{}, du \textbackslash{}end\{align*\}
+  \textbackslash{}{]}
+\item
+  Integrate the new \textbackslash{}(u\textbackslash{})-integral, if
+  possible:
+
+  \textbackslash{}{[} -\textbackslash{}frac\{1\}\{2\}\textbackslash{}int
+  u\^{}\{-1/2\}\textbackslash{}, du =
+  -\textbackslash{}frac\{1\}\{2\}\textbackslash{}frac\{u\^{}\{1/2\}\}\{1/2\}+C=-u\^{}\{1/2\}+C
+  \textbackslash{}{]}
+\item
+  Finally, substitute back \textbackslash{}(x\textbackslash{})'s for
+  \textbackslash{}(u\textbackslash{})'s everywhere in the answer:
+
+  Undoing our \textbackslash{}( u=4-x\^{}2 \textbackslash{})
+  substitution yields \textbackslash{}{[} -u\^{}\{1/2\}+C =
+  -\textbackslash{}sqrt\{4-x\^{}2\}+C. \textbackslash{}{]}
+\end{enumerate}
+
+Thus we have found \textbackslash{}{[}
+\textbackslash{}int\textbackslash{}frac\{x\}\{\textbackslash{}sqrt\{4-x\^{}2\}\}\textbackslash{},
+dx= -\textbackslash{}sqrt\{4-x\^{}2\}+C \textbackslash{}{]}
+
+How would we check this? By differentiating: \textbackslash{}{[}
+\textbackslash{}begin\{align*\}
+\textbackslash{}frac\{d\}\{dx\}\textbackslash{}left(-\textbackslash{}sqrt\{4-x\^{}2\}+C\textbackslash{}right)=\&
+\textbackslash{}frac\{d\}\{dx\}\textbackslash{}left(-\textbackslash{}left(4-x\^{}2\textbackslash{}right)\^{}\{1/2\}+C\textbackslash{}right)
+\textbackslash{}\textbackslash{} =\&
+-\textbackslash{}frac\{1\}\{2\}\textbackslash{}left(4-x\^{}2\textbackslash{}right)\^{}\{-1/2\}(-2x)
+\textbackslash{}\textbackslash{} =\&
+x\textbackslash{}left(4-x\^{}2\textbackslash{}right)\^{}\{-1/2\}
+\textbackslash{}\textbackslash{} =\&
+\textbackslash{}frac\{x\}\{\textbackslash{}sqrt\{4-x\^{}2\}\}
+\textbackslash{}end\{align*\} \textbackslash{}{]}
+
+To view this video please enable JavaScript, and consider upgrading to a
+web browser that \href{http://videojs.com/html5-video-support/}{supports
+HTML5 video}
+
+\hypertarget{example-2}{%
+\paragraph{Example 2}\label{example-2}}
+
+Evaluate \textbackslash{}(
+\textbackslash{}int\textbackslash{}frac\{e\^{}x\textbackslash{},
+dx\}\{\textbackslash{}left(e\^{}x+15\textbackslash{}right)\^{}3\}
+\textbackslash{})
+
+This integral is not in our list of building blocks. But notice that the
+derivative of \textbackslash{}( e\^{}x+15 \textbackslash{}) (which we
+see in the denominator) is just \textbackslash{}( e\^{}x
+\textbackslash{}) (which we see in the numerator), so substitution will
+be a good choice for this.
+
+Let \textbackslash{}( u=e\^{}x+15 \textbackslash{}). Then
+\textbackslash{}( du=e\^{}x\textbackslash{}, dx \textbackslash{}), and
+this integral becomes \textbackslash{}(
+\textbackslash{}int\textbackslash{}frac\{du\}\{u\^{}3\} =
+\textbackslash{}int u\^{}\{-3\}\textbackslash{}, du \textbackslash{}).
+
+Luckily, that is on our list of building block formulas:
+\textbackslash{}(
+\textbackslash{}int\textbackslash{}frac\{du\}\{u\^{}3\} =
+\textbackslash{}frac\{u\^{}\{-2\}\}\{-2\}+C =
+-\textbackslash{}frac\{1\}\{2u\^{}2\}+C \textbackslash{}).
+
+Finally, translating back: \textbackslash{}{[}
+\textbackslash{}int\textbackslash{}frac\{e\^{}x\textbackslash{},
+dx\}\{\textbackslash{}left(e\^{}x+15\textbackslash{}right)\^{}3\} =
+-\textbackslash{}frac\{1\}\{2\textbackslash{}left(e\^{}x+15\textbackslash{}right)\^{}2\}
++C. \textbackslash{}{]}
+
+\hypertarget{example-3}{%
+\paragraph{Example 3}\label{example-3}}
+
+Evaluate
+
+\begin{enumerate}
+\tightlist
+\item
+  \textbackslash{}(
+  \textbackslash{}int\textbackslash{}frac\{x\^{}2\}\{x\^{}3+5\}\textbackslash{},
+  dx \textbackslash{})
+\item
+  \textbackslash{}(
+  \textbackslash{}int\textbackslash{}frac\{x\^{}3+5\}\{x\^{}2\}\textbackslash{},
+  dx \textbackslash{})
+\end{enumerate}
+
+\begin{enumerate}
+\item
+  This is not a basic integral, but the composition is less obvious.
+  Here, we can treat the denominator as the inside of the
+  \textbackslash{}( \textbackslash{}frac\{1\}\{x\} \textbackslash{})
+  function.
+
+  Let \textbackslash{}( u=x\^{}3+5 \textbackslash{}). Then
+  \textbackslash{}( du=3x\^{}2\textbackslash{}, dx \textbackslash{}).
+  Solving for \textbackslash{}(dx\textbackslash{}), \textbackslash{}(
+  dx=\textbackslash{}frac\{du\}\{3x\^{}2\} \textbackslash{}).
+  Substituting, \textbackslash{}{[}
+  \textbackslash{}int\textbackslash{}frac\{x\^{}2\}\{x\^{}3+5\}\textbackslash{},
+  dx =
+  \textbackslash{}int\textbackslash{}frac\{x\^{}2\}\{u\}\textbackslash{}frac\{du\}\{3x\^{}2\}
+  = \textbackslash{}int
+  \textbackslash{}frac\{1\}\{u\}\textbackslash{}frac\{du\}\{3\} =
+  \textbackslash{}frac\{1\}\{3\}\textbackslash{}int
+  \textbackslash{}frac\{1\}\{u\}\textbackslash{}, du \textbackslash{}{]}
+
+  Using our basic formulas, \textbackslash{}{[}
+  \textbackslash{}frac\{1\}\{3\}\textbackslash{}int
+  \textbackslash{}frac\{1\}\{u\}\textbackslash{}, du =
+  \textbackslash{}frac\{1\}\{3\}\textbackslash{}ln\textbar{}u\textbar{}
+  +C. \textbackslash{}{]}
+
+  Undoing the substitution, \textbackslash{}{[}
+  \textbackslash{}int\textbackslash{}frac\{x\^{}2\}\{x\^{}3+5\}\textbackslash{},
+  dx =
+  \textbackslash{}frac\{1\}\{3\}\textbackslash{}ln\textbackslash{}left\textbar{}x\^{}3+5\textbackslash{}right\textbar{}
+  +C. \textbackslash{}{]}
+\item
+  It is tempting to start this problem the same way we did the last, but
+  if we try it will not work, since the numerator of this fraction is
+  not the derivative of the denominator. Instead, we need to try a
+  different approach. For this problem, we can use some basic algebra:
+  \textbackslash{}{[} \textbackslash{}begin\{align*\}
+  \textbackslash{}int\textbackslash{}frac\{x\^{}3+5\}\{x\^{}2\}\textbackslash{},
+  dx =\&
+  \textbackslash{}int\textbackslash{}left(\textbackslash{}frac\{x\^{}3\}\{x\^{}2\}+\textbackslash{}frac\{5\}\{x\^{}2\}\textbackslash{}right)\textbackslash{},
+  dx \textbackslash{}\textbackslash{} =\&
+  \textbackslash{}int\textbackslash{}left(x+5x\^{}\{-2\}\textbackslash{}right)\textbackslash{},
+  dx. \textbackslash{}end\{align*\} \textbackslash{}{]}
+
+  We can integrate this using our basic rules, without needing
+  substitution: \textbackslash{}{[} \textbackslash{}begin\{align*\}
+  \textbackslash{}int\textbackslash{}left(x+5x\^{}\{-2\}\textbackslash{}right)\textbackslash{},
+  dx=\&
+  \textbackslash{}frac\{x\^{}2\}\{2\}+5\textbackslash{}frac\{x\^{}\{-1\}\}\{-1\}+C
+  \textbackslash{}\textbackslash{} =\&
+  \textbackslash{}frac\{1\}\{2\}x\^{}2-\textbackslash{}frac\{5\}\{x\}+C.
+  \textbackslash{}end\{align*\} \textbackslash{}{]}
+\end{enumerate}
+
+\hypertarget{substitution-and-definite-integrals}{%
+\subsection{Substitution and Definite
+Integrals}\label{substitution-and-definite-integrals}}
+
+When you use substitution to help evaluate a definite integral, you have
+a choice for how to handle the limits of integration. You can do either
+of these, whichever seems better to you. The important thing to remember
+is that the original limits of integration were values of the original
+variable (say, \textbackslash{}(x\textbackslash{})), not values of the
+new variable (say, \textbackslash{}(u\textbackslash{})).
+
+\begin{enumerate}
+\item
+  You can solve the antiderivative as a side problem, translating back
+  to \textbackslash{}(x\textbackslash{})'s, and then use the
+  antiderivative with the original limits of integration.
+
+  Or\ldots{}
+\item
+  You can substitute for the limits of integration at the same time as
+  you're substituting for everything inside the integral, and then skip
+  the ``translate back into \textbackslash{}(x\textbackslash{})'' step.
+
+  If the original integral had endpoints \textbackslash{}(x
+  =a\textbackslash{}) and \textbackslash{}(x =b\textbackslash{}), and we
+  make the substitution \textbackslash{}(u = g(x )\textbackslash{}) and
+  \textbackslash{}(du = g'(x )\textbackslash{}, dx\textbackslash{}),
+  then the new integral will have endpoints \textbackslash{}(u=
+  g(a)\textbackslash{}) and \textbackslash{}(u=g(b)\textbackslash{}) and
+  \textbackslash{}{[}
+  \textbackslash{}int\_\{x=a\}\^{}\{x=b\}\textbackslash{}text\{(original
+  integrand)\}\textbackslash{}, dx\textbackslash{}{]} becomes
+  \textbackslash{}{[} \textbackslash{}int\_\{u=g(a)\}\^{}\{u=g(b)\}
+  \textbackslash{}text\{(new integrand)\}\textbackslash{},
+  du.\textbackslash{}{]}
+\end{enumerate}
+
+Method 1 seems more straightforward for most students, but it can
+involve some messy algebra. Method 2 is often neater and usually
+involves fewer steps.
+
+\hypertarget{example-4}{%
+\paragraph{Example 4}\label{example-4}}
+
+Evaluate \textbackslash{}(
+\textbackslash{}int\textbackslash{}limits\_0\^{}1
+(3x-1)\^{}4\textbackslash{}, dx \textbackslash{}).
+
+We'll need substitution to find an antiderivative, so we'll need to
+handle the limits of integration carefully. Let's solve this example
+both ways.
+
+\begin{enumerate}
+\item
+  \textbf{Doing the antiderivative as a side problem:}
+
+  Step One -- find the antiderivative, using substitution:
+
+  Let \textbackslash{}( u=3x-1 \textbackslash{}). Then \textbackslash{}(
+  du=3\textbackslash{}, dx \textbackslash{}) and \textbackslash{}{[}
+  \textbackslash{}int(3x-1)\^{}4\textbackslash{}, dx =
+  \textbackslash{}int
+  u\^{}4\textbackslash{}left(\textbackslash{}frac\{1\}\{3\}\textbackslash{},
+  du\textbackslash{}right) =
+  \textbackslash{}frac\{1\}\{3\}\textbackslash{}frac\{u\^{}5\}\{5\}+C.
+  \textbackslash{}{]}
+
+  Translating back to x: \textbackslash{}{[}
+  \textbackslash{}frac\{1\}\{3\}\textbackslash{}frac\{u\^{}5\}\{5\}+C =
+  \textbackslash{}frac\{(3x-1)\^{}5\}\{15\}+C. \textbackslash{}{]}
+
+  Step Two -- evaluate the definite integral: \textbackslash{}{[}
+  \textbackslash{}int\textbackslash{}limits\_0\^{}1
+  (3x-1)\^{}4\textbackslash{}, dx = \textbackslash{}left.
+  \textbackslash{}frac\{(3x-1)\^{}5\}\{15\}\textbackslash{}right{]}\_0\^{}1
+  =
+  \textbackslash{}frac\{\textbackslash{}left(3(1)-1\textbackslash{}right)\^{}5\}\{15\}
+  -
+  \textbackslash{}frac\{\textbackslash{}left(3(0)-1\textbackslash{}right)\^{}5\}\{15\}
+  =
+  \textbackslash{}frac\{32\}\{15\}-\textbackslash{}frac\{-1\}\{15\}=\textbackslash{}frac\{33\}\{15\}.
+  \textbackslash{}{]}
+\item
+  \textbf{Substituting for the limits of integration:}
+
+  Let \textbackslash{}( u=3x-1 \textbackslash{}). Then \textbackslash{}(
+  du=3\textbackslash{}, dx \textbackslash{}) and, substituting for the
+  limits of integration, when \textbackslash{}(x = 0\textbackslash{}),
+  \textbackslash{}(u = -1\textbackslash{}), and when \textbackslash{}(x
+  = 1\textbackslash{}), \textbackslash{}(u = 2\textbackslash{}).
+
+  So, \textbackslash{}{[} \textbackslash{}begin\{align*\}
+  \textbackslash{}int\_\{x=0\}\^{}\{x=1\} (3x-1)\^{}4\textbackslash{},
+  dx =\& \textbackslash{}int\_\{u=-1\}\^{}\{u=2\}
+  u\^{}4\textbackslash{}left(\textbackslash{}frac\{1\}\{3\}\textbackslash{},
+  du\textbackslash{}right) \textbackslash{}\textbackslash{} =\&
+  \textbackslash{}left.\textbackslash{}frac\{u\^{}5\}\{15\}\textbackslash{}right{]}\_\{u=-1\}\^{}\{u=2\}
+  \textbackslash{}\textbackslash{} =\&
+  \textbackslash{}frac\{(2)\^{}5\}\{15\}-\textbackslash{}frac\{(-1)\^{}5\}\{15\}
+  \textbackslash{}\textbackslash{} =\&
+  \textbackslash{}frac\{32\}\{15\}-\textbackslash{}frac\{-1\}\{15\}
+  \textbackslash{}\textbackslash{} =\& \textbackslash{}frac\{33\}\{15\}
+  \textbackslash{}end\{align*\} \textbackslash{}{]}
+\end{enumerate}
+
+To view this video please enable JavaScript, and consider upgrading to a
+web browser that \href{http://videojs.com/html5-video-support/}{supports
+HTML5 video}
+
+\hypertarget{example-5}{%
+\paragraph{Example 5}\label{example-5}}
+
+Evaluate \textbackslash{}(
+\textbackslash{}int\textbackslash{}limits\_2\^{}\{10\}
+\textbackslash{}frac\{\textbackslash{}left(\textbackslash{}ln(x)\textbackslash{}right)\^{}6\}\{x\}\textbackslash{},
+dx \textbackslash{}).
+
+I can see the derivative of \textbackslash{}( \textbackslash{}ln(x)
+\textbackslash{}) in the integrand, so I can tell that substitution is a
+good choice.
+
+Let \textbackslash{}( u=\textbackslash{}ln(x) \textbackslash{}). Then
+\textbackslash{}( du=\textbackslash{}frac\{1\}\{x\}\textbackslash{}, dx
+\textbackslash{}). When \textbackslash{}( x=2 \textbackslash{}),
+\textbackslash{}( u=\textbackslash{}ln(2) \textbackslash{}). When
+\textbackslash{}( x=10 \textbackslash{}), \textbackslash{}(
+u=\textbackslash{}ln(10) \textbackslash{}). So the new definite integral
+is \textbackslash{}{[} \textbackslash{}begin\{align*\}
+\textbackslash{}int\textbackslash{}limits\_\{x=2\}\^{}\{x=10\}\textbackslash{}frac\{\textbackslash{}left(\textbackslash{}ln(x)\textbackslash{}right)\^{}6\}\{x\}\textbackslash{},
+dx =\&
+\textbackslash{}int\textbackslash{}limits\_\{u=\textbackslash{}ln(2)\}\^{}\{u=\textbackslash{}ln(10)\}
+u\^{}6\textbackslash{}, du \textbackslash{}\textbackslash{} =\&
+\textbackslash{}left.\textbackslash{}frac\{u\^{}7\}\{7\}\textbackslash{}right{]}\_\{u=\textbackslash{}ln(2)\}\^{}\{u=\textbackslash{}ln(10)\}
+\textbackslash{}\textbackslash{} =\&
+\textbackslash{}frac\{1\}\{7\}\textbackslash{}left(\textbackslash{}left(\textbackslash{}ln(10)\textbackslash{}right)\^{}7-\textbackslash{}left(\textbackslash{}ln(2)\textbackslash{}right)\^{}7\textbackslash{}right)
+\textbackslash{}\textbackslash{} \textbackslash{}approx \& 49.01.
+\textbackslash{}end\{align*\} \textbackslash{}{]}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\endhead
+\href{section3-3.php}{← Previous Section} & \href{section3-5.php}{Next
+Section →}\tabularnewline
+\bottomrule
+\end{longtable}

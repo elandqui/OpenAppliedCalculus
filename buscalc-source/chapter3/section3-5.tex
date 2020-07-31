@@ -1,0 +1,243 @@
+\protect\hyperlink{main-nav}{≡} \protect\hyperlink{close-nav}{×}
+
+\hypertarget{section-3.5-additional-integration-techniques}{%
+\section{Section 3.5: Additional Integration
+Techniques}\label{section-3.5-additional-integration-techniques}}
+
+\hypertarget{integration-by-parts}{%
+\subsection{Integration By Parts}\label{integration-by-parts}}
+
+Integration by parts is an integration method which enables us to find
+antiderivatives of some new functions such as \textbackslash{}(
+\textbackslash{}ln(x) \textbackslash{}) as well as antiderivatives of
+products of functions such as \textbackslash{}(
+x\^{}2\textbackslash{}ln(x) \textbackslash{}) and \textbackslash{}(
+xe\^{}x \textbackslash{}).
+
+If the function we're trying to integrate can be written as a product of
+two functions, \textbackslash{}(u\textbackslash{}), and
+\textbackslash{}(dv\textbackslash{}), then integration by parts lets us
+trade out a complicated integral for hopefully simpler one.
+
+\hypertarget{integration-by-parts-formula}{%
+\paragraph{Integration by Parts
+Formula}\label{integration-by-parts-formula}}
+
+\textbackslash{}{[} \textbackslash{}int u\textbackslash{}, dv =
+uv-\textbackslash{}int v\textbackslash{}, du \textbackslash{}{]}
+
+For definite integrals: \textbackslash{}{[} \textbackslash{}int\_a\^{}b
+u\textbackslash{}, dv =
+\textbackslash{}left.uv\textbackslash{}right{]}\_a\^{}b-\textbackslash{}int\_a\^{}b
+v\textbackslash{}, du \textbackslash{}{]}
+
+\hypertarget{example-1}{%
+\paragraph{Example 1}\label{example-1}}
+
+Integrate \textbackslash{}( \textbackslash{}int xe\^{}x\textbackslash{},
+dx \textbackslash{}).
+
+To use the Integration by Parts method, we break apart the product into
+two parts: \textbackslash{}{[} u=x
+\textbackslash{}qquad\textbackslash{}text\{and\}\textbackslash{}qquad
+dv=e\^{}x\textbackslash{}, dx.\textbackslash{}{]}
+
+We now calculate \textbackslash{}(du\textbackslash{}), the derivative of
+\textbackslash{}(u\textbackslash{}), and
+\textbackslash{}(v\textbackslash{}), the integral of
+\textbackslash{}(dv\textbackslash{}): \textbackslash{}{[}
+du=\textbackslash{}left(\textbackslash{}frac\{d\}\{dx\}
+x\textbackslash{}right)\textbackslash{}, dx
+\textbackslash{}qquad\textbackslash{}text\{and\}\textbackslash{}qquad v=
+\textbackslash{}int e\^{}x\textbackslash{}, dx =
+e\^{}x.\textbackslash{}{]}
+
+Using the Integration by Parts formula, \textbackslash{}{[}
+\textbackslash{}int xe\^{}x\textbackslash{}, dx=uv-\textbackslash{}int
+v\textbackslash{}, du = xe\^{}x - \textbackslash{}int
+e\^{}x\textbackslash{}, dx.\textbackslash{}{]}
+
+Notice the remaining integral is simpler that the original, and one
+which we can easily evaluate: \textbackslash{}{[} xe\^{}x -
+\textbackslash{}int e\^{}x\textbackslash{}, dx = xe\^{}x-e\^{}x+C.
+\textbackslash{}{]}
+
+In the last example we could have chosen either
+\textbackslash{}(x\textbackslash{}) or \textbackslash{}( e\^{}x
+\textbackslash{}) as our \textbackslash{}(u\textbackslash{}), but had we
+chosen \textbackslash{}( u=e\^{}x \textbackslash{}), the second integral
+would have become messier, rather than simpler.
+
+\hypertarget{rule-of-thumb}{%
+\paragraph{Rule of Thumb}\label{rule-of-thumb}}
+
+When selecting the \textbackslash{}(u\textbackslash{}) for Integration
+by Parts, select a logarithmic expression if one is present. If not,
+select an algebraic expression (like \textbackslash{}(x\textbackslash{})
+or \textbackslash{}(dx\textbackslash{})).
+
+(There is a larger decision tree that can be written down for choosing
+\textbackslash{}( u \textbackslash{}) and \textbackslash{}( dv
+\textbackslash{}), but since we're not looking at any trigonometric
+functions in this course the rule above is sufficient for the functions
+we're integrating.)
+
+\hypertarget{example-2}{%
+\paragraph{Example 2}\label{example-2}}
+
+Integrate \textbackslash{}(
+\textbackslash{}int\textbackslash{}limits\_1\^{}4\textbackslash{},
+6x\^{}2\textbackslash{}ln(x)\textbackslash{}, dx \textbackslash{}).
+
+Since this contains a logarithmic expression, we'll use it for our u:
+\textbackslash{}{[} u=\textbackslash{}ln(x) \textbackslash{}qquad
+\textbackslash{}text\{and\} \textbackslash{}qquad dv=
+6x\^{}2\textbackslash{}, dx\textbackslash{}{]}
+
+We now calculate \textbackslash{}(du\textbackslash{}) and
+\textbackslash{}(v\textbackslash{}): \textbackslash{}{[}
+du=\textbackslash{}frac\{1\}\{x\}dx \textbackslash{}qquad
+\textbackslash{}text\{and\} \textbackslash{}qquad v= \textbackslash{}int
+6x\^{}2\textbackslash{}, dx =
+6\textbackslash{}frac\{x\^{}3\}\{3\}=2x\^{}3 \textbackslash{}{]}
+
+Using the By Parts formula: \textbackslash{}{[}
+\textbackslash{}int\_1\^{}4
+6x\^{}2\textbackslash{}ln(x)\textbackslash{}, dx =
+\textbackslash{}left.2x\^{}3\textbackslash{}ln(x)\textbackslash{}right{]}\_1\^{}4
+- \textbackslash{}int\_1\^{}4
+6x\^{}2\textbackslash{}frac\{1\}\{x\}\textbackslash{}, dx
+\textbackslash{}{]}
+
+We can simplify the expression in the integral on the right:
+\textbackslash{}{[} \textbackslash{}int\_1\^{}4
+6x\^{}2\textbackslash{}ln(x)\textbackslash{}, dx =
+\textbackslash{}left.2x\^{}3\textbackslash{}ln(x)\textbackslash{}right{]}\_1\^{}4
+- \textbackslash{}int\_1\^{}4 6x\textbackslash{}, dx \textbackslash{}{]}
+
+The remaining integral is a basic one we can now evaluate:
+\textbackslash{}{[} \textbackslash{}int\_1\^{}4
+6x\^{}2\textbackslash{}ln(x)\textbackslash{}, dx =
+\textbackslash{}left.2x\^{}3\textbackslash{}ln(x)\textbackslash{}right{]}\_1\^{}4
+- \textbackslash{}left.3x\^{}2\textbackslash{}right{]}\_1\^{}4
+\textbackslash{}{]}
+
+Finally, we can evaluate the expressions: \textbackslash{}{[}
+\textbackslash{}begin\{align*\} \textbackslash{}int\_1\^{}4
+6x\^{}2\textbackslash{}ln(x)\textbackslash{}, dx=\&
+\textbackslash{}left(\textbackslash{}left(2\textbackslash{}cdot
+4\^{}3\textbackslash{}ln(4)\textbackslash{}right)-\textbackslash{}left(2\textbackslash{}cdot
+1\^{}3\textbackslash{}ln(1)\textbackslash{}right)\textbackslash{}right)-\textbackslash{}left(\textbackslash{}left(3\textbackslash{}cdot
+4\^{}2\textbackslash{}right)-\textbackslash{}left(3\textbackslash{}cdot
+1\^{}2\textbackslash{}right)\textbackslash{}right)\textbackslash{}\textbackslash{}
+=\& 128\textbackslash{}ln(4)-45\textbackslash{}\textbackslash{}
+\textbackslash{}approx \& 132.446 \textbackslash{}end\{align*\}
+\textbackslash{}{]}
+
+\hypertarget{integration-using-tables-of-integrals}{%
+\subsection{Integration Using Tables of
+Integrals}\label{integration-using-tables-of-integrals}}
+
+There are many techniques of integration we will not be studying. Many
+of them lead to general formulas which can be compiled into a Table of
+Integrals -- a type of cheat-sheet for integration.
+
+For example, here are two entries you might find in a table of
+integrals:
+
+\hypertarget{table-of-integral-examples}{%
+\paragraph{Table of Integral
+Examples}\label{table-of-integral-examples}}
+
+\textbackslash{}{[} \textbackslash{}begin\{align*\} \textbackslash{}int
+\textbackslash{}frac\{1\}\{x\^{}2-a\^{}2\}\textbackslash{}, dx =\&
+\textbackslash{}frac\{1\}\{2a\}\textbackslash{}ln\textbackslash{}left\textbar{}\textbackslash{}frac\{x-a\}\{x+a\}\textbackslash{}right\textbar{}+C
+\textbackslash{}\textbackslash{} \textbackslash{}int
+\textbackslash{}frac\{1\}\{\textbackslash{}sqrt\{x\^{}2+a\^{}2\}\}\textbackslash{},
+dx =\&
+\textbackslash{}ln\textbackslash{}left\textbar{}x+\textbackslash{}sqrt\{x\^{}2+a\^{}2\}\textbackslash{}right\textbar{}+C
+\textbackslash{}end\{align*\} \textbackslash{}{]}
+
+\hypertarget{example-3}{%
+\paragraph{Example 3}\label{example-3}}
+
+Integrate \textbackslash{}(
+\textbackslash{}int\textbackslash{}frac\{5\}\{x\^{}2-9\}\textbackslash{},
+dx \textbackslash{}).
+
+This integral looks very similar to the form of the first integral in
+the examples table. By employing the rule that allows us to pull out
+constants, and by rewriting 9 as
+\textbackslash{}(3\^{}2\textbackslash{}), we can better see the match.
+\textbackslash{}{[}
+\textbackslash{}int\textbackslash{}frac\{5\}\{x\^{}2-9\}\textbackslash{},
+dx =
+5\textbackslash{}int\textbackslash{}frac\{1\}\{x\^{}2-3\^{}2\}\textbackslash{},
+dx \textbackslash{}{]}
+
+Now we simply use the formula from the table, with \textbackslash{}(a =
+3\textbackslash{}). \textbackslash{}{[} \textbackslash{}begin\{align*\}
+\textbackslash{}int\textbackslash{}frac\{5\}\{x\^{}2-9\}\textbackslash{},
+dx = \&
+5\textbackslash{}int\textbackslash{}frac\{1\}\{x\^{}2-3\^{}2\}\textbackslash{},
+dx \textbackslash{}\textbackslash{} =\&
+5\textbackslash{}left(\textbackslash{}frac\{1\}\{2\textbackslash{}cdot
+3\}\textbackslash{}ln\textbackslash{}left\textbar{}\textbackslash{}frac\{x-3\}\{x+3\}\textbackslash{}right\textbar{}\textbackslash{}right)+C
+\textbackslash{}\textbackslash{} =\&
+\textbackslash{}frac\{5\}\{6\}\textbackslash{}ln\textbackslash{}left\textbar{}\textbackslash{}frac\{x-3\}\{x+3\}\textbackslash{}right\textbar{}+C
+\textbackslash{}end\{align*\} \textbackslash{}{]}
+
+Sometimes we have to combine the table with other techniques we've
+learned, like substitution.
+
+\hypertarget{example-4}{%
+\paragraph{Example 4}\label{example-4}}
+
+Integrate \textbackslash{}(
+\textbackslash{}int\textbackslash{}frac\{x\^{}2\}\{\textbackslash{}sqrt\{x\^{}6+16\}\}\textbackslash{},
+dx \textbackslash{}).
+
+This integral looks somewhat like the second integral in the example
+table, but the power of x is incorrect, and there is an x2 in the
+numerator which does not match. Trying to utilize this rule, we can try
+to rewrite the denominator to look like
+(something)\textbackslash{}(\^{}2\textbackslash{}). Luckily,
+\textbackslash{}( x\^{}6 =
+\textbackslash{}left(x\^{}3\textbackslash{}right)\^{}2
+\textbackslash{}). \textbackslash{}{[}
+\textbackslash{}int\textbackslash{}frac\{x\^{}2\}\{\textbackslash{}sqrt\{x\^{}6+16\}\}\textbackslash{},
+dx =
+\textbackslash{}int\textbackslash{}frac\{x\^{}2\}\{\textbackslash{}sqrt\{\textbackslash{}left(x\^{}3\textbackslash{}right)\^{}2+16\}\}\textbackslash{},
+dx \textbackslash{}{]}
+
+Now we can use substitution, letting \textbackslash{}( u=x\^{}3
+\textbackslash{}), so \textbackslash{}( du=3x\^{}2\textbackslash{}, dx
+\textbackslash{}).
+
+Making the subsitution: \textbackslash{}{[}
+\textbackslash{}int\textbackslash{}frac\{x\^{}2\}\{\textbackslash{}sqrt\{\textbackslash{}left(x\^{}3\textbackslash{}right)\^{}2+16\}\}\textbackslash{},
+dx =
+\textbackslash{}int\textbackslash{}frac\{1\}\{\textbackslash{}sqrt\{u\^{}2+16\}\}\textbackslash{},
+\textbackslash{}frac\{du\}\{3\} =
+\textbackslash{}frac\{1\}\{3\}\textbackslash{}int\textbackslash{}frac\{1\}\{\textbackslash{}sqrt\{u\^{}2+16\}\}\textbackslash{},
+du \textbackslash{}{]}
+
+Now we can use the table entry: \textbackslash{}{[}
+\textbackslash{}frac\{1\}\{3\}\textbackslash{}int\textbackslash{}frac\{1\}\{\textbackslash{}sqrt\{u\^{}2+16\}\}\textbackslash{},
+du =
+\textbackslash{}frac\{1\}\{3\}\textbackslash{}ln\textbackslash{}left\textbar{}u+\textbackslash{}sqrt\{u\^{}2+16\}\textbackslash{}right\textbar{}+C
+\textbackslash{}{]}
+
+Undoing the substitution yields the final answer: \textbackslash{}{[}
+\textbackslash{}int\textbackslash{}frac\{x\^{}2\}\{\textbackslash{}sqrt\{x\^{}6+16\}\}\textbackslash{},
+dx =
+\textbackslash{}frac\{1\}\{3\}\textbackslash{}ln\textbackslash{}left\textbar{}x\^{}3+\textbackslash{}sqrt\{x\^{}6+16\}\textbackslash{}right\textbar{}+C
+\textbackslash{}{]}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\endhead
+\href{section3-4.php}{← Previous Section} & \href{section3-6.php}{Next
+Section →}\tabularnewline
+\bottomrule
+\end{longtable}
