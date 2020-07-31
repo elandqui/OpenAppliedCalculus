@@ -1,0 +1,145 @@
+\section{Integrals}
+\label{sec:integrals}
+% From Section 3.1
+Definition of the Definite Integral
+Because the area under the curve is so important, it has a special vocabulary and notation.
+
+The Definite Integral
+The definite integral of a positive function f(x) over an interval [a,b] is the area between f, the x-axis, x=a and x=b.
+
+The definite integral of a positive function f(x) from a to b is the area under the curve between a and b.
+
+If f(t) represents a positive rate (in y-units per t-units), then the definite integral of f(t) from a to b is the total y-units that accumulate between t=a and t=b.
+
+Notation for the Definite Integral
+The definite integral of f(x) from a to b is written
+∫baf(x)dx.
+The ∫ symbol is called the integral sign; it is an elongated letter S, standing for sum. (The ∫ corresponds to the ∑ from the Riemann sum)
+
+The dx on the end must be included! The dx tells what the variable is – in this example, the variable is x. (The dx corresponds to the Δx from the Riemann sum)
+
+The function f is called the integrand.
+
+The a and b are called the limits of integration.
+
+Verb forms
+We integrate, or find the definite integral of a function. This process is called integration.
+
+Formal Algebraic Definition
+∫baf(x)dx=limn→∞∑i=1nf(xi)Δx.
+Practical Definition
+The definite integral can be approximated with a Riemann sum (dividing the area into rectangles where the height of each rectangle comes from the function, computing the area of each rectangle, and adding them up). The more rectangles we use, the narrower the rectangles are, the better our approximation will be.
+
+Looking Ahead
+We will have methods for computing exact values of some definite integrals from formulas soon. In many cases, including when the function is given to you as a table or graph, you will still need to approximate the definite integral with rectangles.
+
+\begin{example}
+The graph below shows y=r(t), the number of telephone calls made per hours on a Tuesday. Approximately how many calls were made between 9 pm and 11 pm? Express this as a definite integral and approximate with a Riemann sum.
+
+graph
+\begin{solution}
+We know that the accumulated calls will be the area under this rate graph over that two-hour period, the definite integral of this rate from t=9 to t=11.
+
+The total number of calls will be ∫911r(t)dt.
+
+The top here is a curve, so we can’t get an exact answer. But we can approximate the area using rectangles. Let's choose to use four rectangles and left-endpoints:
+
+graph
+∫911r(t)dt\approx   0.5(100+150+180+195)=312.5
+The units are calls per hour⋅hours = calls. Our estimate is that about 312 calls were made between 9 pm and 11 pm. Is this an under-estimate or an over-estimate?
+\end{solution}\end{example}
+
+\begin{example}
+Describe the area between the graph of f(x)=1x, the x-axis, and the vertical lines at x=1 and x=5 as a definite integral.
+
+\begin{solution}
+This is the same area we estimated to be about 1.68 before. Now we can use the notation of the definite integral to describe it. Our estimate of ∫151xdx was 1.68. The true value of ∫151xdx is about 1.61.
+\end{solution}\end{example}
+
+\begin{example}
+Using the idea of area, determine the value of ∫131+xdx.
+
+\begin{solution}
+  ∫131+xdx represents the area between the graph of f(x)=1+x, the x-axis, and the vertical lines at 1 and 3.
+
+graph
+Since this area can be broken into a rectangle and a triangle, we can find the area exactly. The area equals
+4+12(2)(2)=6 units2.
+\end{solution}\end{example}
+
+\begin{example}
+The table shows rates of population growth for Berrytown for several years. Use this table to estimate the total population growth from 1970 to 2000:
+
+Year, t	1970	1980	1990	2000	Rate of population growth R(t) in thousands of people per year	1.5	1.9	2.2	2.4
+
+\begin{solution}
+The definite integral of this rate will give the total change in population over the thirty-year period. We only have a few pieces of information, so we can only estimate. Even though we haven't made a graph, we're still approximating the area under the rate curve, using rectangles. How wide are the rectangles? We have information every 10 years, so the rectangles have a width of 10 years. How many rectangles? Be careful here – this is a thirty-year span, so there are three rectangles.
+
+Using left-hand endpoints: (1.5)(10) + (1.9)(10) + (2.2)(10) = 56
+Using right-hand endpoints: (1.9)(10) + (2.2)(10) + (2.4)(10) = 65
+Taking the average of these two:
+56+652=60.5
+Our best estimate of the total population growth from 1970 to 2000 is 60.5 thousand people.
+\end{solution}\end{example}
+
+Signed Area
+You may have noticed that until this point, we've insisted that the integrand (the function we're integrating) be positive. That’s because we've been talking about area, which is always positive.
+
+If the height (from the function) is a negative number, then multiplying it by the width doesn't give us actual area, it gives us the area with a negative sign.
+
+But it turns out to be useful to think about the possibility of negative area. We’ll expand our idea of a definite integral now to include integrands that might not always be positive. The heights of the rectangles, the values from the function, now might not always be positive.
+
+The Definite Integral and Signed Area
+The definite integral of a function f(x) over an interval [a,b] is the signed area between f, the x-axis, x=a and x=b.
+
+The definite integral of a function f(x) from a to b is the signed area under the curve between a and b.
+
+If the function is positive, the signed area is positive, as before (and we can call it area.)
+
+If the function dips below the x-axis, the areas of the regions below the x-axis come in with a negative sign. In this case, we cannot call it simply area. These negative areas take away from the definite integral.
+
+∫abf(x)dx= (Area above x-axis) - (Area below x-axis)
+
+If f(t) represents a positive rate (in y-units per t-units), then the definite integral of f from a to b is the total y-units that accumulate between t=a and t=b.
+
+If f(t) represents any rate (in y-units per t-units), then the definite integral of f from a to b is the net y-units that accumulate between t=a and t=b.
+
+\begin{example}
+Find the definite integral of f(x)=–2 on the interval [1,4].
+
+graph
+\begin{solution}
+∫14-2dx is the signed area of the region shown to the right. The region lies below the x-axis, so the area, 6, comes in with a negative sign. So the definite integral is ∫14-2dx=-6.
+\end{solution}\end{example}
+
+Negative rates indicate that the amount is decreasing. For example, if f(t) is the velocity of a car in the positive direction along a straight line at time t (miles/hour), then negative values of f indicate that the car is traveling in the negative direction, backwards. The definite integral of f is the change in position of the car during the time interval. If the velocity is positive, positive distance accumulates. If the velocity is negative, distance in the negative direction accumulates.
+
+This is true of any rate. For example, if f(t) is the rate of population change (people/year) for a town, then negative values of f would indicate that the population of the town was getting smaller, and the definite integral (now a negative number) would be the change in the population, a decrease, during the time interval.
+
+\begin{example}
+In 1980 there were 12,000 ducks nesting around a lake, and the rate of population change (in ducks per year) is shown in the figure below. Write a definite integral to represent the total change in the duck population from 1980 to 1990, and estimate the population in 1990.
+
+graph
+\begin{solution}
+The change in population is:
+∫19801990f(t)dt=\approx   =-(area between f and axis)-(200 ducks/year)⋅(10 years)-2000 ducks
+Then (1990 duck population) = (1980 population) + (change from 1980 to 1990) = (12,000) + ( -2000) = 10,000 ducks.
+\end{solution}\end{example}
+
+\begin{example}
+A bug starts at the location x=12 on the x-axis at 1 pm walks along the axis with the velocity v(x) shown in the graph. How far does the bug travel between 1 pm and 3 pm, and where is the bug at 3 pm?
+
+graph
+\begin{solution}
+Note that the velocity is positive from 1 until 2:30, then becomes negative. So the bug moves in the positive direction from 1 until 2:30, then turns around and moves back toward where it started. The area under the velocity curve from 1 to 2:30 shows the total distance traveled by the bug in the positive direction; the bug moved 12.5 feet in the positive direction. The area between the velocity curve and the x-axis, between 2:30 and 3, shows the total distance traveled by the bug in the negative direction, back toward home; the bug traveled 2.5 feet in the negative direction. The definite integral of the velocity curve, ∫13v(t)dt, shows the net change in distance:
+∫13v(t)dt=12.5-2.5=10.
+The bug ended up 10 feet farther in the positive direction than he started. At 3 pm, the bug is at x=22.
+\end{solution}\end{example}
+
+\begin{example}
+Use the graph below to calculate ∫02f(x)dx, ∫24f(x)dx, ∫45f(x)dx, and ∫05f(x)dx.
+
+graph
+\begin{solution} 
+Using the given areas, ∫02f(x)dx=2, ∫24f(x)dx=-5, ∫45f(x)dx=2, and ∫05f(x)dx=(area above)-(area below)=(2+2)-(5)=-1.
+\end{solution}\end{example}

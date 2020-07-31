@@ -1,0 +1,152 @@
+\section{The Fundamental Theorem of Calculus}
+\label{sec:fund-theorem}
+% From Section 3.2.
+This section contains the most important and most used theorem of calculus, the Fundamental Theorem of Calculus. Discovered independently by Newton and Leibniz in the late 1600s, it establishes the connection between derivatives and integrals, provides a way of easily calculating many integrals, and was a key step in the development of modern mathematics to support the rise of science and technology. Calculus is one of the most significant intellectual structures in the history of human thought, and the Fundamental Theorem of Calculus is a most important brick in that beautiful structure.
+
+The Fundamental Theorem of Calculus
+∫abF′(x)dx=F(b)-F(a)
+This is actually not new for us; we've been using this relationship for some time; we just haven’t written it this way. This says what we've said before: the definite integral of a rate from a to b is the net y-units, the change in y, that accumulate between t=a and t=b. Here we’ve just made it plain that that the rate is a derivative.
+
+Thinking about the relationship this way gives us the key to finding exact answers for some definite integrals. If the integrand is the derivative of some F, then maybe we could simply find F and subtract – that would be easier than approximating with rectangles. Going backwards through the differentiation process will help us evaluate definite integrals.
+
+\begin{example}
+Find f(x) if f′(x)=2x.
+
+\begin{solution}
+Oooh, I know this one. It's f(x)=x2+3. Oh, wait, you were thinking something else? Yes, I guess you're right – f(x)=x2 works too. So does f(x)=x2-π, and f(x)=x2+104,589.2. In fact, there are lots of answers.
+\end{solution}\end{example}
+
+In fact, there are infinitely many functions that all have the same derivative. And that makes sense – the derivative tells us about the shape of the function, but it doesn't tell about the location. We could shift the graph up or down and the shape wouldn't be affected, so the derivative would be the same.
+
+This leads to one of the trickier definitions – pay careful attention to the articles (the versus an), because they're important.
+
+Antiderivatives
+An antiderivative of a function f(x) is any function F(x) where F′(x)=f(x).
+
+The antiderivative of a function f(x) is a whole family of functions, written F(x)+C, where F′(x)=f(x) and C represents any constant.
+
+The antiderivative is also called the indefinite integral.
+
+Notation for the Antiderivative
+The antiderivative of f is written
+∫f(x)dx
+This notation resembles the definite integral, because the Fundamental Theorem of Calculus says antiderivatives and definite integrals are intimately related. But in this notation, there are no limits of integration.
+
+The ∫ symbol is still called an integral sign; the dx on the end still must be included; you can still think of ∫ and dx as left and right parentheses. The function f is still called the integrand.
+
+Verb Forms
+We antidifferentiate, or integrate, or find the indefinite integral of a function. This process is called antidifferentiation or integration.
+
+There are no small families in the world of antiderivatives: if f has one antiderivative F, then f has an infinite number of antiderivatives and every one of them has the form F(x)+C.
+
+\begin{example}
+Find an antiderivative of 2x.
+\begin{solution}
+We can choose any function we like as long as its derivative is 2x, so we can pick, say, F(x)=x2-5.2.
+\end{solution}\end{example}
+
+\begin{example}
+Find the antiderivative of 2x.
+
+\begin{solution}
+  Now we need to write the entire family of functions whose derivatives are 2x. We can use the ∫ notation:
+∫2xdx=x2+C.
+(Don't forget the +C!)
+\end{solution}\end{example}
+
+\begin{example}
+Find ∫exdx.
+
+\begin{solution}
+This is likely one you remember: ex is its own derivative, so it is also its own antiderivative. The integral sign tells us that we need to include the entire family of functions, so we need that +C on the end:
+∫exdx=ex+C.
+\end{solution}\end{example}
+
+Antiderivatives Graphically or Numerically
+Another way to think about the Fundamental Theorem of Calculus is to solve the expression for F(b):
+
+The Fundamental Theorem of Calculus (restated)
+∫abF′(x)dx=F(b)-F(a)
+The definite integral of a derivative from a to b gives the net change in the original function.
+
+F(b)=F(a)+∫abF′(x)dx
+The amount we end up is the amount we start with plus the net change in the function.
+
+This lets us get values for the antiderivative – as long as we have a starting point, and we know something about the area.
+
+\begin{example}
+Suppose F(t) has the derivative f(t) shown below, and suppose that we know F(0)=5. Find values for F(1), F(2), F(3), and F(4).
+
+derivative graph
+\begin{solution}
+Using the second way to think about the Fundamental Theorem of Calculus, F(b)=F(a)+∫abF′(x)dx, we can see that F(1)=F(0)+∫01f(x)dx. We know the value of F(0), and we can easily find ∫01f(x)dx from the graph – it's just the area of a triangle. So
+F(1)==F(2)==5+0.5=5.5F(0)+∫02f(x)dx5+1=6
+Note that we can start from any place of which we know the value; for example, now that we know F(2), we can use that to find
+F(3)==F(4)==F(2)+∫23f(x)dx6-0.5=5.5F(3)+∫34f(x)dx5.5-1=4.5
+\end{solution}\end{example}
+
+Here is a copy of the applet used in this video:
+
+
+\begin{example}
+F′(t)=f(t) is shown below. Where does F(t) have maximum and minimum values on the interval [0, 4]?
+
+graph
+\begin{solution}
+Since F(b)=F(a)+∫abF′(x)dx, we know that F is increasing as long as the area accumulating under F′=f is positive (until t=3), and then decreases when the curve dips below the x-axis so that negative area starts accumulating. The area between t=3 and t=4 is much smaller than the positive area that accumulates between 0 and 3, so we know that F(4) must be larger than F(0). The maximum value is when t=3; the minimum value is when t=0.
+\end{solution}\end{example}
+
+Note that this is a different way to look at a problem we already knew how to solve – in Chapter 2, we would have found critical points of F, where f=0: there's only one, when t=3. f=F′ goes from positive to negative there, so F has a local max at that point. It's the only critical point, so it must be a global max. Then we would look at the values of F at the endpoints to find which was the global min.
+
+We can also attempt to sketch a function based on the graph of the derivative.
+
+\begin{example}
+The graph below shows f′(x) – the rate of change of f(x). Use it to sketch a graph of f(x) that satisfies f(0)=0.
+
+graph
+\begin{solution}
+Recall from the last chapter the relationships between the function graph and the derivative graph:
+
+f(x)	Increasing	Decreasing	Concave Up	Concave Down	f′(x)	+	-	Increasing	Decreasing
+In the graph shown, we can see the derivative is positive on the interval (0, 1) and (3,∞), so the graph of f should be increasing on those intervals. Likewise, f should be decreasing on the interval (1,3).
+
+In the graph, f′ is decreasing on the interval (0, 2), so f should be concave down on that interval. Likewise, f should be concave up on the interval (2,∞).
+
+The derivative itself is not enough information to know where the function f starts, since there are a family of antiderivatives, but in this case we are given a specific point at which to start.
+
+To start the sketch, we might note first the shapes we need:
+
+graph
+then sketch the basic shapes:
+
+graph
+Now we can attempt to sketch the graph, starting at the point (0, 0). Notice we are very roughly sketching this, as we don't have much information to work with. We can tell, though, from the graph that the area from x=0 to x=1 is about the same as the area from x=1 to x=3, so we would expect the net area from x=0to x=3 to be close to 0.
+
+graph
+It turns out this graph isn't horribly bad. Smoothing it out would give a graph closer to the actual antiderivative graph, shown below.
+
+graph
+\end{solution}\end{example}
+
+Derivative of the Integral
+There is another important connection between the integral and derivative.
+
+The Fundamental Theorem of Calculus (part 2)
+If
+A(x)=∫axf(t)dt
+then
+A′(x)=ddx∫axf(t)dt=f(x).
+I.e., the derivative of the accumulation function is the original function.
+
+\begin{example}
+Let F(x)=∫0xf(t)dt, where f is graphed below. Estimate F′(3).
+
+graph
+\begin{solution}
+The function F(x) measures the area from t=0 to some t=x. To estimate F′(3), we want to estimate how much the area is increasing when t=3. Since the value of the function f(t) is 0 at t=3, the area will not be increasing or decreasing, so we can estimate F′(3)=0.
+
+Directly using the fundamental theorem of calculus part 2,
+F′(x)=ddx∫axf(t)dt=f(x)
+so
+F′(x)=f(3)=0.
+\end{solution}\end{example}

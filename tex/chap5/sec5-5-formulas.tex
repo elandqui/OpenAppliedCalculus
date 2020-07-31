@@ -1,0 +1,145 @@
+\section{Integral Formulas}
+\label{sec:formulas}
+% From Section 3.3
+Now we can put the ideas of areas and antiderivatives together to get a way of evaluating definite integrals that is exact and often easy. To evaluate a definite integral ∫abf(t)dt, we can find any antiderivative F(t) of f(t) and evaluate F(b)-F(a). The problem of finding the exact value of a definite integral reduces to finding some (any) antiderivative F of the integrand and then evaluating F(b)-F(a). Even finding one antiderivative can be difficult, and we will stick to functions that have easy antiderivatives.
+
+Building Blocks
+Antidifferentiation is going backwards through the derivative process. So the easiest antiderivative rules are simply backwards versions of the easiest derivative rules. Recall from Chapter 2:
+
+Derivative Rules: Building Blocks
+In what follows, f and g are differentiable functions of x.
+
+Constant Multiple Rule
+ddx(kf)=kf′
+Sum and Difference Rule
+ddx(f±g)=f′±g′
+Power Rule
+ddx(xn)=nxn-1
+Special cases:
+ddx(k)=0(Because k=kx0.)
+ddx(x)=1(Because x=x1.)
+Exponential Functions
+ddx(ex)=ex
+ddx(ax)=ln(a)ax
+Natural Logarithm
+ddx(ln(x))=1x
+Thinking about these basic rules was how we came up with the antiderivatives of 2x and ex before.
+
+The corresponding rules for antiderivatives are next – each of the antiderivative rules is simply rewriting the derivative rule. All of these antiderivatives can be verified by differentiating.
+
+There is one surprise – the antiderivative of 1x is actually not simply ln(x), it's ln|x|. This is a good thing – the antiderivative has a domain that matches the domain of 1x, which is bigger than the domain of ln(x), so we don’t have to worry about whether our x's are positive or negative. But we must be careful to include those absolute values – otherwise, we could end up with domain problems.
+
+Antiderivative Rules: Building Blocks
+In what follows, f and g are differentiable functions of x, and k, n, and C are constants.
+
+Constant Multiple Rule
+∫k⋅f(x)dx=k⋅∫f(x)dx
+Sum and Difference Rule
+∫(f(x)±g(x))dx=∫f(x)dx±∫g(x)dx
+Power Rule
+∫xndx=xn+1n+1, provided that n≠-1
+Special case:
+∫kdx=kx+C(Because k=kx0.)
+(The other special case (n=-1) is covered next.)
+
+Natural Logarithm
+∫x-1dx=∫1xdx=ln|x|+C
+Exponential Functions
+∫exdx=ex+C
+∫axdx=axln(a)+C
+\begin{example}
+Find the antiderivative of y=3x7-15x--√+14x2.
+
+\begin{solution}
+∫(3x7-15x--√+14x2)dx===∫(3x7-15x1/2+14x-2)dx3x88-15x3/23/2+14x-1-1+C38x8-10x3/2-14x-1+C
+\end{solution}\end{example}
+
+\begin{example}
+Find ∫(ex+12-16x)dx.
+
+\begin{solution}
+  ∫(ex+12-16x)dx=ex+12x-16ln|x|+C
+\end{solution}\end{example}
+
+\begin{example}
+Find F(x) so that F′(x)=ex and F(0)=10.
+
+\begin{solution}
+This time we are looking for a particular antiderivative; we need to find exactly the right constant. Let's start by finding the antiderivative:
+∫exdx=ex+C
+So we know that F(x)=ex+(some constant), now we just need to find which one. To do that, we'll use the other piece of information (the initial condition):
+F(x)=F(0)=C=ex+Ce0+C=1+C=109
+The particular constant we need is 9; thus, F(x)=ex+9.
+\end{solution}\end{example}
+
+The reason we are looking at antiderivatives right now is so we can evaluate definite integrals exactly. Recall the Fundamental Theorem of Calculus:
+
+∫abF′(x)dx=F(b)-F(a)
+If we can find an antiderivative for the integrand, we can use that to evaluate the definite integral. The evaluation F(b)-F(a) is represented as F(x)]ba or F(x)|ba.
+
+\begin{example}
+Evaluate ∫13xdx in two ways:
+
+\begin{solution}
+By sketching the graph of y=x and geometrically finding the area.
+By finding an antiderivative of F(x) of the integrand and evaluating F(3)-F(1).
+The graph of y=x is shown below, and the shaded region corresponding to the integral has area 4.
+
+graph
+One antiderivative of x is F(x)=12x2, and
+∫13xdx====[12x2]31(12(3)2)-(12(1)2)92-124.
+Note that this answer agrees with the answer we got geometrically.
+
+If we had used another antiderivative of x, say F(x)=12x2+7, then
+∫13xdx====[12x2+7]31(12(3)2+7)-(12(1)2+7)92+7-12-74.
+In general, whatever constant we choose gets subtracted away during the evaluation, so we might as well always choose the easiest one, where the constant is 0.
+\end{solution}\end{example}
+
+\begin{example}
+Find the area between the graph of y=3x2 and the horizontal axis for x between 1 and 2.
+
+\begin{solution}
+  This is
+∫123x2dx=x3∣∣21=23-13=7.
+\end{solution}\end{example}
+
+\begin{example}
+A robot has been programmed so that when it starts to move, its velocity after t seconds will be 3t2 feet/second.
+
+\begin{solution}
+How far will the robot travel during its first 4 seconds of movement?
+How far will the robot travel during its next 4 seconds of movement?
+The distance during the first 4 seconds will be the area under the graph of velocity, from t=0 to t=4.
+
+graph
+That area is the definite integral ∫043t2dt. An antiderivative of 3t2 is t3, so ∫043t2dt=t3]40=43-03=64 feet.
+
+∫483t2dt=t3]84=83-43=512-64=448 feet.
+\end{solution}\end{example}
+
+\begin{example}
+Suppose that t minutes after putting 1000 bacteria on a Petri plate the rate of growth of the population is 6t bacteria per minute.
+
+\begin{solution}
+How many new bacteria are added to the population during the first 7 minutes?
+What is the total population after 7 minutes?
+The number of new bacteria is the area under the rate of growth graph, and one antiderivative of 6t is 3t2.
+
+graph
+So
+new bacteria=∫076tdt=3t2∣∣70=3(7)2-3(0)2=147
+The new population = (old population) + (new bacteria) = 1000 + 147 = 1147 bacteria.
+\end{solution}\end{example}
+
+\begin{example}
+A company determines their marginal cost for production, in dollars per item, is MC(x)=4x√+2 when producing x thousand items. Find the cost of increasing production from 4 thousand items to 5 thousand items.
+
+\begin{solution}
+  Remember that marginal cost is the rate of change of cost, and so the fundamental theorem tells us that ∫abMC(x)dx=∫abC′(x)dx=C(b)-C(a). In other words, the integral of marginal cost will give us a net change in cost. To find the cost of increasing production from 4 thousand items to 5 thousand items, we need to integrate ∫45MC(x)dx.
+
+We can write the marginal cost as MC(x)=4x-1/2+2. We can then use the basic rules to find an antiderivative:
+C(x)=4x1/21/2+2x=8x--√+2x.
+Using this,
+Net change in cost ===\approx   ∫45(4x-1/2+2)dx[8x--√+2x]54(85–√+2(5))-(84–√+2(4))3.889
+It will cost 3.889 thousand dollars to increase production from 4 thousand items to 5 thousand items. (The final answer would be better written as \$3889.)
+\end{solution}\end{example}

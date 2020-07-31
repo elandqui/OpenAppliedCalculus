@@ -1,0 +1,252 @@
+\section{Applications of Integrals}
+\label{sec:integral-applications}
+
+% From Sections 3.7 and 3.6
+
+Consumer and Producer Surplus
+Here are a demand and a supply curve for a product. Which is which?
+
+graph
+The demand curve is decreasing – lower prices are associated with higher quantities demanded, higher prices are associated with lower quantities demanded. Demand curves are often shown as if they were linear, but there’s no reason they have to be.
+
+The supply curve is increasing – lower prices are associated with lower supply, and higher prices are associated with higher quantities supplied.
+
+The point where the demand and supply curve cross is called the equilibrium point (q∗,p∗).
+
+graph
+Suppose that the price is set at the equilibrium price, so that the quantity demanded equals the quantity supplied. Now think about the folks who are represented on the left of the equilibrium point. The consumers on the left would have been willing to pay a higher price than they ended up having to pay, so the equilibrium price saved them money. On the other hand, the producers represented on the left would have been willing to supply these goods for a lower price – they made more money than they expected to. Both of these groups ended up with extra cash in their pockets!
+
+Graphically, the amount of extra money that ended up in consumers' pockets is the area between the demand curve and the horizontal line at p∗. This is the difference in price, summed up over all the consumers who spent less than they expected to – a definite integral. Notice that since the area under the horizontal line is a rectangle, we can simplify the area integral:
+∫0q∗(d(q)-p∗)dq=∫0q∗d(q)dq-∫0q∗p∗dq=∫0q∗d(q)dq-p∗q∗.
+The amount of extra money that ended up in producers' pockets is the area between the supply curve and the horizontal line at p∗. This is the difference in price, summed up over all the producers who received more than they expected to. Similar to consumer surplus, this integral can be simplified:
+∫0q∗(p∗-s(q))dq=∫0q∗p∗dq-∫0q∗s(q)dq=p∗q∗-∫0q∗s(q)dq.
+Consumer and Producer Surplus
+Given a demand function p=d(q) and a supply function p=s(q), and the equilibrium point (q∗,p∗)
+The consumer surplus is
+∫0q∗d(q)dq-p∗q∗.
+The producer surplus is
+p∗q∗-∫0q∗s(q)dq.
+The sum of the consumer surplus and producer surplus is the total gains from trade.
+What are the units of consumer and producer surplus? The units are (price per item)(quantity of items) = money!
+
+\begin{example}
+Suppose the demand for a product is given by p=d(q)=-0.8q+150 and the supply for the same product is given by p=s(q)=5.2q. For both functions, q is the quantity and p is the price, in dollars.
+
+\begin{solution}
+  Find the equilibrium point.
+Find the consumer surplus at the equilibrium price.
+Find the producer surplus at the equilibrium price.
+The equilibrium point is where the supply and demand functions are equal. Solving -0.8q+150=5.2q gives q=25.
+The consumer surplus is
+∫025(-0.8q+150)dq-(130)(25)=\$250.
+The producer surplus is
+(130)(25)-∫0255.2qdq=\$1625.
+\end{solution}\end{example}
+
+\begin{example}
+The tables below show information about the demand and supply functions for a product. For both functions, q is the quantity and p is the price, in dollars.
+
+q	0	100	200	300	400	500	600	700	p	70	61	53	46	40	35	31	28
+q	0	100	200	300	400	500	600	700	p	14	21	28	33	40	47	54	61
+Which is which? That is, which table represents demand and which represents supply?
+What is the equilibrium price and quantity?
+Find the consumer and producer surplus at the equilibrium price.
+
+\begin{solution}
+The first table shows decreasing price associated with increasing quantity, so that is the demand function. The second table shows increasing price associated with increasing quantity, so that is the supply function.
+For both functions, q=400 is associated with p=40; the equilibrium price is \$40 and the equilibrium quantity is 400 units. Notice that we were lucky here, because the equilibrium point is actually one of the points shown. In many cases with a table, we would have to estimate.
+The consumer surplus uses the demand function, which comes from the first table. We'll have to approximate the value of the integral using rectangles. There are 4 rectangles, and let's choose to use left endpoints.
+
+The consumer surplus is
+∫0400(demand)dq-(40)(400)\approx   (100)(70+61+53+46)-(40)(400)=\$7000
+So the consumer surplus is about \$7000.
+
+The producer surplus uses the supply function, which comes from the second table. Let's choose to use left endpoints for this integral also.
+
+The producer surplus is
+(40)(400)-∫0400(supply)dq\approx   (40)(400)-(100)(14+21+28+33)=\$6400
+So the producer surplus is about \$6400.
+\end{solution}\end{example}
+
+Continuous Income Stream
+In precalculus, you learned about compound interest in that really simple situation where you made a single deposit into an interest-bearing account and let it sit undisturbed, earning interest, for some period of time. Recall:
+
+Compound Interest Formulas
+Let P be the principal (initial investment), r be the annual interest rate expressed as a decimal, and A(t) be the amount in the account at the end of t years.
+
+Compounding n times per year
+A(t)=P(1+rn)nt
+Compounded continuously
+A(t)=Pert
+If you’re using this formula to find what an account will be worth in the future, t>0 and A(t) is called the future value.
+
+If you're using the formula to find what you need to deposit today to have a certain value P sometime in the future, t<0 and A(t) is called the present value.
+
+You may also have learned somewhat more complicated annuity formulas to deal with slightly more complicated situations – where you make equal deposits equally spaced in time.
+
+But real life is not usually so neat.
+
+Calculus allows us to handle situations where deposits are flowing continuously into an account that earns interest. As long as we can model the flow of income with a function, we can use a definite integral to calculate the present and future value of a continuous income stream. The idea here is that each little bit of income in the future needs to be multiplied by the exponential function to bring it back to the present, and then we'll add them all up (a definite integral).
+
+Continuous Income Stream
+Suppose money can earn interest at an annual interest rate of r, compounded continuously. Let F(t) be a continuous income function (in dollars per year) that applies between year 0 and year T.
+
+Then the present value of that income stream is given by
+PV=∫0TF(t)e-rtdt.
+The future value can be computed by the ordinary compound interest formula
+FV=PVert.
+This is a useful way to compare two investments – find the present value of each to see which is worth more today.
+
+\begin{example}
+You have an opportunity to buy a business that will earn \$75,000 per year continuously over the next eight years. Money can earn 2.8\% per year, compounded continuously. Is this business worth its purchase price of \$630,000?
+
+\begin{solution}
+  First, please note that we still have to make some simplifying assumptions. We have to assume that the interest rates are going to remain constant for that entire eight years. We also have to assume that the \$75,000 per year is coming in continuously, like a faucet dripping dollars into the business. Neither of these assumptions might be accurate.
+
+But moving on: The present value of the \$630,000 is, well, \$630,000. This is one investment, where we put our \$630,000 in the bank and let it sit there.
+
+To find the present value of the business, we think of it as an income stream. The function F(t) in this case is a constant \$75,000 dollars per year, so F(t)=75,000. The interest rate is 2.8\% and the term we're interested in is 8 years, so r=.028, and T=8:
+PV=∫0875000e-0.028tdt\approx   537,548.75
+The present value of the business is about \$537,500, which is less than the \$630,000 asking price, so this is not a good deal.
+\end{solution}\end{example}
+
+While this integral could have been done using substitution, for many of the integrals in this section we don't have the techniques to use antiderivatives or, in some cases, no antiderivative exists. Technology will work quickly, and it will give you an answer that is good enough.
+
+\begin{example}
+A company is considering purchasing a new machine for its production floor. The machine costs \$65,000. The company estimates that the additional income from the machine will be a constant \$7000 for the first year, then will increase by \$800 each year after that. In order to buy the machine, the company needs to be convinced that it will pay for itself by the end of 8 years with this additional income. Money can earn 1.7\% per year, compounded continuously. Should the company buy the machine?
+
+\begin{solution}
+  We'll assume that the income will come in continuously over the 8 years. We’ll also assume that interest rates will remain constant over that 8-year time period.
+
+We're interested in the present value of the machine, which we will compare to its \$65,000 price tag. Let t be the time, in years, since the purchase of the machine. The income from the machine is different depending on the time.
+
+From t=0 to t=1 (the first year), the income is constant \$7000 per year. From t=1 to t=8, the income is increasing by \$800 each year; the income flow function F(t) will be F(t)=7000+800(t-1)=6200+800t. To find the present value, we'll have to divide the integral into the two pieces, one for each of the functions:
+PV=∫017000e-0.017tdt+∫18(6200+800t)e-0.017tdt\approx   70166.
+The present value is greater than the cost of the machine, so the company should buy the machine.
+\end{solution}\end{example}
+
+\subsection{Average Value}
+We know the average of n numbers a1,a2,…,an is their sum divided by n. But what if we need to find the average temperature over a day's time – there are too many possible temperatures to add them up! This is a job for the definite integral.
+
+% From Section 3.6.
+Average Value
+The average value of a function f(x) on the interval [a,b] is given by
+1b-a∫baf(x)dx.
+The average value of a positive f has a nice geometric interpretation. Imagine that the area under f (graph (a) below) is a liquid that can leak through the graph to form a rectangle with the same area (graph (b) below).
+
+If the height of the rectangle is H, then the area of the rectangle is H⋅(b-a). We know the area of the rectangle is the same as the area under f so H⋅(b-a)=∫baf(x)dx. Then
+H=1b-a∫baf(x)dx,
+the average value of f on [a,b].
+
+The average value of a positive function f is the height H of the rectangle whose area is the same as the area under f.
+
+\begin{example}
+During a 9 hour work day, the production rate at time t hours after the start of the shift was given by the function r(t)=5+t√ cars per hour. Find the average hourly production rate.
+
+\begin{solution}
+The average hourly production is 19-0∫90(5+t√)dt=7 cars per hour.
+\end{solution}\end{example}
+
+A note about the units – remember that the definite integral has units (cars per hour)⋅(hours) = cars. But the 1b-a in front has units 1hours – the units of the average value are cars per hour, just what we expect an average rate to be.
+
+In general…
+…the average value of a function will have the same units as the integrand.
+
+Function averages, involving means and more complicated averages, are used to smooth data so that underlying patterns are more obvious and to remove high frequency noise from signals. In these situations, the original function f is replaced by some average of f. If f is rather jagged time data, then the ten year average of f is the integral g(x)=110∫x-5x+5f(t)dt, an average of f over 5 units on each side of x.
+
+For example, the figure below shows the graphs of a Monthly Average (rather “noisy” data) of surface temperature data, an Annual Average (still rather jagged), and a Five Year Average (a much smoother function).
+
+graph by Robert A. Rohde
+Image prepared by Robert A. Rohde, http://commons.wikimedia.org/wiki/File:Short_Instrumental_Temperature_Record.png.
+Typically the average function reveals the pattern much more clearly than the original data. This use of a moving average value of noisy data (weather information, stock prices) is a very common.
+
+\begin{example}  2
+The graph below shows the amount of water in a reservoir over a 12 hour period. Estimate the average amount of water in the reservoir over this period.
+
+graph
+\begin{solution}
+If V(t) is the volume of the water (in millions of liters) after t hours, then the average amount is 112∫120V(t)dt. In order to find the definite integral, we'll have to estimate. Let's use 6 rectangles and take the heights from their right edges (there's nothing special about using 6 rectangles or right edges – other choices would still give you a valid estimate).
+
+graph
+The estimate of the integral is
+∫120V(t)dt\approx   (18)(2)+(9.7)(2)+(8.2)(2)+(12)(2)+(19.9)(2)+(22)(2)=179.6.
+The units of this integral are (millions of liters)⋅(feet). So our estimate of the average volume is 112⋅179.6\approx   15 millions of liters. (The estimate might change a little depending on how we estimate the function values from the graph.)
+
+In the figure below, you can see the same graph with the line y=15 drawn in. The area under the curve and the area under the rectangle are (approximately) the same.
+
+graph
+In fact, that would be a different way to estimate the average value. We could have estimated the placement of the horizontal line so that the area under the curve and under the line were equal.
+\end{solution}\end{example}
+
+Area
+We have already used integrals to find the area between the graph of a function and the horizontal axis. Integrals can also be used to find the area between two graphs.
+
+If f(x)≥g(x) for all x in [a,b], then we can approximate the area between f and g by partitioning the interval [a,b] and forming a Riemann sum, as shown in the picture. The height of each rectangle is top - bottom, f(ci)-g(ci) so the area of the i-th rectangle is (height)⋅(base) = (f(ci)-g(ci))⋅Δx. Adding up these rectangles gives an approximation of the total area as ∑ni=1(f(ci)-g(ci))⋅Δx, a Riemann sum.
+
+grapg
+The limit of this Riemann sum, as the number of rectangles gets larger and their width gets smaller, is the definite integral ∫ba(f(x)-g(x))dx.
+
+Area Between Two Curves
+The area between two curves f(x) and g(x), where f(x)≥g(x), between x=a and x=b is
+∫ba(f(x)-g(x))dx.
+The integrand is top - bottom. Make a graph or use test values to be sure which curve is which.
+
+\begin{example}  3
+Find the area bounded between the graphs of f(x)=x and g(x)=3 for 1≤x≤4.
+
+graph
+\begin{solution}
+Always start with a graph so you can see which graph is the top and which is the bottom. In this example, the two curves cross, and they change positions; we’ll need to split the area into two pieces. Geometrically, we can see that the area is 2 + 0.5 = 2.5.
+
+Writing the area as a sum of definite integrals, we get
+Area =∫31(3-x)dx+∫43(x-3)dx.
+These integrals are easy to evaluate using antiderivatives:
+∫31(3-x)dx===[3x-x22]31(9-92)-(3-12)2
+∫43(x-3)dx===[x22-3x]43(162-12)-(92-9)12
+The sum of these two integrals tells us that the total area between f and g is 2.5 square units, which we already knew from the picture.
+\end{solution}\end{example}
+
+Note that the single integral ∫41(3-x)dx=1.5 is not the area we want in the last example. The value of the integral is 1.5, and the value of the area is 2.5. That's because for the triangle on the right, the graph of y=x is above the graph of y=3, so the integrand 3-x is negative; in the definite integral, the area of that triangle comes in with a negative sign.
+
+In this example, it was easy to see exactly where the two curves crossed so we could break the region into the two pieces to figure separately. In other examples, you might need to solve an equation to find where the curves cross.
+
+\begin{example}
+Two objects start from the same location and travel along the same path with velocities vA(t)=t+3 and vB(t)=t2-4t+3 meters per second. How far ahead is A after 3 seconds?
+
+graph
+\begin{solution}
+Since vA(t)≥vB(t) , the area between the graphs of vA and vB represents the distance between the objects.
+
+After 3 seconds, the distance apart is
+∫30(vA(t)-vB(t))dt=====∫30((t+3)-(t2-4t+3))dt∫30(5t-t2)dt[5t22-t33]30(592-273)-(0)13.5 meters.
+\end{solution}\end{example}
+
+Volume
+Just as we can partition an interval and imagine approximating an area with rectangles to find a formula for the area between curves, we can partition an interval and imagine approximating a volume with simple shapes to find a formula for the volume of a solid. While this approach works for a variety of shapes, our focus will be on shapes formed by revolving a curve around the horizontal axis.
+
+We start with an area, the region below a function on the interval a≤x≤b. We are going to take that region, and rotate it around the x-axis, creating the solid shape shown.
+
+regionsolid
+To find the volume of this solid, we can start by partitioning the interval [0,1] and approximating the area with rectangles. As before, the width of each rectangle would be Δx and the height f(ci).
+
+regionsolid
+If we took just one of these rectangles and rotated it about the horizontal axis, it would form a cylindrical shape. The radius of that cylinder would be f(ci), so the volume would be
+V=πr2h=π(f(ci))2Δx.
+The volume of the whole solid could be approximated by rotating each of the rectangles about the x axis. Adding up the volume of each of the little cylindrical discs gives an approximation of the total volume as ∑i=1nπ(f(ci))2Δx, a Riemann sum.
+
+The limit of this sum as the width of the rectangles becomes small is the definite integral ∫baπ(f(x))2dx
+Volume
+The volume of the solid obtained by rotating about the x-axis the area bounded by the curve f(x), the x-axis, x=a, and x=b is
+∫baπ(f(x))2dx
+\begin{example}
+Find the volume of the solid formed by rotating the area under f(x)=e-x on the interval [0,1] about the x-axis.
+
+region
+\begin{solution}
+This is the region pictured in the earlier example. We substitute in the function and bounds into the formula we derived to set up the definite integral:
+Volume=∫10π(e-x)2dx.
+Using exponent rules, the integrand can be simplified. The constant π can be pulled out of the integral:
+Volume=π∫10e-2xdx.
+Using the substitution u=-2x, we can integrate this function.
+π∫10e-2xdx===\approx   (u-substitution)-12πe-2x]10(-12πe-2(1))-(-12πe-2(0))1.358 cubic units.
+\end{solution}\end{example}
