@@ -1,0 +1,160 @@
+\section{Optimization with Multivariable Functions}
+\label{sec:multi-opt}
+
+The partial derivatives tell us something about where a surface has local maxima and minima. Remember that even in the one-variable cases, there were critical points which were neither maxima nor minima – this is also true for functions of many variables. In fact, as you might expect, the situation is even more complicated.
+
+Second Derivatives
+When you find a partial derivative of a function of two variables, you get another function of two variables – you can take its partial derivatives, too. We've done this before, in the one-variable setting. In the one-variable setting, the second derivative gave information about how the graph was curved. In the two-variable setting, the second partial derivatives give some information about how the surface is curved, as you travel on cross-sections – but that's not very complete information about the entire surface.
+
+Imagine that you have a surface that's ruffled around a point, like what happens near a button on an overstuffed sofa, or a pinched piece of fabric, or the wrinkly skin near your thumb when you make a fist. Right at that point, every direction you move, something different will happen – it might increase, decrease, curve up, curve down… A simple phrase like concave up or concave down can't describe all the things that can happen on a surface.
+
+Surprisingly enough, though, there is still a second derivative test that can help you decide if a point is a local max or min or neither, so we still do want to find second derivatives.
+
+Second Partial Derivatives
+Suppose f(x,y) is a function of two variables. Then it has four second partial derivatives:
+fxx=fyx=∂∂x(fx)=(fx)x∂∂x(fy)=(fy)xfxy=fyy=∂∂y(fx)=(fx)y∂∂y(fy)=(fy)y
+fxy and fyx are called the mixed (second) partial derivatives of f.
+
+Leibniz notation for the second partial derivatives is a bit confusing, and we won't use it as often:
+fxx=fyx=∂∂x(∂f∂x)=∂2f∂x2∂∂x(∂f∂y)=∂2f∂x∂yfxy=fyy=∂∂y(∂f∂x)=∂2f∂y∂x∂∂y(∂f∂y)=∂2f∂y2
+Notice that the order of the variables for the mixed partials goes from right to left in the Leibniz notation instead of left to right.
+
+\begin{example}
+Find all four partial derivatives of f(x,y)=x2-4xy+4y2.
+
+\begin{solution}
+  We have to start by finding the (first) partial derivatives:
+fx(x,y)=fy(x,y)=2x-4y-4x+8y
+Now we’re ready to take the second partial derivatives:
+fxx(x,y)=fxy(x,y)=fyx(x,y)=fyy(x,y)=∂∂x(2x-4y)=2∂∂y(2x-4y)=-4∂∂x(-4x+8y)=-4∂∂y(-4x+8y)=8
+\end{solution}\end{example}
+
+You might have noticed that the two mixed partial derivatives were equal in this last example. It turns out that it's not a coincidence – it's a theorem!
+
+Mixed Partial Derivative Theorem
+If f, fx, fy, fxy, and fyx are all continuous (no breaks in their graphs), then
+fxy=fyx.
+In fact, as long as f and all its appropriate partial derivatives are continuous, the mixed partials are equal even if they are of higher order, and even if the function has more than two variables.
+
+This theorem means that the confusing Leibniz notation for second derivatives is not a big problem – in almost every situation the mixed partials are equal, so the order in which we compute them doesn't matter.
+
+\begin{example}
+Find ∂2f∂x∂y for f(x,y)=ex+yy3+y+yln(y).
+
+\begin{solution}
+  We already found the first partial derivatives in an earlier example:
+∂f∂x=∂f∂y=1y3+yex+y(ex+y(1))(y3+y)-(ex+y)(3y2+1)(y3+y)2+(1)(ln(y))+(y)(1y)
+Now we need to find the mixed partial derivative. The theorem says that ∂f2∂x∂y=∂f2∂y∂x, so it doesn't matter whether we find the partial derivative of ∂f∂x with respect to y or the partial derivative of ∂f∂y with respect to x. Which would you rather do?
+
+It looks like it will be easier to compute the mixed partial by finding the partial derivative of ∂f∂x=1y3+yex+y with respect to y – it still looks messy, but it looks less messy:
+∂f2∂y∂x=∂∂y(1y3+yex+y)=(ex+y)(y3+y)-(ex+y)(3y2+1)(y3+y)2
+If we had decided to do this the other way, we'd end up in the same place. Eventually…
+\end{solution}\end{example}
+
+Local Maxima, Local Minima, and Saddle Points
+Let's briefly review max-min problems in one variable.
+
+A local max is a point on a curve that is higher than all the nearby points. A local min is lower than all the nearby points. We know that local max or min can only occur at critical points, where the derivative is zero or undefined. But we also know that not all critical points are max or min, so we also need to test them, with the First Derivative or Second Derivative Test.
+
+The situation with a function of two variables is much the same. Just as in the one-variable case, the first step is to find critical points, places where both the partial derivatives are either zero or undefined
+
+Definition (Local Maximum and Minimum)
+f has a local maximum at (a,b) if f(a,b)≥f(x,y) for all points (x,y) near (a,b).
+f has a local minimum at (a,b) if f(a,b)≤f(x,y) for all points (x,y) near (a,b).
+A critical point for a function f(x,y) is a point (x,y) (or (x,y,f(x,y))) where both the following are true:
+
+fx=0 or is undefined, and
+fy=0 or is undefined.
+Just as in the one-variable case, a local max or min of f can only occur at a critical point.
+
+Just as in the one-variable setting, not all critical points are local max or min. For a function of two variables, the critical point could be a local max, local min, or a saddle point.
+
+A point on a surface is a local maximum if it's higher than all the points nearby; a point is a local minimum if it's lower than all the points nearby.
+
+A saddle point is a point on a surface that is a minimum along some paths and a maximum along some others. It's called this because it's shaped a bit like a saddle you might use to ride a horse. You can see a saddle point by making a fist – between the knuckles of your index and middle fingers, you can see a place that is a minimum as you go across your knuckles, but a maximum as you go along your hand toward your fingers.
+
+Here is a picture of a saddle point from a few different angles. This is the surface f(x,y)=5x2-3y2+10, and there is a saddle point above the origin. The lines show what the surface looks like above the x- and y- axes. Notice how the point above the origin, where the lines cross, is a local minimum in one direction, but a local maximum in the other direction.
+
+View 1 View 2 View 3 View 4
+Second Derivative Test
+Just as in the one-variable case, we'll need a way to test critical points to see whether they are local max or min. There is a second derivative test for functions of two variables that can help, but, just as in the one-variable case, it won't always give an answer.
+
+The Second Derivative Test for Functions of Two Variables
+Find all critical points of f(x,y).
+Compute
+D(x,y)=(fxx)(fyy)-(fxy)(fyx),
+and evaluate it at each critical point.
+
+If D>0, then f has a local max or min at the critical point. To see which, look at the sign of fxx:
+
+If fxx>0, then f has a local minimum at the critical point.
+If fxx<0, then f has a local maximum at the critical point.
+If D<0 then f has a saddle point at the critical point.
+If D=0, there could be a local max, local min, or neither (i.e., the test in inconclusive).
+\begin{example}
+Find all local maxima, minima, and saddle points for the function
+f(x,y)=x3+y3+3x2-3y2-8.
+
+\begin{solution}
+  First we need the partial derivatives: fx=3x2+6x and fy=3y2-6y.
+
+Critical points are the places where both of these are zero (neither is ever undefined): fx=3x2+6x=3x(x+2)=0 when x=0 or when x=-2. fy=3y2-6y=3y(y-2)=0 when y=0 or when y=2.
+
+Putting these together, we get four critical points: (0, 0), (-2, 0), (0, 2), and (-2, 2).
+
+Now to classify them, we’ll use the Second Derivative Test. We’ll need all the second partial derivatives:
+fxx=6x+6, f+yy=6y-6, fxy=fyx=0.
+Then
+D(x,y)=(6x+6)(6y-6)-(0)(0)=(6x+6)(6y-6).
+Now look at each critical point in turn:
+
+At (0, 0): D(0,0)=(6(0)+6)(6(0)-6)=(6)(-6)=-36<0, so there is a saddle point at (0, 0).
+At (-2, 0): D(-2,0)=(6(-2)+6)(6(0)-6)=(-6)(-6)=36>0 and fxx(-2,0)=6(-2)+6=-6<0, so there is a local maximum at (-2, 0).
+At (0, 2): D(0,2)=(6(0)+6)(6(2)-6)=(6)(6)=36>0 and fxx(0,2)=6(0)+6=6>0, so there is a local minimum at (0, 2).
+At (-2, 2): D(-2,2)=(6(-2)+6)(6(2)-6)=(-6)(6)=-36<0, so there is another saddle point at (-2, 2).
+\end{solution}\end{example}
+
+\begin{example}
+Find all local maxima, minima, and saddle points for the function
+z=9x3+y33-4xy.
+
+\begin{solution}
+  We’ll need all the partial derivatives and second partial derivatives, so let’s compute them all first:
+zx=zxx=27x2-4y,zy=y2-4x,54x,zxy=zyx=-4,zy=2y.
+Now to find the critical points: We need both zx and zy to be zero (neither is ever undefined), so we need to solve this set of equations simultaneously:
+zx=zy=27x2-4y=0y2-4x=0
+Perhaps it's been a while since you solved systems of equations. One solution method is the substitution method – solve one equation for one variable and substitute into the other equation:
+27x2-4y=y2-4x=00}→Solve y2-4x=0 for x=y24 …
+…then substitute into the other equation:
+27(y24)2-4y=2716y4-y=00
+Now we have just one equation in one variable to solve. Factoring out a y gives
+y(2716y3-1)=0,
+so y=0 or 2716y3-1=0, giving y=127/16----√3=4√33.
+
+Plugging back in to the equation x=y24 to find x gives us the two critical points: (0,0) and (49,43).
+
+Now to test them. First compute
+D(x,y)===(fxx)(fyy)-(fxy)(fyx)(54x)(2y)-(-4)(-4)108xy-16
+Then evaluate D at the two critical points:
+
+At (0,0): D(0,0)=-16<0, so there is a saddle point at (0, 0).
+At (49,4√33): D(49,4√33)=16(4–√3-1)>0, and fxx(49,4√33)>0, so there is a local minimum at (49,4√33).
+\end{solution}\end{example}
+
+\subsection{Applied Optimization}
+\begin{example}
+A company makes two products. The demand equations for the two products are given below. p1, p2, q1,and q2 are the prices and quantities for Products 1 and 2.
+q1=q2=200-3p1-p2150-p1-2p2
+Find the price the company should charge for each product in order to maximize total revenue. What is that maximum revenue?
+
+Revenue is still price⋅quantity. If we're selling two products, the total revenue will be the sum of the revenues from the two products:
+R(p1,p2)===p1q1+p2q2p1(200-3p1-p2)+p2(150-p1-2p2)200p1-3p21-2p1p2+150p2-2p22
+This is a function of two variables, the two prices, and we need to optimize it (just as in the previous examples). First we find critical points. The notation here gets a bit hard to look at, but hang in there – this is the same stuff we've done before.
+Rp1=200-6p1-2p2  and  Rp2=150-2p1-4p2.
+Solving these simultaneously gives the one critical point (p1,p2)=(25,25)
+To confirm that this gives maximum revenue, we need to use the Second Derivative Test. Find all the second derivatives:
+Rp1p2=-6, Rp2p2=-4,  and  Rp1p2=Rp2p1=-2.
+So D(25,25)=(-6)(-4)-(-2)(-2)>0 and Rp1p2(25,25)<0, so this really is a local maximum.
+
+Thus, to maximize revenue the company should charge \$25 per unit for both products. This will yield a maximum revenue of \$4375.
+\end{solution}\end{example}
