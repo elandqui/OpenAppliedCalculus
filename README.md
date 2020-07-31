@@ -1,7 +1,7 @@
 # Open Applied Calculus
 This is an open textbook (OER) for Applied Calculus for business, education, and the social and life sciences and released under a Creative Commons Attribution Share Alike 4.0 (CC-BY-SA 4.0) license..
 
-Read below for some unique ways that you can help [**support**](#support) this project. There is also a <a href="https://www.gofundme.com/manage/oac-textbook">GoFundMe page to support Open Applied Calculus</a>.
+Read below for some unique ways that you can help [**support**](#support) this project, like **advertising** and **investing in Bitcoin**! There is also a <a href="https://www.gofundme.com/manage/oac-textbook">GoFundMe page to support Open Applied Calculus</a>.
 
 ## What are Open Educational Resources?
 
@@ -22,12 +22,11 @@ The **goals** of this project are to:
    - **life sciences**.
  * Introduce a **mathematical modeling** approach to calculus.
  * Have students analyze and model with **real and realistic data** and scenarios.
- * Incorporate Microsoft **Excel** and/or <a href="https://www.libreoffice.org/">LibreOffice</a> **Calc spreadsheets** to demonstrate how to **model with spreadsheets**. (Business majors use Excel. This will be a distinctive feature of this textbook.)
+ * Incorporate <a href="https://www.libreoffice.org/">LibreOffice</a> **Calc spreadsheets** (a free alternative to Microsoft **Excel**) to demonstrate how to **model with spreadsheets**. (Business majors use spreadsheets. This will be a distinctive feature of this textbook.)
  * Incorporate **Python** and/or <a href="http://www.sagemath.org/">SageMath</a> code for students in the life sciences.
  * Create **lecture videos** to accompany the text for students' convenience and to assist with the **online** or **flipped** models of the course.
  * Create an **online version** of the textbook to be displayed in an internet browser using <a href="https://pretextbook.org/">PreTeXt</a>.
  * Obtain **sponsors** for this project. 
- * Have a reasonably complete version of this textbook to present at **MAA MathFest 2020** (July 29 - August 1 in Philadelphia).
  * Have the textbook hosted on well-known **open textbook websites** for wider dissemination.
  * Distribute **print editions** of the textbook.
 
@@ -37,8 +36,8 @@ The following is a rough **task list** for this project.
  * Complete one section on functions (1.2) in a relatively complete form. (Done) 
  * Convert existing open business and applied calculus textbooks from .docx format to **LaTeX** format. (In Progress)
  * Set up means to include **advertisements** in the text or to accept donations to the project. 
- * Improve the **graphics** of the textbook, e.g. graphs, tables, and figures.
- * Overhaul the existing text to introduce a **modeling and data-analytics** approach to calculus.
+ * Improve the **graphics** of the textbook, e.g. graphs, tables, and figures. (In Progress)
+ * Overhaul the existing text to introduce a **modeling and data-analytics** approach to calculus. (In Progress)
  * Solicit **reviewers and reviews** for this textbook. (In Progress) 
  * When ready, organize a team of project developers for the textbook.
  * Create **new homework problems** to be used with <a href="https://www.myopenmath.com/">MyOpenMath</a> and/or <a href="http://webwork.maa.org/">WeBWorK</a>.
