@@ -204,30 +204,41 @@ When graphing a linear function, there are two basic ways to graph it.
 \begin{example}
 Graph $f(x) = 5 - \frac{2}{3} x$ by plotting points.
 
-\begin{solution} In general, we evaluate the function at two or more inputs to find at
-least two points on the graph. Usually it is best to pick input values
-that will ``work nicely'' in the equation. In this equation, multiples
-of 3 will work nicely due to the in the equation, and of course using
-$x = 0$ to get the vertical intercept. Evaluating $f(x)$ at
-$x = 0, 3$, and $6$:
+\begin{solution} In general, we evaluate the function at two or more inputs to find at least two points on the graph. Usually it is best to pick input values that will ``work nicely'' in the equation. In this equation, multiples of 3 will work nicely due to the in the equation, and of course using $x = 0$ to get the vertical intercept. Evaluating $f(x)$ at $x = 0, 3$, and $6$:
+\begin{align*}
+f(0) &= 5 - \dfrac{2}{3} \cdot 0 = 5 \\
+f(3) &= 5 - \dfrac{2}{3} \cdot 3 = 3 \\
+f(6) &= 5 - \dfrac{2}{3} \cdot 6 = 1
+\end{align*}
+These evaluations tell us that the points $(0,5)$, $(3,3)$, and $(6,1)$ lie on the graph of the line. Plotting these points and drawing a line through them gives us the graph.
 
-$f(0) = 5 - \frac{2}{3} \cdot 0 = 5 $\\
-\indent $f(3) = 5 - \frac{2}{3} \cdot 3 = 3 $
-\indent $f(6) = 5 - \frac{2}{3} \cdot 6 = 1 $
+\begin{center}
+\begin{tikzpicture}
+  % Grid
+  \draw[help lines] (-0.2, -0.2) grid (6.2, 5.2); % Grid
+  \draw[->] (-0.2, 0) -- (6.2, 0) node[right] {$x$}; % x-axis
+  \draw[->] (0, -0.2) -- (0, 5.2) node[above] {$y$}; % y-axis
+  % Axis labels
+  \foreach \x/\xtext in {1, 2, 3, 4, 5, 6}
+     \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north,fill=white] {$\xtext$};
+   \foreach \y/\ytext in {1, 2, 3, 4, 5}
+     \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east,fill=white] {$\ytext$};
+  \node[below left](origin) at (0, 0){0};
+  % Points
+  \filldraw (0, 5) circle (2pt);
+  \filldraw (3, 3) circle (2pt);
+  \filldraw (6, 1) circle (2pt);
 
-%%\incluegraphics[width=2.64861in,height=2.26319in]{media/image93.png}
+  %Line
+  \draw[color=aldRed, thick, domain=-0.2:6.2] plot(\x, 5 - 2*\x/3) node[right] {$f(x) = 5 - \frac{2}{3} x$};
+\end{tikzpicture}
+\end{center}
 
-These evaluations tell us that the points $(0,5)$, $(3,3)$, and $(6,1)$ lie on
-the graph of the line. Plotting these points and drawing a line through
-them gives us the graph.
+
+
 \end{solution}\end{example}
 
-When using the initial value and rate of change to graph, we need to
-consider the graphical interpretation of these values. Remember the
-initial value of the function is the output when the input is $0$, so
-in the equation $f(x) = b + mx$, the graph includes the point $(0, b)$. On the
-graph, this is the vertical intercept -- the point where the graph
-crosses the vertical axis.
+When using the initial value and rate of change to graph, we need to consider the graphical interpretation of these values. Remember the initial value of the function is the output when the input is $0$, so in the equation $f(x) = b + mx$, the graph includes the point $(0, b)$. On the graph, this is the vertical intercept -- the point where the graph crosses the vertical axis.
 
 For the rate of change, it is helpful to recall that we calculated this value as
 $$m = \frac{\mbox{change of output}}{\mbox{change of input}}$$
@@ -397,10 +408,34 @@ Looking to what we're trying to find, we want to know when U-Haul will be the be
   Y(m) &= 20 + 0.59 m\\
   B(m) &= 16 + 0.63 m
 \end{align*}
-These graphs are sketched to the right, with $Y(m)$ drawn dashed.
+These graphs are plotted below.
 
-[INSERT GRAPH]
-%\incluegraphics[width=2.75417in,height=2.70903in]{media/image245.png}
+\begin{center}
+\begin{tikzpicture}
+  \begin{axis}[
+    xmin = -2, xmax = 202,
+    ymin = -2, ymax = 152,
+    xtick distance = 50,
+    ytick distance = 50,
+    grid = both,
+    major grid style = {gridGray},
+    width = 0.6\textwidth,
+    xlabel = {Distance traveled (miles) ($m$)},
+    ylabel = {Total Cost (\$)},
+    legend cell align = {left},
+    legend pos = north west
+    %height = 0.5\textwidth,
+    ]
+    \filldraw (100, 79) circle (2pt) node[below right] {$(100, 79)$};
+    \addplot[domain = 0:202, samples = 2, smooth, thick, aldRed] {20 + 0.59*x};
+    \addplot[domain = 0:202, samples = 2, smooth, thick, aldBlue] {16 + 0.63*x};
+    \legend{ $Y(m) = 20 + 0.59 m$,
+             $B(m) = 16 + 0.63 m$}
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
 To find the intersection, we set the equations equal to each other and solve for $m$.
 \begin{align*}
   Y(m) &= B(m) \\
@@ -532,6 +567,7 @@ where $c$ is the number of chirps in 15 seconds, and $T(c)$ is the temperature i
 This linear equation can then be used to approximate the solution to various questions we might ask about the trend. While the data does not perfectly fall on the linear equation, the equation is our best guess as to how the relationship will behave outside of the values we have data for. Recall the notions of interpolation and extrapolation.
 
 \begin{example}
+  Consider the cricket chirp data in Table \ref{sh:crickets}.
   \begin{itemize}
     \item[a)] Would predicting the temperature when crickets are chirping 30 times in 15 seconds be interpolation or extrapolation? Make the prediction, and discuss if it is reasonable.
     \item[b)] Would predicting the number of chirps crickets will make at 40 degrees be interpolation or extrapolation? Make the prediction, and discuss if it is reasonable.
@@ -604,8 +640,14 @@ Notice that the plot also includes another number: $R^2 = 0.90$. Most calculator
 \end{definition}
 
 We should only compute the correlation coefficient for data that follows a linear pattern; if the data exhibits a non-linear pattern, the correlation coefficient is meaningless. To get a sense for the relationship between the value of $r$ and the graph of the data, here are some large data sets with their correlation coefficients:
-[Provide graph]
-%\incluegraphics[width=5.82292in,height=2.44792in]{media/image301.png}\footnote{\url{http://en.wikipedia.org/wiki/File:Correlation_examples.png}}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width = 0.6\textwidth]{img/chap1/sec1-4/correlation_examples.png}
+  \caption{Comparing data sets with correlation coefficients}
+  \footnote{\url{https://en.wikipedia.org/wiki/Pearson_correlation_coefficient}}
+  \end{figure}
+
+
 
 
 \begin{example}
