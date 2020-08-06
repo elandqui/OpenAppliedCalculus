@@ -1,0 +1,65 @@
+% Sample Spreadsheet\begin{table}[!ht]
+  \centering
+  \textsf{
+  \begin{tabular}{|a*{10}{|c}|}
+    \hline
+    \rowcolor{shGray} & A & B & C & D & E & F & G & H & I & J\\
+    \hline
+      1 & \textbf{Chirps} & 44 & 35 & 20.4 & 33 & 31 & 35 & 18.5 & 37 & 26 \\
+    \hline
+      2 & \textbf{Temp. ($^{\circ}$F)} & 80.5 & 70.5 & 57 & 66 & 68 & 72 & 52 & 73.5 & 53\\
+    \hline
+  \end{tabular}}
+  \caption{}
+  \label{sh:crickets}
+\end{table}
+
+% Sample for a grid
+\begin{center}
+\begin{tikzpicture}
+  \begin{axis}[
+    xmin = -2, xmax = 202,
+    ymin = -2, ymax = 152,
+    xtick distance = 50,
+    ytick distance = 50,
+    grid = both,
+    major grid style = {gridGray},
+    width = 0.6\textwidth,
+    xlabel = {Distance traveled (miles) ($m$)},
+    ylabel = {Total Cost (\$)},
+    legend cell align = {left},
+    legend pos = north west
+    %height = 0.5\textwidth,
+    ]
+    \filldraw (100, 79) circle (2pt) node[below right] {$(100, 79)$};
+    \addplot[domain = 0:202, samples = 2, smooth, thick, aldRed] {20 + 0.59*x};
+    \addplot[domain = 0:202, samples = 2, smooth, thick, aldBlue] {16 + 0.63*x};
+    \legend{ $Y(m) = 20 + 0.59 m$,
+             $B(m) = 16 + 0.63 m$}
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+
+\begin{center}
+\begin{tikzpicture}
+  % Grid
+  \draw[help lines] (-0.2, -0.2) grid (6.2, 5.2); % Grid
+  \draw[->] (-0.2, 0) -- (6.2, 0) node[right] {$x$}; % x-axis
+  \draw[->] (0, -0.2) -- (0, 5.2) node[above] {$y$}; % y-axis
+  % Axis labels
+  \foreach \x/\xtext in {1, 2, 3, 4, 5, 6}
+     \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north,fill=white] {$\xtext$};
+   \foreach \y/\ytext in {1, 2, 3, 4, 5}
+     \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east,fill=white] {$\ytext$};
+   \node[below left](origin) at (0, 0){0};
+  % Points
+  \filldraw (0, 5) circle (2pt);
+  \filldraw (3, 3) circle (2pt);
+  \filldraw (6, 1) circle (2pt);
+
+  %Line
+  \draw[color=aldRed, thick, domain=-0.2:6.2] plot(\x, 5 - 2*\x/3) node[right] {$f(x) = 5 - \frac{2}{3} x$};
+\end{tikzpicture}
+\end{center}
