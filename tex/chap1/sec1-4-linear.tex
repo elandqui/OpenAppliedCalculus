@@ -166,7 +166,7 @@ Keeping track of units, as we did above, can help us interpret this quantity. In
 Now let's solve for the initial value, $b$. We have $I(n) = b + 80n$ and when $n = 3$, $I(3) = 760$, so
 $$760 = b+80\cdot 3 = b + 240 \enspace .$$
 This allows us to solve for $b$:
-$$b = 760 - 240 = 520 \ensspace .$$
+$$b = 760 - 240 = 520 \enspace .$$
 
 This form allows us to see the starting value for the function: 520. This is Ilya's income when $n = 0$, which means no new policies are sold. We can interpret this as Ilya's base salary for the week, which does not depend upon the number of policies sold.
 
@@ -335,11 +335,11 @@ The graphs of two lines will intersect if they are not parallel. They will inter
 
 Economics tells us that in a free market, the price for an item is related to the quantity that producers will supply and the quantity that consumers will demand. Increases in prices will decrease demand, while supply tends to increase with prices. Sometimes supply and demand are modeled with linear functions.
 \begin{example}
-  The supply, in thousands of items, for custom phone cases can be modeled by the equation $s(p)=0.5+1.2p$ while the demand can be modeled by $d(p)=8.7−0.7p$, where $p$ is in dollars. Find the equilibrium price and quantity, the intersection of the supply and demand curves.
+  The supply, in thousands of items, for custom phone cases can be modeled by the equation $s(p)=0.5+1.2p$ while the demand can be modeled by $d(p)=8.7-0.7p$, where $p$ is in dollars. Find the equilibrium price and quantity, the intersection of the supply and demand curves.
 
   \begin{solution} Setting $s(p)=d(p)$, we find
   \begin{align*}
-    0.5 + 1.2p &= 8.7−0.7p \\
+    0.5 + 1.2p &= 8.7-0.7p \\
     1.9p &= 8.2 \\
     p&=\frac{8.2}{1.9} \approx 4.32
   \end{align*}
@@ -417,30 +417,31 @@ Looking to what we're trying to find, we want to know when U-Haul will be the be
 These graphs are plotted below.
 
 \begin{center}
-\begin{tikzpicture}
-  \begin{axis}[
-    xmin = -2, xmax = 202,
-    ymin = -2, ymax = 152,
-    xtick distance = 50,
-    ytick distance = 50,
-    grid = both,
-    major grid style = {gridGray},
-    width = 0.6\textwidth,
-    xlabel = {Distance traveled (miles) ($m$)},
-    ylabel = {Total Cost (\$)},
-    legend cell align = {left},
-    legend pos = north west
-    %height = 0.5\textwidth,
-    ]
-    \filldraw (100, 79) circle (2pt) node[below right] {$(100, 79)$};
-    \addplot[domain = 0:202, samples = 2, smooth, thick, aldRed] {20 + 0.59*x};
-    \addplot[domain = 0:202, samples = 2, smooth, thick, aldBlue] {16 + 0.63*x};
-    \legend{ $Y(m) = 20 + 0.59 m$,
-             $B(m) = 16 + 0.63 m$}
-
-\end{axis}
-\end{tikzpicture}
-\end{center}
+ \begin{tikzpicture}
+   \begin{axis}[
+     xmin = -2,
+     xmax = 202,
+     ymin = -2,
+     ymax = 152,
+     xtick distance = 50,
+     ytick distance = 50,
+     grid = both,
+     major grid style = {gridGray},
+     width = 0.6\textwidth,
+     xlabel = {Distance traveled (miles) ($m$)},
+     ylabel = {Total Cost (\$)},
+     legend cell align = {left},
+     legend pos = north west,
+     height = 0.5\textwidth,
+     ]
+     \filldraw (100, 79) circle[radius=2pt] node[below right] {$(100, 79)$};
+     \addplot[domain = 0:202, samples = 2, smooth, thick, aldRed] {20 + 0.59*x};
+     \addplot[domain = 0:202, samples = 2, smooth, thick, aldBlue] {16 + 0.63*x};
+     \legend{ $Y(m) = 20 + 0.59 m$,
+              $B(m) = 16 + 0.63 m$}
+  \end{axis}
+ \end{tikzpicture}
+ \end{center}
 
 To find the intersection, we set the equations equal to each other and solve for $m$.
 \begin{align*}
