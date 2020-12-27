@@ -16,7 +16,7 @@ If $n$ T-shirts are ordered, then
 $$C(n) = \$50 + \left(\frac{\$5}{\mbox{T-shirt}}\right)(n \mbox{ T-shirts}) = 50 + 5n \mbox{ dollars} \enspace .$$
 Notice how the units (or dimensions) make sense in this equation. Each term has units of dollars, after cancelling the unit of ``T-shirt" in the second term.
 
-Notice this equation consisted of two quantities. The first is the fixed \$50 charge which does not change based on the value of the input. When the no T-shirts are ordered, the cost is \$50, giving the point
+Notice this equation consisted of two quantities. The first is the fixed \$50 charge which does not change based on the value of the input. When no T-shirts are ordered, the cost is \$50, giving the point
 $(0, 50)$ on the graph of the function. This is the {\bf vertical}\index{Intercept!vertical} or {$y$-intercept}\index{Intercept!$y$}. The second is the \$5 per T-shirt, which is a \textbf{rate of change}\index{Rate of change}. In $C(n)$, this rate of change is multiplied by the input value. It is important here to note that in this equation, the rate of change is {\bf constant}; over any interval, the rate of change is the same.
 
 Looking at $C(n)$ as a table, we can also see the cost changes by \$5 for each additional T-shirt.
@@ -158,15 +158,15 @@ $$f(x)=-\frac{19}{5} + \frac{3}{5}x\enspace .$$
 \begin{example}
 Working as an insurance salesperson, Ilya earns a base salary and a commission on each new policy, so his weekly income, $I$, depends on the number of new policies, $n$, he sells during the week. Last week he sold 3 new policies, and earned \$760 for the week. The week before, he sold 5 new policies, and earned \$920. Find an equation for $I(n)$, and interpret the meaning of the components of the equation.
 
-\begin{solution} The given information gives us two input-output pairs: $(3,760)$ and $(5,920)$. We start by finding the rate of change.
+\begin{solution} The given information gives us two input-output pairs: $(3,760)$ and $(5,920)$. We start by finding the rate of change of $I(n)$.
 $$m = \frac{920-760 \mbox{ dollars}}{5-3\mbox{ policies}}=\frac{160}{2} \mbox{ dollars per policy} = \$80 \mbox{ per policy} \enspace .$$
 
 Keeping track of units, as we did above, can help us interpret this quantity. Income increased by \$160 when the number of policies increased by 2, so the rate of change is \$80 per policy; Ilya earns a commission of \$80 for each policy sold during the week.
 
-We can then solve for the initial value
-$I(n) = b + 80n$		then when n = 3, $I(3) = 760$, giving
-$760 = b+80\cdot 3 = b + 240$		this allows us to solve for $b$
-$b = 760 - 240 = 520$
+Now let's solve for the initial value, $b$. We have $I(n) = b + 80n$ and when $n = 3$, $I(3) = 760$, so
+$$760 = b+80\cdot 3 = b + 240 \enspace .$$
+This allows us to solve for $b$:
+$$b = 760 - 240 = 520 \ensspace .$$
 
 This form allows us to see the starting value for the function: 520. This is Ilya's income when $n = 0$, which means no new policies are sold. We can interpret this as Ilya's base salary for the week, which does not depend upon the number of policies sold.
 
@@ -234,8 +234,6 @@ These evaluations tell us that the points $(0,5)$, $(3,3)$, and $(6,1)$ lie on t
 \end{tikzpicture}
 \end{center}
 
-
-
 \end{solution}\end{example}
 
 When using the initial value and rate of change to graph, we need to consider the graphical interpretation of these values. Remember the initial value of the function is the output when the input is $0$, so in the equation $f(x) = b + mx$, the graph includes the point $(0, b)$. On the graph, this is the vertical intercept -- the point where the graph crosses the vertical axis.
@@ -243,10 +241,7 @@ When using the initial value and rate of change to graph, we need to consider th
 For the rate of change, it is helpful to recall that we calculated this value as
 $$m = \frac{\mbox{change of output}}{\mbox{change of input}}$$
 %%\incluegraphics[width=3.00000in,height=2.17986in]{media/image97.png}
-From a graph of a line, this tells us that if we divide the vertical
-difference, or rise, of the function outputs by the horizontal
-difference, or run, of the inputs, we will obtain the rate of change,
-also called slope of the line.
+From a graph of a line, this tells us that if we divide the vertical difference, or rise, of the function outputs by the horizontal difference, or run, of the inputs, we will obtain the rate of change, also called slope of the line.
 $$m = \frac{\mbox{change of output}}{\mbox{change of input}} = \frac{\mbox{rise}}{\mbox{run}}$$
 
 
@@ -268,30 +263,40 @@ Graph $f(x) = 5 - \frac{2}{3} x$ using the vertical intercept and slope.
 \includegraphics[width=0.5\textwidth]{img/chap1/sec1-4/image049.png}
 \caption{}
 \end{figure}
+
 \end{solution}\end{example}
 
-Another option for graphing is to use transformations of the identity function $f(x)=x$. In the equation $f(x)=mx$, the $m$ acts as the vertical stretch of the identity function. When $m<0$, there is also a vertical reflection of the graph. Looking at some examples will also help show the effect of slope on the shape of the graph.
+Figure \ref{fig:slopes} below gives some examples of the graph of $f(x)=mx$ to show the effect of the slope, $m$, on the shape of the graph.
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.5\textwidth]{img/chap1/sec1-4/image050.png}
 \caption{$f(x)=mx$ for several values of $m$.}
+\label{fig:slopes}
 \end{figure}
 
-In $f(x)=mx+b$, the $b$ acts as the vertical shift, moving the graph up and down without affecting the slope of the line. Here are some examples.
+In $f(x)=mx+b$, the $b$ acts as the vertical shift, moving the graph up and down without affecting the slope of the line. Figure \ref{fig:b-shift} gives some examples.
 
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=0.5\textwidth]{img/chap1/sec1-4/image051.png}
   \caption{$f(x)=mx$ for several values of $b$.}
+  \label{fig:b-shift}
 \end{figure}
 
 \begin{example}
-Match each function with one of the lines in the graph below.
+Match each function with one of the lines in Figure \ref{fig:matchlines}.
+\begin{itemize}[label={}]
+    \item $f(x) = 2x+3$
+    \item $g(x) = 2x-3$
+    \item $h(x) = -2x+3$
+    \item $j(x) = \frac{1}{2}x+3$
+\end{itemize}
 \begin{figure}[!ht]
-\centering
-\includegraphics[width=0.5\textwidth]{img/chap1/sec1-4/image052.png}
-\caption{}
+  \centering
+  \includegraphics[width=0.5\textwidth]{img/chap1/sec1-4/image052.png}
+  \caption{}
+  \label{fig:matchlines}
 \end{figure}
 
 \begin{solution} Only one graph has a vertical intercept of $-3$, so we can immediately match that graph with $g(x)$. For the three graphs with a vertical intercept at 3, only one has a negative slope, so we can match that line with $h(x)$. Of the other two, the steeper line would have a larger slope, so we can match that graph with $f(x)$, and the flatter line with $j(x)$.
@@ -340,11 +345,12 @@ Economics tells us that in a free market, the price for an item is related to th
   \end{align*}
   We can find the output value of the intersection point by evaluating either function at this input:
   $$ s(4.32) = 0.5+1.2(4.32) \approx 5.68 \enspace .$$
-  These lines intersect at the point $(4.32, 5.68)$. Therefore, the equilibrium price is \$4.32 and the equilibrium quantity is 5,680 items. Looking at the graph, this result seems reasonable.
+  These lines intersect at the point $(4.32, 5.68)$. Therefore, the equilibrium price is \$4.32 and the equilibrium quantity is 5,680 items. Looking at the graph in Figure \ref{fig:intersection}, this result seems reasonable.
   \begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.5\textwidth]{img/chap1/sec1-4/image053.png}
+  \includegraphics[width=0.4\textwidth]{img/chap1/sec1-4/image053.png}
   \caption{}
+  \label{fig:intersection}
   \end{figure}
 \end{solution}\end{example}
 
@@ -359,8 +365,8 @@ Emily saved up \$3500 for her summer visit to Seattle. She anticipates spending 
 
 \begin{solution} In the problem, there are two changing quantities: time and money. The amount of money she has remaining while on vacation depends on how long she stays. We can define our variables, including units.
   \begin{itemize}
-    \item[] {\bf Output:} $M$, money remaining, in dollars
     \item[] {\bf Input:} $t$, time, in weeks
+    \item[] {\bf Output:} $M$, money remaining, in dollars
   \end{itemize}
 Reading the problem, we identify two important values. The first, \$3500, is the initial value for $M$. The other value appears to be a rate of change -- the units of dollars per week match the units of our output variable divided by our input variable. She is spending money each week, so you should recognize that the amount of money remaining is
 decreasing each week and the slope is negative.
@@ -782,9 +788,9 @@ $$C(14) = 113.41 + 2.19\cdot 14 = 144.07 \mbox{ billion gallons.}$$
 
 \begin{enumerate}
 
-\item A town's population has been growing linearly. In 2003, the population was 45,000, and the population has been growing by 1700 people each year. Write an equation,for the population $t$ years after 2003.
+\item A town's population has been growing linearly. In 2003, the population was 45,000, and the population has been growing by 1700 people each year. Write an equation for the population $t$ years after 2003.
 
-\item A town's population has been growing linearly. In 2005, the population was 69,000, and the population has been growing by 2500 people each year. Write an equation,for the population $t$ years after 2005.
+\item A town's population has been growing linearly. In 2005, the population was 69,000, and the population has been growing by 2500 people each year. Write an equation for the population $t$ years after 2005.
 
 \item Sonya is currently 10 miles from home, and is walking away from home at 3 miles per hour. Write an equation for her distance from home $t$ hours from now.
 
