@@ -1,4 +1,5 @@
-% Sample Spreadsheet\begin{table}[!ht]
+% Sample Spreadsheet
+\begin{table}[!ht]
   \centering
   \textsf{
   \begin{tabular}{|a*{10}{|c}|}
@@ -13,6 +14,81 @@
   \caption{}
   \label{sh:crickets}
 \end{table}
+
+% Sample Graph with points.
+% Example 0.1.1
+
+\begin{figure}[ht!]
+\centering
+\begin{tikzpicture}[scale=0.09]
+    % grid
+    \draw[step=10, very thin, gray] (0, 0) grid (40, 60);
+
+    % axes
+    \draw[->] (-2,0) -- coordinate (x axis mid) (42,0) node[right] {$x$};
+    \draw[->] (0,-2) -- coordinate (y axis mid) (0,63) node[above] {$y$};
+
+    % ticks
+    \foreach \x in {10, 20, ..., 40}
+     		\draw (\x,1pt) -- (\x,-3pt)
+			node[anchor=north] {\x};
+    	\foreach \y in {100, 200, ..., 600}
+     		\draw (1pt,\y/10) -- (-3pt,\y/10) 
+     			node[anchor=east] {\y}; 
+
+    % labels
+    \node[below = 15] at (x axis mid) {Hours worked};
+	\node[rotate=90, above = 25] at (y axis mid) {Pay (U.S.\ Dollars)};
+
+    % plot 
+    \draw[->, very thick, color=aldRed] (0, 0) -- (42, 63);
+    
+    % points
+    \filldraw (0, 0) circle [radius=20pt]; %node[left, fill=white] {$(0,0)$};
+    \filldraw (20, 30) circle [radius=20pt]; %node[below right, fill=white] {$(20,300)$};
+    % legend
+
+\end{tikzpicture}
+\caption{Pay as a function of time worked.}
+\label{fig:0-rate}
+\end{figure}
+
+% Sample graph with shading
+% Example 0.2.1
+
+\begin{figure}[ht!]
+\centering
+\begin{tikzpicture}[scale=1]
+    % grid
+    \draw[step=1, very thin, gray] (0, 0) grid (12, 3);
+
+    % axes
+    \draw[->] (-0.2,0) -- coordinate (x axis mid) (12.5,0) node[right] {$t$};
+    \draw[->] (0,-0.2) -- coordinate (y axis mid) (0,3.5) node[above] {$y$};
+
+    % ticks
+    \foreach \x in {1, 2, ..., 12}
+     		\draw (\x,1pt) -- (\x,-3pt)
+			node[anchor=north] {\x};
+    	\foreach \y in {1, 2, 3}
+     		\draw (1pt,\y) -- (-3pt,\y) 
+     			node[anchor=east] {\y}; 
+
+    % labels
+    \node[below= 15] at (x axis mid) {Time (hours)};
+	\node[rotate=90, above= 25] at (y axis mid) {Snowfall rate (in/hr)};
+
+    % plot
+    \fill[color=aldBlue!30, opacity=0.5] (0, 0) -- (4, 1) -- (6,2) --(8, 2) -- (12, 0);
+	\draw[very thick, color=aldRed] (0, 0) -- (4, 1) -- (6,2) --(8, 2) -- (12, 0); 
+    
+    % legend
+    \node [fill=white] at (7, 2.5) {$y=r(t)$};
+
+ \end{tikzpicture}
+\caption{Snowfall rate during a snowstorm.}
+\label{fig:0-snow}
+\end{figure}
 
 % Sample for a grid
 \begin{center}
@@ -55,9 +131,9 @@
      \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east,fill=white] {$\ytext$};
    \node[below left](origin) at (0, 0){0};
   % Points
-  \filldraw (0, 5) circle (2pt);
-  \filldraw (3, 3) circle (2pt);
-  \filldraw (6, 1) circle (2pt);
+  \filldraw (0, 5) circle [radius=2pt];
+  \filldraw (3, 3) circle [radius=2pt];
+  \filldraw (6, 1) circle [radius=2pt];
 
   %Line
   \draw[color=aldRed, thick, domain=-0.2:6.2] plot(\x, 5 - 2*\x/3) node[right] {$f(x) = 5 - \frac{2}{3} x$};
