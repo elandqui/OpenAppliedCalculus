@@ -4,12 +4,15 @@ This is an open textbook (OER) for Applied Calculus for business, education, and
 Read below for some unique ways that you can help [**support**](#support) this project, like visiting the **affiliates** below, **advertising** with me, and **investing in Bitcoin**! There is also a <a href="https://www.gofundme.com/manage/oac-textbook">GoFundMe page to support Open Applied Calculus</a>. 
 
 ## Affiliate Partners
+<!---
+<a href="https://blockfi.mxuy67.net/c/2612759/889697/10568"><img src="https://raw.githubusercontent.com/elandqui/OpenAppliedCalculus/master/img/ads/blockFi/blockfi-banner0.png" width="100" height="100"/></a>
+-->
 
-![BlockFi](https://raw.githubusercontent.com/elandqui/OpenAppliedCalculus/master/img/ads/blockFi/blockfi-banner0.png)
+[![BlockFi](https://raw.githubusercontent.com/elandqui/OpenAppliedCalculus/master/img/ads/blockFi/blockfi-banner0.png "Earn up to 8.6\% APY on your dollar-backed stablecoins and up to 6\% APY on crypto with BlockFi! Receive up to a \$250 Bitcoin bonus when you click and fund a new BlockFi account. Terms apply.")](https://blockfi.mxuy67.net/c/2612759/889697/10568)
 
-**BlockFi:** <a href="https://blockfi.mxuy67.net/c/2612759/889697/10568">Earn up to 8.6\% APY on your dollar-backed stablecoins and up to 6\% APY on crypto with BlockFi! Receive up to a \$250 Bitcoin bonus when you click and fund a new BlockFi account. Terms apply.</a>
+**[BlockFi:](https://blockfi.mxuy67.net/c/2612759/889697/10568")** Earn up to 8.6\% APY on your dollar-backed stablecoins and up to 6\% APY on crypto with BlockFi! Receive up to a \$250 Bitcoin bonus when you click and fund a new BlockFi account. Terms apply.
 
-**Brave Browswer:** Download the <a href="https://brave.com/ela242">Brave internet browser</a>, a privacy-minded browser that earns you Basic Attention Tokens (BAT) for browsing. If you have the Brave browser, you can click on the BAT icon to "tip" me in BAT.
+**[Brave Browswer:](https://brave.com/ela242)** Download the <a href="https://brave.com/ela242">Brave internet browser</a>, a privacy-minded browser that earns you Basic Attention Tokens (BAT) for browsing. If you have the Brave browser, you can click on the BAT icon to "tip" me in BAT.
 
 ## What are Open Educational Resources?
 
