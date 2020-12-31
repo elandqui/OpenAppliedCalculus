@@ -2,7 +2,7 @@
 \contentsline {paragraph}{Calculus is the study of change.}{5}%
 \contentsline {section}{\numberline {0.1}Two Problems}{5}%
 \contentsline {section}{\numberline {0.2}Problem Solving}{7}%
-\contentsline {subsection}{\numberline {0.2.1}Exercises}{9}%
+\contentsline {section}{\numberline {0.3}Exercises}{10}%
 \contentsline {chapter}{\numberline {1}Models, Graphs, and Functions}{11}%
 \contentsline {section}{\numberline {1.1}What is a Function?}{11}%
 \contentsline {subsection}{\numberline {1.1.1}Function Concepts}{11}%
