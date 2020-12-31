@@ -1,9 +1,13 @@
 # Open Applied Calculus
 This is an open textbook (OER) for Applied Calculus for business, education, and the social and life sciences and released under a Creative Commons Attribution Share Alike 4.0 (CC-BY-SA 4.0) license..
 
-Support OER by downloading the <a href="https://brave.com/ela242">Brave internet browser</a>, a privacy-minded browser that earns you Basic Attention Tokens (BAT) for browsing. If you have the Brave browser, you can click on the BAT icon to "tip" me in BAT.
+Read below for some unique ways that you can help [**support**](#support) this project, like visiting the **affiliates** below, **advertising** with me, and **investing in Bitcoin**! There is also a <a href="https://www.gofundme.com/manage/oac-textbook">GoFundMe page to support Open Applied Calculus</a>. 
 
-Read below for some unique ways that you can help [**support**](#support) this project, like **advertising** and **investing in Bitcoin**! There is also a <a href="https://www.gofundme.com/manage/oac-textbook">GoFundMe page to support Open Applied Calculus</a>.
+## Affiliate Partners
+
+**BlockFi:** <a href="https://blockfi.mxuy67.net/c/2612759/889697/10568">Earn up to 8.6\% APY on your dollar-backed stablecoins and up to 6\% APY on crypto with BlockFi! Receive up to a \$250 Bitcoin bonus when you click and fund a new BlockFi account. Terms apply.</a>
+
+**Brave Browswer:** Download the <a href="https://brave.com/ela242">Brave internet browser</a>, a privacy-minded browser that earns you Basic Attention Tokens (BAT) for browsing. If you have the Brave browser, you can click on the BAT icon to "tip" me in BAT.
 
 ## What are Open Educational Resources?
 
@@ -57,13 +61,19 @@ The following is a rough **task list** for this project.
 ## Support Open Applied Calculus <a name="support"></a>
 You can support this project in some unique ways that will be a win-win-win situation for you, students, and me. A portion will be redonated for local COVID-19 relief.
 
-<h3 id="889697"><a href="https://blockfi.mxuy67.net/c/2612759/889697/10568">Exclusive! Receive Up To A $250 BTC Bonus When You Click And Fund A New BlockFi Account. Terms Apply.</a></h3>
-<img height="0" width="0" src="https://imp.pxf.io/i/2612759/889697/10568" style="position:absolute;visibility:hidden;" border="0" />
+ * Affiliate Partners
+    - <a href="https://blockfi.mxuy67.net/c/2612759/889697/10568">Earn up to 8.6\% APY on your crypto with BlockFi! Receive up to a \$250 Bitcoin bonus when you click and fund a new BlockFi account. Terms apply.</a>
 
- * The halving has passed! **Invest in Bitcoin**, cryptocurrencies, or US Dollar-pegged *stablecoins* via an exchange through my referral links.
+ * Cryptocurrencies are a great investment. **Earn, Mine, and Invest in Bitcoin**, cryptocurrencies, or US Dollar-pegged *stablecoins* through my referral links.
+   - <a href="https://blockfi.mxuy67.net/c/2612759/889697/10568">**BlockFi**</a>: a crypto and stablecoin savings account with phenomenal interest rates up to 8.6\% APY! 
    - <a href="https://www.coinbase.com/join/landqu_e">**Coinbase**</a>: a very user-friendly crypto exchange.
+   - <a href="https://coinbase.com/earn/xlm/invite/cq8rgxt4"> Learn about Stellar Lumens (XLM) in Coinbase Earn and earn XLM!</a>
+   - <a href="https://coinbase.com/earn/oxt/invite/39h7v158"> Learn about Orchid (OXT) in Coinbase Earn and earn OXT!</a>
+   - <a href="https://coinbase.com/earn/eos/invite/8b95vgnx"> Learn about EOS in Coinbase Earn and earn EOS!</a>
+   - <a href="https://coinbase.com/earn/band/invite/2s49zc65"> Learn about BAND in Coinbase Earn and earn BAND!</a>
    - <a href="https://www.binance.us/?ref=35061022">**Binance.US**</a>: another great crypto exchange with low trading fees.
-   - <a href="https://blockfi.com/?ref=12bd8405">**BlockFi**</a>: a crypto and stablecoin savings account with phenomenal interest rates.
+   - <a href="https://www.publish0x.com?a=Jxbo2qkAag">**Publish0x**</a>: Earn Ethereum (ETH) and other cryptos by reading.
+   - <a href="https://cryptotabbrowser.com/16356908">**CryptoTab Browser**</a>: Browse the internet and mine Bitcoin!
 
  * Direct donations
    - <a href="https://www.gofundme.com/oac-textbook">Go to the GoFundMe page for Open Applied Calculus</a> to support the development of the textbook and ancillary materials.
@@ -84,5 +94,11 @@ You can support this project in some unique ways that will be a win-win-win situ
 
  ## Thank You!
  **Acknowledgments:** I offer my gratitude to the following supporters of this project.
-  * <a href="http://www.passhe.edu">Pennsylvania State System of Higher Education (PASSHE)</a> Faculty Professional Development Committee Grant (05/2019 - 10/2020)
-  * Dan Stafford, OER Librarian, <a href="https://library.kutztown.edu/">Rohrbach Library</a>, <a href="https://www.kutztown.edu/">Kutztown University</a>
+  * **Supporters:** Thank you for direct funding for the textbook!
+    - <a href="http://www.passhe.edu">Pennsylvania State System of Higher Education (PASSHE)</a> Faculty Professional Development Committee Grant (05/2019 - 10/2020)
+    - Dan Stafford, OER Librarian, <a href="https://library.kutztown.edu/">Rohrbach Library</a>, <a href="https://www.kutztown.edu/">Kutztown University</a>
+  * **Contributers:** Thank you for material for the textbook!
+    - Dr. Eric Bancroft, *Grove City College*
+  * **Reviewers:** Thank you for your many helpful suggestions and reviews!
+    - Dr. Stephen Gendler, *Clarion University of Pennsylvania*
+    - Dr. Kate Overmoyer, *Clarion University of Pennsylvania*
