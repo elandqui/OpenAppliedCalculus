@@ -1,55 +1,58 @@
-\contentsline {chapter}{\numberline {0}What is Calculus?}{5}%
-\contentsline {paragraph}{Calculus is the study of change.}{5}%
-\contentsline {section}{\numberline {0.1}Two Problems}{5}%
-\contentsline {section}{\numberline {0.2}Problem Solving}{7}%
-\contentsline {section}{\numberline {0.3}Exercises}{10}%
-\contentsline {chapter}{\numberline {1}Models, Graphs, and Functions}{11}%
-\contentsline {section}{\numberline {1.1}What is a Function?}{11}%
-\contentsline {subsection}{\numberline {1.1.1}Function Concepts}{11}%
-\contentsline {subsection}{\numberline {1.1.2}Representing Functions}{11}%
-\contentsline {paragraph}{Function Notation.}{12}%
-\contentsline {paragraph}{Tables as Functions.}{12}%
-\contentsline {paragraph}{Graphs as Functions}{12}%
-\contentsline {paragraph}{Formulas as Functions}{13}%
-\contentsline {subsection}{\numberline {1.1.3}Evaluating Functions.}{14}%
-\contentsline {subsection}{\numberline {1.1.4}Cost, Revenue, and Profit}{16}%
-\contentsline {subsection}{\numberline {1.1.5}Domain and Range.}{17}%
-\contentsline {paragraph}{Interval Notation.}{18}%
-\contentsline {subsection}{\numberline {1.1.6}Exercises}{18}%
-\contentsline {section}{\numberline {1.2}Models}{21}%
-\contentsline {subsection}{\numberline {1.2.1}What is a Mathematical Model?}{22}%
-\contentsline {subsection}{\numberline {1.2.2}Scatter Plots: Plotting Data in a Spreadsheet}{23}%
-\contentsline {subsection}{\numberline {1.2.3}Curve Fitting, Interpolation, and Extrapolation}{28}%
-\contentsline {paragraph}{Interpolation.}{28}%
-\contentsline {paragraph}{Extrapolation.}{29}%
-\contentsline {section}{\numberline {1.3}Linear Functions}{31}%
-\contentsline {subsection}{\numberline {1.3.1}Linear Function Basics}{31}%
-\contentsline {paragraph}{Calculating Rate of Change}{32}%
-\contentsline {subsection}{\numberline {1.3.2}Graphs of Linear Functions}{34}%
-\contentsline {paragraph}{Graphical Interpretation of a Linear Equation.}{35}%
-\contentsline {paragraph}{Intersections of Lines}{38}%
-\contentsline {subsection}{\numberline {1.3.3}Modeling with Linear Functions}{38}%
-\contentsline {subsection}{\numberline {1.3.4}Fitting Linear Models to Data}{42}%
-\contentsline {subsection}{\numberline {1.3.5}Fitting Lines with a Spreadsheet.}{44}%
-\contentsline {subsection}{\numberline {1.3.6}Exercises}{47}%
-\contentsline {section}{\numberline {1.4}Polynomial Functions}{48}%
-\contentsline {subsection}{\numberline {1.4.1}Quadratic Functions}{48}%
-\contentsline {subsection}{\numberline {1.4.2}Polynomial Functions}{50}%
-\contentsline {subsection}{\numberline {1.4.3}Rational Functions}{52}%
-\contentsline {section}{\numberline {1.5}Exponential Functions}{56}%
-\contentsline {subsection}{\numberline {1.5.1}Laws of Exponents}{56}%
-\contentsline {subsection}{\numberline {1.5.2}Exponential Models}{57}%
-\contentsline {subsection}{\numberline {1.5.3}Graphs of Exponential Functions}{60}%
-\contentsline {subsection}{\numberline {1.5.4}Exercises}{62}%
-\contentsline {section}{\numberline {1.6}Logistic Functions}{65}%
-\contentsline {section}{\numberline {1.7}Logarithmic Functions}{65}%
-\contentsline {section}{\numberline {1.8}Trigonometric Functions}{68}%
-\contentsline {subsection}{\numberline {1.8.1}Definitions}{68}%
-\contentsline {subsection}{\numberline {1.8.2}Modeling with Sine Waves}{68}%
-\contentsline {section}{\numberline {1.9}Combining Functions}{69}%
-\contentsline {chapter}{\numberline {2}The Derivative: Rates of Change of a Function}{71}%
-\contentsline {chapter}{\numberline {3}Applications of Derivatives}{73}%
-\contentsline {chapter}{\numberline {4}Functions of Many Variables}{75}%
-\contentsline {chapter}{\numberline {5}The Integral: Accumulation of a Rate Function}{77}%
-\contentsline {chapter}{References}{79}%
-\contentsline {chapter}{Index}{79}%
+\contentsline {chapter}{Copyright}{iii}{chapter*.1}%
+\contentsline {chapter}{Acknowledgements}{v}{chapter*.2}%
+\contentsline {chapter}{Sponsors}{vii}{chapter*.3}%
+\contentsline {chapter}{\numberline {0}What is Calculus?}{1}{chapter.0}%
+\contentsline {paragraph}{Calculus is the study of change.}{1}{section*.6}%
+\contentsline {section}{\numberline {0.1}Two Problems}{1}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Problem Solving}{3}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Exercises}{6}{section.0.3}%
+\contentsline {chapter}{\numberline {1}Models, Graphs, and Functions}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}What is a Function?}{7}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Function Concepts}{7}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Representing Functions}{7}{subsection.1.1.2}%
+\contentsline {paragraph}{Function Notation.}{8}{section*.12}%
+\contentsline {paragraph}{Tables as Functions.}{8}{section*.13}%
+\contentsline {paragraph}{Graphs as Functions}{8}{section*.15}%
+\contentsline {paragraph}{Formulas as Functions}{9}{section*.19}%
+\contentsline {subsection}{\numberline {1.1.3}Evaluating Functions.}{10}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Cost, Revenue, and Profit}{12}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Domain and Range.}{13}{subsection.1.1.5}%
+\contentsline {paragraph}{Interval Notation.}{14}{section*.22}%
+\contentsline {subsection}{\numberline {1.1.6}Exercises}{14}{subsection.1.1.6}%
+\contentsline {section}{\numberline {1.2}Models}{17}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}What is a Mathematical Model?}{18}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Scatter Plots: Plotting Data in a Spreadsheet}{19}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Curve Fitting, Interpolation, and Extrapolation}{24}{subsection.1.2.3}%
+\contentsline {paragraph}{Interpolation.}{24}{section*.33}%
+\contentsline {paragraph}{Extrapolation.}{25}{section*.36}%
+\contentsline {section}{\numberline {1.3}Linear Functions}{27}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Linear Function Basics}{27}{subsection.1.3.1}%
+\contentsline {paragraph}{Calculating Rate of Change}{28}{section*.42}%
+\contentsline {subsection}{\numberline {1.3.2}Graphs of Linear Functions}{30}{subsection.1.3.2}%
+\contentsline {paragraph}{Graphical Interpretation of a Linear Equation.}{31}{section*.43}%
+\contentsline {paragraph}{Intersections of Lines}{34}{section*.50}%
+\contentsline {subsection}{\numberline {1.3.3}Modeling with Linear Functions}{34}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Fitting Linear Models to Data}{38}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}Fitting Lines with a Spreadsheet.}{40}{subsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.3.6}Exercises}{43}{subsection.1.3.6}%
+\contentsline {section}{\numberline {1.4}Polynomial Functions}{44}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Quadratic Functions}{44}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Polynomial Functions}{46}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Rational Functions}{48}{subsection.1.4.3}%
+\contentsline {section}{\numberline {1.5}Exponential Functions}{52}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Laws of Exponents}{52}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Exponential Models}{53}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Graphs of Exponential Functions}{56}{subsection.1.5.3}%
+\contentsline {subsection}{\numberline {1.5.4}Exercises}{58}{subsection.1.5.4}%
+\contentsline {section}{\numberline {1.6}Logistic Functions}{61}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Logarithmic Functions}{61}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Trigonometric Functions}{64}{section.1.8}%
+\contentsline {subsection}{\numberline {1.8.1}Definitions}{64}{subsection.1.8.1}%
+\contentsline {subsection}{\numberline {1.8.2}Modeling with Sine Waves}{64}{subsection.1.8.2}%
+\contentsline {section}{\numberline {1.9}Combining Functions}{65}{section.1.9}%
+\contentsline {chapter}{\numberline {2}The Derivative: Rates of Change of a Function}{67}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Applications of Derivatives}{69}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Functions of Many Variables}{71}{chapter.4}%
+\contentsline {chapter}{\numberline {5}The Integral: Accumulation of a Rate Function}{73}{chapter.5}%
+\contentsline {chapter}{References}{75}{chapter.5}%
+\contentsline {chapter}{Index}{75}{chapter.5}%

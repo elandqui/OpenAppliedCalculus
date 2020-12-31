@@ -7,7 +7,16 @@
 
 \documentclass{book}
 \usepackage[table]{xcolor}
-\usepackage{amssymb, amsmath, amsthm, graphicx, makeidx, url, longtable, booktabs, wrapfig, subcaption, enumitem, tikz, pgfplots, multicol, cutwin} %hyperref, tcolorbox, wrapfigure
+\usepackage{amssymb, amsmath, amsthm, graphicx, makeidx, url, longtable, booktabs, wrapfig, subcaption, enumitem, tikz, pgfplots, multicol, cutwin, hyperref}
+%tcolorbox, wrapfigure
+\hypersetup{
+    colorlinks=true,
+    linkcolor=aldRed,
+    filecolor=aldRed,      
+    urlcolor=aldRed,
+}
+\urlstyle{same}
+
 \pgfplotsset{compat = newest}
 %\usepackage{eso-pic}
 \usepackage[margin=1in]{geometry}
@@ -53,86 +62,41 @@
 
 \makeindex
 
-
-
-
 %\newcommand\BackgroundPic{\put(0,0){\parbox[b][\paperheight]{\paperwidth}{\vfill
 %\centering
 %\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{img/cover.jpg}%
 %\vfill
 %}}}
 \begin{document}
-%\AddToShipoutPicture*{\BackgroundPic}
 
-\title{Open Applied Calculus}
-\author{Eric Landquist}
-%\date{\today}
-\maketitle
+\frontmatter
+    \input{tex/front/titlepage}
+    \input{tex/front/copyright}
+    \input{tex/front/acknowledgements}
+    \input{tex/front/sponsors}    
+    \tableofcontents
 
-%----------------------------------------------------------------------------------------
-%	COPYRIGHT PAGE
-%----------------------------------------------------------------------------------------
-
-%\newpage
-%~\vfill
-\thispagestyle{empty}
-The textbook is adapted from {\em Modeling, Functions, and Graphs: Algebra for College Students} by Katherine Yoshiwara, {\em Business Calculus} by Shana Calaway, and {\em Applied Calculus} by Shana Calaway, Dale Hoffman, and David Lippman. The latter two texts were adapted from {\em Precalculus: An Investigation of Functions} by David Lippman and Melonie Rasmussen and {\em Contemporary Calculus}, by Dale Hoffman.
-
-\noindent Copyright \copyright\ 2020 Eric Landquist CC-BY-SA 4.0\\ % Copyright notice
-
-\noindent This text is licensed under a Creative Commons Attribution-Share Alike 4.0 United
-States License.\\
-
-To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
-You are free:
-\begin{itemize}
-	\item {\bf to Share} — to copy, distribute, display, and perform the work
-	\item {\bf to Remix} — to make derivative works
-\end{itemize}
-Under the following conditions:
-\begin{itemize}
-	\item {\bf Attribution.} You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work).
-	\item {\bf Share Alike.} If you alter, transform, or build upon this work, you may distribute the resulting work only under the same, similar or a compatible license.
-\end{itemize}
-With the understanding that:
-\begin{itemize}
-	\item {\bf Waiver.} Any of the above conditions can be waived if you get permission from the copyright holder.
-	\item {\bf Other Rights.} In no way are any of the following rights affected by the license:
-		\begin{itemize}
-			\item Your fair dealing or fair use rights;
-			\item Apart from the remix rights granted under this license, the author's moral rights;
-			\item Rights other persons may have either in the work itself or in how the work is used, such as publicity or privacy rights.
-			\item Notice — For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to this web page:
-http://creativecommons.org/licenses/by-sa/4.0/us/
-\end{itemize}
-\end{itemize}
-\noindent {\bf Acknowledgements.} I gratefully acknowledge support for the initial development of this book with a grant from the Pennsylvania State System of Higher Education (PASSHE) Faculty Professional Development Committee. \\
-
-I also thank Dr.\ Eric Bancroft of Grove City College for providing HTML and image files for the text.\\
-% License information
-
-\noindent \textit{First release, August 2019} % Printing/edition date
-
-\tableofcontents
-\setcounter{chapter}{-1}
-\input{tex/chap0-whatiscalculus}
-\input{tex/chap1-models}
-% Uncomment individual sections in the files below when they are done.
-\input{tex/chap2-derivatives}
-\input{tex/chap3-derivapps}
-\input{tex/chap4-multivariable}
-\input{tex/chap5-integrals}
+\mainmatter
+    \setcounter{chapter}{-1}
+    
+    \input{tex/chap0-whatiscalculus}
+    \input{tex/chap1-models}
+    % Uncomment individual sections in the files below when they are done.
+    \input{tex/chap2-derivatives}
+    \input{tex/chap3-derivapps}
+    \input{tex/chap4-multivariable}
+    \input{tex/chap5-integrals}
 
 
 \backmatter
-\bibliographystyle{plain}
-\bibliography{openappcalc}
-\addcontentsline{toc}{chapter}{References}
+    \bibliographystyle{plain}
+    \bibliography{openappcalc}
+    \addcontentsline{toc}{chapter}{References}
 
-\clearpage
-\addcontentsline{toc}{chapter}{Index}
-\printindex
+    \clearpage
+    \addcontentsline{toc}{chapter}{Index}
+    \printindex
 
-%\appendix
+    %\appendix
 
 \end{document}

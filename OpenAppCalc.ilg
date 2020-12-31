@@ -1,6 +1,6 @@
-This is makeindex, version 2.15 [TeX Live 2017] (kpathsea + Thai support).
-Scanning input file OpenAppCalc.idx....done (111 entries accepted, 0 rejected).
-Sorting entries....done (803 comparisons).
-Generating output file OpenAppCalc.ind....done (165 lines written, 0 warnings).
+This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
+Scanning input file OpenAppCalc.idx....done (124 entries accepted, 0 rejected).
+Sorting entries....done (926 comparisons).
+Generating output file OpenAppCalc.ind....done (183 lines written, 0 warnings).
 Output written in OpenAppCalc.ind.
 Transcript written in OpenAppCalc.ilg.
