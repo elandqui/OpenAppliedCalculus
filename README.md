@@ -5,8 +5,8 @@ Read below for some unique ways that you can help [**support**](#support) this p
 
 ## Affiliate Partners
 
-<a href="https://blockfi.mxuy67.net/c/2612759/889697/10568"><img src="https://raw.githubusercontent.com/elandqui/OpenAppliedCalculus/master/img/ads/blockFi/blockfi-banner0.png" border="0" alt="" width="468" height="60"/></a>
-<a href="https://blockfi.mxuy67.net/c/2612759/889697/10568"><img src="/img/ads/blockFi/blockfi-banner0.png" border="0" alt="" width="468" height="60"/></a>
+<a href="https://blockfi.mxuy67.net/c/2612759/889697/10568"><img src="https://raw.githubusercontent.com/elandqui/OpenAppliedCalculus/master/img/ads/blockFi/blockfi-banner0.png?raw=true" border="0" alt="" width="468" height="60"/></a>
+<a href="https://blockfi.mxuy67.net/c/2612759/889697/10568"><img src="/img/ads/blockFi/blockfi-banner0.png?raw=true" border="0" alt="" width="468" height="60"/></a>
 <!--
 [![BlockFi](https://raw.githubusercontent.com/elandqui/OpenAppliedCalculus/master/img/ads/blockFi/blockfi-banner0.png "Earn up to 8.6\% APY on your dollar-backed stablecoins and up to 6\% APY on crypto with BlockFi! Receive up to a \$250 Bitcoin bonus when you click and fund a new BlockFi account. Terms apply.")](https://blockfi.mxuy67.net/c/2612759/889697/10568)
 -->
