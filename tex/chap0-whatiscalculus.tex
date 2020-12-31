@@ -6,28 +6,30 @@
 \end{center}
 
 %\addcontentsline{toc}{chapter}{What is Calculus?}
+
+
+A good speaker will often begin a talk with an outline of what will be discussed in the talk. In the same way, it is incumbent upon the author of a textbook to give the reader the big picture of the subject of the textbook. That is the purpose of this brief chapter.
+
 \begin{wrapfigure}{R}{0.25\textwidth}
-  %\vspace{-20pt}
+  \vspace{-20pt}
   \centering
     \includegraphics[width=0.24\textwidth]{img/chap0/IsaacNewton.jpg}
   %\end{center}
 %\vspace{-20pt}  
 \caption{Isaac Newton in 1689}
-%\vspace{-10pt}
+\vspace{-10pt}
 \end{wrapfigure}
-
-A good speaker will often begin a talk with an outline of what will be discussed in the talk. In the same way, it is incumbent upon the author of a textbook to give the reader the big picture of the subject of the textbook. That is the purpose of this brief chapter.
 
 \paragraph{Calculus is the study of change.} Over time, the population of a city may grow. The price of a stock will fluctuate: sometimes increasing and sometimes decreasing. The cumulative profits of a company may grow or wane. These situations represent changing quantities. We may want to dig deeper and find out how quickly the city is growing or the rate at which a company's stock price or profits are growing. Those are questions that calculus attempts to answer.
 
 \begin{wrapfigure}{R}{0.25\textwidth}
-%\vspace{-20pt} 
+\vspace{-10pt} 
  \centering
     \includegraphics[width=0.24\textwidth]{img/chap0/GottfriedWilhelmLeibniz.jpg}
   %\end{center}
 %\vspace{-20pt}
   \caption{Gottfried Wilhelm Leibniz circa 1695}
-%\vspace{-10pt}
+\vspace{-60pt}
 \end{wrapfigure}
 
 Calculus was first developed in the late 1600s independently by Sir Isaac Newton\index{Newton, Isaac} and Gottfried Wilhelm Leibniz\index{Leibniz, Gottfried} to help them describe and understand the rules governing the motion of planets and moons. Since then, thousands of other men and women have refined the basic ideas of calculus, developed new techniques to make the calculations easier, and found ways to apply calculus to problems besides planetary motion. Perhaps most importantly, they have used calculus to help understand a wide variety of physical, biological, economic, and social phenomena and to describe and solve problems in those areas.
@@ -44,8 +46,7 @@ Calculus is the study of two seemingly different questions that are actually inv
     \item What is the {\bf accumulation}\index{Accumulation} of a function?
 \end{enumerate}
 Geometrically, these questions can be visualized as the {\bf slope of a curve}\index{Slope!curve} and the {\bf area under a curve}\index{Area!under a curve}, respectively, as seen in Figure \ref{fig:0-1}. We start with these pictures because a conceptual understanding of calculus (and really, all of mathematics), and not merely as a set of rules and procedures, is crucial to understanding the content of this course and being able to apply it to real-world problems, perhaps even in novel ways.
-
-\begin{figure}[h!]
+\begin{figure}[ht!]
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{img/chap0/ex0-1.png}
@@ -66,10 +67,12 @@ In this book, we will unpack these two problems and two pictures and show how th
 Let's consider a pair of examples to illustrate these two concepts.
 
 \begin{example}
-Suppose that you're paid $y$ dollars for working $x$ hours. A graph of the relationship between the amount of time you work (in hours) and your pay (in dollars) is in Figure \ref{fig:0-rate}. The slope of the line is your hourly pay rate. In this case, the slope of the curve and the rate of change of the function is \$15 per hour.
-\begin{figure}[h!]
+
+Suppose that you're paid $y$ dollars for working $x$ hours. A graph of the relationship between the amount of time you work (in hours) and your pay (in dollars) is in Figure \ref{fig:0-rate}. The slope of the line is your hourly pay rate. In this case, the slope of the curve and the rate of change of the function is \$15 per hour. Note that the curve is a line, so we find the slope of the line by finding the slope between any two points on the line. Let's take the points $(0,0)$ and $(20,300)$.
+$$\mbox{rate of change} = \mbox{slope} = \frac{300 - 0\mbox{ dollars}}{20 - 0\mbox{ hours}} = \frac{300 \mbox{ dollars}}{20\mbox{ hours}} = \$15 \mbox{ per hour}$$.
+\begin{figure}[ht!]
 \centering
-\begin{tikzpicture}[scale=0.1]
+\begin{tikzpicture}[scale=0.09]
     % grid
     \draw[step=10, very thin, gray] (0, 0) grid (40, 60);
 
@@ -90,31 +93,91 @@ Suppose that you're paid $y$ dollars for working $x$ hours. A graph of the relat
 	\node[rotate=90, above = 25] at (y axis mid) {Pay (U.S.\ Dollars)};
 
     % plot 
-    \draw[->, thick, color=aldRed] (0, 0) -- (42, 63);
+    \draw[->, very thick, color=aldRed] (0, 0) -- (42, 63);
     
+    % points
+    \filldraw (0, 0) circle [radius=20pt]; %node[left, fill=white] {$(0,0)$};
+    \filldraw (20, 30) circle [radius=20pt]; %node[below right, fill=white] {$(20,300)$};
     % legend
 
 \end{tikzpicture}
 \caption{Pay as a function of time worked.}
 \label{fig:0-rate}
 \end{figure}
+
+
 \end{example}
 
 \begin{example}
-Suppose that $t$ hours after a snowstorm starts, the snowfall rate is $r(t)$ inches per hour. The shaded area represents the total accumulation of the snow during the storm.
+Suppose that $t$ hours after a snowstorm starts, the snowfall rate is $r(t)$ inches per hour. The shaded area in Figure \ref{fig:0-snow} represents the total accumulation of the snow during the storm. How much snow accumulated during the storm?
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[scale=1]
+    % grid
+    \draw[step=1, very thin, gray] (0, 0) grid (12, 3);
+
+    % axes
+    \draw[->] (-0.2,0) -- coordinate (x axis mid) (12.5,0) node[right] {$t$};
+    \draw[->] (0,-0.2) -- coordinate (y axis mid) (0,3.5) node[above] {$y$};
+
+    % ticks
+    \foreach \x in {1, 2, ..., 12}
+     		\draw (\x,1pt) -- (\x,-3pt)
+			node[anchor=north] {\x};
+    	\foreach \y in {1, 2, 3}
+     		\draw (1pt,\y) -- (-3pt,\y) 
+     			node[anchor=east] {\y}; 
+
+    % labels
+    \node[below= 15] at (x axis mid) {Time (hours)};
+	\node[rotate=90, above= 25] at (y axis mid) {Snowfall rate (in/hr)};
+
+    % plot
+    \fill[color=aldBlue!30, opacity=0.5] (0, 0) -- (4, 1) -- (6,2) --(8, 2) -- (12, 0);
+	\draw[very thick, color=aldRed] (0, 0) -- (4, 1) -- (6,2) --(8, 2) -- (12, 0); 
+    
+    % legend
+    \node [fill=white] at (7, 2.5) {$y=r(t)$};
+
+ \end{tikzpicture}
+\caption{Snowfall rate during a snowstorm.}
+\label{fig:0-snow}
+\end{figure}
+
+\solution To find the total accumulation of snow, we can break this image up in a natural way into four shapes: the triangle, trapezoid, square, and triangle over the intervals $[0, 4]$, $[4, 6]$, $[6, 8]$, and $[8, 12]$, respectively. Therefore, the total shaded area is (note the units):
+\begin{align*}
+&\frac{1}{2}\left(4\mbox{ hours}\right)\left(1 \frac{\mbox{inches}}{\mbox{hour}}\right) + \left(2\mbox{ hours}\right)\left(\frac{1+2}{2} \frac{\mbox{inches}}{\mbox{hour}}\right) + \left(2\mbox{ hours}\right)\left(2 \frac{\mbox{inches}}{\mbox{hour}}\right) + \frac{1}{2}\left(4\mbox{ hours}\right)\left(2 \frac{\mbox{inches}}{\mbox{hour}}\right) \\
+&= 2 \mbox{ inches} + 3 \mbox{ inches} + 4 \mbox{ inches} + 4 \mbox{ inches} \\
+&= 13 \mbox{ inches} \enspace .
+\end{align*}
+The shaded area represents the total snow accumulation: 13 inches. Get out the shovels and sleds!
 \end{example}
 
 \section{Problem Solving}
 \label{sec:polya}
 
+\begin{wrapfigure}{R}{0.25\textwidth}
+\vspace{-10pt} 
+ \centering
+    \includegraphics[width=0.24\textwidth]{img/chap0/polya.jpg}
+  %\end{center}
+%\vspace{-20pt}
+  \caption{George P\'{o}lya}
+\vspace{-10pt}
+\end{wrapfigure}
+
 One day when my wife was pregnant with our second child, she was lying down on the couch with a bit of nausea, which is not uncommon in the first trimester. I offered her a ginger candy, which helps to alleviate nausea. Our son, who was a clever two years old at the time asked me, ``Pwease I have ginger candy?" I replied, ``No, you can't have ginger candy. It's for mommy. Mommy's tummy hurts." My son sat for a minute thinking. After a moment, he said. ``My tummy hurts. Pwease I have ginger candy?" He still didn't get the candy; we don't reward dishonesty, but it was a humorous example of problem solving.
 
 Have you ever looked at a math problem and said to yourself, ``I don't know where to start!" No matter how you answered that question, this section will offer some tips.
 
-One often thinks of the study of a mathematical subject as mere rote memorization of formulas and step-by-step procedures. On the contrary, the approach that mathematicians take to the subject is much more creative. We see mathematics as a way to apply abstract concepts to solve problems. Often there is just one correct answer. Often, however, the ``correct" or ``best" answer may be impossible to find, so we are instead interested in a solution that would be considered ``good," ``plausible," or ``reasonable." That is the approach that will drive much of the content of this textbook. In short, one of our objectives is to retrain the way you view mathematics: it's not about knowing or not knowing the answer, it's about figuring out a solution. This textbook is not a book to tell you what to think, but how to think about quantitative problem solving.
+One often thinks of the study of a mathematical subject as mere rote memorization of formulas and step-by-step procedures. On the contrary, the approach that mathematicians take to the subject is much more creative. We see mathematics as a way to apply abstract concepts to solve problems. Often there is just one correct answer. Often, however, the ``correct" or ``best" answer may be impossible to find, so we are instead interested in a solution that would be considered ``good," ``plausible," or ``reasonable." That is the approach that will drive much of the content of this textbook. In short, one of our objectives is to retrain the way you view mathematics: it's not about knowing or not knowing the answer, it's about figuring out a solution. This textbook is not a book to tell you what to think, but how to think: how to think about quantitative problem solving.
 
 In light of this, we introduce a well-known problem-solving process and thoughts on how to implement it in practice. In his famous book {\em How to Solve It}, mathematician George P\'{o}lya \index{P\'{o}lya, George} described his problem-solving process in four steps, which we have modified to follow the acronym ``C.O.P.E."
-% [Picture of Polya]
+
+\begin{center}
+{\bf C.O.P.E.\ Problem-Solving Process}
+\end{center}
+
 \begin{enumerate}
 \item {\bf Comprehend} (Understand) the problem.
 \begin{itemize}
@@ -195,7 +258,7 @@ In light of this, we introduce a well-known problem-solving process and thoughts
 My charge to you, the student of calculus, is to keep the C.O.P.E.\ problem solving method in mind throughout your course. {\bf Comprehension} will often involve reviewing earlier chapters and sections, looking up content in the index, and in many cases, and reviewing material from earlier courses such as algebra. Be patient with yourself. When {\bf observing} what tools apply, again, review of the text may be likely. Just as a hammer doesn't work well to put a nut on a bolt, make sure that the right mathematical tool applies to the problem at hand. If not, then don't use the tool. Be patient with yourself. When {\bf proceeding} with the solution, keep in mind that the point of writing up a solution is to clearly communicate the solution to the intended audience. That audience may be your future self. Write  your solution so as to make it impossible to misunderstand. Be sure that all graphics are clear and labeled and that all variables are defined. Be patient with yourself. When {\bf evaluating} your solution, be critical with yourself. Expect there to be something wrong and scrutinize each step. Finally, if you approach this course with the intent to understand the concepts and the pictures behind each concept, then you will be in an excellent position to {\bf extend} any solution and apply it in powerful ways in your particular field of study. I hope you enjoy this book and this course and that you find it useful throughout your life.
 
 
-\subsection{Exercises}
+\section{Exercises}
 \label{0-3-exercises}
 
 \begin{enumerate}
