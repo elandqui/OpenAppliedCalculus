@@ -5,6 +5,8 @@ Read below for some unique ways that you can help [**support**](#support) this p
 
 ## Affiliate Partners
 
+![BlockFi](https://github.com/elandqui/OpenAppliedCalculus/blob/master/img/ads/blockFi/blockfi-banner0.png)
+
 **BlockFi:** <a href="https://blockfi.mxuy67.net/c/2612759/889697/10568">Earn up to 8.6\% APY on your dollar-backed stablecoins and up to 6\% APY on crypto with BlockFi! Receive up to a \$250 Bitcoin bonus when you click and fund a new BlockFi account. Terms apply.</a>
 
 **Brave Browswer:** Download the <a href="https://brave.com/ela242">Brave internet browser</a>, a privacy-minded browser that earns you Basic Attention Tokens (BAT) for browsing. If you have the Brave browser, you can click on the BAT icon to "tip" me in BAT.
