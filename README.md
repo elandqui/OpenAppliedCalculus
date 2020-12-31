@@ -57,7 +57,8 @@ The following is a rough **task list** for this project.
 ## Support Open Applied Calculus <a name="support"></a>
 You can support this project in some unique ways that will be a win-win-win situation for you, students, and me. A portion will be redonated for local COVID-19 relief.
 
-<a href="https://blockfi.mxuy67.net/c/2612759/907789/10568" target="_top" id="907789"><img src="//a.impactradius-go.com/display-ad/10568-907789" border="0" alt="" width="856" height="508"/></a><img height="0" width="0" src="https://imp.pxf.io/i/2612759/907789/10568" style="position:absolute;visibility:hidden;" border="0" />
+<h3 id="889697"><a href="https://blockfi.mxuy67.net/c/2612759/889697/10568">Exclusive! Receive Up To A $250 BTC Bonus When You Click And Fund A New BlockFi Account. Terms Apply.</a></h3>
+<img height="0" width="0" src="https://imp.pxf.io/i/2612759/889697/10568" style="position:absolute;visibility:hidden;" border="0" />
 
  * The halving has passed! **Invest in Bitcoin**, cryptocurrencies, or US Dollar-pegged *stablecoins* via an exchange through my referral links.
    - <a href="https://www.coinbase.com/join/landqu_e">**Coinbase**</a>: a very user-friendly crypto exchange.
