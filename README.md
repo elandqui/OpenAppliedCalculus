@@ -62,7 +62,7 @@ The following is a rough **task list** for this project.
 You can support this project in some unique ways that will be a win-win-win situation for you, students, and me. A portion will be redonated for local COVID-19 relief.
 
  * Affiliate Partners
-    - <a href="https://blockfi.mxuy67.net/c/2612759/889697/10568">Earn up to 8.6\% APY on your crypto with BlockFi! Receive up to a \$250 Bitcoin bonus when you click and fund a new BlockFi account. Terms apply.</a>
+    - **BlockFi:** <a href="https://blockfi.mxuy67.net/c/2612759/889697/10568">Earn up to 8.6\% APY on your crypto with BlockFi! Receive up to a \$250 Bitcoin bonus when you click and fund a new BlockFi account. Terms apply.</a>
 
  * Cryptocurrencies are a great investment. **Earn, Mine, and Invest in Bitcoin**, cryptocurrencies, or US Dollar-pegged *stablecoins* through my referral links.
    - <a href="https://blockfi.mxuy67.net/c/2612759/889697/10568">**BlockFi**</a>: a crypto and stablecoin savings account with phenomenal interest rates up to 8.6\% APY! 
