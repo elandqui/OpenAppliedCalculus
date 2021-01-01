@@ -1,10 +1,9 @@
 \section{Slopes and Average Rates of Change}
 \label{sec:slope}
 
-\section*{Precalculus Idea: Slope and Rate of Change}
+\subsection{Precalculus Idea: Slope and Rate of Change}
 
 % Start with an example.
-
 \begin{wrapfigure}{R}{0.5\textwidth}
   \vspace{-20pt}
 \centering
@@ -59,26 +58,46 @@ $$m = \mbox{Slope from } P \mbox{ to } Q = \frac{\mbox{rise}}{\mbox{run}} = \fra
   %\end{center}
 %\vspace{-20pt}  
 \caption{Tangent Line}
-\label{fig:2-slopeCurve}
+\label{fig:2-1-slopeCurve}
 \vspace{-10pt}
 \end{wrapfigure}
-We would like to get that same kind of information (how fast the curve rises or falls, velocity from distance) even if the graph is not a straight line. But what happens if we try to find the slope of a curve\index{Slope!curve}, as in Figure \ref{fig:2-slopeCurve}?
 
-\begin{wrapfigure}{R}{0.4\textwidth}
-  \vspace{-10pt}
+We would like to get that same kind of information (how fast the curve rises or falls, velocity from distance) even if the graph is not a straight line. But what happens if we try to find the slope of a curve\index{Slope!curve}, as in Figure \ref{fig:2-1-slopeCurve}?
+
+\subsection{Secant Lines}
+
+
+
+We need two points in order to determine the slope of a line. How can we find a slope of a curve, at just one point? The answer, as suggested in Figure \ref{fig:2-1-slopeCurve}, is to find the slope of the {\bf tangent line}\index{Line!tangent}\index{Tangent line} to the curve at that point. Most of us have an intuitive idea of what a tangent line is. Unfortunately, ``tangent line'' is hard to define precisely. We need to develop more tools for our mathematical toolbox in order to define it precisely. but we will build that definition from the concept of a secant line of a curve.
+
+\begin{definition}[Secant Line]
+A {\bf secant line}\index{Line!secant}\index{Secant line} is a line through two points on a curve. In Figure \ref{fig:2-1-secant}, the red line is the secant line of the blue curve between the points $P = (a, f(a))$ and $Q = (b, f(b))$.
+\end{definition}
+
+%\begin{wrapfigure}{L}{0.25\textwidth}
+%  \vspace{-20pt}
+\begin{figure}[ht!]
   \centering
     \includegraphics[width=0.24\textwidth]{img/chap2/image111.png}
   %\end{center}
 %\vspace{-20pt}  
 \caption{Secant line through points $P$ and $Q$}
-\label{fig:2-slopeCurve}
-\vspace{-10pt}
-\end{wrapfigure}
+\label{fig:2-1-secant}
+\end{figure}
+%\vspace{-10pt}
+%\end{wrapfigure}
 
-We need two points in order to determine the slope of a line. How can we find a slope of a curve, at just one point? The answer, as suggested in Figure \ref{fig:2-slopeCurve}, is to find the slope of the {\bf tangent line}\index{Line!tangent}\index{Tangent line} to the curve at that point. Most of us have an intuitive idea of what a tangent line is. Unfortunately, ``tangent line'' is hard to define precisely. We need to develop more tools for our mathematical toolbox in order to define it precisely. but we will build that definition from the concept of a secant line of a curve.
-\begin{definition}[Secant Line]
-A {\bf secant line}\index{Line!secant}\index{Secant line} is a line through two points on a curve. 
+\begin{definition}
+The {\bf rate of change}\index{Rate of change} of a function $f(x)$ between two points, $P = (a, f(a))$ and $Q = (b, f(b))$, on the curve $y=f(x)$ is the slope of the secant line of the curve $y=f(x)$ between the points $P$ and $Q$:
+$$\mbox{Rate of change of } f(x) \mbox{ from } a \mbox{ to } b = \mbox{Slope from } P \mbox{ to } Q = \frac{f(b)-f(a)}{b-a} \enspace .$$
 \end{definition}
 
+\subsection{Exercises}
 
+\begin{enumerate}
+    \item What is the slope of the line between the points $(4, -2)$ and $(7, 10)$?
+    \item What is the slope of the line between the points $(-1, 6)$ and $(3, -10)$?
+    \item The S\&P 500 rose from \$3244.67 to \$3756.07 in 2020. What is the average rate of change of the S\&P 500 in 2020?
+    \item The price of a share of the S\&P 500 ETF SPY rose from \$323.54 to \$373.8 in 2020. What is the average rate of change of a share price of SPY in 2020?
+\end{enumerate}
 
