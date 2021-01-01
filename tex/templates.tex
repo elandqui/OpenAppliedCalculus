@@ -1,3 +1,15 @@
+% Wrapper figure in Chapter 0
+
+\begin{wrapfigure}{R}{0.25\textwidth}
+  \vspace{-20pt}
+  \centering
+    \includegraphics[width=0.24\textwidth]{img/chap0/IsaacNewton.jpg}
+  %\end{center}
+%\vspace{-20pt}  
+\caption{Isaac Newton in 1689}
+\vspace{-10pt}
+\end{wrapfigure}
+
 % Sample Spreadsheet
 \begin{table}[!ht]
   \centering
@@ -116,6 +128,28 @@
 \end{axis}
 \end{tikzpicture}
 \end{center}
+
+% Sample for a time series taken from a data file.
+% Example 2.1.1
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \vspace{-20pt}
+\centering
+\begin{tikzpicture}[scale=1]
+    \begin{axis}[
+        date coordinates in=x,
+        date ZERO=2019-12-31,
+        ytick distance = 5,
+        grid = both,
+        major grid style = {gridGray},
+        xticklabel = {\year-\month},
+        ylabel = {Price ($\$10,000$)},
+    ]
+    \addplot[very thick, aldRed, mark=*] table[x=Date, y=Price] {datasets/bitcoin2020.dat};
+    \end{axis}
+\end{tikzpicture}
+\caption{Price of Bitcoin in 2020, in Thousands of Dollars. Source: Coindesk; https://www.coindesk.com/price/bitcoin}
+\label{fig:2-1-bitcoin2020}
+\end{wrapfigure}
 
 
 \begin{center}
