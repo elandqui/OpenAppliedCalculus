@@ -1,126 +1,232 @@
 \section{Tangent Lines and Instantaneous Rates of Change}
 \label{sec:tangents}
 
-Can't-quite-do-it-yet Definition (Tangent Line)
-A tangent line is a line at one point on a curve… that does its best to be the curve at that point?
+\subsection{Tangent Line Concepts}
 
-As you may be able to see in the image below, the closer the point Q is to the point P, the closer the secant slope gets to the tangent slope. This will be key to finding the tangent slope, but first we need to more carefully define the idea of getting closer to.
+\begin{example} 
+Suppose that Figure \ref{fig:2-2-bacteria} plots the population of a bacteria culture $t$ hours after an antibiotic is added to the culture. What is the rate at which the population  is changing eight hours after the bacteria is added to the culture?
+\end{example}
 
-secant to tangent
+\begin{figure}[ht!]
+\centering
+\begin{tikzpicture}[scale=1]
+    % grid
+    \draw[step=1, very thin, gray] (0, 0) grid (10, 6);
 
-Instantaneous Velocity
+    % axes
+    \draw[->] (-0.2,0) -- coordinate (x axis mid) (10.5,0) node[right] {$t$};
+    \draw[->] (0,-0.2) -- coordinate (y axis mid) (0, 6.5) node[above] {$y$};
+
+    % ticks
+    \foreach \x in {1, 2, ..., 10}
+     		\draw (\x,1pt) -- (\x,-3pt)
+			node[anchor=north] {\x};
+    	\foreach \y in {1, 2, ..., 6}
+     		\draw (1pt,\y) -- (-3pt,\y) 
+     			node[anchor=east] {\y}; 
+
+    % labels
+    \node[below = 15] at (x axis mid) {Time (hours)};
+	\node[rotate=90, above = 25] at (y axis mid) {Bacteria population (millions)};
+
+    % plot 
+    \draw[smooth, samples=1000, domain=0:10.2, very thick, color=aldRed] plot(\x,{(6*\x+2)*exp(-\x/2)});    
+
+    % points
+    
+    % legend
+
+\end{tikzpicture}
+\caption{Population of a bacteria culture $t$ hours after an antibiotic is added.}
+\label{fig:2-2-bacteria}
+\end{figure}
+
+If we wanted to know the rate of change of the culture between two distinct points in time, then we could apply the techniques of the last section. Here, however, we want to know the rate of change at an instant in time, or the {\bf instantaneous rate of change}\index{Rate of change!instantaneous} of the culture at a single point in time. We found the average rate of change by computing the slope of a secant line. Here, we can estimate the instantaneous rate of change by approximating the slope of a certain line called a {\bf tangent line}\index{Line!tangent}\index{Tangent line} of the curve at a point. 
+
+An informal definition of a tangent line of a curve is that a {\bf tangent line} of a curve is a line that touches one point on the curve in such a way that the curve and line would be indistinguishable if you zoomed in closely enough. In other words, the slope of the curve is the same as the slope of the line at that point.
+
+Figure \ref{fig:2-2-bacteria-tangent} shows the tangent line of the curve in blue. We can approximate the slope of the tangent line by computing the slope between any two points on the line. Pick any two. We will pick the two black points and estimate their coordinates: roughly $(0, 3.7)$ and $(8, 1)$. Therefore, the population of bacteria is changing at a rate of roughly
+$$\frac{1-3.7}{8-0} \mbox{ million baceria per hour} \approx -0.34 \mbox{ million bacteria per hour} \enspace .$$
+Since this value is negative, the population is decreasing. Note the negative slope of the tangent line. In conclusion, eight hours after the antibiotic is added to the bateria culture, the bacteria population is decreasing at a rate of roughly 340,000 bacteria per hour. Practically, this means that the antibiotic is successfully killing off the bacteria.
+\begin{figure}[ht!]
+\centering
+\begin{tikzpicture}[scale=1]
+    % grid
+    \draw[step=1, very thin, gray] (0, 0) grid (10, 6);
+
+    % axes
+    \draw[->] (-0.2,0) -- coordinate (x axis mid) (10.5,0) node[right] {$t$};
+    \draw[->] (0,-0.2) -- coordinate (y axis mid) (0, 6.5) node[above] {$y$};
+
+    % ticks
+    \foreach \x in {1, 2, ..., 10}
+     		\draw (\x,1pt) -- (\x,-3pt)
+			node[anchor=north] {\x};
+    	\foreach \y in {1, 2, ..., 6}
+     		\draw (1pt,\y) -- (-3pt,\y) 
+     			node[anchor=east] {\y}; 
+
+    % labels
+    \node[below = 15] at (x axis mid) {Time (hours)};
+	\node[rotate=90, above = 25] at (y axis mid) {Bacteria population (millions)};
+
+    % plot 
+    \draw[smooth, samples=1000, domain=0:10.2, very thick, color=aldRed] plot(\x,{(6*\x+2)*exp(-\x/2)});    
+    \draw[samples=2, domain=0:10.2, very thick, color=aldBlue] plot(\x, {50*exp(-4) - 19*exp(-4)*(\x-8)});
+    % dy/dx = 6e^(-x/2) - (3x+1)e^(-x/2) = (-3x+5)e^(-x/2)
+
+    % points
+    \filldraw (0, 3.7) circle [radius=3pt]; 
+    \filldraw (8, 0.916) circle [radius=3pt]; 
+    % legend
+
+\end{tikzpicture}
+\caption{Bacteria culture population with a tangent line at $t=8$ hours.}
+\label{fig:2-2-bacteria-tangent}
+\end{figure}
+
+
+\subsection{Tangent Lines, Formally}
+\begin{wrapfigure}{R}{0.4\textwidth}
+  \vspace{-20pt}
+    \centering
+    \includegraphics{img/chap2/image112.png}
+    \caption{Secant lines approaching a tangent line.}
+\label{fig:2-2-secants}
+\end{wrapfigure}
+
+To develop our formal definition of a tangent line, we consider the plot in Figure \ref{fig:2-2-secants}. In the plot, the red line is the tangent line of the curve $y=f(x)$ at the point $P = (a, f(a))$ and the green lines are secant lines that go through $P$. The closer the point $Q$ is to the point $P$, the closer the secant line slope gets to the tangent line slope and the closer the secant line gets to the tangent line. This will be key to finding the tangent slope, but first we need to more carefully define the idea of ``getting closer to.''
+
+\subsection*{Instantaneous Velocity} 
+
 Suppose we drop a tomato from the top of a 100 foot building and time its fall.
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \vspace{-20pt}
+    \centering
+    \includegraphics{img/chap2/image003.png}
+    \caption{The height of a dropped tomato versus time.}
+\label{fig:2-2-tomato}
+\end{wrapfigure}
 
-graph and table
-Some questions are easy to answer directly from the table:
-
-How long did it take for the tomato to drop 100 feet? (2.5 seconds)
-How far did the tomato fall during the first second? (100 – 84 = 16 feet)
-How far did the tomato fall during the last second? (64 – 0 = 64 feet)
-How far did the tomato fall between t=0.5 and t=1? (96 – 84 = 12 feet)
-Some questions require a little calculation:
-
-What was the average velocity of the tomato during its fall?
-Average velocity=distance fallentotal time=ΔpositionΔtime=-100 ft2.5 s=-40 ft/s
-What was the average velocity between t=1 and t=2 seconds?
-Average velocity=ΔpositionΔtime=36 ft-84 ft2 s-1 s=-48 ft1 s=-48 ft/s
-Some questions are more difficult:
-
-How fast was the tomato falling 1 second after it was dropped?
-
-This question is significantly different from the previous two questions about average velocity. Here we want the instantaneous velocity, the velocity at an instant in time. Unfortunately the tomato is not equipped with a speedometer so we will have to give an approximate answer.
-
-One crude approximation of the instantaneous velocity after 1 second is simply the average velocity during the entire fall, -40 ft/s . But the tomato fell slowly at the beginning and rapidly near the end so the "-40 ft/s" estimate may or may not be a good answer.
-
-We can get a better approximation of the instantaneous velocity at t=1 by calculating the average velocities over a short time interval near t=1. The average velocity between t=0.5 and t=1 is -12 feet0.5 s=-24 ft/s, and the average velocity between t=1 and t=1.5 is -20 feet0.5 s=-40 ft/s so we can be reasonably sure that the instantaneous velocity is between -24 ft/s and -40 ft/s.
-
-In general, the shorter the time interval over which we calculate the average velocity, the better the average velocity will approximate the instantaneous velocity. The average velocity over a time interval is ΔpositionΔtime, which is the slope of the secant line through two points on the graph of height versus time. The instantaneous velocity at a particular time and height is the slope of the tangent line to the graph at the point given by that time and height.
-
-graph
-Average vs Instantaneous Velocity
-Average velocity = ΔpositionΔtime = slope of the secant line through 2 points.
-
-Instantaneous velocity = slope of the line tangent to the graph.
-
-Growing Bacteria
-Suppose we set up a machine to count the number of bacteria growing on a Petri plate. At first there are few bacteria so the population grows slowly. Then there are more bacteria to divide so the population grows more quickly. Later, there are more bacteria and less room and nutrients available for the expanding population, so the population grows slowly again. Finally, the bacteria have used up most of the nutrients, and the population declines as bacteria die.
-
- bacteria 1
-The population graph can be used to answer a number of questions.
-
-What is the bacteria population at time t=3 days?
-
-From the graph, at t=3, the population is about 0.5 thousand, or 500 bacteria.
-
-What is the population increment from t=3 to t=10 days?
-
-At t=10, the population is about 4.5 thousand, so the increment is about 4000 bacteria.
-
-What is the rate of population growth from t=3 to t=10 days?
-
-The rate of growth from t=3 to t=10 is the average change in population during that time:
-average change in population ===\approx   change in populationchange in timeΔpopulationΔtime4000 bacteria7 days570 bacteria/day.
-This is the slope of the secant line through the two points (3, 500) and (10, 4500).
-
-What is the rate of population growth on the third day, at t=3 ?
-
-This question is asking for the instantaneous rate of population change, the slope of the line which is tangent to the population curve at (3, 500). If we sketch a line approximately tangent to the curve at (3, 500) and pick two points near the ends of the tangent line segment , we can estimate that instantaneous rate of population growth is approximately 320 bacteria/day .
-
- bacteria 2
-Tangent Lines
-Try this!
-The graph below is the graph of y=f(x). We want to find the slope of the tangent line at the point (1, 2).
-
-graph
-First, draw the secant line between (1, 2) and (2, -1) and compute its slope.
-
-Now draw the secant line between (1, 2) and (1.5, 1) and compute its slope.
-
-Compare the two lines you have drawn. Which would be a better approximation of the tangent line to the curve at (1, 2)?
-
-Now draw the secant line between (1, 2) and (1.3, 1.5) and compute its slope. Is this line an even better approximation of the tangent line?
-
-Now draw your best guess for the tangent line and measure its slope. Do you see a pattern in the slopes?
-
-You should have noticed that as the interval got smaller and smaller, the secant line got closer to the tangent line and its slope got closer to the slope of the tangent line. That’s good news–we know how to find the slope of a secant line.
-
-In some applications, we need to know where the graph of a function f(x) has horizontal tangent lines (slopes = 0).
-
+Some questions are easy to answer directly from the table.
 \begin{example}
-Below is the graph of y=g(x). At what values of x does the graph of g(x) have horizontal tangent lines?
-
-graph
-\begin{solution}
-The tangent lines to the graph of g(x) are horizontal (slope = 0) when x\approx   -1,1,2.5, and 5.
-\end{solution}\end{example}
-
-Let's explore further this idea of finding the tangent slope based on the secant slope.
-
-\begin{example}
-Find the slope of the line $L$ in the graph below which is tangent to $f(x)=x^2$ at the point $(2,4)$.
-
-\begin{solution} We could estimate the slope of L from the graph, but we won't. Instead, we will use the idea that secant lines over tiny intervals approximate the tangent line.
-
-graphgraph
-We can see that the line through (2,4) and (3,9) on the graph of f is an approximation of the slope of the tangent line, and we can calculate that slope exactly: m=ΔyΔx=9-43-2=5. But m=5 is only an estimate of the slope of the tangent line and not a very good estimate. It's too big. We can get a better estimate by picking a second point on the graph of f which is closer to (2,4) – the point (2,4) is fixed and it must be one of the points we use.
-
-From the second figure, we can see that the slope of the line through the points (2,4) and (2.5,6.25) is a better approximation of the slope of the tangent line at (2,4): m=ΔyΔx=6.25-42.5-2=2.250.5=4.5, a better estimate, but still an approximation. We can continue picking points closer and closer to (2,4) on the graph of f, and then calculating the slopes of the lines through each of these points and the point (2,4):
-
-Points to the left of (2,4)
-x	y=x2	Slope of line through (x,y) and (2,4).	1.5	2.25	3.5	1.9	3.61	3.9	1.99	3.9601	3.99
-Points to the right of (2,4)
-x	y=x2	Slope of line through (x,y) and (2,4).	3	9	5	2.5	6.25	4.5	2.01	4.0401	4.01
-The only thing special about the x–values we picked is that they are numbers which are close, and very close, to x=2. Someone else might have picked other nearby values for x. As the points we pick get closer and closer to the point (2,4) on the graph of y=x2, the slopes of the lines through the points and (2,4) are better approximations of the slope of the tangent line, and these slopes are getting closer and closer to 4.
-
-We can bypass much of the calculating by not picking the points one at a time: let's look at a general point near (2,4). Define x=2+h so h is the increment from 2 to x. If h is small, then x=2+h is close to 2 and the point (2+h,f(2+h))=(2+h,(2+h)2) is close to (2,4). The slope m of the line through the points (2,4) and (2+h,(2+h)2) is a good approximation of the slope of the tangent line at the point (2,4):
-
-graph
-m=(2+h)2-4(2+h)-2=(4+4h+h2)-4h=4h+h2h=h(4+h)h=4+h
-The value m=4+h is the slope of the secant line through the two points (2,4) and (2+h,(2+h)2). As h gets smaller and smaller, this slope approaches the slope of the tangent line to the graph of f at (2,4).
-
-More formally, we could write:
-Slope of the tangent line=ΔyΔx=limh→0(4+h).
-We can easily evaluate this limit using direct substitution, finding that as the interval h shrinks towards 0, the secant slope approaches the tangent slope, 4.
-\end{solution}\end{example}
-
-The tangent line problem and the instantaneous velocity problem are the same problem. In each problem we wanted to know how rapidly something was changing at an instant in time, and the answer turned out to be finding the slope of a tangent line, which we approximated with the slope of a secant line. This idea is the key to defining the slope of a curve.
+    \begin{itemize}
+    \item[a.] How long did it take for the tomato to drop 100 feet?
+    \item[b.] How far did the tomato fall during the first second?
+    \item[c.] How far did the tomato fall during the last second? (64 – 0 = 64 feet)
+    \item[d.] How far did the tomato fall between t=0.5 and t=1? (96 – 84 = 12 feet)
+    \end{itemize}
+\solution
+    \begin{itemize}
+    \item[a.] It took 2.5 seconds for the tomato to drop 100 feet.
+    \item[b.] The tomato fell $100-84=16$ feet during the first second.
+    \item[c.] The tomato fell $64-0=64$ feet during the last second.
+    \item[d.] The tomato fell $96 - 84 = 12$ feet between $t=0.5$ and $t=1$ second.
+    \end{itemize}
+\end{example}
+%Some questions require a little calculation:
+%
+%What was the average velocity of the tomato during its fall?
+%Average velocity=distance fallentotal time=ΔpositionΔtime=-100 ft2.5 s=-40 ft/s
+%What was the average velocity between t=1 and t=2 seconds?
+%Average velocity=ΔpositionΔtime=36 ft-84 ft2 s-1 s=-48 ft1 s=-48 ft/s
+%Some questions are more difficult:
+%
+%How fast was the tomato falling 1 second after it was dropped?
+%
+%This question is significantly different from the previous two questions about average velocity. Here we want the instantaneous velocity, the velocity at an instant in time. Unfortunately the tomato is not equipped with a speedometer so we will have to give an approximate answer.
+%
+%One crude approximation of the instantaneous velocity after 1 second is simply the average velocity during the entire fall, -40 ft/s . But the tomato fell slowly at the beginning and rapidly near the end so the "-40 ft/s" estimate may or may not be a good answer.
+%
+%We can get a better approximation of the instantaneous velocity at t=1 by calculating the average velocities over a short time interval near t=1. The average velocity between t=0.5 and t=1 is -12 feet0.5 s=-24 ft/s, and the average velocity between t=1 and t=1.5 is -20 feet0.5 s=-40 ft/s so we can be reasonably sure that the instantaneous velocity is between -24 ft/s and -40 ft/s.
+%
+%In general, the shorter the time interval over which we calculate the average velocity, the better the average velocity will approximate the instantaneous velocity. The average velocity over a time interval is ΔpositionΔtime, which is the slope of the secant line through two points on the graph of height versus time. The instantaneous velocity at a particular time and height is the slope of the tangent line to the graph at the point given by that time and height.
+%
+%graph
+%Average vs Instantaneous Velocity
+%Average velocity = ΔpositionΔtime = slope of the secant line through 2 points.
+%
+%Instantaneous velocity = slope of the line tangent to the graph.
+%
+%Growing Bacteria
+%Suppose we set up a machine to count the number of bacteria growing on a Petri plate. At first there are few bacteria so the population grows slowly. Then there are more bacteria to divide so the population grows more quickly. Later, there are more bacteria and less room and nutrients available for the expanding population, so the population grows slowly again. Finally, the bacteria have used up most of the nutrients, and the population declines as bacteria die.
+%
+% bacteria 1
+%The population graph can be used to answer a number of questions.
+%
+%What is the bacteria population at time t=3 days?
+%
+%From the graph, at t=3, the population is about 0.5 thousand, or 500 bacteria.
+%
+%What is the population increment from t=3 to t=10 days?
+%
+%At t=10, the population is about 4.5 thousand, so the increment is about 4000 bacteria.
+%
+%What is the rate of population growth from t=3 to t=10 days?
+%
+%The rate of growth from t=3 to t=10 is the average change in population during that time:
+%average change in population ===\approx   change in populationchange in timeΔpopulationΔtime4000 bacteria7 days570 bacteria/day.
+%This is the slope of the secant line through the two points (3, 500) and (10, 4500).
+%
+%What is the rate of population growth on the third day, at t=3 ?
+%
+%This question is asking for the instantaneous rate of population change, the slope of the line which is tangent to the population curve at (3, 500). If we sketch a line approximately tangent to the curve at (3, 500) and pick two points near the ends of the tangent line segment , we can estimate that instantaneous rate of population growth is approximately 320 bacteria/day .
+%
+% bacteria 2
+%Tangent Lines
+%Try this!
+%The graph below is the graph of y=f(x). We want to find the slope of the tangent line at the point (1, 2).
+%
+%graph
+%First, draw the secant line between (1, 2) and (2, -1) and compute its slope.
+%
+%Now draw the secant line between (1, 2) and (1.5, 1) and compute its slope.
+%
+%Compare the two lines you have drawn. Which would be a better approximation of the tangent line to the curve at (1, 2)?
+%
+%Now draw the secant line between (1, 2) and (1.3, 1.5) and compute its slope. Is this line an even better approximation of the tangent line?
+%
+%Now draw your best guess for the tangent line and measure its slope. Do you see a pattern in the slopes?
+%
+%You should have noticed that as the interval got smaller and smaller, the secant line got closer to the tangent line and its slope got closer to the slope of the tangent line. That’s good news–we know how to find the slope of a secant line.
+%
+%In some applications, we need to know where the graph of a function f(x) has horizontal tangent lines (slopes = 0).
+%
+%\begin{example}
+%Below is the graph of y=g(x). At what values of x does the graph of g(x) have horizontal tangent lines?
+%
+%graph
+%\begin{solution}
+%The tangent lines to the graph of g(x) are horizontal (slope = 0) when x\approx   -1,1,2.5, and 5.
+%\end{solution}\end{example}
+%
+%Let's explore further this idea of finding the tangent slope based on the secant slope.
+%
+%\begin{example}
+%Find the slope of the line $L$ in the graph below which is tangent to $f(x)=x^2$ at the point $(2,4)$.
+%
+%\begin{solution} We could estimate the slope of L from the graph, but we won't. Instead, we will use the idea that secant lines over tiny intervals approximate the tangent line.
+%
+%graphgraph
+%We can see that the line through (2,4) and (3,9) on the graph of f is an approximation of the slope of the tangent line, and we can calculate that slope exactly: m=ΔyΔx=9-43-2=5. But m=5 is only an estimate of the slope of the tangent line and not a very good estimate. It's too big. We can get a better estimate by picking a second point on the graph of f which is closer to (2,4) – the point (2,4) is fixed and it must be one of the points we use.
+%
+%From the second figure, we can see that the slope of the line through the points (2,4) and (2.5,6.25) is a better approximation of the slope of the tangent line at (2,4): m=ΔyΔx=6.25-42.5-2=2.250.5=4.5, a better estimate, but still an approximation. We can continue picking points closer and closer to (2,4) on the graph of f, and then calculating the slopes of the lines through each of these points and the point (2,4):
+%
+%Points to the left of (2,4)
+%x	y=x2	Slope of line through (x,y) and (2,4).	1.5	2.25	3.5	1.9	3.61	3.9	1.99	3.9601	3.99
+%Points to the right of (2,4)
+%x	y=x2	Slope of line through (x,y) and (2,4).	3	9	5	2.5	6.25	4.5	2.01	4.0401	4.01
+%The only thing special about the x–values we picked is that they are numbers which are close, and very close, to x=2. Someone else might have picked other nearby values for x. As the points we pick get closer and closer to the point (2,4) on the graph of y=x2, the slopes of the lines through the points and (2,4) are better approximations of the slope of the tangent line, and these slopes are getting closer and closer to 4.
+%
+%We can bypass much of the calculating by not picking the points one at a time: let's look at a general point near (2,4). Define x=2+h so h is the increment from 2 to x. If h is small, then x=2+h is close to 2 and the point (2+h,f(2+h))=(2+h,(2+h)2) is close to (2,4). The slope m of the line through the points (2,4) and (2+h,(2+h)2) is a good approximation of the slope of the tangent line at the point (2,4):
+%
+%graph
+%m=(2+h)2-4(2+h)-2=(4+4h+h2)-4h=4h+h2h=h(4+h)h=4+h
+%The value m=4+h is the slope of the secant line through the two points (2,4) and (2+h,(2+h)2). As h gets smaller and smaller, this slope approaches the slope of the tangent line to the graph of f at (2,4).
+%
+%More formally, we could write:
+%Slope of the tangent line=ΔyΔx=limh→0(4+h).
+%We can easily evaluate this limit using direct substitution, finding that as the interval h shrinks towards 0, the secant slope approaches the tangent slope, 4.
+%\end{solution}\end{example}
+%
+%The tangent line problem and the instantaneous velocity problem are the same problem. In each problem we wanted to know how rapidly something was changing at an instant in time, and the answer turned out to be finding the slope of a tangent line, which we approximated with the slope of a secant line. This idea is the key to defining the slope of a curve.
