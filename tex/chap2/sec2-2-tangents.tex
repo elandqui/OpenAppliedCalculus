@@ -111,36 +111,179 @@ Suppose we drop a tomato from the top of a 100 foot building and time its fall.
 Some questions are easy to answer directly from the table.
 \begin{example}
     \begin{itemize}
-    \item[a.] How long did it take for the tomato to drop 100 feet?
-    \item[b.] How far did the tomato fall during the first second?
-    \item[c.] How far did the tomato fall during the last second? (64 – 0 = 64 feet)
-    \item[d.] How far did the tomato fall between t=0.5 and t=1? (96 – 84 = 12 feet)
-    \end{itemize}
-\solution
-    \begin{itemize}
-    \item[a.] It took 2.5 seconds for the tomato to drop 100 feet.
-    \item[b.] The tomato fell $100-84=16$ feet during the first second.
-    \item[c.] The tomato fell $64-0=64$ feet during the last second.
-    \item[d.] The tomato fell $96 - 84 = 12$ feet between $t=0.5$ and $t=1$ second.
+    \item[(a)] How long did it take for the tomato to drop 100 feet?
+
+    \begin{solution}
+    It took 2.5 seconds for the tomato to drop 100 feet.
+    \end{solution}
+
+    \item[(b)] How far did the tomato fall during the first second?
+
+    \begin{solution}
+    The tomato fell $100-84=16$ feet during the first second.
+    \end{solution}
+
+    \item[(c)] How far did the tomato fall during the last second?
+
+    \begin{solution}
+    The tomato fell $64-0=64$ feet during the last second.
+    \end{solution}
+
+    \item[(d)] How far did the tomato fall between $t=0.5$ and $t=1$ seconds? 
+
+    \begin{solution}
+    The tomato fell $96 - 84 = 12$ feet between $t=0.5$ and $t=1$ seconds.
+    \end{solution}
     \end{itemize}
 \end{example}
-%Some questions require a little calculation:
-%
-%What was the average velocity of the tomato during its fall?
-%Average velocity=distance fallentotal time=ΔpositionΔtime=-100 ft2.5 s=-40 ft/s
-%What was the average velocity between t=1 and t=2 seconds?
-%Average velocity=ΔpositionΔtime=36 ft-84 ft2 s-1 s=-48 ft1 s=-48 ft/s
-%Some questions are more difficult:
-%
-%How fast was the tomato falling 1 second after it was dropped?
-%
-%This question is significantly different from the previous two questions about average velocity. Here we want the instantaneous velocity, the velocity at an instant in time. Unfortunately the tomato is not equipped with a speedometer so we will have to give an approximate answer.
-%
-%One crude approximation of the instantaneous velocity after 1 second is simply the average velocity during the entire fall, -40 ft/s . But the tomato fell slowly at the beginning and rapidly near the end so the "-40 ft/s" estimate may or may not be a good answer.
-%
-%We can get a better approximation of the instantaneous velocity at t=1 by calculating the average velocities over a short time interval near t=1. The average velocity between t=0.5 and t=1 is -12 feet0.5 s=-24 ft/s, and the average velocity between t=1 and t=1.5 is -20 feet0.5 s=-40 ft/s so we can be reasonably sure that the instantaneous velocity is between -24 ft/s and -40 ft/s.
-%
-%In general, the shorter the time interval over which we calculate the average velocity, the better the average velocity will approximate the instantaneous velocity. The average velocity over a time interval is ΔpositionΔtime, which is the slope of the secant line through two points on the graph of height versus time. The instantaneous velocity at a particular time and height is the slope of the tangent line to the graph at the point given by that time and height.
+Some questions require a little calculation.
+\begin{example}
+    \begin{itemize}
+    \item[(e)] What was the average velocity of the tomato during its fall?
+
+    \begin{solution}
+    Average velocity $= \frac{\mbox{change in position}}{\mbox{change in time}} = \frac{0-100 \mbox{ ft}}{2.5-0 \mbox{ s}} = -40 \mbox{ ft/s}$.
+    \end{solution}
+
+    \item[(f)] What was the average velocity between $t=1$ and $t=2$ seconds?
+
+    \begin{solution}
+    Average velocity $= \frac{\mbox{change in position}}{\mbox{change in time}} = \frac{36-84 \mbox{ ft}}{2-1 \mbox{ s}} = -48 \mbox{ ft/s}$.
+    \end{solution}
+    \end{itemize}
+\end{example}
+
+Now, we consider a different question that is an example of an instantaneous rate of change, and example of a question that is significantly different from the previous example about average velocity.
+\begin{example}
+    How fast was the tomato falling one second after it was dropped?
+
+    \begin{solution}
+    Here we want the instantaneous velocity, the velocity at an instant in time. Unfortunately, the tomato is not equipped with a speedometer so we will have to give an approximate answer.
+
+    One crude approximation of the instantaneous velocity after one second is simply the average velocity during the entire fall: $-40$ ft/s. However, the tomato fell slowly at the beginning and rapidly near the end so this estimate may or may not be a good answer.
+
+    We can get a better approximation of the instantaneous velocity at $t=1$ by calculating the average velocities over a short time interval near $t=1$. The average velocity between $t=0.5 and t=1$ is $\displaystyle\frac{-12 \mbox{ feet}}{0.5 \mbox{ s}} = -24$ ft/s, and the average velocity between $t=1$ and $t=1.5$ is $\displaystyle\frac{-20 \mbox{ feet}}{0.5 \mbox{ s}} = -40$ ft/s, so we can be reasonably sure that the instantaneous velocity is between $-24$ ft/s and $-40$ ft/s.
+
+    Another approximation would be by calculating the average velocity between $t=0.5 and t=1.5$, that is, the shortest time interval we have with $t=1$ in the middle: $\displaystyle\frac{64-96 \mbox{ feet}}{1.5-0.5 \mbox{ s}} = -32$ ft/s.
+
+     Now, in general, the shorter the time interval over which we calculate the average velocity, the better the average velocity will approximate the instantaneous velocity. Using just the table in Figure \ref{fig:2-2-tomato}, we cannot find any shorter time interval. However, with a model or a function describing the height of the tomato, we could get a better approximation. We will plot the points and fit a curve to it and work from there.
+
+    Notice that the data, plotted in Figure \ref{fig:2-2-tomato-model}, is not linear and has the same concavity (concave down), so a quadratic model may be appropriate. In fact, we know from physics that in the absence of air resistance, that a quadratic model would fit this kind of data perfectly. From LibreOffice, we can obtain the model
+$$h(t) = 100 - 16t^2 \mbox{ feet after } t \mbox{ seconds}$$
+for the height of the tomato. We plot this and the data together.
+
+\begin{figure}[!ht]
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+
+    \begin{tikzpicture}[scale=2]
+    \def\xmin{0}
+    \def\xmax{2.5}
+    \def\xscale{1}
+
+    \def\ymin{0}
+    \def\ymax{100}
+    \def\yscale{40}
+
+    % grid
+    \draw[step=0.5, very thin, gray] (0, 0) grid (2.5, 2.5);
+
+    % axes
+    \draw[->] (-0.2,0) -- coordinate (x axis mid) (2.7, 0) node[right] {$t$};
+    \draw[->] (0,-0.2) -- coordinate (y axis mid) (0, 2.7) node[above] {$y$};
+
+    % ticks
+    \foreach \x in {0.5, 1, ..., 2.5}
+     		\draw (\x,1pt) -- (\x,-3pt)
+			node[anchor=north] {\x};
+    	\foreach \y in {20, 40, ..., 100}
+     		\draw (1pt,\y/\yscale) -- (-3pt,\y/\yscale) 
+     			node[anchor=east] {\y}; 
+
+    % labels
+    \node[below = 15] at (x axis mid) {Time (seconds)};
+	\node[rotate=90, above = 25] at (y axis mid) {Height (feet)};
+
+    % plot 
+    
+    % points
+    \foreach \pt in {(0, 100/\yscale), (0.5, 96/\yscale), (1, 84/\yscale), (1.5, 64/\yscale), (2, 36/\yscale), (2.5,0/\yscale)}
+        \filldraw[color=aldRed] \pt circle [radius=2pt]; 
+    % legend
+
+    \end{tikzpicture}
+    \caption{Data of the height of the tomato.}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.4\textwidth}
+
+    \begin{tikzpicture}[scale=2]
+    \def\xmin{0}
+    \def\xmax{2.5}
+    \def\xscale{1}
+
+    \def\ymin{0}
+    \def\ymax{100}
+    \def\yscale{40}
+
+    % grid
+    \draw[step=0.5, very thin, gray] (0, 0) grid (2.5, 2.5);
+
+    % axes
+    \draw[->] (-0.2,0) -- coordinate (x axis mid) (2.7, 0) node[right] {$t$};
+    \draw[->] (0,-0.2) -- coordinate (y axis mid) (0, 2.7) node[above] {$y$};
+
+    % ticks
+    \foreach \x in {0.5, 1, ..., 2.5}
+     		\draw (\x,1pt) -- (\x,-3pt)
+			node[anchor=north] {\x};
+    	\foreach \y in {20, 40, ..., 100}
+     		\draw (1pt,\y/\yscale) -- (-3pt,\y/\yscale) 
+     			node[anchor=east] {\y}; 
+
+    % labels
+    \node[below = 15] at (x axis mid) {Time (seconds)};
+	\node[rotate=90, above = 25] at (y axis mid) {Height (feet)};
+
+    % plot 
+    \draw[smooth, samples=1000, domain=0:2.5, very thick, color=aldBlue] plot(\x,{(100-16*\x^2)/\yscale});    
+
+    % points
+    \foreach \pt in {(0, 100/\yscale), (0.5, 96/\yscale), (1, 84/\yscale), (1.5, 64/\yscale), (2, 36/\yscale), (2.5,0/\yscale)}
+        \filldraw[color=aldRed] \pt circle [radius=2pt]; 
+    % legend
+
+    \end{tikzpicture}
+    \caption{Modeling the height of the tomato.}
+    \end{subfigure}
+    \caption{ }
+    \label{fig:2-2-tomato-model}
+\end{figure}
+
+Now we can approximate the velocity of the tomato at $t=1$ seconds by going off the model. We often use the symbol $\Delta$ (delta)\index{Delta} to indicate a finite difference between two values of a variable. In this context, $\Delta t$ is a difference in time and $\Delta h$ is a difference in the function $h$, i.e., a difference in height. With this notation, the average velocity over some time interval is $\frac{\Delta h}{\Delta t}$. In this example, 
+$$\Delta h = h(1+\Delta t) - h(1) \enspace .$$
+\begin{table}[ht!]
+\begin{centering}
+\begin{tabular}{lll}
+\toprule
+$\Delta t$ (seconds) & $\Delta h = h(1+\Delta t)-h(1)$ (feet) & $\frac{\Delta h}{\Delta t}$ (ft/s) \\
+\midrule
+1       & $h(2) - h(1) = 36-84 = -48$                   & $\dfrac{-48\mathstrut}{1\mathstrut} = -48$ \\
+0.5     & $h(1.5) - h(1) = 64-84 = -20$                 & $\dfrac{-20\mathstrut}{0.5\mathstrut} = -40$ \\
+0.1     & $h(1.1) - h(1) = 80.64-84 = -3.36$            & $\dfrac{-3.36\mathstrut}{0.1\mathstrut} = -33.6$ \\
+0.01    & $h(1.01) - h(1) = 83.6784-84 = -0.3216$       & $\dfrac{-0.3216\mathstrut}{0.01\mathstrut} = -32.16$ \\
+0.001   & $h(1.001) - h(1) = 83.967984-84 = -0.032016$  & $\dfrac{-0.032016\mathstrut}{0.001\mathstrut} = -32.016$ \\
+\bottomrule
+\end{tabular}
+\caption{Average velocities approaching the instantaneous velocity at $t=1$ seconds.}
+\label{tab:2-2-tomato-velocity}
+\end{centering}
+\end{table}
+From the data in Table \ref{tab:2-2-tomato-velocity}, the average velocities are approaching $-32$ feet per second, which is in fact the (instantaneous) velocity of the tomato one second after being dropped.
+\end{solution}
+\end{example}
+
+%The average velocity over a time interval is ΔpositionΔtime, which is the slope of the secant line through two points on the graph of height versus time. The instantaneous velocity at a particular time and height is the slope of the tangent line to the graph at the point given by that time and height.
 %
 %graph
 %Average vs Instantaneous Velocity
