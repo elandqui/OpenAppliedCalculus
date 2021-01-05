@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.21)  5 JAN 2021 00:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.21)  5 JAN 2021 12:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1187,7 +1187,7 @@ Package pdftex.def Info: img/chap0/ex0-2.png  used on input line 58.
 <img/chap0/polya.jpg, id=397, 242.9075pt x 321.2pt>
 File: img/chap0/polya.jpg Graphic file (type jpg)
 <use img/chap0/polya.jpg>
-Package pdftex.def Info: img/chap0/polya.jpg  used on input line 162.
+Package pdftex.def Info: img/chap0/polya.jpg  used on input line 163.
 (pdftex.def)             Requested size: 112.74377pt x 149.08199pt.
  [3 <./img/chap0/polya.jpg>] [4] [5]) (./tex/chap1-models.tex [6]
 Chapter 1.
@@ -1726,12 +1726,21 @@ Overfull \hbox (64.74113pt too wide) in paragraph at lines 106--107
  [][] 
  []
 
-[70 <./img/chap2/image112.png> <./img/chap2/image003.png>]))
-(./tex/chap3-derivapps.tex [71] [72
+[70 <./img/chap2/image112.png> <./img/chap2/image003.png>]
+Overfull \hbox (18.0885pt too wide) in paragraph at lines 214--215
+[][] 
+ []
 
-]
+
+Overfull \hbox (18.0885pt too wide) in paragraph at lines 256--257
+[][] 
+ []
+
+)) (./tex/chap3-derivapps.tex [71] [72]
 Chapter 3.
-) (./tex/chap4-multivariable.tex [73] [74
+) (./tex/chap4-multivariable.tex [73
+
+] [74
 
 ]
 Chapter 4.
@@ -1759,10 +1768,10 @@ Package rerunfilecheck Info: File `OpenAppCalc.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 103.
  ) 
 Here is how much of TeX's memory you used:
- 33704 strings out of 482671
- 794870 string characters out of 5955617
- 1456565 words of memory out of 5000000
- 47645 multiletter control sequences out of 15000+600000
+ 34740 strings out of 482671
+ 816317 string characters out of 5955617
+ 1459713 words of memory out of 5000000
+ 48678 multiletter control sequences out of 15000+600000
  545438 words of font info for 73 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  78i,17n,136p,1532b,2224s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1796,10 +1805,10 @@ msfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
 ls/msbm10.pfb>
-Output written on OpenAppCalc.pdf (90 pages, 7006235 bytes).
+Output written on OpenAppCalc.pdf (90 pages, 7039798 bytes).
 PDF statistics:
- 1624 PDF objects out of 1728 (max. 8388607)
- 1320 compressed objects within 14 object streams
- 499 named destinations out of 1000 (max. 500000)
+ 1630 PDF objects out of 1728 (max. 8388607)
+ 1326 compressed objects within 14 object streams
+ 502 named destinations out of 1000 (max. 500000)
  890 words of extra memory for PDF output out of 10000 (max. 10000000)
 
