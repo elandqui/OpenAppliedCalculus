@@ -23,6 +23,7 @@
   \indexspace
 
   \item Base, \hyperpage{61}
+  \item Bitcoin, \hyperpage{67}
   \item Break-even point, \hyperpage{12, 13}
 
   \indexspace
@@ -101,8 +102,8 @@
   \item Line
     \subitem best fit, \hyperpage{40}
     \subitem regression, \hyperpage{40}
-    \subitem secant, \hyperpage{67}
-    \subitem tangent, \hyperpage{67}
+    \subitem secant, \hyperpage{68}
+    \subitem tangent, \hyperpage{68, 69}
   \item Logarithm
     \subitem common, \hyperpage{61}
     \subitem natural, \hyperpage{61}
@@ -142,7 +143,8 @@
   \item Rate
     \subitem decay, \hyperpage{54}
     \subitem growth, \hyperpage{54}
-  \item Rate of change, \hyperpage{1}, \hyperpage{27}, \hyperpage{67}
+  \item Rate of change, \hyperpage{1}, \hyperpage{27}, \hyperpage{68}
+    \subitem instantaneous, \hyperpage{69}
   \item Regression, \hyperpage{24}
     \subitem line, \hyperpage{40}
   \item Revenue, \hyperpage{12, 13}
@@ -151,19 +153,19 @@
   \indexspace
 
   \item Scatter plot, \hyperpage{19}
-  \item Secant line, \hyperpage{67}
+  \item Secant line, \hyperpage{68}
   \item Shift
     \subitem horizontal, \hyperpage{64}
     \subitem vertical, \hyperpage{64}
   \item Sine wave, \hyperpage{64}
-  \item Slope, \hyperpage{28}, \hyperpage{31}, \hyperpage{67}
-    \subitem curve, \hyperpage{1}, \hyperpage{67}
+  \item Slope, \hyperpage{28}, \hyperpage{31}, \hyperpage{68}
+    \subitem curve, \hyperpage{1}, \hyperpage{68}
   \item Slope-intercept form, \hyperpage{27}
   \item Starting value, \hyperpage{54}, \hyperpage{56}
 
   \indexspace
 
-  \item Tangent line, \hyperpage{67}
+  \item Tangent line, \hyperpage{68, 69}
   \item Term, \hyperpage{46}
     \subitem leading, \hyperpage{47}
   \item Time series, \hyperpage{19}
