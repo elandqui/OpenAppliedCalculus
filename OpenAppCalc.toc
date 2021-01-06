@@ -58,8 +58,9 @@
 \contentsline {section}{\numberline {2.2}Tangent Lines and Instantaneous Rates of Change}{69}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Tangent Line Concepts}{69}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Tangent Lines, Formally}{69}{subsection.2.2.2}%
-\contentsline {chapter}{\numberline {3}Applications of Derivatives}{73}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Functions of Many Variables}{75}{chapter.4}%
-\contentsline {chapter}{\numberline {5}The Integral: Accumulation of a Rate Function}{77}{chapter.5}%
-\contentsline {chapter}{References}{79}{chapter.5}%
-\contentsline {chapter}{Index}{79}{chapter.5}%
+\contentsline {subsection}{\numberline {2.2.3}Exercises}{71}{subsection.2.2.3}%
+\contentsline {chapter}{\numberline {3}Applications of Derivatives}{75}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Functions of Many Variables}{77}{chapter.4}%
+\contentsline {chapter}{\numberline {5}The Integral: Accumulation of a Rate Function}{79}{chapter.5}%
+\contentsline {chapter}{References}{81}{chapter.5}%
+\contentsline {chapter}{Index}{81}{chapter.5}%
