@@ -331,7 +331,7 @@ From the data in Table \ref{tab:2-2-tomato-velocity}, the average velocities are
 %
 %Now draw your best guess for the tangent line and measure its slope. Do you see a pattern in the slopes?
 %
-%You should have noticed that as the interval got smaller and smaller, the secant line got closer to the tangent line and its slope got closer to the slope of the tangent line. That’s good news–we know how to find the slope of a secant line.
+%You should have noticed that as the interval got smaller and smaller, the secant line got closer to the tangent line and its slope got closer to the slope of the tangent line. That’s good news-we know how to find the slope of a secant line.
 %
 %In some applications, we need to know where the graph of a function f(x) has horizontal tangent lines (slopes = 0).
 %
@@ -351,7 +351,7 @@ From the data in Table \ref{tab:2-2-tomato-velocity}, the average velocities are
 %\begin{solution} We could estimate the slope of L from the graph, but we won't. Instead, we will use the idea that secant lines over tiny intervals approximate the tangent line.
 %
 %graphgraph
-%We can see that the line through (2,4) and (3,9) on the graph of f is an approximation of the slope of the tangent line, and we can calculate that slope exactly: m=ΔyΔx=9-43-2=5. But m=5 is only an estimate of the slope of the tangent line and not a very good estimate. It's too big. We can get a better estimate by picking a second point on the graph of f which is closer to (2,4) – the point (2,4) is fixed and it must be one of the points we use.
+%We can see that the line through (2,4) and (3,9) on the graph of f is an approximation of the slope of the tangent line, and we can calculate that slope exactly: m=ΔyΔx=9-43-2=5. But m=5 is only an estimate of the slope of the tangent line and not a very good estimate. It's too big. We can get a better estimate by picking a second point on the graph of f which is closer to (2,4) - the point (2,4) is fixed and it must be one of the points we use.
 %
 %From the second figure, we can see that the slope of the line through the points (2,4) and (2.5,6.25) is a better approximation of the slope of the tangent line at (2,4): m=ΔyΔx=6.25-42.5-2=2.250.5=4.5, a better estimate, but still an approximation. We can continue picking points closer and closer to (2,4) on the graph of f, and then calculating the slopes of the lines through each of these points and the point (2,4):
 %
@@ -359,7 +359,7 @@ From the data in Table \ref{tab:2-2-tomato-velocity}, the average velocities are
 %x	y=x2	Slope of line through (x,y) and (2,4).	1.5	2.25	3.5	1.9	3.61	3.9	1.99	3.9601	3.99
 %Points to the right of (2,4)
 %x	y=x2	Slope of line through (x,y) and (2,4).	3	9	5	2.5	6.25	4.5	2.01	4.0401	4.01
-%The only thing special about the x–values we picked is that they are numbers which are close, and very close, to x=2. Someone else might have picked other nearby values for x. As the points we pick get closer and closer to the point (2,4) on the graph of y=x2, the slopes of the lines through the points and (2,4) are better approximations of the slope of the tangent line, and these slopes are getting closer and closer to 4.
+%The only thing special about the x-values we picked is that they are numbers which are close, and very close, to x=2. Someone else might have picked other nearby values for x. As the points we pick get closer and closer to the point (2,4) on the graph of y=x2, the slopes of the lines through the points and (2,4) are better approximations of the slope of the tangent line, and these slopes are getting closer and closer to 4.
 %
 %We can bypass much of the calculating by not picking the points one at a time: let's look at a general point near (2,4). Define x=2+h so h is the increment from 2 to x. If h is small, then x=2+h is close to 2 and the point (2+h,f(2+h))=(2+h,(2+h)2) is close to (2,4). The slope m of the line through the points (2,4) and (2+h,(2+h)2) is a good approximation of the slope of the tangent line at the point (2,4):
 %
@@ -373,3 +373,116 @@ From the data in Table \ref{tab:2-2-tomato-velocity}, the average velocities are
 %\end{solution}\end{example}
 %
 %The tangent line problem and the instantaneous velocity problem are the same problem. In each problem we wanted to know how rapidly something was changing at an instant in time, and the answer turned out to be finding the slope of a tangent line, which we approximated with the slope of a secant line. This idea is the key to defining the slope of a curve.
+
+\subsection{Exercises}
+\label{2-2-exercies}
+
+\begin{enumerate}
+\item	What is the slope of the line through the points $(3,9)$  and  $(x, y)$  for $y = x^2$ and:
+    \begin{itemize}
+    \item[(a)] $x = 2.97$?   
+    \item[(b)] $x = 3.001$?   
+	\item[(c)] $x = 3+h$?   
+    \item[(d)] What happens to this last slope when $h$  is very small (close to 0)?   
+    \item[(e)] Sketch the graph of $y = x^2$  for  $x$  near  $3$.
+    \end{itemize}
+
+\item	What is the slope of the line through  the points $(-2,4)$  and  $(x, y)$  for $y = x^2$  and:
+    \begin{itemize}
+    \item[(a)] $x = -1.98$?   
+    \item[(b)] $x = -2.03$?   
+	\item[(c)] $x = -2+h$?   
+    \item[(d)] What happens to this last slope when $h$  is very small (close to 0)?   
+    \item[(e)] Sketch the graph of $y = x^2$  for  $x$  near  $-2$.
+    \end{itemize}    
+ 
+\item	What is the slope of the line through  the points $(2,4)$  and  $(x, y)$  for $y = x^2 + x - 2$   and  
+\begin{itemize}
+    \item[(a)] $x = 1.99$?   
+    \item[(b)] $x = 2.004$?   
+	\item[(c)] $x = 2+h$?   
+    \item[(d)] What happens to this last slope when $h$  is very small (close to 0)?   
+    \item[(e)] Sketch the graph of $y = x^2+x-2$  for  $x$  near  $2$.
+    \end{itemize} 
+
+\item	What is the slope of the line through the points $(-1,-2)$  and  $(x, y)$  for $y = x^2 +x - 2$  and:
+\begin{itemize}
+    \item[(a)] $x = -0.98$?   
+    \item[(b)] $x = -1.03$?   
+	\item[(c)] $x = -1+h$?   
+    \item[(d)] What happens to this last slope when $h$  is very small (close to 0)?   
+    \item[(e)] Sketch the graph of $y = x^2+x-2$  for  $x$  near  $-1$.
+    \end{itemize} 
+
+\begin{minipage}{\linewidth}
+\begin{wrapfigure}{r}{0.4\textwidth}
+    \centering
+    \vspace{-12pt}
+    \includegraphics[width=0.4\textwidth]{img/chap2/image007.png}
+    \caption{Temperature in Ames.}
+    \label{fig:2-2-exer5}
+\end{wrapfigure}
+
+\item	The graph in Figure \ref{fig:2-2-exer5} shows the temperature during a day in Ames.
+    \begin{itemize}
+    \item[(a)] What was the average rate of change in temperature from  9 am  to  1 pm? 
+    \item[(b)] Sketch a tangent line on the curve and estimate how fast the temperature was changing at  10 am.  
+    \item[(c)] Sketch a tangent line on the curve and estimate how fast the temperature was changing at 7 pm.
+    \end{itemize}
+\end{minipage}
+
+\begin{minipage}{\linewidth}
+\begin{wrapfigure}{r}{0.4\textwidth}
+    \centering
+    %\vspace{-12pt}
+    \includegraphics[width=0.4\textwidth]{img/chap2/image008.png}
+    \caption{Net distance a car has traveled.}
+    \label{fig:2-2-exer6}
+\end{wrapfigure}
+
+\item	The graph in Figure \ref{fig:2-2-exer6} shows the distance of a car from a measuring position located on the edge of a straight road.
+    \begin{itemize}
+    \item[(a)]	 What was the average velocity of the car from  $t = 0$  to  $t = 30$ seconds?
+    \item[(b)]	What was the average velocity of the car from  $t = 10$  to  $t = 30$ seconds?
+    \item[(c)]	Sketch a tangent line on the curve and estimate the velocity of the car at  $t = 10$, at $t = 20$, and at $t = 30$ seconds.
+    \item[(d)]	What does the horizontal part of the graph between  $t = 15$  and  $t = 20$ seconds mean?
+    \item[(e)]	What does the negative velocity at  $t = 25$  represent?
+    \end{itemize}
+\end{minipage}
+
+\begin{minipage}{\linewidth}
+\begin{wrapfigure}{r}{0.4\textwidth}
+    \centering
+    \vspace{-12pt}
+    \includegraphics[width=0.4\textwidth]{img/chap2/image009.png}
+    \caption{Net distance a car has traveled.}
+    \label{fig:2-2-exer7}
+\end{wrapfigure}
+
+\item	The graph in Figure \ref{fig:2-2-exer7} shows the distance of a car from a measuring position located on the edge of a straight road.
+    \begin{itemize}
+    \item[(a)]	What was the average velocity of the car from  $t = 0$  to  $t = 20$ seconds?
+    \item[(b)]	What was the average velocity from  $t = 10$  to  $t = 30$ seconds?
+    \item[(c)]	About how fast was the car traveling at  $t = 10$ 
+		seconds?  at  $t = 20$ seconds?  at  $t = 30$ seconds?
+    \end{itemize}
+\end{minipage}
+
+\begin{minipage}{\linewidth}
+\begin{wrapfigure}{r}{0.4\textwidth}
+    \centering
+    %\vspace{-12pt}
+    \includegraphics[width=0.4\textwidth]{img/chap2/image010.png}
+    \caption{Developmental skill level of chess masters versus age.}
+    \label{fig:2-2-exer8}
+\end{wrapfigure}
+
+\item	The graph in Figure \ref{fig:2-2-exer8} shows the composite developmental skill level of chess masters at different ages as determined by their performance against other chess masters.  (From {\em Rating Systems for Human Abilities}, by W.H.\ Batchelder and R.S.\ Simpson, 1988.\ UMAP Module 698.)
+\begin{itemize}
+    \item[(a)]	At what age is the ``typical'' chess master playing the best chess?
+    \item[(b)]	At approximately what age is the chess master's skill level increasing most rapidly?
+    \item[(c)]	Describe the development of the ``typical'' chess master's skill in words.
+    \item[(d)]	Sketch graphs which you think would reasonably describe the performance levels versus age for an athlete, a classical pianist, a rock singer, a mathematician, and a professional in your major field.
+\end{itemize}
+\end{minipage}
+\end{enumerate}
