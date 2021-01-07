@@ -395,6 +395,53 @@ The {\bf revenue}\index{Revenue} function, $R(n)$ gives the amount of money brou
 $$ P(n) = R(n) - C(n)\enspace .$$
 The {\bf break-even point}\index{Break-even point} is the fewest number of items, $n$, that must be sold in order for $P(n) \geq 0$, in other words, the fewest number of items to guarantee that you won't have negative profit and be losing money.
 \end{definition}
+\begin{definition}
+The {\bf average cost}\index{Cost!average} to produce $n$ items is 
+$$A(n) = \frac{C(n)}{n} \enspace .$$
+\end{definition}
+
+\begin{example}
+Table \ref{tab:1-2-cost} shows the total cost ($C(n)$) of producing $n$ items.
+\begin{table}[ht!]
+\centering
+\begin{tabular}{cc}
+\toprule
+Items ($n$)	& Cost $C(n)$ \\
+\midrule
+0	& \$20,000\\
+100	& \$35,000\\
+200	& \$45,000\\	
+300	& \$53,000\\
+\bottomrule
+\end{tabular}
+\caption{Cost to produce $n$ items.}
+\label{tab:1-2-cost}
+\end{table}
+\begin{enumerate}[label=(\alph*)]
+    \item What is $F(n)$, the fixed cost for producing $n$ items?
+
+    \begin{solution}
+    The fixed cost is $F(n) = C(0) = \$20,000$, the cost even when no items (i.e., when $n=0$ items) are made.
+    \end{solution}
+    \item When 200 items are made, what is the variable cost?
+
+    \begin{solution}
+    The fixed cost is \$20,000, and when 200 items are made, the total cost is $C(200) = \$45,000$. Subtracting the fixed cost, the total variable cost is $V(200) = C(200) - F(n) = C(200) - C(0) = \$45,000 - \$20,000 = \$25,000$.
+    \end{solution}
+    \item When 200 items are made, what is the average cost?
+
+    \begin{solution}
+    The average cost is the total cost divided by the number of items: $A(200) = \frac{C(200)}{200 \mbox{ items}} = \frac{\$45,000}{200\mbox{ items}} = \$225$ per item. So, on average, each item had a cost of \$225.
+    \end{solution}    
+    
+    \item When 200 items are made, what is the average {\bf variable} cost?
+
+    \begin{solution}
+    The average variable cost would be the total variable cost divided by the number of items: $\frac{V(200)}{200 \mbox{ items}} = \frac{\$25,000}{200\mbox{ items}} = \$125$ per item. So, on average, each item had a variable cost of \$125.
+    \end{solution}
+\end{enumerate}
+
+\end{example}
 
 \subsection{Domain and Range.}
 
