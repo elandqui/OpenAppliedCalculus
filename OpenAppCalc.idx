@@ -32,96 +32,97 @@
 \indexentry{Revenue|hyperpage}{13}
 \indexentry{Profit|hyperpage}{13}
 \indexentry{Break-even point|hyperpage}{13}
-\indexentry{Domain|hyperpage}{13}
-\indexentry{Range|hyperpage}{13}
+\indexentry{Cost!average|hyperpage}{13}
+\indexentry{Domain|hyperpage}{14}
+\indexentry{Range|hyperpage}{14}
 \indexentry{Interval notation|hyperpage}{14}
 \indexentry{Union|hyperpage}{14}
-\indexentry{Mathematical modeling|hyperpage}{18}
-\indexentry{Modeling|hyperpage}{18}
-\indexentry{model|hyperpage}{18}
-\indexentry{LibreOffice|hyperpage}{19}
-\indexentry{Scatter plot|hyperpage}{19}
-\indexentry{Time series|hyperpage}{19}
-\indexentry{Curve fitting|hyperpage}{24}
-\indexentry{Curve!regression|hyperpage}{24}
-\indexentry{Regression|hyperpage}{24}
-\indexentry{Curve!best fit|hyperpage}{24}
-\indexentry{Interpolation|hyperpage}{24}
-\indexentry{Extrapolation|hyperpage}{24}
-\indexentry{Model breakdown|hyperpage}{24}
-\indexentry{Intercept!vertical|hyperpage}{27}
-\indexentry{Intercept!$y$|hyperpage}{27}
-\indexentry{Rate of change|hyperpage}{27}
-\indexentry{Function!linear|hyperpage}{27}
-\indexentry{Function!linear|hyperpage}{27}
-\indexentry{Slope-intercept form|hyperpage}{27}
-\indexentry{Slope|hyperpage}{28}
-\indexentry{Increasing|hyperpage}{28}
-\indexentry{Decreasing|hyperpage}{28}
-\indexentry{Delta ($\Delta$)|hyperpage}{28}
-\indexentry{Intercept!vertical|hyperpage}{31}
-\indexentry{Slope|hyperpage}{31}
-\indexentry{Intercept!horizontal|hyperpage}{33}
-\indexentry{Line!best fit|hyperpage}{40}
-\indexentry{Line!regression|hyperpage}{40}
-\indexentry{Regression!line|hyperpage}{40}
-\indexentry{Coefficient of determination|hyperpage}{40}
-\indexentry{Correlation coefficient|hyperpage}{40}
-\indexentry{Function!quadratic|hyperpage}{44}
-\indexentry{Vertex|hyperpage}{44}
-\indexentry{Intercept!vertical|hyperpage}{45}
-\indexentry{Intercept!horizontal|hyperpage}{45}
-\indexentry{Zero|hyperpage}{45}
-\indexentry{Root|hyperpage}{45}
-\indexentry{Quadratic formula|hyperpage}{46}
-\indexentry{Function!polynomial|hyperpage}{46}
-\indexentry{Coefficient|hyperpage}{46}
-\indexentry{Term|hyperpage}{46}
-\indexentry{Degree|hyperpage}{47}
-\indexentry{Term!leading|hyperpage}{47}
-\indexentry{Coefficient!leading|hyperpage}{47}
-\indexentry{Intercept!vertical|hyperpage}{47}
-\indexentry{Intercept!horizontal|hyperpage}{47}
-\indexentry{Function!rational|hyperpage}{48}
-\indexentry{Asymptote!vertical|hyperpage}{49}
-\indexentry{Asymptote|hyperpage}{49}
-\indexentry{Asymptote!vertical|hyperpage}{49}
-\indexentry{Asymptote!horizontal|hyperpage}{50}
-\indexentry{Laws of Exponents|hyperpage}{52}
-\indexentry{Function!exponential|hyperpage}{54}
-\indexentry{Exponential growth|hyperpage}{54}
-\indexentry{Exponential decay|hyperpage}{54}
-\indexentry{Initial value|hyperpage}{54}
-\indexentry{Starting value|hyperpage}{54}
-\indexentry{Rate!decay|hyperpage}{54}
-\indexentry{Rate!growth|hyperpage}{54}
-\indexentry{Growth factor|hyperpage}{54}
-\indexentry{Growth multiplier|hyperpage}{54}
-\indexentry{Compound interest|hyperpage}{55}
-\indexentry{Principal|hyperpage}{55}
-\indexentry{Annual percentage rate|hyperpage}{55}
-\indexentry{APR|hyperpage}{55}
-\indexentry{Annual percentage yield|hyperpage}{55}
-\indexentry{APY|hyperpage}{55}
-\indexentry{Continuous growth|hyperpage}{56}
-\indexentry{Initial value|hyperpage}{56}
-\indexentry{Starting value|hyperpage}{56}
-\indexentry{Growth rate|hyperpage}{56}
-\indexentry{Function!logistic|hyperpage}{61}
-\indexentry{Function!logarithm|hyperpage}{61}
-\indexentry{Base|hyperpage}{61}
-\indexentry{Function!exponential|hyperpage}{61}
-\indexentry{Properties of logarithms|hyperpage}{61}
-\indexentry{Logarithm!common|hyperpage}{61}
-\indexentry{Logarithm!natural|hyperpage}{61}
-\indexentry{Functions!trigonometric|hyperpage}{64}
-\indexentry{Function!sine|hyperpage}{64}
-\indexentry{Function!cosine|hyperpage}{64}
-\indexentry{Sine wave|hyperpage}{64}
-\indexentry{Shift!vertical|hyperpage}{64}
-\indexentry{Amplitude|hyperpage}{64}
-\indexentry{Shift!horizontal|hyperpage}{64}
-\indexentry{Model!trigonometric|hyperpage}{64}
+\indexentry{Mathematical modeling|hyperpage}{19}
+\indexentry{Modeling|hyperpage}{19}
+\indexentry{model|hyperpage}{19}
+\indexentry{LibreOffice|hyperpage}{20}
+\indexentry{Scatter plot|hyperpage}{20}
+\indexentry{Time series|hyperpage}{20}
+\indexentry{Curve fitting|hyperpage}{25}
+\indexentry{Curve!regression|hyperpage}{25}
+\indexentry{Regression|hyperpage}{25}
+\indexentry{Curve!best fit|hyperpage}{25}
+\indexentry{Interpolation|hyperpage}{25}
+\indexentry{Extrapolation|hyperpage}{25}
+\indexentry{Model breakdown|hyperpage}{25}
+\indexentry{Intercept!vertical|hyperpage}{28}
+\indexentry{Intercept!$y$|hyperpage}{28}
+\indexentry{Rate of change|hyperpage}{28}
+\indexentry{Function!linear|hyperpage}{28}
+\indexentry{Function!linear|hyperpage}{28}
+\indexentry{Slope-intercept form|hyperpage}{28}
+\indexentry{Slope|hyperpage}{29}
+\indexentry{Increasing|hyperpage}{29}
+\indexentry{Decreasing|hyperpage}{29}
+\indexentry{Delta ($\Delta$)|hyperpage}{29}
+\indexentry{Intercept!vertical|hyperpage}{32}
+\indexentry{Slope|hyperpage}{32}
+\indexentry{Intercept!horizontal|hyperpage}{34}
+\indexentry{Line!best fit|hyperpage}{41}
+\indexentry{Line!regression|hyperpage}{41}
+\indexentry{Regression!line|hyperpage}{41}
+\indexentry{Coefficient of determination|hyperpage}{41}
+\indexentry{Correlation coefficient|hyperpage}{41}
+\indexentry{Function!quadratic|hyperpage}{45}
+\indexentry{Vertex|hyperpage}{45}
+\indexentry{Intercept!vertical|hyperpage}{46}
+\indexentry{Intercept!horizontal|hyperpage}{46}
+\indexentry{Zero|hyperpage}{46}
+\indexentry{Root|hyperpage}{46}
+\indexentry{Quadratic formula|hyperpage}{47}
+\indexentry{Function!polynomial|hyperpage}{47}
+\indexentry{Coefficient|hyperpage}{47}
+\indexentry{Term|hyperpage}{47}
+\indexentry{Degree|hyperpage}{48}
+\indexentry{Term!leading|hyperpage}{48}
+\indexentry{Coefficient!leading|hyperpage}{48}
+\indexentry{Intercept!vertical|hyperpage}{48}
+\indexentry{Intercept!horizontal|hyperpage}{48}
+\indexentry{Function!rational|hyperpage}{49}
+\indexentry{Asymptote!vertical|hyperpage}{50}
+\indexentry{Asymptote|hyperpage}{50}
+\indexentry{Asymptote!vertical|hyperpage}{50}
+\indexentry{Asymptote!horizontal|hyperpage}{51}
+\indexentry{Laws of Exponents|hyperpage}{53}
+\indexentry{Function!exponential|hyperpage}{55}
+\indexentry{Exponential growth|hyperpage}{55}
+\indexentry{Exponential decay|hyperpage}{55}
+\indexentry{Initial value|hyperpage}{55}
+\indexentry{Starting value|hyperpage}{55}
+\indexentry{Rate!decay|hyperpage}{55}
+\indexentry{Rate!growth|hyperpage}{55}
+\indexentry{Growth factor|hyperpage}{55}
+\indexentry{Growth multiplier|hyperpage}{55}
+\indexentry{Compound interest|hyperpage}{56}
+\indexentry{Principal|hyperpage}{56}
+\indexentry{Annual percentage rate|hyperpage}{56}
+\indexentry{APR|hyperpage}{56}
+\indexentry{Annual percentage yield|hyperpage}{56}
+\indexentry{APY|hyperpage}{56}
+\indexentry{Continuous growth|hyperpage}{57}
+\indexentry{Initial value|hyperpage}{57}
+\indexentry{Starting value|hyperpage}{57}
+\indexentry{Growth rate|hyperpage}{57}
+\indexentry{Function!logistic|hyperpage}{62}
+\indexentry{Function!logarithm|hyperpage}{62}
+\indexentry{Base|hyperpage}{62}
+\indexentry{Function!exponential|hyperpage}{62}
+\indexentry{Properties of logarithms|hyperpage}{62}
+\indexentry{Logarithm!common|hyperpage}{62}
+\indexentry{Logarithm!natural|hyperpage}{62}
+\indexentry{Functions!trigonometric|hyperpage}{65}
+\indexentry{Function!sine|hyperpage}{65}
+\indexentry{Function!cosine|hyperpage}{65}
+\indexentry{Sine wave|hyperpage}{65}
+\indexentry{Shift!vertical|hyperpage}{65}
+\indexentry{Amplitude|hyperpage}{65}
+\indexentry{Shift!horizontal|hyperpage}{65}
+\indexentry{Model!trigonometric|hyperpage}{65}
 \indexentry{Bitcoin|hyperpage}{67}
 \indexentry{Slope|hyperpage}{68}
 \indexentry{Rate of change|hyperpage}{68}
@@ -134,4 +135,7 @@
 \indexentry{Rate of change!instantaneous|hyperpage}{69}
 \indexentry{Line!tangent|hyperpage}{69}
 \indexentry{Tangent line|hyperpage}{69}
-\indexentry{Delta|hyperpage}{71}
+\indexentry{Tangent line!horizontal|hyperpage}{71}
+\indexentry{Delta|hyperpage}{72}
+\indexentry{Marginal cost|hyperpage}{72}
+\indexentry{Cost!marginal|hyperpage}{72}

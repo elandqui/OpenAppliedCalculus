@@ -6,116 +6,120 @@
   \indexspace
 
   \item Accumulation, \hyperpage{1}
-  \item Amplitude, \hyperpage{64}
-  \item Annual percentage rate, \hyperpage{55}
-  \item Annual percentage yield, \hyperpage{55}
-  \item APR, \hyperpage{55}
-  \item APY, \hyperpage{55}
+  \item Amplitude, \hyperpage{65}
+  \item Annual percentage rate, \hyperpage{56}
+  \item Annual percentage yield, \hyperpage{56}
+  \item APR, \hyperpage{56}
+  \item APY, \hyperpage{56}
   \item Area
     \subitem under a curve, \hyperpage{1}
-  \item Asymptote, \hyperpage{49}
-    \subitem horizontal, \hyperpage{50}
-    \subitem vertical, \hyperpage{49}
+  \item Asymptote, \hyperpage{50}
+    \subitem horizontal, \hyperpage{51}
+    \subitem vertical, \hyperpage{50}
   \item Axis
     \subitem horizontal, \hyperpage{8}
     \subitem vertical, \hyperpage{8}
 
   \indexspace
 
-  \item Base, \hyperpage{61}
+  \item Base, \hyperpage{62}
   \item Bitcoin, \hyperpage{67}
   \item Break-even point, \hyperpage{12, 13}
 
   \indexspace
 
-  \item Coefficient, \hyperpage{46}
-    \subitem leading, \hyperpage{47}
-  \item Coefficient of determination, \hyperpage{40}
-  \item Compound interest, \hyperpage{55}
-  \item Continuous growth, \hyperpage{56}
+  \item Coefficient, \hyperpage{47}
+    \subitem leading, \hyperpage{48}
+  \item Coefficient of determination, \hyperpage{41}
+  \item Compound interest, \hyperpage{56}
+  \item Continuous growth, \hyperpage{57}
   \item Coordinate axes, \hyperpage{8}
-  \item Correlation coefficient, \hyperpage{40}
+  \item Correlation coefficient, \hyperpage{41}
   \item Cost
+    \subitem average, \hyperpage{13}
     \subitem fixed, \hyperpage{12, 13}
+    \subitem marginal, \hyperpage{72}
     \subitem total, \hyperpage{12, 13}
     \subitem variable, \hyperpage{12, 13}
   \item Curve
-    \subitem best fit, \hyperpage{24}
-    \subitem regression, \hyperpage{24}
-  \item Curve fitting, \hyperpage{24}
+    \subitem best fit, \hyperpage{25}
+    \subitem regression, \hyperpage{25}
+  \item Curve fitting, \hyperpage{25}
 
   \indexspace
 
-  \item Decreasing, \hyperpage{28}
-  \item Degree, \hyperpage{47}
-  \item Delta ($\Delta$), \hyperpage{28}
-  \item Domain, \hyperpage{13}
+  \item Decreasing, \hyperpage{29}
+  \item Degree, \hyperpage{48}
+  \item Delta, \hyperpage{72}
+  \item Delta ($\Delta$), \hyperpage{29}
+  \item Domain, \hyperpage{14}
 
   \indexspace
 
-  \item Exponential decay, \hyperpage{54}
-  \item Exponential growth, \hyperpage{54}
-  \item Extrapolation, \hyperpage{24}
+  \item Exponential decay, \hyperpage{55}
+  \item Exponential growth, \hyperpage{55}
+  \item Extrapolation, \hyperpage{25}
 
   \indexspace
 
   \item Function, \hyperpage{7}
-    \subitem cosine, \hyperpage{64}
+    \subitem cosine, \hyperpage{65}
     \subitem cost, \hyperpage{12}
-    \subitem exponential, \hyperpage{54}, \hyperpage{61}
-    \subitem linear, \hyperpage{27}
-    \subitem logarithm, \hyperpage{61}
-    \subitem logistic, \hyperpage{61}
-    \subitem polynomial, \hyperpage{46}
+    \subitem exponential, \hyperpage{55}, \hyperpage{62}
+    \subitem linear, \hyperpage{28}
+    \subitem logarithm, \hyperpage{62}
+    \subitem logistic, \hyperpage{62}
+    \subitem polynomial, \hyperpage{47}
     \subitem profit, \hyperpage{12}
-    \subitem quadratic, \hyperpage{44}
-    \subitem rational, \hyperpage{48}
+    \subitem quadratic, \hyperpage{45}
+    \subitem rational, \hyperpage{49}
     \subitem revenue, \hyperpage{12}
-    \subitem sine, \hyperpage{64}
+    \subitem sine, \hyperpage{65}
   \item Functions
-    \subitem trigonometric, \hyperpage{64}
+    \subitem trigonometric, \hyperpage{65}
 
   \indexspace
 
   \item Graph, \hyperpage{8}
-  \item Growth factor, \hyperpage{54}
-  \item Growth multiplier, \hyperpage{54}
-  \item Growth rate, \hyperpage{56}
+  \item Growth factor, \hyperpage{55}
+  \item Growth multiplier, \hyperpage{55}
+  \item Growth rate, \hyperpage{57}
 
   \indexspace
 
-  \item Increasing, \hyperpage{28}
-  \item Initial value, \hyperpage{54}, \hyperpage{56}
+  \item Increasing, \hyperpage{29}
+  \item Initial value, \hyperpage{55}, \hyperpage{57}
   \item Intercept
-    \subitem $y$, \hyperpage{27}
-    \subitem horizontal, \hyperpage{33}, \hyperpage{45}, \hyperpage{47}
-    \subitem vertical, \hyperpage{27}, \hyperpage{31}, \hyperpage{45}, 
-		\hyperpage{47}
-  \item Interpolation, \hyperpage{24}
+    \subitem $y$, \hyperpage{28}
+    \subitem horizontal, \hyperpage{34}, \hyperpage{46}, \hyperpage{48}
+    \subitem vertical, \hyperpage{28}, \hyperpage{32}, \hyperpage{46}, 
+		\hyperpage{48}
+  \item Interpolation, \hyperpage{25}
   \item Interval notation, \hyperpage{14}
 
   \indexspace
 
-  \item Laws of Exponents, \hyperpage{52}
+  \item Laws of Exponents, \hyperpage{53}
   \item Leibniz, Gottfried, \hyperpage{1}
-  \item LibreOffice, \hyperpage{19}
+  \item LibreOffice, \hyperpage{20}
   \item Line
-    \subitem best fit, \hyperpage{40}
-    \subitem regression, \hyperpage{40}
+    \subitem best fit, \hyperpage{41}
+    \subitem regression, \hyperpage{41}
     \subitem secant, \hyperpage{68}
     \subitem tangent, \hyperpage{68, 69}
   \item Logarithm
-    \subitem common, \hyperpage{61}
-    \subitem natural, \hyperpage{61}
+    \subitem common, \hyperpage{62}
+    \subitem natural, \hyperpage{62}
 
   \indexspace
 
-  \item Mathematical modeling, \hyperpage{18}
+  \item Marginal cost, \hyperpage{72}
+  \item Mathematical modeling, \hyperpage{19}
   \item Model
-    \subitem trigonometric, \hyperpage{64}
-  \item model, \hyperpage{18}
-  \item Model breakdown, \hyperpage{24}
-  \item Modeling, \hyperpage{18}
+    \subitem trigonometric, \hyperpage{65}
+  \item model, \hyperpage{19}
+  \item Model breakdown, \hyperpage{25}
+  \item Modeling, \hyperpage{19}
 
   \indexspace
 
@@ -129,46 +133,47 @@
 
   \item P\'{o}lya, George, \hyperpage{4}
   \item Point, \hyperpage{8}
-  \item Principal, \hyperpage{55}
+  \item Principal, \hyperpage{56}
   \item Profit, \hyperpage{12, 13}
-  \item Properties of logarithms, \hyperpage{61}
+  \item Properties of logarithms, \hyperpage{62}
 
   \indexspace
 
-  \item Quadratic formula, \hyperpage{46}
+  \item Quadratic formula, \hyperpage{47}
 
   \indexspace
 
-  \item Range, \hyperpage{13}
+  \item Range, \hyperpage{14}
   \item Rate
-    \subitem decay, \hyperpage{54}
-    \subitem growth, \hyperpage{54}
-  \item Rate of change, \hyperpage{1}, \hyperpage{27}, \hyperpage{68}
+    \subitem decay, \hyperpage{55}
+    \subitem growth, \hyperpage{55}
+  \item Rate of change, \hyperpage{1}, \hyperpage{28}, \hyperpage{68}
     \subitem instantaneous, \hyperpage{69}
-  \item Regression, \hyperpage{24}
-    \subitem line, \hyperpage{40}
+  \item Regression, \hyperpage{25}
+    \subitem line, \hyperpage{41}
   \item Revenue, \hyperpage{12, 13}
-  \item Root, \hyperpage{45}
+  \item Root, \hyperpage{46}
 
   \indexspace
 
-  \item Scatter plot, \hyperpage{19}
+  \item Scatter plot, \hyperpage{20}
   \item Secant line, \hyperpage{68}
   \item Shift
-    \subitem horizontal, \hyperpage{64}
-    \subitem vertical, \hyperpage{64}
-  \item Sine wave, \hyperpage{64}
-  \item Slope, \hyperpage{28}, \hyperpage{31}, \hyperpage{68}
+    \subitem horizontal, \hyperpage{65}
+    \subitem vertical, \hyperpage{65}
+  \item Sine wave, \hyperpage{65}
+  \item Slope, \hyperpage{29}, \hyperpage{32}, \hyperpage{68}
     \subitem curve, \hyperpage{1}, \hyperpage{68}
-  \item Slope-intercept form, \hyperpage{27}
-  \item Starting value, \hyperpage{54}, \hyperpage{56}
+  \item Slope-intercept form, \hyperpage{28}
+  \item Starting value, \hyperpage{55}, \hyperpage{57}
 
   \indexspace
 
   \item Tangent line, \hyperpage{68, 69}
-  \item Term, \hyperpage{46}
-    \subitem leading, \hyperpage{47}
-  \item Time series, \hyperpage{19}
+    \subitem horizontal, \hyperpage{71}
+  \item Term, \hyperpage{47}
+    \subitem leading, \hyperpage{48}
+  \item Time series, \hyperpage{20}
 
   \indexspace
 
@@ -179,11 +184,11 @@
   \item Variable
     \subitem dependent, \hyperpage{7}
     \subitem independent, \hyperpage{7}
-  \item Vertex, \hyperpage{44}
+  \item Vertex, \hyperpage{45}
   \item Vertical line test, \hyperpage{9}
 
   \indexspace
 
-  \item Zero, \hyperpage{45}
+  \item Zero, \hyperpage{46}
 
 \end{theindex}
