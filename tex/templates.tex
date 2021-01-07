@@ -1,3 +1,6 @@
+% Itemizing
+\begin{enumerate}[label=(\alph*)]
+
 % A basic table from Section 1.1.
 \begin{table}[ht!]
 \begin{centering}
@@ -32,7 +35,7 @@ $\Delta t$ (seconds) & $\Delta h = h(1+\Delta t)-h(1)$ (feet) & $\dfrac{\Delta h
 \end{centering}
 \end{table}
 
-% Wrapped figure in Chapter 0
+% Wrapped figure in Chapter 0 (not in an itemized environment.
 
 \begin{wrapfigure}{R}{0.25\textwidth}
   \vspace{-20pt}
@@ -43,6 +46,22 @@ $\Delta t$ (seconds) & $\Delta h = h(1+\Delta t)-h(1)$ (feet) & $\dfrac{\Delta h
 \caption{Isaac Newton in 1689}
 \vspace{-10pt}
 \end{wrapfigure}
+
+% Wrapped figure for an itemized environment.
+% In Exercises 1.1.6
+\begin{minipage}{\linewidth}
+\begin{wrapfigure}{r}{0.4\textwidth}
+    \centering
+    \vspace{-12pt}
+    \includegraphics[width=0.4\textwidth]{img/chap1/sec1-2/prob7.png}
+\end{wrapfigure}
+
+\item Let $g(x)$ be the function graphed on the right.
+    \begin{enumerate}
+        \item Evaluate $g(2)$.
+        \item Solve $g(x) = 2$ for $x$.
+    \end{enumerate}
+\end{minipage}
 
 % Sample Spreadsheet
 \begin{table}[!ht]
