@@ -45,9 +45,11 @@ If we wanted to know the rate of change of the culture between two distinct poin
 
 An informal definition of a tangent line of a curve is that a {\bf tangent line} of a curve is a line that touches one point on the curve in such a way that the curve and line would be indistinguishable if you zoomed in closely enough. In other words, the slope of the curve is the same as the slope of the line at that point.
 
-Figure \ref{fig:2-2-bacteria-tangent} shows the tangent line of the curve in blue. We can approximate the slope of the tangent line by computing the slope between any two points on the line. Pick any two. We will pick the two black points and estimate their coordinates: roughly $(0, 3.7)$ and $(8, 1)$. Therefore, the population of bacteria is changing at a rate of roughly
-$$\frac{1-3.7}{8-0} \mbox{ million baceria per hour} \approx -0.34 \mbox{ million bacteria per hour} \enspace .$$
+\begin{solution}
+Figure \ref{fig:2-2-bacteria-tangent} shows the tangent line of the curve in blue. We can approximate the slope of the tangent line by computing the slope between any two points on the line. Pick any two. We will pick the two black points and estimate their coordinates: roughly $(0, 3.7)$ and $(8, 1)$. Keeping the units in mind, the population of bacteria is changing at a rate of roughly
+$$\frac{1-3.7}{8-0} \frac{\mbox{ million baceria}}{\mbox{ hour}} \approx -0.34 \mbox{ million bacteria per hour} \enspace .$$
 Since this value is negative, the population is decreasing. Note the negative slope of the tangent line. In conclusion, eight hours after the antibiotic is added to the bateria culture, the bacteria population is decreasing at a rate of roughly 340,000 bacteria per hour. Practically, this means that the antibiotic is successfully killing off the bacteria.
+\end{solution}
 \begin{figure}[ht!]
 \centering
 \begin{tikzpicture}[scale=1]
@@ -86,22 +88,58 @@ Since this value is negative, the population is decreasing. Note the negative sl
 \end{figure}
 
 
-\subsection{Tangent Lines, Formally}
+\subsection{Tangent Lines, More Formally}
 \begin{wrapfigure}{R}{0.4\textwidth}
   \vspace{-20pt}
     \centering
     \includegraphics{img/chap2/image112.png}
     \caption{Secant lines approaching a tangent line.}
 \label{fig:2-2-secants}
+    \vspace{-10pt}
 \end{wrapfigure}
 
-To develop our formal definition of a tangent line, we consider the plot in Figure \ref{fig:2-2-secants}. In the plot, the red line is the tangent line of the curve $y=f(x)$ at the point $P = (a, f(a))$ and the green lines are secant lines that go through $P$. The closer the point $Q$ is to the point $P$, the closer the secant line slope gets to the tangent line slope and the closer the secant line gets to the tangent line. This will be key to finding the tangent slope, but first we need to more carefully define the idea of ``getting closer to.''
+To develop our formal definition of a tangent line, we consider the plot in Figure \ref{fig:2-2-secants}. In the plot, the red line is the tangent line of the curve $y=f(x)$ at the point $P = (a, f(a))$ and the green lines are secant lines that go through $P$. The closer the point $Q$ is to the point $P$, the closer the secant line slope gets to the tangent line slope and the closer the secant line gets to the tangent line. This will be key to finding the tangent slope, but first we need to more carefully define the idea of ``getting closer to.'' This will be done in Sections %\ref{sec:limits} and \ref{sec:algderiv}.
 
-\subsection*{Instantaneous Velocity} 
+This is an example for the reader to try.
+\begin{example}
+The graph in Figure \ref{fig:2-2-curve-for-tangents} is the graph of $y=f(x)$. We want to find the slope of the tangent line of this curve at the point $(1, 2)$.
+\begin{figure}[!ht]
+  \centering
+    \includegraphics[width=0.6\textwidth]{img/chap2/image005.png}
+    \caption{$y=f(x)$}
+    \label{fig:2-2-curve-for-tangents}
+\end{figure}
+
+\begin{solution}
+First, draw the secant line between the points $(1, 2)$ and $(2, -1)$ and compute its slope. Now draw the secant line between the points $(1, 2)$ and $(1.5, 1)$ and compute its slope. Compare the two lines you have drawn. Which would be a better approximation of the tangent line to the curve at the point $(1, 2)$?
+
+Now draw the secant line between the points $(1, 2)$ and $(1.3, 1.5)$ and compute its slope. Is this line an even better approximation of the tangent line? Now draw your best guess for the tangent line and measure its slope. Do you see a pattern in the slopes?
+
+You should have noticed that as the interval got smaller and smaller, the secant line got closer to the tangent line and its slope got closer to the slope of the tangent line. That's good news! We know how to find the slope of a secant line.
+\end{solution}
+\end{example}
+
+In some applications, we need to know where the graph of a function $f(x)$ has horizontal tangent lines\index{Tangent line!horizontal}, that is, where the slope of the curve, or the rate of change of the function, is $0$.
+
+\begin{example}
+The graph of $y=g(x)$ is in Figure \ref{fig:2-2-gx}. At what values of $x$ does the graph of $g(x)$ have horizontal tangent lines?
+\begin{figure}[!ht]
+  \centering
+    \includegraphics[width=0.4\textwidth]{img/chap2/image006.png}
+    \caption{$y=g(x)$}
+    \label{fig:2-2-gx}
+\end{figure}
+
+\begin{solution}
+The tangent lines to the graph of $g(x)$ are horizontal when $x\approx -1,1,2.5,$ and $5$.
+\end{solution}\end{example}
+
+\subsection{Example: Instantaneous Velocity} 
+To give another example of the concept of instantaneous rate of change, we consider the well-known and well-understood example of velocity. In fact, it was the problem of computing instantaneous velocity that led to the invention of calculus.
 
 Suppose we drop a tomato from the top of a 100 foot building and time its fall.
 \begin{wrapfigure}{R}{0.5\textwidth}
-  \vspace{-20pt}
+  \vspace{  0pt}
     \centering
     \includegraphics{img/chap2/image003.png}
     \caption{The height of a dropped tomato versus time.}
@@ -153,7 +191,7 @@ Some questions require a little calculation.
     \end{itemize}
 \end{example}
 
-Now, we consider a different question that is an example of an instantaneous rate of change, and example of a question that is significantly different from the previous example about average velocity.
+Now, we consider a different question that is an example of an instantaneous rate of change, and an example of a question that is significantly different from the previous example about average velocity.
 \begin{example}
     How fast was the tomato falling one second after it was dropped?
 
@@ -162,9 +200,9 @@ Now, we consider a different question that is an example of an instantaneous rat
 
     One crude approximation of the instantaneous velocity after one second is simply the average velocity during the entire fall: $-40$ ft/s. However, the tomato fell slowly at the beginning and rapidly near the end so this estimate may or may not be a good answer.
 
-    We can get a better approximation of the instantaneous velocity at $t=1$ by calculating the average velocities over a short time interval near $t=1$. The average velocity between $t=0.5 and t=1$ is $\displaystyle\frac{-12 \mbox{ feet}}{0.5 \mbox{ s}} = -24$ ft/s, and the average velocity between $t=1$ and $t=1.5$ is $\displaystyle\frac{-20 \mbox{ feet}}{0.5 \mbox{ s}} = -40$ ft/s, so we can be reasonably sure that the instantaneous velocity is between $-24$ ft/s and $-40$ ft/s.
+    We can get a better approximation of the instantaneous velocity at $t=1$ by calculating the average velocities over a short time interval near $t=1$. The average velocity between $t=0.5$ and $t=1$ is $\displaystyle\frac{-12 \mbox{ feet}}{0.5 \mbox{ s}} = -24$ ft/s, and the average velocity between $t=1$ and $t=1.5$ is $\displaystyle\frac{-20 \mbox{ feet}}{0.5 \mbox{ s}} = -40$ ft/s, so we can be reasonably sure that the instantaneous velocity is between $-24$ ft/s and $-40$ ft/s.
 
-    Another approximation would be by calculating the average velocity between $t=0.5 and t=1.5$, that is, the shortest time interval we have with $t=1$ in the middle: $\displaystyle\frac{64-96 \mbox{ feet}}{1.5-0.5 \mbox{ s}} = -32$ ft/s.
+    Another approximation would be by calculating the average velocity between $t=0.5$ and $t=1.5$, that is, the shortest time interval we have with $t=1$ in the middle: $\displaystyle\frac{64-96 \mbox{ feet}}{1.5-0.5 \mbox{ s}} = -32$ ft/s.
 
      Now, in general, the shorter the time interval over which we calculate the average velocity, the better the average velocity will approximate the instantaneous velocity. Using just the table in Figure \ref{fig:2-2-tomato}, we cannot find any shorter time interval. However, with a model or a function describing the height of the tomato, we could get a better approximation. We will plot the points and fit a curve to it and work from there.
 
@@ -283,6 +321,52 @@ From the data in Table \ref{tab:2-2-tomato-velocity}, the average velocities are
 \end{solution}
 \end{example}
 
+\subsection*{Example: Marginal Cost} 
+Another example of the application of secant and tangent lines is {\bf marginal cost}\index{Marginal cost}\index{Cost!marginal}. 
+\begin{definition}
+    The {\bf marginal cost} at $q$ items, $MC(q)$, is the cost of producing the next item:
+$$MC(q)=C(q+1)-C(q) \enspace .$$
+
+In many cases, though, it's easier to approximate this difference using tangent lines, as the instantaneous rate of change of $C(n)$ at $n=q$. Some sources define the marginal cost this way. In this course, we will use both of these definitions as if they were interchangeable.
+\end{definition} 
+In other words, the marginal cost of $n$ items is the slope of the secant line of $y=C(n)$ through the points $(n, C(n))$ and $(n+1, C(n+1))$, but it can be approximated by the slope of the tangent line of $y=C(n)$ through the point $(n, C(n))$. 
+\begin{example}
+Table \ref{tab:2-2-cost} shows the total cost ($C(n)$) of producing $n$ items.
+\begin{table}[ht!]
+\centering
+\begin{tabular}{cc}
+\toprule
+Items ($n$)	& Cost $C(n)$ \\
+\midrule
+0	& \$20,000\\
+100	& \$35,000\\
+200	& \$45,000\\	
+300	& \$53,000\\
+\bottomrule
+\end{tabular}
+\caption{Cost to produce $n$ items.}
+\label{tab:2-2-cost}
+\end{table}
+
+When 200 items are made, estimate the marginal cost.
+
+\begin{solution}
+Since we don't have $C(201)$, We need to estimate the value of $MC(200)$ by estimating the slope of the tangent line at $n=200$ using secant lines. The secant line from $n=100$ to $n=200$ has a slope of:
+$$MC(200) \approx \frac{\$45,000-\$35,000}{200-100 \mbox{ items}} = \$100 \mbox{ per item} \enspace .$$
+The secant line from $n=200$ to $n=300$ has a slope of:
+$$MC(200) \approx \frac{\$53,000-\$45,000}{300-200 \mbox{ items}} = \$80 \mbox{ per item} \enspace .$$
+
+We could estimate the tangent slope by averaging these secant slopes, giving us an estimate of $\$90$ per item. 
+
+Alternatively, we could estimate $MC(2000$ by finding the slope of the secant line between $n=100$ and $n=300$:
+$$MC(200) \approx \frac{\$53,000-\$35,000}{300-100 \mbox{ items}} = \$90 \mbox{ per item} \enspace .$$
+
+This tells us that after 200 items have been made, it will cost about $\$90$ to make one more item.
+    \end{solution}
+\end{example}
+
+
+%Instantaneous velocity is an example of the instantaneous rate of change of a function, specifically position as a function of time. Therefore, we are interested in the more general concept of the instantaneous rate of change of a function.
 %The average velocity over a time interval is ΔpositionΔtime, which is the slope of the secant line through two points on the graph of height versus time. The instantaneous velocity at a particular time and height is the slope of the tangent line to the graph at the point given by that time and height.
 %
 %graph
@@ -316,35 +400,9 @@ From the data in Table \ref{tab:2-2-tomato-velocity}, the average velocities are
 %This question is asking for the instantaneous rate of population change, the slope of the line which is tangent to the population curve at (3, 500). If we sketch a line approximately tangent to the curve at (3, 500) and pick two points near the ends of the tangent line segment , we can estimate that instantaneous rate of population growth is approximately 320 bacteria/day .
 %
 % bacteria 2
-%Tangent Lines
-%Try this!
-%The graph below is the graph of y=f(x). We want to find the slope of the tangent line at the point (1, 2).
-%
-%graph
-%First, draw the secant line between (1, 2) and (2, -1) and compute its slope.
-%
-%Now draw the secant line between (1, 2) and (1.5, 1) and compute its slope.
-%
-%Compare the two lines you have drawn. Which would be a better approximation of the tangent line to the curve at (1, 2)?
-%
-%Now draw the secant line between (1, 2) and (1.3, 1.5) and compute its slope. Is this line an even better approximation of the tangent line?
-%
-%Now draw your best guess for the tangent line and measure its slope. Do you see a pattern in the slopes?
-%
-%You should have noticed that as the interval got smaller and smaller, the secant line got closer to the tangent line and its slope got closer to the slope of the tangent line. That’s good news-we know how to find the slope of a secant line.
-%
-%In some applications, we need to know where the graph of a function f(x) has horizontal tangent lines (slopes = 0).
-%
-%\begin{example}
-%Below is the graph of y=g(x). At what values of x does the graph of g(x) have horizontal tangent lines?
-%
-%graph
-%\begin{solution}
-%The tangent lines to the graph of g(x) are horizontal (slope = 0) when x\approx   -1,1,2.5, and 5.
-%\end{solution}\end{example}
-%
+
 %Let's explore further this idea of finding the tangent slope based on the secant slope.
-%
+
 %\begin{example}
 %Find the slope of the line $L$ in the graph below which is tangent to $f(x)=x^2$ at the point $(2,4)$.
 %

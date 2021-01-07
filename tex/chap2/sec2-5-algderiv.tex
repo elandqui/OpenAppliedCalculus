@@ -1,0 +1,34 @@
+\section{Finding Derivatives Algebraically}
+\label{sec:algderiv}
+
+Formal Algebraic Definition
+f′(x)=limh→0f(x+h)-f(x)h
+Practical Definition
+The derivative can be approximated by looking at an average rate of change, or the slope of a secant line, over a very tiny interval. The tinier the interval, the closer this is to the true instantaneous rate of change, slope of the tangent line, or slope of the curve.
+
+\begin{example}
+Find the slope of the tangent line to f(x)=1x at x=3.
+
+\begin{solution} The slope of the tangent line is the value of the derivative f′(3). f(3)=13 and f(3+h)=13+h, so, using the formal limit definition of the derivative,
+f′(3)=limh→0f(3+h)-f(3)h=limh→013+h-13h.
+We can simplify by giving the fractions a common denominator:
+limh→013+h-13h=======limh→013+h⋅33-13⋅3+h3+hhlimh→039+3h-3+h9+3hhlimh→03-(3+h)9+3hhlimh→03-3-h9+3hhlimh→0-h9+3hhlimh→0-h9+3h⋅1hlimh→0-19+3h
+and the evaluate using direct substitution:
+limh→0-19+3h=-19+3(0)=-19.
+Thus, the slope of the tangent line to f(x)=1x at x=3 is -19.
+\end{solution}\end{example}
+
+\begin{example}
+Find ddx(2x2-4x-1).
+
+\begin{solution} Setting up the derivative using a limit,
+f′(x)=limh→0f(x+h)-f(x)h.
+We will start by simplifying f(x+h) by expanding:
+f(x+h)===2(x+h)2-4(x+h)-12(x2+2xh+h2)-4(x+h)-12x2+4xh+2h2-4x-4h-1
+Now finding the limit:
+f′(x)======limh→0f(x+h)-f(x)hlimh→0(2x2+4xh+2h2-4x-4h-1)-(2x2-4x-1)hlimh→02x2+4xh+2h2-4x-4h-1-2x2+4x+1h(Substitute in the formulas.)limh→04xh+2h2-4hh(Now simplify.)limh→0h(4x+2h-4)h(Factor out the h, then cancel.)limh→0(4x+2h-4)
+We can find the limit of this expression by direct substitution:
+f′(x)=limh→0(4x+2h-4)=4x-4
+Notice that the derivative depends on x, and that this formula will tell us the slope of the tangent line to f at any value x. For example, if we wanted to know the tangent slope of f at x=3, we would simply evaluate: f′(3)=4(3)-4=8.
+\end{solution}\end{example}
+A formula for the derivative function is very powerful, but as you can see, calculating the derivative using the limit definition is very time consuming. In the next section, we will identify some patterns that will allow us to start building a set of rules for finding derivatives without needing the limit definition.

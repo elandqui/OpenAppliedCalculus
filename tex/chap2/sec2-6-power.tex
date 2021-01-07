@@ -1,0 +1,195 @@
+\section{The Power Rule}
+\label{sec:power}
+
+In the next few sections, we’ll get the derivative rules that will let us find formulas for derivatives when our function comes to us as a formula. This is a very algebraic section, and you should get lots of practice. When you tell someone you have studied calculus, this is the one skill they will expect you to have.
+Building Blocks
+These are the simplest rules – rules for the basic functions. We won't prove these rules; we'll just use them. But first, let's look at a few so that we can see they make sense.
+
+\begin{example}
+Find the derivative of y=f(x)=mx+b
+\begin{solution} This is a linear function, so its graph is its own tangent line! The slope of the tangent line, the derivative, is the slope of the line:
+f′(x)=m
+\end{solution}\end{example}
+Rule:
+The derivative of a linear function is its slope.
+
+\begin{example}
+Find the derivative of f(x)=135.
+
+\begin{solution} Think about this one graphically, too. The graph of f(x) is a horizontal line. So its slope is zero:
+f′(x)=0
+\end{solution}\end{example}
+Rule:
+The derivative of a constant is zero.
+
+\begin{example}
+Find the derivative of f(x)=x2.
+
+\begin{solution} Recall the formal definition of the derivative:
+f′(x)=limh→0f(x+h)-f(x)h.
+Using our function f(x)=x2, f(x+h)=(x+h)2=x2+2xh+h2.
+
+Then
+f′(x)======limh→0f(x+h)-f(x)hlimh→0x2+2xh+h2-x2hlimh→02xh+h2hlimh→0h(2x+h)hlimh→0(2x+h)2x
+From all that, we find that f′(x)=2x.
+\end{solution}\end{example}
+
+Luckily, there is a handy rule we use to skip using the limit:
+
+Power Rule
+The derivative of f(x)=xn is
+f′(x)=nxn-1.
+\begin{example}
+Find the derivative of g(x)=4x3
+\begin{solution} Using the power rule, we know that if f(x)=x3, then f′(x)=3x2. Notice that g is 4 times the function f. Think about what this change means to the graph of g – it’s now 4 times as tall as the graph of f. If we find the slope of a secant line, it will be ΔgΔx=4ΔfΔx=4ΔfΔx; each slope will be 4 times the slope of the secant line on the f graph. This property will hold for the slopes of tangent lines, too:
+ddx(4x3)=4ddx(x3)=4⋅3x2=12x2.
+\end{solution}\end{example}
+Rule:
+Constants come along for the ride, i.e., ddx(kf)=kf′.
+Here are all the basic rules in one place.
+
+Derivative Rules: Building Blocks
+In what follows, f and g are differentiable functions of x.
+
+Constant Multiple Rule
+ddx(kf)=kf′
+Sum and Difference Rule
+ddx(f±g)=f′±g′
+Power Rule
+ddx(xn)=nxn-1
+Special cases:
+ddx(k)=0(Because k=kx0.)
+ddx(x)=1(Because x=x1.)
+Exponential Functions
+ddx(ex)=ex
+ddx(ax)=ln(a)ax
+Natural Logarithm
+ddx(ln(x))=1x
+The sum, difference, and constant multiple rule combined with the power rule allow us to easily find the derivative of any polynomial.
+
+\begin{example}
+Find the derivative of p(x)=17x10+13x8-1.8x+1003.
+
+\begin{solution} ddx(17x10+13x8-1.8x+1003)====ddx(17x10)+ddx(13x8)-ddx(1.8x)+ddx(1003)17ddx(x10)+13ddx(x8)-1.8ddx(x)+ddx(1003)17(10x9)+13(8x7)-1.8(1)+0170x9+104x7-1.8
+\end{solution}\end{example}
+You don't have to show every single step. Do be careful when you're first working with the rules, but pretty soon you’ll be able to just write down the derivative directly:
+
+\begin{example}
+Find ddx(17x2-33x+12).
+
+\begin{solution} Writing out the rules, we'd write
+ddx(17x2-33x+12)=17(2x)-33(1)+0=34x-33.
+
+Once you're familiar with the rules, you can, in your head, multiply the 2 times the 17 and the 33 times 1, and just write
+ddx(17x2-33x+12)=34x-33.
+\end{solution}\end{example}
+
+The power rule works even if the power is negative or a fraction. In order to apply it, first translate all roots and basic rational expressions into exponents:
+
+\begin{example}
+Find the derivative of y=3t√-4t4+5et.
+
+\begin{solution} The first step is translate into exponents:
+y=3t√-4t4+5et=3t1/2-4t-4+5et
+Now you can take the derivative:
+ddt(3t1/2-4t-4+5et)==3(12t-1/2)-4(-4t-5)+5(et)32t-1/2+16t-5+5et
+If there is a reason to, you can rewrite the answer with radicals and positive exponents:
+y′=32t-1/2+16t-5+5et=32t√+16t5+5et
+\end{solution}\end{example}
+
+Be careful when finding the derivatives with negative exponents.
+
+We can immediately apply these rules to solve the problem we started the chapter with - finding a tangent line.
+
+\begin{example}
+Find the equation of the line tangent to g(t)=10-t2 when t=2.
+
+\begin{solution} The slope of the tangent line is the value of the derivative. We can compute g′(t)=-2t. To find the slope of the tangent line when t=2, evaluate the derivative at that point. The slope of the tangent line is -4.
+
+To find the equation of the tangent line, we also need a point on the tangent line. Since the tangent line touches the original function at t=2, we can find the point by evaluating the original function: g(2)=10-22=6. The tangent line must pass through the point (2, 6).
+
+Using the point-slope equation of a line, the tangent line will have equation y-6=-4(t-2). Simplifying to slope-intercept form, the equation is y=-4t+14.
+
+Graphing, we can verify this line is indeed tangent to the curve:
+
+graph with tangent line
+\end{solution}\end{example}
+
+We can also use these rules to help us find the derivatives we need to interpret the behavior of a function.
+
+\begin{example}
+In a memory experiment, a researcher asks the subject to memorize as many words from a list as possible in 10 seconds. Recall is tested, then the subject is given 10 more seconds to study, and so on. Suppose the number of words remembered after t seconds of studying could be modeled by W(t)=4t2/5. Find and interpret W′(20).
+
+\begin{solution} W′(t)=4⋅25t-3/5=85t-3/5, so W′(20)=85(20)-3/5\approx   0.2652.
+
+Since W is measured in words, and t is in seconds, W′ has units words per second. W′(20)\approx   0.2652 means that after 20 seconds of studying, the subject is learning about 0.27 more words for each additional second of studying.
+\end{solution}\end{example}
+
+
+
+\begin{example}
+  \label{ex:2-7-11}
+The cost to produce x items is x--√ hundred dollars.
+
+What is the cost for producing 100 items? 101 items? What is cost of the 101st item?
+For f(x)=x--√, calculate f′(x) and evaluate f′ at x=100. How does f′(100) compare with the last answer in Part a?
+\begin{solution} Put f(x)=x--√=x1/2hundred dollars, the cost for x items. Then f(100)=\$1000 and f(101)=\$1004.99, so it costs \$4.99 for that 101st item. Using this definition, the marginal cost is \$4.99.
+f′(x)=12x-1/2, so f′(100)=12100√=120 hundred dollars = \$5.00.
+\end{solution}\end{example}
+
+Note how close these answers are! This shows (again) why it’s OK that we use both definitions for marginal cost.
+
+Demand
+Demand is the functional relationship between the price p and the quantity q that can be sold (that is demanded). Depending on your situation, you might think of p as a function of q, or of q as a function of p
+Revenue
+Your revenue is the amount of money you actually take in from selling your products.
+
+The Total Revenue (TR, or just R) for q items is the total amount of money you take in for selling q items. Total Revenue is price multiplied by quantity,
+TR=p⋅q.
+Average Revenue
+The Average Revenue (AR) for q items is the total revenue divided by q, or
+TRq.
+Marginal Revenue
+The Marginal Revenue (MR) at q items is the revenue from producing the next item,
+MR(q)=TR(q+1)-TR(q).
+Just as with marginal cost, we will use both this definition and the derivative definition:
+MR(q)=TR′(q).
+Profit
+Your profit is what’s left over from total revenue after costs have been subtracted.
+
+The Profit (P) for q items is
+TR(q)-TC(q),
+the difference between total revenue and total costs.
+
+The average profit for q items is
+Pq.
+The marginal profit at q items is
+P(q+1)–P(q),
+or
+P′(q)
+Graphical Interpretations of the Basic Business Math Terms
+Illustration
+Here are the graphs of TR and TC for producing and selling a certain item. The horizontal axis is the number of items, in thousands. The vertical axis is the number of dollars, also in thousands.
+
+TR TC graph
+First, notice how to find the fixed cost and variable cost from the graph here. FC is the y-intercept of the TC graph. (FC=TC(0).) The graph of TVC would have the same shape as the graph of TC, shifted down. (TVC=TC-FC.)
+
+MC(q)=TC(q+1)-TC(q), but that’s impossible to read on this graph. How could you distinguish between TC(4022) and TC(4023)? On this graph, that interval is too small to see, and our best guess at the secant line is actually the tangent line to the TC curve at that point. (This is the reason we want to have the derivative definition handy.)
+
+MC(q) is the slope of the tangent line to the TC curve at (q,TC(q)).
+
+MR(q) is the slope of the tangent line to the TR curve at (q,TR(q)).
+
+Profit is the distance between the TR and TC curve. If you experiment with a clear ruler, you’ll see that the biggest profit occurs exactly when the tangent lines to the TR and TC curves are parallel. This is the rule profit is maximized when MR=MC which we'll explore later in the chapter.
+
+\begin{example}
+The demand, D, for a product at a price of p dollars is given by D(p)=200-0.2p2. Find the marginal revenue when the price is \$10.
+
+\begin{solution} First we need to form a revenue equation. Since Revenue = Price×Quantity, and the demand equation shows the quantity of product that can be sold, we have
+R(p)=D(p)⋅p=(200-0.2p2)p=200p-0.2p3.
+Now we can find marginal revenue by finding the derivative:
+R′(p)=200(1)-0.2(3p2)=200-0.6p2
+At a price of \$10, R′(10)=200-0.6(10)2=140.
+
+Notice the units for R′ are dollars of Revenuedollar of price, so R′(10)=140 means that when the price is \$10, the revenue will increase by \$140 for each dollar that the price was increased.
+\end{solution}\end{example}
