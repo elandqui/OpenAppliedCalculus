@@ -60,8 +60,16 @@
 \contentsline {subsection}{\numberline {2.2.2}Tangent Lines, More Formally}{69}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Example: Instantaneous Velocity}{71}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}Exercises}{74}{subsection.2.2.4}%
-\contentsline {chapter}{\numberline {3}Applications of Derivatives}{77}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Functions of Many Variables}{79}{chapter.4}%
-\contentsline {chapter}{\numberline {5}The Integral: Accumulation of a Rate Function}{81}{chapter.5}%
-\contentsline {chapter}{References}{83}{chapter.5}%
-\contentsline {chapter}{Index}{83}{chapter.5}%
+\contentsline {section}{\numberline {2.3}The Derivative}{76}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Derivative Concepts and Notation}{76}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}The Derivative as a Function}{77}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Interpreting the Derivative}{78}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Limits of Functions}{80}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Limits}{80}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}One Sided Limits}{81}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Continuity}{82}{subsection.2.4.3}%
+\contentsline {chapter}{\numberline {3}Applications of Derivatives}{85}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Functions of Many Variables}{87}{chapter.4}%
+\contentsline {chapter}{\numberline {5}The Integral: Accumulation of a Rate Function}{89}{chapter.5}%
+\contentsline {chapter}{References}{91}{chapter.5}%
+\contentsline {chapter}{Index}{91}{chapter.5}%
