@@ -69,8 +69,9 @@
 \contentsline {subsection}{\numberline {2.4.2}One Sided Limits}{82}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Continuity}{83}{subsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.4.4}Exercises}{84}{subsection.2.4.4}%
-\contentsline {chapter}{\numberline {3}Applications of Derivatives}{87}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Functions of Many Variables}{89}{chapter.4}%
-\contentsline {chapter}{\numberline {5}The Integral: Accumulation of a Rate Function}{91}{chapter.5}%
-\contentsline {chapter}{References}{93}{chapter.5}%
-\contentsline {chapter}{Index}{93}{chapter.5}%
+\contentsline {section}{\numberline {2.5}Finding Derivatives Algebraically}{86}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Applications of Derivatives}{89}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Functions of Many Variables}{91}{chapter.4}%
+\contentsline {chapter}{\numberline {5}The Integral: Accumulation of a Rate Function}{93}{chapter.5}%
+\contentsline {chapter}{References}{95}{chapter.5}%
+\contentsline {chapter}{Index}{95}{chapter.5}%

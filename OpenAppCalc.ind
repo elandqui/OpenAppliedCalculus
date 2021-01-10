@@ -33,7 +33,7 @@
     \subitem leading, \hyperpage{48}
   \item Coefficient of determination, \hyperpage{41}
   \item Compound interest, \hyperpage{56}
-  \item Continuous, \hyperpage{82}
+  \item Continuous, \hyperpage{83}
   \item Continuous growth, \hyperpage{57}
   \item Coordinate axes, \hyperpage{8}
   \item Correlation coefficient, \hyperpage{41}
@@ -54,7 +54,8 @@
   \item Degree, \hyperpage{48}
   \item Delta, \hyperpage{72}, \hyperpage{76}
   \item Delta ($\Delta$), \hyperpage{29}
-  \item Derivative, \hyperpage{76}
+  \item Derivative, \hyperpage{76}, \hyperpage{86}
+    \subitem limit definition, \hyperpage{86}
   \item Differentiable, \hyperpage{76}
   \item Differential, \hyperpage{76}
   \item Differentiate, \hyperpage{76}
