@@ -32,7 +32,7 @@ Use the graph of $y=f(x)$ in Figure \ref{fig:2-4-limit-ex} to determine the foll
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.4\textwidth]{img/chap2/image012.png}
-    \label{$y=f(x)$}
+    \caption{$y=f(x)$}
     \label{fig:2-4-limit-ex}
 \end{figure}
 
@@ -113,9 +113,14 @@ $$\lim_{x\to c^-}f(x)=L \enspace .$$
 The{\bf right limit}\index{Limit!right} of $f(x)$ as $x$ approaches $c$ is $L$ if the values of $f(x)$ get as close to $L$ as we want when $x$ is very close to and right of $c$ (i.e., $x>c$). We write
 $$\lim_{x\to c^+}f(x)=L \enspace .$$
 \begin{example}
-Evaluate the one sided limits of the function $f(x)$ graphed below at $x=0$ and $x=1$.
+Evaluate the one sided limits of the function $f(x)$ graphed in Figure \ref{fig:2-4-fx-ex} at $x=0$ and $x=1$.
 
-[graph]
+\begin{figure}[!ht]
+  \centering
+    \includegraphics[width=0.4\textwidth]{img/chap2/image014.png}
+    \caption{$y=f(x)$}
+    \label{fig:2-4-fx-ex}
+\end{figure}
 
 \begin{solution} As $x$ approaches 0 from the left, the value of the function is getting closer to 1, so $\displaystyle\lim_{x\to 0^-}f(x)=1$.
 As $x$ approaches 0 from the right, the value of the function is getting closer to 2, so $\displaystyle\lim_{x\to 0^+}f(x)=2$.
@@ -137,9 +142,14 @@ A function $f(x)$ is {\bf continuous} at $x=a$ if and only if:
     \item $\displaystyle\lim_{x\to a}f(x)=f(a)$.
     \end{enumerate}
 \end{definition}
-The graph below illustrates some of the different ways a function can behave at and near a point, and the table contains some numerical information about the function and its behavior.
+The graph in Figure \ref{fig:2-4-fx-continuity} illustrates some of the different ways a function can behave at and near a point, and the table contains some numerical information about the function and its behavior.
+\begin{figure}[!ht]
+  \centering
+    \includegraphics[width=0.4\textwidth]{img/chap2/image015.png}
+    \caption{$y=f(x)$}
+    \label{fig:2-4-fx-continuity}
+\end{figure}
 
-graph 
 \begin{table}[ht!]
 \begin{centering}
 \begin{tabular}{ccc}
@@ -184,5 +194,73 @@ Evaluate using continuity, if possible:
     \begin{solution} 
     This function is not defined at $x = 2$, so is not continuous at $x = 2$. We cannot use direct substitution. There is also no factor of $x-2$ in the numerator, so the $x-2$ in the denominator cannot be canceled out to remove the discontinuity. Therefore, the limit does not exist.
     \end{solution}
+\end{enumerate}
+
+\subsection{Exercises}
+
+\begin{enumerate}
+    \item Use the graph to determine the following limits.
+    \begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/chap2/image016.png}
+    \end{figure}
+    \begin{enumerate}[label=(\alph*)]
+    \item $\displaystyle\lim_{x\to 1} f(x)$
+    \item $\displaystyle\lim_{x\to 2} f(x)$
+    \item $\displaystyle\lim_{x\to 3} f(x)$
+    \item $\displaystyle\lim_{x\to 4} f(x)$
+    \end{enumerate}
+
+    \item	Use the graph to determine the following limits.
+    \begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/chap2/image017.png}
+    \end{figure}
+    \begin{enumerate}[label=(\alph*)]
+    \item $\displaystyle\lim_{x\to 1} f(x)$
+    \item $\displaystyle\lim_{x\to 2} f(x)$
+    \item $\displaystyle\lim_{x\to 3} f(x)$
+    \item $\displaystyle\lim_{x\to 4} f(x)$
+    \end{enumerate}
+
+
+    \item	Evaluate the following. 
+    \begin{enumerate}[label=(\alph*)]
+    \item $\displaystyle\lim_{x\to 1}\dfrac{x^2 + 3x + 3}{x-2}$ 
+    \item $\displaystyle\lim_{x\to 2}\dfrac{x^2 + 3x + 3}{x-2}$ 
+    \end{enumerate}
+
+    \item	Evaluate the following.
+    \begin{enumerate}[label=(\alph*)]
+    \item $\displaystyle\lim_{x\to 0}\dfrac{x + 7}{x^2+9x+14}$ 
+    \item $\displaystyle\lim_{x\to 3}\dfrac{x + 7}{x^2+9x+14}$ 
+    \item $\displaystyle\lim_{x\to -4}\dfrac{x + 7}{x^2+9x+14}$ 
+    \item $\displaystyle\lim_{x\to -7}\dfrac{x + 7}{x^2+9x+14}$  
+    \end{enumerate}
+
+
+    \item At which points is the function shown discontinuous?
+
+    \begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/chap2/image018.png}
+    \end{figure}
+
+    \item	At which points is the function shown  discontinuous?	
+
+    \begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/chap2/image019.png}
+    \end{figure}
+
+    \item	Find at least one point at which each function is not continuous and  state which of the  three  conditions in the definition of continuity is 
+	violated at that point.
+    \begin{enumerate}[label=(\alph*)]
+    \item $\dfrac{x-5}{x+3}$
+    \item $\dfrac{x^2 + x -6}{x-2}$
+    \item $\dfrac{x}{x}$
+    \item $\dfrac{\pi}{x^2-6x+9}$
+    \item $\ln(x^2)$
+    \end{enumerate}
 \end{enumerate}
 \end{example}
