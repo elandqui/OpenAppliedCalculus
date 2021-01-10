@@ -66,10 +66,11 @@
 \contentsline {subsection}{\numberline {2.3.3}Interpreting the Derivative}{78}{subsection.2.3.3}%
 \contentsline {section}{\numberline {2.4}Limits of Functions}{80}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Limits}{80}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}One Sided Limits}{81}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Continuity}{82}{subsection.2.4.3}%
-\contentsline {chapter}{\numberline {3}Applications of Derivatives}{85}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Functions of Many Variables}{87}{chapter.4}%
-\contentsline {chapter}{\numberline {5}The Integral: Accumulation of a Rate Function}{89}{chapter.5}%
-\contentsline {chapter}{References}{91}{chapter.5}%
-\contentsline {chapter}{Index}{91}{chapter.5}%
+\contentsline {subsection}{\numberline {2.4.2}One Sided Limits}{82}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Continuity}{83}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Exercises}{84}{subsection.2.4.4}%
+\contentsline {chapter}{\numberline {3}Applications of Derivatives}{87}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Functions of Many Variables}{89}{chapter.4}%
+\contentsline {chapter}{\numberline {5}The Integral: Accumulation of a Rate Function}{91}{chapter.5}%
+\contentsline {chapter}{References}{93}{chapter.5}%
+\contentsline {chapter}{Index}{93}{chapter.5}%
