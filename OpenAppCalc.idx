@@ -32,6 +32,7 @@
 \indexentry{Revenue|hyperpage}{13}
 \indexentry{Profit|hyperpage}{13}
 \indexentry{Break-even point|hyperpage}{13}
+\indexentry{Demand|hyperpage}{13}
 \indexentry{Cost!average|hyperpage}{13}
 \indexentry{Domain|hyperpage}{14}
 \indexentry{Range|hyperpage}{14}
@@ -158,12 +159,31 @@
 \indexentry{Marginal profit|hyperpage}{79}
 \indexentry{Profitmarginal|hyperpage}{79}
 \indexentry{Limit|hyperpage}{80}
-\indexentry{Limit!left|hyperpage}{82}
-\indexentry{Limit!right|hyperpage}{82}
+\indexentry{Limit!left|hyperpage}{83}
+\indexentry{Limit!right|hyperpage}{83}
 \indexentry{Continuous|hyperpage}{83}
-\indexentry{Discontinuity!removeable|hyperpage}{83}
-\indexentry{Discontinuity!jump|hyperpage}{83}
-\indexentry{Discontinuity!step|hyperpage}{83}
-\indexentry{Discontinuity!nonremoveable|hyperpage}{83}
+\indexentry{Discontinuity!removeable|hyperpage}{84}
+\indexentry{Discontinuity!jump|hyperpage}{84}
+\indexentry{Discontinuity!step|hyperpage}{84}
+\indexentry{Discontinuity!nonremoveable|hyperpage}{84}
 \indexentry{Derivative|hyperpage}{86}
 \indexentry{Derivative!limit definition|hyperpage}{86}
+\indexentry{Sum and difference rule|hyperpage}{89}
+\indexentry{Derivative rules!Sum and difference rule|hyperpage}{89}
+\indexentry{Constant multiple rule|hyperpage}{89}
+\indexentry{Derivative rules!Constant multiple rule|hyperpage}{89}
+\indexentry{Power rule|hyperpage}{90}
+\indexentry{Derivative rules!Power rule|hyperpage}{90}
+\indexentry{Cost!marginal|hyperpage}{92}
+\indexentry{Marginal cost|hyperpage}{92}
+\indexentry{Demand|hyperpage}{92}
+\indexentry{Marginal revenue|hyperpage}{92}
+\indexentry{Revenue|hyperpage}{92}
+\indexentry{Product Rule|hyperpage}{93}
+\indexentry{Quotient Rule|hyperpage}{94}
+\indexentry{Cost|hyperpage}{95}
+\indexentry{Marginal cost|hyperpage}{95}
+\indexentry{Average cost|hyperpage}{95}
+\indexentry{Cost!average|hyperpage}{95}
+\indexentry{Average revenue|hyperpage}{95}
+\indexentry{Revenue!average|hyperpage}{95}

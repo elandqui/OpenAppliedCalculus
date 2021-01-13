@@ -10,7 +10,7 @@
 \BOOKMARK [2][-]{subsection.1.1.1}{Function Concepts}{section.1.1}% 10
 \BOOKMARK [2][-]{subsection.1.1.2}{Representing Functions}{section.1.1}% 11
 \BOOKMARK [2][-]{subsection.1.1.3}{Evaluating Functions.}{section.1.1}% 12
-\BOOKMARK [2][-]{subsection.1.1.4}{Cost, Revenue, and Profit}{section.1.1}% 13
+\BOOKMARK [2][-]{subsection.1.1.4}{Cost, Revenue, Profit, and Demand}{section.1.1}% 13
 \BOOKMARK [2][-]{subsection.1.1.5}{Domain and Range.}{section.1.1}% 14
 \BOOKMARK [2][-]{subsection.1.1.6}{Exercises}{section.1.1}% 15
 \BOOKMARK [1][-]{section.1.2}{Models}{chapter.1}% 16
@@ -53,14 +53,33 @@
 \BOOKMARK [2][-]{subsection.2.3.1}{Derivative Concepts and Notation}{section.2.3}% 53
 \BOOKMARK [2][-]{subsection.2.3.2}{The Derivative as a Function}{section.2.3}% 54
 \BOOKMARK [2][-]{subsection.2.3.3}{Interpreting the Derivative}{section.2.3}% 55
-\BOOKMARK [1][-]{section.2.4}{Limits of Functions}{chapter.2}% 56
-\BOOKMARK [2][-]{subsection.2.4.1}{Limits}{section.2.4}% 57
-\BOOKMARK [2][-]{subsection.2.4.2}{One Sided Limits}{section.2.4}% 58
-\BOOKMARK [2][-]{subsection.2.4.3}{Continuity}{section.2.4}% 59
-\BOOKMARK [2][-]{subsection.2.4.4}{Exercises}{section.2.4}% 60
-\BOOKMARK [1][-]{section.2.5}{Finding Derivatives Algebraically}{chapter.2}% 61
-\BOOKMARK [0][-]{chapter.3}{Applications of Derivatives}{}% 62
-\BOOKMARK [0][-]{chapter.4}{Functions of Many Variables}{}% 63
-\BOOKMARK [0][-]{chapter.5}{The Integral: Accumulation of a Rate Function}{}% 64
-\BOOKMARK [0][-]{chapter.5}{References}{}% 65
-\BOOKMARK [0][-]{chapter.5}{Index}{}% 66
+\BOOKMARK [2][-]{subsection.2.3.4}{Graphical Interpretations of the Basic Business Math Terms}{section.2.3}% 56
+\BOOKMARK [1][-]{section.2.4}{Limits of Functions}{chapter.2}% 57
+\BOOKMARK [2][-]{subsection.2.4.1}{Limits}{section.2.4}% 58
+\BOOKMARK [2][-]{subsection.2.4.2}{One Sided Limits}{section.2.4}% 59
+\BOOKMARK [2][-]{subsection.2.4.3}{Continuity}{section.2.4}% 60
+\BOOKMARK [2][-]{subsection.2.4.4}{Exercises}{section.2.4}% 61
+\BOOKMARK [1][-]{section.2.5}{Finding Derivatives Algebraically}{chapter.2}% 62
+\BOOKMARK [2][-]{subsection.2.5.1}{Formal Limit Definition of the Derivative}{section.2.5}% 63
+\BOOKMARK [2][-]{subsection.2.5.2}{Exercises}{section.2.5}% 64
+\BOOKMARK [1][-]{section.2.6}{Sum, Difference, and Constant Multiple Rules}{chapter.2}% 65
+\BOOKMARK [2][-]{subsection.2.6.1}{Sum and Difference}{section.2.6}% 66
+\BOOKMARK [2][-]{subsection.2.6.2}{Constant Multiples}{section.2.6}% 67
+\BOOKMARK [2][-]{subsection.2.6.3}{Exercises}{section.2.6}% 68
+\BOOKMARK [1][-]{section.2.7}{The Power Rule}{chapter.2}% 69
+\BOOKMARK [2][-]{subsection.2.7.1}{Main Results}{section.2.7}% 70
+\BOOKMARK [2][-]{subsection.2.7.2}{Polynomials and Power Functions}{section.2.7}% 71
+\BOOKMARK [2][-]{subsection.2.7.3}{Exercises}{section.2.7}% 72
+\BOOKMARK [1][-]{section.2.8}{Exponential and Logarithmic Functions}{chapter.2}% 73
+\BOOKMARK [1][-]{section.2.9}{The Product and Quotient Rules}{chapter.2}% 74
+\BOOKMARK [2][-]{subsection.2.9.1}{Derivative Rules: Product and Quotient Rules}{section.2.9}% 75
+\BOOKMARK [2][-]{subsection.2.9.2}{More Graphical Interpretations of the Basic Business Math Terms}{section.2.9}% 76
+\BOOKMARK [1][-]{section.2.10}{Trigonometric Functions}{chapter.2}% 77
+\BOOKMARK [2][-]{subsection.2.10.1}{Derivative Formulas}{section.2.10}% 78
+\BOOKMARK [2][-]{subsection.2.10.2}{Examples}{section.2.10}% 79
+\BOOKMARK [2][-]{subsection.2.10.3}{Exercises}{section.2.10}% 80
+\BOOKMARK [0][-]{chapter.3}{Applications of Derivatives}{}% 81
+\BOOKMARK [0][-]{chapter.4}{Functions of Many Variables}{}% 82
+\BOOKMARK [0][-]{chapter.5}{The Integral: Accumulation of a Rate Function}{}% 83
+\BOOKMARK [0][-]{chapter.5}{References}{}% 84
+\BOOKMARK [0][-]{chapter.5}{Index}{}% 85
