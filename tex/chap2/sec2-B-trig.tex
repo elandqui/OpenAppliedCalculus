@@ -1,0 +1,31 @@
+\section{Trigonometric Functions}
+\label{sec:trigderiv}
+
+\subsection{Derivative Formulas}
+
+\begin{theorem}
+$$\dfrac{d}{dx}\sin(x) = \cos(x)$$
+
+$$\dfrac{d}{dx}\cos(x) = -\sin(x)$$
+\end{theorem}
+
+From this, we can figure out the derivatives of the four other trigonometric functions.
+
+\begin{theorem}
+$$\dfrac{d}{dx}\tan(x) = \sec^2(x)$$
+\end{theorem}
+\begin{proof}
+Here, we'll use the fact that $\tan(x) = \dfrac{\sin(x)}{\cos(x)}$ and use the Quotient Rule, since we are finding the derivative of a quotient (fraction).
+\begin{align*}
+    \dfrac{d}{dx}\tan(x) &= \dfrac{d}{dx}\frac{\sin(x)}{\cos(x)} \\
+    &= \dfrac{\cos(x)\cdot\frac{d}{dx}\sin(x) - \sin(x)\cdot\frac{d}{dx}\cos(x)}{\cos^2(x)} \\
+    &= \dfrac{\cos(x)\cdot\cos(x) - \sin(x)\cdot(-\sin(x))}{\cos^2(x)} \\
+    &= \dfrac{\cos^2(x) + \sin^2(x)}{\cos^2(x)} \\
+    &= \dfrac{1}{\cos^2(x)}\\
+    &= \sec^2(x)
+\end{align*}
+\end{proof}
+
+\subsection{Examples}
+
+\subsection{Exercises}

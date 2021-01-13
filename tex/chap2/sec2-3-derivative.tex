@@ -108,20 +108,51 @@ Sketch the graph of the velocity of the rocket at time $t$. (Velocity is the der
 So far we have emphasized the derivative as the slope of the line tangent to a graph. That interpretation is very visual and useful when examining the graph of a function, and we will continue to use it. Derivatives, however, are used in a wide variety of fields and applications, and some of these fields use other interpretations. The following are a few interpretations of the derivative that are commonly used.
 
 \paragraph*{General}
+
 {\bf Rate of Change:} $f'(x)$ is the rate of change of the function at $x$. If the units for $x$ are years and the units for $f(x)$ are people, then the units for $\frac{df}{dx}$ are people per year, a rate of change in population.
 
 \paragraph*{Graphical}
+
 {\bf Slope:} $f'(x)$ is the slope of the line tangent to the graph of $f(x)$ at the point $(x,f(x))$.
 
 \paragraph*{Physical}
+
 {\bf Velocity:} If $f(x)$ is the position of an object at time $x$, then $f'(x)$ is the {\bf velocity}\index{Velocity} of the object at time $x$. If the units for $x$ are hours and $f(x)$ is distance measured in miles, then the units for $f'(x)=\frac{df}{dx}$ are miles per hour, which is a measure of velocity.
 
 {\bf Acceleration:} If $f(x)$ is the velocity of an object at time $x$, then $f'(x)$ is the {\bf acceleration}\index{Acceleraton} of the object at time $x$. If the units are for $x$ are hours and $f(x)$ has the units miles per hour, then the units for the acceleration $f'(x)=\frac{df}{dx}$ are miles per hour per hour, or miles per hour$^2$.
 
 \paragraph*{Business}
-{\bf Marginal Cost}\index{Marginal cost}\index{Cost!marginal}, {\bf Marginal Revenue}\index{Marginal revenue}\index{Revenue!marginal}, and {\bf Marginal Profit}\index{Marginal profit}\index{Profitmarginal}: We introduced marginal cost in Section \ref{ssec:marginalcost} and marginal revenue and profit are defined in a similar way. In business contexts, the word ``marginal'' usually means the derivative or rate of change of some function. Therefore, {\bf marginal revenue} is the additional revenue from selling one more item once we have already sold $n$ items. {\bf Marginal profit} is the additional profit from selling one more item once we have already sold $n$ items. If $f(x)$ is the cost to produce $x$ bicycles and the units for $f(x)$ are dollars, then the units for $f'(x)=\frac{df}{dx}$ are dollars per bicycle, the cost per bicycle.
+
+{\bf Marginal Cost}\index{Marginal cost}\index{Cost!marginal}, {\bf Marginal Revenue}\index{Marginal revenue}\index{Revenue!marginal}, and {\bf Marginal Profit}\index{Marginal profit}\index{Profitmarginal}: We introduced marginal cost in Section \ref{ssec:marginalcost} and marginal revenue and profit are defined in a similar way. In business contexts, the word ``marginal'' usually means the derivative or rate of change of some function. 
+
+Therefore, {\bf marginal revenue}, $MR(n)$ is the additional revenue from selling one more item once we have already sold $n$ item. Just as with marginal cost, we will use both this definition and the derivative definition.
+$$MR(n) = R(n+1)-R(n) \approx R'(n) \enspace.$$
+
+{\bf Marginal profit} is the additional profit from selling one more item once we have already sold $n$ items. 
+$$MP(n) = P(n+1)-P(n) \approx P'(n) \enspace.$$
+
+If $f(x)$ is the cost to produce $x$ bicycles and the units for $f(x)$ are dollars, then the units for $f'(x)=\frac{df}{dx}$ are dollars per bicycle, the cost per bicycle.
 
 One of the strengths of calculus is that it provides a unity and economy of ideas among diverse applications. The vocabulary and problems may be different, but the ideas and even the notations of calculus are still useful.
+
+\subsection{Graphical Interpretations of the Basic Business Math Terms}
+%Illustration
+Figure \ref{fig:2-3-trandtc} shows graphs of $TR = R(q)$ and $TC = C(q)$ for producing and selling a certain item. The horizontal axis is the number of items, in thousands. The vertical axis is the number of dollars, also in thousands.
+
+\begin{figure}[!ht]
+  \centering
+    \includegraphics[width=0.4\textwidth]{img/chap2/image035.png}
+    \caption{Total Revenue ($TR$) and Total Cost ($TC$) versus $q$ items.}
+    \label{fig:2-3-trandtc}
+\end{figure}
+First, notice how to find the fixed cost and variable cost from the graph here. The fixed cost, $FC$, is the $y$-intercept of the $TC$ graph. ($FC=C(0)$.) The graph of variable costs would have the same shape as the graph of $TC$, shifted down.
+
+Marginal cost for $q$ items is $MC(q)=C(q+1)-C(q)$, but that's impossible to read on this graph. How could you distinguish between $C(4022)$ and $C(4023)$? On this graph, that interval is too small to see, and our best guess at the secant line is actually the tangent line to the $TC$ curve at that point. (This is the reason we want to have the derivative definition handy.)
+\begin{itemize}[label={}]
+    \item $MC(q)$ is the slope of the tangent line to the $TC$ curve at the point $(q, C(q))$.
+    \item $MR(q)$ is the slope of the tangent line to the $TR$ curve at the point $(q, R(q))$.
+\end{itemize}
+Profit is the distance between the $TR$ and $TC$ curves. If you experiment with a clear ruler, you'll see that the biggest profit occurs exactly when the tangent lines to the $TR$ and $TC$ curves are parallel. This is the rule that profit is maximized when $MR=MC$ which we'll explore in Section \ref{sec:app-opt}.
 
 \begin{example}
 Suppose the demand for widgets is $D(p)=\frac{1}{p}$, where $D$ is the quantity of widgets, in thousands, at a price of $p$ dollars. Approximate and interpret the derivative of $D$ at $p=\$3$.

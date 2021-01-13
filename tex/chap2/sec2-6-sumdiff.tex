@@ -1,0 +1,29 @@
+\section{Sum, Difference, and Constant Multiple Rules}
+\label{sec:power}
+
+In the next few sections, we'll get the derivative rules that will let us find formulas for derivatives when our function comes to us as a formula. 
+
+\subsection{Sum and Difference}
+Given two functions, $f(x)$ and $g(x)$, what can be said about the derivative of their sum? Think about it. What should we expect for the slope of the curve $y = f(x)+g(x)$ or the curve $y=f(x) - g(x)$? We can prove the following result using the limit definition of the derivative, but it should make intuitive sense that the slope of a sum is the sum of the slopes.
+
+\begin{theorem}[Sum and Difference Rule\index{Sum and difference rule}\index{Derivative rules!Sum and difference rule}]
+\label{thm:sumdiffderiv}
+If $f(x)$ and $g(x)$ are differentiable, then 
+    $$\dfrac{d}{dx}(f(x) \pm g(x))=f'(x) \pm g'(x) \enspace .$$
+\end{theorem}
+
+\subsection{Constant Multiples}
+Given a single function, $f(x)$, we have $2f(x) = f(x) + f(x)$ and $3f(x) = f(x) + f(x) + f(x)$, so it would make sense that the slope of $y=k\cdot f(x)$ is $k$ times the slope of $y=f(x)$. This too, can be proved using the limit definition of the derivative. We often say that when taking the derivative of a multiple of a function, that ``constants come along for the ride.'' 
+
+\begin{theorem}[Constant Multiple Rule\index{Constant multiple rule}\index{Derivative rules!Constant multiple rule}]
+\label{thm:constmultderiv}
+If $f(x)$ is differentiable and $k$ is a real number, then
+$$\dfrac{d}{dx}(k\cdot f(x))=k\cdot f'(x) \enspace .$$
+\end{theorem}
+
+\subsection{Exercises}
+\begin{enumerate}
+    \item Prove Theorem \ref{thm:sumdiffderiv} using the limit definition of the derivative, Definition \ref{def:deriv}.
+    \item Prove Theorem \ref{thm:constmultderiv} using the limit definition of the derivative, Definition \ref{def:deriv}.
+\end{enumerate}
+
