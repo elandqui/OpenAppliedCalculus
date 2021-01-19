@@ -12,9 +12,48 @@ We can view the {\bf derivative}\index{Derivative} of a function, $f(x)$ in seve
     \end{itemize}
 \end{definition}
 
+We've been acting as if derivatives exist everywhere for every function. This is true for most of the functions that you will run into in this textbook. But there are some common places where the derivative doesn't exist.
+
 \begin{definition}
 A function, $f(x)$, is called {\bf differentiable}\index{Differentiable} at the point $(a,f(a))$ if its derivative exists at $x=a$.
 \end{definition}
+
+Remember that the derivative is the slope of the tangent line to the curve. That's what to think about.
+
+Where can a slope not exist? If the tangent line is vertical, the derivative will not exist.
+
+\begin{example}
+Show that $f(x)=\sqrt[3]{x}=x^{1/3}$ is not differentiable at $x=0$.
+
+\begin{solution} From the graph in Figure \ref{fig:2-3-cuberoot}, we can see that the tangent line to $y=\sqrt[3]{x}$ at $x=0$ is vertical with undefined slope, which is why the derivative does not exist at $x=0$.
+
+\begin{figure}[!ht]
+  \centering
+    \includegraphics[width=0.4\textwidth]{img/chap2/image037.png}
+    \caption{$f(x)=\sqrt[3]{x}$}
+    \label{fig:2-3-cuberoot}
+\end{figure}
+\end{solution}\end{example}
+
+Where can a tangent line not exist?
+
+If there is a sharp corner (cusp)\index{Cusp} in the graph, the derivative will not exist at that point because there is no well-defined tangent line (a teetering tangent, if you will).
+
+If there is a discontinuity\index{Discontinuity} in the graph (a jump, a break, a hole in the graph, or a vertical asymptote), the tangent line will be different on either side and the derivative will not exist at that point.
+
+\begin{example}
+Show that $f(x)=|x|$ is not differentiable at $x=0$.
+
+\begin{solution} On the left side of the graph in Figure \ref{fig:2-3-absx}, the slope of the line is $-1$. On the right side of the graph, the slope is $1$. There is no well-defined tangent line at the sharp corner at $x=0$, so the function $|x|$ is not differentiable at that point.
+
+\begin{figure}[!ht]
+  \centering
+    \includegraphics[width=0.4\textwidth]{img/chap2/image038.png}
+    \caption{$f(x)=|x|$}
+    \label{fig:2-3-absx}
+\end{figure}
+\end{solution}\end{example}
+
 
 \begin{definition}
 When we find the derivative of a function, or take the derivative of a function, we say that we {\bf differentiate}\index{Differentiate} the function.
