@@ -63,34 +63,36 @@
 \contentsline {section}{\numberline {2.3}The Derivative}{76}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Derivative Concepts and Notation}{76}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}The Derivative as a Function}{77}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Interpreting the Derivative}{78}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Graphical Interpretations of the Basic Business Math Terms}{79}{subsection.2.3.4}%
-\contentsline {section}{\numberline {2.4}Limits of Functions}{80}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Limits}{80}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.3.3}Interpreting the Derivative}{79}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Graphical Interpretations of the Basic Business Math Terms}{80}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}Limits of Functions}{81}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Limits}{81}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}One Sided Limits}{83}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Continuity}{83}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.3}Continuity}{84}{subsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.4.4}Exercises}{85}{subsection.2.4.4}%
-\contentsline {section}{\numberline {2.5}Finding Derivatives Algebraically}{86}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Formal Limit Definition of the Derivative}{86}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Exercises}{88}{subsection.2.5.2}%
-\contentsline {section}{\numberline {2.6}Sum, Difference, and Constant Multiple Rules}{88}{section.2.6}%
+\contentsline {section}{\numberline {2.5}Finding Derivatives Algebraically}{87}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Formal Limit Definition of the Derivative}{87}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Exercises}{89}{subsection.2.5.2}%
+\contentsline {section}{\numberline {2.6}Sum, Difference, and Constant Multiple Rules}{89}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}Sum and Difference}{89}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Constant Multiples}{89}{subsection.2.6.2}%
-\contentsline {subsection}{\numberline {2.6.3}Exercises}{89}{subsection.2.6.3}%
-\contentsline {section}{\numberline {2.7}The Power Rule}{89}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}Main Results}{89}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}Polynomials and Power Functions}{90}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.6.2}Constant Multiples}{90}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Exercises}{90}{subsection.2.6.3}%
+\contentsline {section}{\numberline {2.7}The Power Rule}{90}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Main Results}{90}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Polynomials and Power Functions}{91}{subsection.2.7.2}%
 \contentsline {subsection}{\numberline {2.7.3}Exercises}{93}{subsection.2.7.3}%
 \contentsline {section}{\numberline {2.8}Exponential and Logarithmic Functions}{93}{section.2.8}%
-\contentsline {section}{\numberline {2.9}The Product and Quotient Rules}{93}{section.2.9}%
-\contentsline {subsection}{\numberline {2.9.1}Derivative Rules: Product and Quotient Rules}{93}{subsection.2.9.1}%
-\contentsline {subsection}{\numberline {2.9.2}More Graphical Interpretations of the Basic Business Math Terms}{95}{subsection.2.9.2}%
-\contentsline {section}{\numberline {2.10}Trigonometric Functions}{97}{section.2.10}%
-\contentsline {subsection}{\numberline {2.10.1}Derivative Formulas}{97}{subsection.2.10.1}%
-\contentsline {subsection}{\numberline {2.10.2}Examples}{97}{subsection.2.10.2}%
-\contentsline {subsection}{\numberline {2.10.3}Exercises}{97}{subsection.2.10.3}%
-\contentsline {chapter}{\numberline {3}Applications of Derivatives}{99}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Functions of Many Variables}{101}{chapter.4}%
-\contentsline {chapter}{\numberline {5}The Integral: Accumulation of a Rate Function}{103}{chapter.5}%
-\contentsline {chapter}{References}{105}{chapter.5}%
-\contentsline {chapter}{Index}{105}{chapter.5}%
+\contentsline {section}{\numberline {2.9}The Product and Quotient Rules}{94}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Derivative Rules: Product and Quotient Rules}{94}{subsection.2.9.1}%
+\contentsline {subsection}{\numberline {2.9.2}More Graphical Interpretations of the Basic Business Math Terms}{96}{subsection.2.9.2}%
+\contentsline {section}{\numberline {2.10}The Chain Rule}{97}{section.2.10}%
+\contentsline {subsection}{\numberline {2.10.1}Derivatives of Complicated Functions}{100}{subsection.2.10.1}%
+\contentsline {section}{\numberline {2.11}Trigonometric Functions}{101}{section.2.11}%
+\contentsline {subsection}{\numberline {2.11.1}Derivative Formulas}{101}{subsection.2.11.1}%
+\contentsline {subsection}{\numberline {2.11.2}Examples}{102}{subsection.2.11.2}%
+\contentsline {subsection}{\numberline {2.11.3}Exercises}{102}{subsection.2.11.3}%
+\contentsline {chapter}{\numberline {3}Applications of Derivatives}{103}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Functions of Many Variables}{105}{chapter.4}%
+\contentsline {chapter}{\numberline {5}The Integral: Accumulation of a Rate Function}{107}{chapter.5}%
+\contentsline {chapter}{References}{109}{chapter.5}%
+\contentsline {chapter}{Index}{109}{chapter.5}%

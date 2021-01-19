@@ -142,48 +142,54 @@
 \indexentry{Cost!marginal|hyperpage}{72}
 \indexentry{Derivative|hyperpage}{76}
 \indexentry{Differentiable|hyperpage}{76}
+\indexentry{Cusp|hyperpage}{76}
+\indexentry{Discontinuity|hyperpage}{76}
 \indexentry{Differentiate|hyperpage}{76}
-\indexentry{Leibniz, Gottfried|hyperpage}{76}
-\indexentry{Newton, Isaac|hyperpage}{76}
-\indexentry{Lagrange, Joseph-Louis|hyperpage}{76}
-\indexentry{Leibniz notation|hyperpage}{76}
-\indexentry{Delta|hyperpage}{76}
-\indexentry{Infinitesimal|hyperpage}{76}
-\indexentry{Differential|hyperpage}{76}
-\indexentry{Velocity|hyperpage}{79}
-\indexentry{Acceleraton|hyperpage}{79}
-\indexentry{Marginal cost|hyperpage}{79}
-\indexentry{Cost!marginal|hyperpage}{79}
-\indexentry{Marginal revenue|hyperpage}{79}
-\indexentry{Revenue!marginal|hyperpage}{79}
-\indexentry{Marginal profit|hyperpage}{79}
-\indexentry{Profitmarginal|hyperpage}{79}
-\indexentry{Limit|hyperpage}{80}
+\indexentry{Leibniz, Gottfried|hyperpage}{77}
+\indexentry{Newton, Isaac|hyperpage}{77}
+\indexentry{Lagrange, Joseph-Louis|hyperpage}{77}
+\indexentry{Leibniz notation|hyperpage}{77}
+\indexentry{Delta|hyperpage}{77}
+\indexentry{Infinitesimal|hyperpage}{77}
+\indexentry{Differential|hyperpage}{77}
+\indexentry{Velocity|hyperpage}{80}
+\indexentry{Acceleraton|hyperpage}{80}
+\indexentry{Marginal cost|hyperpage}{80}
+\indexentry{Cost!marginal|hyperpage}{80}
+\indexentry{Marginal revenue|hyperpage}{80}
+\indexentry{Revenue!marginal|hyperpage}{80}
+\indexentry{Marginal profit|hyperpage}{80}
+\indexentry{Profitmarginal|hyperpage}{80}
+\indexentry{Limit|hyperpage}{81}
 \indexentry{Limit!left|hyperpage}{83}
-\indexentry{Limit!right|hyperpage}{83}
-\indexentry{Continuous|hyperpage}{83}
-\indexentry{Discontinuity!removeable|hyperpage}{84}
-\indexentry{Discontinuity!jump|hyperpage}{84}
-\indexentry{Discontinuity!step|hyperpage}{84}
-\indexentry{Discontinuity!nonremoveable|hyperpage}{84}
-\indexentry{Derivative|hyperpage}{86}
-\indexentry{Derivative!limit definition|hyperpage}{86}
+\indexentry{Limit!right|hyperpage}{84}
+\indexentry{Continuous|hyperpage}{84}
+\indexentry{Discontinuity!removeable|hyperpage}{85}
+\indexentry{Discontinuity!jump|hyperpage}{85}
+\indexentry{Discontinuity!step|hyperpage}{85}
+\indexentry{Discontinuity!nonremoveable|hyperpage}{85}
+\indexentry{Derivative|hyperpage}{87}
+\indexentry{Derivative!limit definition|hyperpage}{87}
 \indexentry{Sum and difference rule|hyperpage}{89}
 \indexentry{Derivative rules!Sum and difference rule|hyperpage}{89}
-\indexentry{Constant multiple rule|hyperpage}{89}
-\indexentry{Derivative rules!Constant multiple rule|hyperpage}{89}
-\indexentry{Power rule|hyperpage}{90}
-\indexentry{Derivative rules!Power rule|hyperpage}{90}
-\indexentry{Cost!marginal|hyperpage}{92}
-\indexentry{Marginal cost|hyperpage}{92}
-\indexentry{Demand|hyperpage}{92}
-\indexentry{Marginal revenue|hyperpage}{92}
-\indexentry{Revenue|hyperpage}{92}
-\indexentry{Product Rule|hyperpage}{93}
-\indexentry{Quotient Rule|hyperpage}{94}
-\indexentry{Cost|hyperpage}{95}
-\indexentry{Marginal cost|hyperpage}{95}
-\indexentry{Average cost|hyperpage}{95}
-\indexentry{Cost!average|hyperpage}{95}
-\indexentry{Average revenue|hyperpage}{95}
-\indexentry{Revenue!average|hyperpage}{95}
+\indexentry{Constant multiple rule|hyperpage}{90}
+\indexentry{Derivative rules!Constant multiple rule|hyperpage}{90}
+\indexentry{Power rule|hyperpage}{91}
+\indexentry{Derivative rules!Power rule|hyperpage}{91}
+\indexentry{Cost!marginal|hyperpage}{93}
+\indexentry{Marginal cost|hyperpage}{93}
+\indexentry{Demand|hyperpage}{93}
+\indexentry{Marginal revenue|hyperpage}{93}
+\indexentry{Revenue|hyperpage}{93}
+\indexentry{Product Rule|hyperpage}{94}
+\indexentry{Quotient Rule|hyperpage}{95}
+\indexentry{Cost|hyperpage}{96}
+\indexentry{Marginal cost|hyperpage}{96}
+\indexentry{Average cost|hyperpage}{96}
+\indexentry{Cost!average|hyperpage}{96}
+\indexentry{Average revenue|hyperpage}{96}
+\indexentry{Revenue!average|hyperpage}{96}
+\indexentry{Chain rule|hyperpage}{97}
+\indexentry{Composition|hyperpage}{97}
+\indexentry{Leibniz notation|hyperpage}{98}
+\indexentry{Lagrange notation|hyperpage}{98}

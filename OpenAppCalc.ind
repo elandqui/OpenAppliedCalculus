@@ -5,7 +5,7 @@
 
   \indexspace
 
-  \item Acceleraton, \hyperpage{79}
+  \item Acceleraton, \hyperpage{80}
   \item Accumulation, \hyperpage{1}
   \item Amplitude, \hyperpage{65}
   \item Annual percentage rate, \hyperpage{56}
@@ -17,8 +17,8 @@
   \item Asymptote, \hyperpage{50}
     \subitem horizontal, \hyperpage{51}
     \subitem vertical, \hyperpage{50}
-  \item Average cost, \hyperpage{95}
-  \item Average revenue, \hyperpage{95}
+  \item Average cost, \hyperpage{96}
+  \item Average revenue, \hyperpage{96}
   \item Axis
     \subitem horizontal, \hyperpage{8}
     \subitem vertical, \hyperpage{8}
@@ -31,47 +31,50 @@
 
   \indexspace
 
+  \item Chain rule, \hyperpage{97}
   \item Coefficient, \hyperpage{47}
     \subitem leading, \hyperpage{48}
   \item Coefficient of determination, \hyperpage{41}
+  \item Composition, \hyperpage{97}
   \item Compound interest, \hyperpage{56}
-  \item Constant multiple rule, \hyperpage{89}
-  \item Continuous, \hyperpage{83}
+  \item Constant multiple rule, \hyperpage{90}
+  \item Continuous, \hyperpage{84}
   \item Continuous growth, \hyperpage{57}
   \item Coordinate axes, \hyperpage{8}
   \item Correlation coefficient, \hyperpage{41}
-  \item Cost, \hyperpage{95}
-    \subitem average, \hyperpage{13}, \hyperpage{95}
+  \item Cost, \hyperpage{96}
+    \subitem average, \hyperpage{13}, \hyperpage{96}
     \subitem fixed, \hyperpage{12, 13}
-    \subitem marginal, \hyperpage{72}, \hyperpage{79}, \hyperpage{92}
+    \subitem marginal, \hyperpage{72}, \hyperpage{80}, \hyperpage{93}
     \subitem total, \hyperpage{12, 13}
     \subitem variable, \hyperpage{12, 13}
   \item Curve
     \subitem best fit, \hyperpage{25}
     \subitem regression, \hyperpage{25}
   \item Curve fitting, \hyperpage{25}
+  \item Cusp, \hyperpage{76}
 
   \indexspace
 
   \item Decreasing, \hyperpage{29}
   \item Degree, \hyperpage{48}
-  \item Delta, \hyperpage{72}, \hyperpage{76}
+  \item Delta, \hyperpage{72}, \hyperpage{77}
   \item Delta ($\Delta$), \hyperpage{29}
-  \item Demand, \hyperpage{13}, \hyperpage{92}
-  \item Derivative, \hyperpage{76}, \hyperpage{86}
-    \subitem limit definition, \hyperpage{86}
+  \item Demand, \hyperpage{13}, \hyperpage{93}
+  \item Derivative, \hyperpage{76}, \hyperpage{87}
+    \subitem limit definition, \hyperpage{87}
   \item Derivative rules
-    \subitem Constant multiple rule, \hyperpage{89}
-    \subitem Power rule, \hyperpage{90}
+    \subitem Constant multiple rule, \hyperpage{90}
+    \subitem Power rule, \hyperpage{91}
     \subitem Sum and difference rule, \hyperpage{89}
   \item Differentiable, \hyperpage{76}
-  \item Differential, \hyperpage{76}
+  \item Differential, \hyperpage{77}
   \item Differentiate, \hyperpage{76}
-  \item Discontinuity
-    \subitem jump, \hyperpage{84}
-    \subitem nonremoveable, \hyperpage{84}
-    \subitem removeable, \hyperpage{84}
-    \subitem step, \hyperpage{84}
+  \item Discontinuity, \hyperpage{76}
+    \subitem jump, \hyperpage{85}
+    \subitem nonremoveable, \hyperpage{85}
+    \subitem removeable, \hyperpage{85}
+    \subitem step, \hyperpage{85}
   \item Domain, \hyperpage{14}
 
   \indexspace
@@ -108,7 +111,7 @@
   \indexspace
 
   \item Increasing, \hyperpage{29}
-  \item Infinitesimal, \hyperpage{76}
+  \item Infinitesimal, \hyperpage{77}
   \item Initial value, \hyperpage{55}, \hyperpage{57}
   \item Intercept
     \subitem $y$, \hyperpage{28}
@@ -120,14 +123,15 @@
 
   \indexspace
 
-  \item Lagrange, Joseph-Louis, \hyperpage{76}
+  \item Lagrange notation, \hyperpage{98}
+  \item Lagrange, Joseph-Louis, \hyperpage{77}
   \item Laws of Exponents, \hyperpage{53}
-  \item Leibniz notation, \hyperpage{76}
-  \item Leibniz, Gottfried, \hyperpage{1}, \hyperpage{76}
+  \item Leibniz notation, \hyperpage{77}, \hyperpage{98}
+  \item Leibniz, Gottfried, \hyperpage{1}, \hyperpage{77}
   \item LibreOffice, \hyperpage{20}
-  \item Limit, \hyperpage{80}
+  \item Limit, \hyperpage{81}
     \subitem left, \hyperpage{83}
-    \subitem right, \hyperpage{83}
+    \subitem right, \hyperpage{84}
   \item Line
     \subitem best fit, \hyperpage{41}
     \subitem regression, \hyperpage{41}
@@ -139,10 +143,10 @@
 
   \indexspace
 
-  \item Marginal cost, \hyperpage{72}, \hyperpage{79}, \hyperpage{92}, 
-		\hyperpage{95}
-  \item Marginal profit, \hyperpage{79}
-  \item Marginal revenue, \hyperpage{79}, \hyperpage{92}
+  \item Marginal cost, \hyperpage{72}, \hyperpage{80}, \hyperpage{93}, 
+		\hyperpage{96}
+  \item Marginal profit, \hyperpage{80}
+  \item Marginal revenue, \hyperpage{80}, \hyperpage{93}
   \item Mathematical modeling, \hyperpage{19}
   \item Model
     \subitem trigonometric, \hyperpage{65}
@@ -152,7 +156,7 @@
 
   \indexspace
 
-  \item Newton, Isaac, \hyperpage{1}, \hyperpage{76}
+  \item Newton, Isaac, \hyperpage{1}, \hyperpage{77}
 
   \indexspace
 
@@ -162,17 +166,17 @@
 
   \item P\'{o}lya, George, \hyperpage{4}
   \item Point, \hyperpage{8}
-  \item Power rule, \hyperpage{90}
+  \item Power rule, \hyperpage{91}
   \item Principal, \hyperpage{56}
-  \item Product Rule, \hyperpage{93}
+  \item Product Rule, \hyperpage{94}
   \item Profit, \hyperpage{12, 13}
-  \item Profitmarginal, \hyperpage{79}
+  \item Profitmarginal, \hyperpage{80}
   \item Properties of logarithms, \hyperpage{62}
 
   \indexspace
 
   \item Quadratic formula, \hyperpage{47}
-  \item Quotient Rule, \hyperpage{94}
+  \item Quotient Rule, \hyperpage{95}
 
   \indexspace
 
@@ -184,9 +188,9 @@
     \subitem instantaneous, \hyperpage{69}
   \item Regression, \hyperpage{25}
     \subitem line, \hyperpage{41}
-  \item Revenue, \hyperpage{12, 13}, \hyperpage{92}
-    \subitem average, \hyperpage{95}
-    \subitem marginal, \hyperpage{79}
+  \item Revenue, \hyperpage{12, 13}, \hyperpage{93}
+    \subitem average, \hyperpage{96}
+    \subitem marginal, \hyperpage{80}
   \item Root, \hyperpage{46}
 
   \indexspace
@@ -220,7 +224,7 @@
   \item Variable
     \subitem dependent, \hyperpage{7}
     \subitem independent, \hyperpage{7}
-  \item Velocity, \hyperpage{79}
+  \item Velocity, \hyperpage{80}
   \item Vertex, \hyperpage{45}
   \item Vertical line test, \hyperpage{9}
 
