@@ -91,8 +91,12 @@
 \contentsline {subsection}{\numberline {2.11.1}Derivative Formulas}{101}{subsection.2.11.1}%
 \contentsline {subsection}{\numberline {2.11.2}Examples}{102}{subsection.2.11.2}%
 \contentsline {subsection}{\numberline {2.11.3}Exercises}{102}{subsection.2.11.3}%
-\contentsline {chapter}{\numberline {3}Applications of Derivatives}{103}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Functions of Many Variables}{105}{chapter.4}%
-\contentsline {chapter}{\numberline {5}The Integral: Accumulation of a Rate Function}{107}{chapter.5}%
-\contentsline {chapter}{References}{109}{chapter.5}%
-\contentsline {chapter}{Index}{109}{chapter.5}%
+\contentsline {section}{\numberline {2.12}Higher Order Derivatives}{102}{section.2.12}%
+\contentsline {subsection}{\numberline {2.12.1}Second Derivative}{102}{subsection.2.12.1}%
+\contentsline {subsection}{\numberline {2.12.2}Third and Higher Derivatives}{103}{subsection.2.12.2}%
+\contentsline {subsection}{\numberline {2.12.3}Exercises}{103}{subsection.2.12.3}%
+\contentsline {chapter}{\numberline {3}Applications of Derivatives}{105}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Functions of Many Variables}{107}{chapter.4}%
+\contentsline {chapter}{\numberline {5}The Integral: Accumulation of a Rate Function}{109}{chapter.5}%
+\contentsline {chapter}{References}{111}{chapter.5}%
+\contentsline {chapter}{Index}{111}{chapter.5}%

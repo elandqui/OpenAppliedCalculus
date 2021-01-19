@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.21)  18 JAN 2021 23:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.21)  19 JAN 2021 14:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1088,61 +1088,61 @@ http://creativecommons.org/licenses/by-
 [6
 
 ]
-<img/support/blockFi/blockfi-banner0.png, id=387, 973.6375pt x 250.9375pt>
+<img/support/blockFi/blockfi-banner0.png, id=404, 973.6375pt x 250.9375pt>
 File: img/support/blockFi/blockfi-banner0.png Graphic file (type png)
 <use img/support/blockFi/blockfi-banner0.png>
 Package pdftex.def Info: img/support/blockFi/blockfi-banner0.png  used on input
  line 9.
 (pdftex.def)             Requested size: 469.75502pt x 121.06892pt.
-<img/support/cryptocoins/bitcoin.png, id=401, 2007.5pt x 2007.5pt>
+<img/support/cryptocoins/bitcoin.png, id=418, 2007.5pt x 2007.5pt>
 File: img/support/cryptocoins/bitcoin.png Graphic file (type png)
 <use img/support/cryptocoins/bitcoin.png>
 Package pdftex.def Info: img/support/cryptocoins/bitcoin.png  used on input lin
 e 47.
 (pdftex.def)             Requested size: 11.73203pt x 11.741pt.
-<img/support/cryptocoins/ethereum.png, id=402, 3270.2175pt x 3270.2175pt>
+<img/support/cryptocoins/ethereum.png, id=419, 3270.2175pt x 3270.2175pt>
 File: img/support/cryptocoins/ethereum.png Graphic file (type png)
 <use img/support/cryptocoins/ethereum.png>
 Package pdftex.def Info: img/support/cryptocoins/ethereum.png  used on input li
 ne 47.
 (pdftex.def)             Requested size: 11.72636pt x 11.741pt.
-<img/support/cryptocoins/litecoin.png, id=403, 2007.5pt x 2007.5pt>
+<img/support/cryptocoins/litecoin.png, id=420, 2007.5pt x 2007.5pt>
 File: img/support/cryptocoins/litecoin.png Graphic file (type png)
 <use img/support/cryptocoins/litecoin.png>
 Package pdftex.def Info: img/support/cryptocoins/litecoin.png  used on input li
 ne 47.
 (pdftex.def)             Requested size: 11.73203pt x 11.741pt.
-<img/support/cryptocoins/tether.png, id=404, 2007.5pt x 2007.5pt>
+<img/support/cryptocoins/tether.png, id=421, 2007.5pt x 2007.5pt>
 File: img/support/cryptocoins/tether.png Graphic file (type png)
 <use img/support/cryptocoins/tether.png>
 Package pdftex.def Info: img/support/cryptocoins/tether.png  used on input line
  47.
 (pdftex.def)             Requested size: 11.73203pt x 11.741pt.
-<img/support/cryptocoins/tezos.png, id=405, 2733.21124pt x 2733.21124pt>
+<img/support/cryptocoins/tezos.png, id=422, 2733.21124pt x 2733.21124pt>
 File: img/support/cryptocoins/tezos.png Graphic file (type png)
 <use img/support/cryptocoins/tezos.png>
 Package pdftex.def Info: img/support/cryptocoins/tezos.png  used on input line 
 47.
 (pdftex.def)             Requested size: 11.71921pt x 11.741pt.
-<img/support/cryptocoins/usdc.png, id=406, 2007.5pt x 2007.5pt>
+<img/support/cryptocoins/usdc.png, id=423, 2007.5pt x 2007.5pt>
 File: img/support/cryptocoins/usdc.png Graphic file (type png)
 <use img/support/cryptocoins/usdc.png>
 Package pdftex.def Info: img/support/cryptocoins/usdc.png  used on input line 4
 7.
 (pdftex.def)             Requested size: 11.73203pt x 11.741pt.
-<img/support/cryptocoins/binance.png, id=407, 2007.5pt x 2007.5pt>
+<img/support/cryptocoins/binance.png, id=424, 2007.5pt x 2007.5pt>
 File: img/support/cryptocoins/binance.png Graphic file (type png)
 <use img/support/cryptocoins/binance.png>
 Package pdftex.def Info: img/support/cryptocoins/binance.png  used on input lin
 e 47.
 (pdftex.def)             Requested size: 11.73203pt x 11.741pt.
-<img/support/cryptocoins/bat.png, id=408, 2007.5pt x 2007.5pt>
+<img/support/cryptocoins/bat.png, id=425, 2007.5pt x 2007.5pt>
 File: img/support/cryptocoins/bat.png Graphic file (type png)
 <use img/support/cryptocoins/bat.png>
 Package pdftex.def Info: img/support/cryptocoins/bat.png  used on input line 47
 .
 (pdftex.def)             Requested size: 11.73203pt x 11.741pt.
-<img/support/cryptocoins/bitcoin-cash.png, id=409, 2007.5pt x 2007.5pt>
+<img/support/cryptocoins/bitcoin-cash.png, id=426, 2007.5pt x 2007.5pt>
 File: img/support/cryptocoins/bitcoin-cash.png Graphic file (type png)
 <use img/support/cryptocoins/bitcoin-cash.png>
 Package pdftex.def Info: img/support/cryptocoins/bitcoin-cash.png  used on inpu
@@ -1155,39 +1155,41 @@ ins/tezos.png> <./img/support/cryptocoins/usdc.png> <./img/support/cryptocoins/
 binance.png> <./img/support/cryptocoins/bat.png> <./img/support/cryptocoins/bit
 coin-cash.png>] (./OpenAppCalc.toc [9
 
-])
+] [10])
 \tf@toc=\write6
 \openout6 = `OpenAppCalc.toc'.
 
- [10] (./tex/chap0-whatiscalculus.tex
+ [11] [12
+
+]
+(./tex/chap0-whatiscalculus.tex
 Chapter 0.
-<img/chap0/IsaacNewton.jpg, id=535, 298.11375pt x 364.36125pt>
+<img/chap0/IsaacNewton.jpg, id=563, 298.11375pt x 364.36125pt>
 File: img/chap0/IsaacNewton.jpg Graphic file (type jpg)
 <use img/chap0/IsaacNewton.jpg>
 Package pdftex.def Info: img/chap0/IsaacNewton.jpg  used on input line 16.
 (pdftex.def)             Requested size: 112.74377pt x 137.7971pt.
-<img/chap0/GottfriedWilhelmLeibniz.jpg, id=536, 1080.6774pt x 1334.1042pt>
+<img/chap0/GottfriedWilhelmLeibniz.jpg, id=564, 1080.6774pt x 1334.1042pt>
 File: img/chap0/GottfriedWilhelmLeibniz.jpg Graphic file (type jpg)
 <use img/chap0/GottfriedWilhelmLeibniz.jpg>
 Package pdftex.def Info: img/chap0/GottfriedWilhelmLeibniz.jpg  used on input l
 ine 28.
 (pdftex.def)             Requested size: 112.74377pt x 139.1792pt.
-<img/chap0/ex0-1.png, id=538, 526.8483pt x 434.3427pt>
+<img/chap0/ex0-1.png, id=566, 526.8483pt x 434.3427pt>
 File: img/chap0/ex0-1.png Graphic file (type png)
 <use img/chap0/ex0-1.png>
 Package pdftex.def Info: img/chap0/ex0-1.png  used on input line 52.
 (pdftex.def)             Requested size: 211.38832pt x 174.27083pt.
-<img/chap0/ex0-2.png, id=539, 526.8483pt x 434.3427pt>
+<img/chap0/ex0-2.png, id=567, 526.8483pt x 434.3427pt>
 File: img/chap0/ex0-2.png Graphic file (type png)
 <use img/chap0/ex0-2.png>
 Package pdftex.def Info: img/chap0/ex0-2.png  used on input line 58.
 (pdftex.def)             Requested size: 211.38832pt x 174.27083pt.
 [1
 
-
  <./img/chap0/IsaacNewton.jpg> <./img/chap0/GottfriedWilhelmLeibniz.jpg>]
 [2 <./img/chap0/ex0-1.png> <./img/chap0/ex0-2.png>]
-<img/chap0/polya.jpg, id=563, 242.9075pt x 321.2pt>
+<img/chap0/polya.jpg, id=592, 242.9075pt x 321.2pt>
 File: img/chap0/polya.jpg Graphic file (type jpg)
 <use img/chap0/polya.jpg>
 Package pdftex.def Info: img/chap0/polya.jpg  used on input line 163.
@@ -1197,29 +1199,29 @@ Chapter 1.
 (./tex/chap1/sec1-2-functions.tex [7
 
 ]
-<img/chap1/sec1-2/table1-1.png, id=611, 413.545pt x 289.08pt>
+<img/chap1/sec1-2/table1-1.png, id=640, 413.545pt x 289.08pt>
 File: img/chap1/sec1-2/table1-1.png Graphic file (type png)
 <use img/chap1/sec1-2/table1-1.png>
 Package pdftex.def Info: img/chap1/sec1-2/table1-1.png  used on input line 150.
 
 (pdftex.def)             Requested size: 140.92793pt x 98.51526pt.
  [8]
-<img/chap1/sec1-2/ex114a.png, id=625, 409.7709pt x 422.7795pt>
+<img/chap1/sec1-2/ex114a.png, id=655, 409.7709pt x 422.7795pt>
 File: img/chap1/sec1-2/ex114a.png Graphic file (type png)
 <use img/chap1/sec1-2/ex114a.png>
 Package pdftex.def Info: img/chap1/sec1-2/ex114a.png  used on input line 164.
 (pdftex.def)             Requested size: 140.92793pt x 145.40105pt.
-<img/chap1/sec1-2/ex114b.png, id=626, 409.7709pt x 422.7795pt>
+<img/chap1/sec1-2/ex114b.png, id=656, 409.7709pt x 422.7795pt>
 File: img/chap1/sec1-2/ex114b.png Graphic file (type png)
 <use img/chap1/sec1-2/ex114b.png>
 Package pdftex.def Info: img/chap1/sec1-2/ex114b.png  used on input line 169.
 (pdftex.def)             Requested size: 140.92793pt x 145.40105pt.
-<img/chap1/sec1-2/ex114c.png, id=627, 409.7709pt x 422.7795pt>
+<img/chap1/sec1-2/ex114c.png, id=657, 409.7709pt x 422.7795pt>
 File: img/chap1/sec1-2/ex114c.png Graphic file (type png)
 <use img/chap1/sec1-2/ex114c.png>
 Package pdftex.def Info: img/chap1/sec1-2/ex114c.png  used on input line 174.
 (pdftex.def)             Requested size: 140.92793pt x 145.40105pt.
-<img/chap1/sec1-2/fig115.png, id=628, 409.7709pt x 422.7795pt>
+<img/chap1/sec1-2/fig115.png, id=658, 409.7709pt x 422.7795pt>
 File: img/chap1/sec1-2/fig115.png Graphic file (type png)
 <use img/chap1/sec1-2/fig115.png>
 Package pdftex.def Info: img/chap1/sec1-2/fig115.png  used on input line 186.
@@ -1231,76 +1233,76 @@ Underfull \vbox (badness 1584) has occurred while \output is active []
 ap1/sec1-2/ex114b.png> <./img/chap1/sec1-2/ex114c.png> <./img/chap1/sec1-2/fig1
 15.png>]
 [10]
-<img/chap1/sec1-2/ex117.png, id=655, 409.0482pt x 422.0568pt>
+<img/chap1/sec1-2/ex117.png, id=683, 409.0482pt x 422.0568pt>
 File: img/chap1/sec1-2/ex117.png Graphic file (type png)
 <use img/chap1/sec1-2/ex117.png>
 Package pdftex.def Info: img/chap1/sec1-2/ex117.png  used on input line 288.
 (pdftex.def)             Requested size: 140.92793pt x 145.40366pt.
  [11 <./img/chap1/sec1-2/ex117.png>] [12] [13]
-<img/chap1/sec1-2/ex-1-2-11.png, id=691, 654.445pt x 76.285pt>
+<img/chap1/sec1-2/ex-1-2-11.png, id=720, 654.445pt x 76.285pt>
 File: img/chap1/sec1-2/ex-1-2-11.png Graphic file (type png)
 <use img/chap1/sec1-2/ex-1-2-11.png>
 Package pdftex.def Info: img/chap1/sec1-2/ex-1-2-11.png  used on input line 519
 .
 (pdftex.def)             Requested size: 234.8775pt x 27.3776pt.
  [14 <./img/chap1/sec1-2/ex-1-2-11.png>]
-<img/chap1/sec1-2/prob3a.png, id=708, 409.0482pt x 422.0568pt>
+<img/chap1/sec1-2/prob3a.png, id=737, 409.0482pt x 422.0568pt>
 File: img/chap1/sec1-2/prob3a.png Graphic file (type png)
 <use img/chap1/sec1-2/prob3a.png>
 Package pdftex.def Info: img/chap1/sec1-2/prob3a.png  used on input line 597.
 (pdftex.def)             Requested size: 93.94957pt x 96.93578pt.
-<img/chap1/sec1-2/prob3b.png, id=709, 409.0482pt x 422.0568pt>
+<img/chap1/sec1-2/prob3b.png, id=738, 409.0482pt x 422.0568pt>
 File: img/chap1/sec1-2/prob3b.png Graphic file (type png)
 <use img/chap1/sec1-2/prob3b.png>
 Package pdftex.def Info: img/chap1/sec1-2/prob3b.png  used on input line 597.
 (pdftex.def)             Requested size: 93.94957pt x 96.93578pt.
-<img/chap1/sec1-2/prob3c.png, id=710, 409.0482pt x 422.0568pt>
+<img/chap1/sec1-2/prob3c.png, id=739, 409.0482pt x 422.0568pt>
 File: img/chap1/sec1-2/prob3c.png Graphic file (type png)
 <use img/chap1/sec1-2/prob3c.png>
 Package pdftex.def Info: img/chap1/sec1-2/prob3c.png  used on input line 598.
 (pdftex.def)             Requested size: 93.94957pt x 96.93578pt.
-<img/chap1/sec1-2/prob3d.png, id=711, 409.0482pt x 422.0568pt>
+<img/chap1/sec1-2/prob3d.png, id=740, 409.0482pt x 422.0568pt>
 File: img/chap1/sec1-2/prob3d.png Graphic file (type png)
 <use img/chap1/sec1-2/prob3d.png>
 Package pdftex.def Info: img/chap1/sec1-2/prob3d.png  used on input line 601.
 (pdftex.def)             Requested size: 93.94957pt x 96.93578pt.
-<img/chap1/sec1-2/prob3e.png, id=712, 409.0482pt x 422.0568pt>
+<img/chap1/sec1-2/prob3e.png, id=741, 409.0482pt x 422.0568pt>
 File: img/chap1/sec1-2/prob3e.png Graphic file (type png)
 <use img/chap1/sec1-2/prob3e.png>
 Package pdftex.def Info: img/chap1/sec1-2/prob3e.png  used on input line 601.
 (pdftex.def)             Requested size: 93.94957pt x 96.93578pt.
-<img/chap1/sec1-2/prob3f.png, id=713, 409.0482pt x 422.0568pt>
+<img/chap1/sec1-2/prob3f.png, id=742, 409.0482pt x 422.0568pt>
 File: img/chap1/sec1-2/prob3f.png Graphic file (type png)
 <use img/chap1/sec1-2/prob3f.png>
 Package pdftex.def Info: img/chap1/sec1-2/prob3f.png  used on input line 602.
 (pdftex.def)             Requested size: 93.94957pt x 96.93578pt.
  [15]
-<img/chap1/sec1-2/prob4a.png, id=735, 409.0482pt x 422.0568pt>
+<img/chap1/sec1-2/prob4a.png, id=763, 409.0482pt x 422.0568pt>
 File: img/chap1/sec1-2/prob4a.png Graphic file (type png)
 <use img/chap1/sec1-2/prob4a.png>
 Package pdftex.def Info: img/chap1/sec1-2/prob4a.png  used on input line 611.
 (pdftex.def)             Requested size: 93.94957pt x 96.93578pt.
-<img/chap1/sec1-2/prob4b.png, id=736, 409.0482pt x 422.0568pt>
+<img/chap1/sec1-2/prob4b.png, id=764, 409.0482pt x 422.0568pt>
 File: img/chap1/sec1-2/prob4b.png Graphic file (type png)
 <use img/chap1/sec1-2/prob4b.png>
 Package pdftex.def Info: img/chap1/sec1-2/prob4b.png  used on input line 611.
 (pdftex.def)             Requested size: 93.94957pt x 96.93578pt.
-<img/chap1/sec1-2/prob4c.png, id=737, 409.0482pt x 422.0568pt>
+<img/chap1/sec1-2/prob4c.png, id=765, 409.0482pt x 422.0568pt>
 File: img/chap1/sec1-2/prob4c.png Graphic file (type png)
 <use img/chap1/sec1-2/prob4c.png>
 Package pdftex.def Info: img/chap1/sec1-2/prob4c.png  used on input line 612.
 (pdftex.def)             Requested size: 93.94957pt x 96.93578pt.
-<img/chap1/sec1-2/prob4d.png, id=738, 409.0482pt x 422.0568pt>
+<img/chap1/sec1-2/prob4d.png, id=766, 409.0482pt x 422.0568pt>
 File: img/chap1/sec1-2/prob4d.png Graphic file (type png)
 <use img/chap1/sec1-2/prob4d.png>
 Package pdftex.def Info: img/chap1/sec1-2/prob4d.png  used on input line 615.
 (pdftex.def)             Requested size: 93.94957pt x 96.93578pt.
-<img/chap1/sec1-2/prob4e.png, id=739, 409.0482pt x 422.0568pt>
+<img/chap1/sec1-2/prob4e.png, id=767, 409.0482pt x 422.0568pt>
 File: img/chap1/sec1-2/prob4e.png Graphic file (type png)
 <use img/chap1/sec1-2/prob4e.png>
 Package pdftex.def Info: img/chap1/sec1-2/prob4e.png  used on input line 615.
 (pdftex.def)             Requested size: 93.94957pt x 96.93578pt.
-<img/chap1/sec1-2/prob4f.png, id=740, 409.0482pt x 422.0568pt>
+<img/chap1/sec1-2/prob4f.png, id=768, 409.0482pt x 422.0568pt>
 File: img/chap1/sec1-2/prob4f.png Graphic file (type png)
 <use img/chap1/sec1-2/prob4f.png>
 Package pdftex.def Info: img/chap1/sec1-2/prob4f.png  used on input line 616.
@@ -1310,25 +1312,25 @@ p1/sec1-2/prob3c.png> <./img/chap1/sec1-2/prob3d.png> <./img/chap1/sec1-2/prob3
 e.png> <./img/chap1/sec1-2/prob3f.png> <./img/chap1/sec1-2/prob4a.png> <./img/c
 hap1/sec1-2/prob4b.png> <./img/chap1/sec1-2/prob4c.png> <./img/chap1/sec1-2/pro
 b4d.png> <./img/chap1/sec1-2/prob4e.png> <./img/chap1/sec1-2/prob4f.png>]
-<img/chap1/sec1-2/prob7.png, id=760, 565.8741pt x 422.7795pt>
+<img/chap1/sec1-2/prob7.png, id=788, 565.8741pt x 422.7795pt>
 File: img/chap1/sec1-2/prob7.png Graphic file (type png)
 <use img/chap1/sec1-2/prob7.png>
 Package pdftex.def Info: img/chap1/sec1-2/prob7.png  used on input line 803.
 (pdftex.def)             Requested size: 177.89928pt x 132.91174pt.
-<img/chap1/sec1-2/prob8.png, id=761, 565.8741pt x 422.7795pt>
+<img/chap1/sec1-2/prob8.png, id=789, 565.8741pt x 422.7795pt>
 File: img/chap1/sec1-2/prob8.png Graphic file (type png)
 <use img/chap1/sec1-2/prob8.png>
 Package pdftex.def Info: img/chap1/sec1-2/prob8.png  used on input line 819.
 (pdftex.def)             Requested size: 177.89928pt x 132.91174pt.
  [17 <./img/chap1/sec1-2/prob7.png> <./img/chap1/sec1-2/prob8.png>]
-<img/chap1/sec1-2/prob21.png, id=783, 566.5968pt x 424.2249pt>
+<img/chap1/sec1-2/prob21.png, id=812, 566.5968pt x 424.2249pt>
 File: img/chap1/sec1-2/prob21.png Graphic file (type png)
 <use img/chap1/sec1-2/prob21.png>
 Package pdftex.def Info: img/chap1/sec1-2/prob21.png  used on input line 903.
 (pdftex.def)             Requested size: 213.48048pt x 159.83482pt.
 )
 (./tex/chap1/sec1-3-models.tex [18 <./img/chap1/sec1-2/prob21.png>]
-<img/chap1/sec1-3/fig1-3-oil.png, id=814, 565.8741pt x 424.2249pt>
+<img/chap1/sec1-3/fig1-3-oil.png, id=842, 565.8741pt x 424.2249pt>
 File: img/chap1/sec1-3/fig1-3-oil.png Graphic file (type png)
 <use img/chap1/sec1-3/fig1-3-oil.png>
 Package pdftex.def Info: img/chap1/sec1-3/fig1-3-oil.png  used on input line 36
@@ -1337,7 +1339,7 @@ Package pdftex.def Info: img/chap1/sec1-3/fig1-3-oil.png  used on input line 36
 
 Package floatflt Message: Floating figure 1 set on page 19
 [19 <./img/chap1/sec1-3/fig1-3-oil.png>]
-<img/chap1/sec1-3/line-scatter1.png, id=828, 672.5125pt x 324.21124pt>
+<img/chap1/sec1-3/line-scatter1.png, id=857, 672.5125pt x 324.21124pt>
 File: img/chap1/sec1-3/line-scatter1.png Graphic file (type png)
 <use img/chap1/sec1-3/line-scatter1.png>
 Package pdftex.def Info: img/chap1/sec1-3/line-scatter1.png  used on input line
@@ -1347,19 +1349,19 @@ Package pdftex.def Info: img/chap1/sec1-3/line-scatter1.png  used on input line
 Underfull \vbox (badness 1888) has occurred while \output is active []
 
  [20]
-<img/chap1/sec1-3/scatterplot2.png, id=836, 672.5125pt x 326.21875pt>
+<img/chap1/sec1-3/scatterplot2.png, id=865, 672.5125pt x 326.21875pt>
 File: img/chap1/sec1-3/scatterplot2.png Graphic file (type png)
 <use img/chap1/sec1-3/scatterplot2.png>
 Package pdftex.def Info: img/chap1/sec1-3/scatterplot2.png  used on input line 
 105.
 (pdftex.def)             Requested size: 281.85587pt x 136.72223pt.
-<img/chap1/sec1-3/scatterplot3-oil.png, id=837, 672.5125pt x 323.2075pt>
+<img/chap1/sec1-3/scatterplot3-oil.png, id=866, 672.5125pt x 323.2075pt>
 File: img/chap1/sec1-3/scatterplot3-oil.png Graphic file (type png)
 <use img/chap1/sec1-3/scatterplot3-oil.png>
 Package pdftex.def Info: img/chap1/sec1-3/scatterplot3-oil.png  used on input l
 ine 114.
 (pdftex.def)             Requested size: 281.85587pt x 135.46017pt.
-<img/chap1/sec1-3/scatterplot4-oil.png, id=838, 456.20438pt x 256.70906pt>
+<img/chap1/sec1-3/scatterplot4-oil.png, id=867, 456.20438pt x 256.70906pt>
 File: img/chap1/sec1-3/scatterplot4-oil.png Graphic file (type png)
 <use img/chap1/sec1-3/scatterplot4-oil.png>
 Package pdftex.def Info: img/chap1/sec1-3/scatterplot4-oil.png  used on input l
@@ -1374,7 +1376,7 @@ LaTeX Font Info:    Trying to load font information for TS1+cmss on input line
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-<img/chap1/sec1-3/scatterplot1.png, id=847, 674.52pt x 324.21124pt>
+<img/chap1/sec1-3/scatterplot1.png, id=875, 674.52pt x 324.21124pt>
 File: img/chap1/sec1-3/scatterplot1.png Graphic file (type png)
 <use img/chap1/sec1-3/scatterplot1.png>
 Package pdftex.def Info: img/chap1/sec1-3/scatterplot1.png  used on input line 
@@ -1384,19 +1386,19 @@ Package pdftex.def Info: img/chap1/sec1-3/scatterplot1.png  used on input line
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22 <./img/chap1/sec1-3/scatterplot4-oil.png (PNG copy)>]
-<img/chap1/sec1-3/scatterplot-column-2.png, id=854, 673.51625pt x 324.21124pt>
+<img/chap1/sec1-3/scatterplot-column-2.png, id=882, 673.51625pt x 324.21124pt>
 File: img/chap1/sec1-3/scatterplot-column-2.png Graphic file (type png)
 <use img/chap1/sec1-3/scatterplot-column-2.png>
 Package pdftex.def Info: img/chap1/sec1-3/scatterplot-column-2.png  used on inp
 ut line 170.
 (pdftex.def)             Requested size: 281.85587pt x 135.67802pt.
-<img/chap1/sec1-3/scatterplot-column-3.png, id=855, 674.52pt x 324.21124pt>
+<img/chap1/sec1-3/scatterplot-column-3.png, id=883, 674.52pt x 324.21124pt>
 File: img/chap1/sec1-3/scatterplot-column-3.png Graphic file (type png)
 <use img/chap1/sec1-3/scatterplot-column-3.png>
 Package pdftex.def Info: img/chap1/sec1-3/scatterplot-column-3.png  used on inp
 ut line 178.
 (pdftex.def)             Requested size: 281.85587pt x 135.4752pt.
-<img/chap1/sec1-3/fig1-3-houseprices.png, id=856, 455.45157pt x 255.95625pt>
+<img/chap1/sec1-3/fig1-3-houseprices.png, id=884, 455.45157pt x 255.95625pt>
 File: img/chap1/sec1-3/fig1-3-houseprices.png Graphic file (type png)
 <use img/chap1/sec1-3/fig1-3-houseprices.png>
 Package pdftex.def Info: img/chap1/sec1-3/fig1-3-houseprices.png  used on input
@@ -1404,7 +1406,7 @@ Package pdftex.def Info: img/chap1/sec1-3/fig1-3-houseprices.png  used on input
 (pdftex.def)             Requested size: 281.85587pt x 158.4022pt.
  [23 <./img/chap1/sec1-3/scatterplot1.png> <./img/chap1/sec1-3/scatterplot-colu
 mn-2.png> <./img/chap1/sec1-3/scatterplot-column-3.png>]
-<img/chap1/sec1-3/issaquah-homes.png, id=864, 455.45157pt x 255.95625pt>
+<img/chap1/sec1-3/issaquah-homes.png, id=892, 455.45157pt x 255.95625pt>
 File: img/chap1/sec1-3/issaquah-homes.png Graphic file (type png)
 <use img/chap1/sec1-3/issaquah-homes.png>
 Package pdftex.def Info: img/chap1/sec1-3/issaquah-homes.png  used on input lin
@@ -1412,26 +1414,26 @@ e 204.
 (pdftex.def)             Requested size: 281.85587pt x 158.4022pt.
  [24 <./img/chap1/sec1-3/fig1-3-houseprices.png (PNG copy)> <./img/chap1/sec1-3
 /issaquah-homes.png (PNG copy)>]
-<img/chap1/sec1-3/ex1-3-oil.png, id=869, 422.57875pt x 285.065pt>
+<img/chap1/sec1-3/ex1-3-oil.png, id=897, 422.57875pt x 285.065pt>
 File: img/chap1/sec1-3/ex1-3-oil.png Graphic file (type png)
 <use img/chap1/sec1-3/ex1-3-oil.png>
 Package pdftex.def Info: img/chap1/sec1-3/ex1-3-oil.png  used on input line 216
 .
 (pdftex.def)             Requested size: 140.92793pt x 95.06783pt.
-<img/chap1/sec1-3/fig1-3-oil-curve.png, id=878, 435.6275pt x 285.065pt>
+<img/chap1/sec1-3/fig1-3-oil-curve.png, id=906, 435.6275pt x 285.065pt>
 File: img/chap1/sec1-3/fig1-3-oil-curve.png Graphic file (type png)
 <use img/chap1/sec1-3/fig1-3-oil-curve.png>
 Package pdftex.def Info: img/chap1/sec1-3/fig1-3-oil-curve.png  used on input l
 ine 261.
 (pdftex.def)             Requested size: 281.85587pt x 184.4375pt.
  [25 <./img/chap1/sec1-3/ex1-3-oil.png>]
-<img/chap1/sec1-3/fig1-3-dash.png, id=889, 498.86375pt x 339.2675pt>
+<img/chap1/sec1-3/fig1-3-dash.png, id=918, 498.86375pt x 339.2675pt>
 File: img/chap1/sec1-3/fig1-3-dash.png Graphic file (type png)
 <use img/chap1/sec1-3/fig1-3-dash.png>
 Package pdftex.def Info: img/chap1/sec1-3/fig1-3-dash.png  used on input line 3
 03.
 (pdftex.def)             Requested size: 187.89914pt x 127.78409pt.
-<img/chap1/sec1-3/fig1-3-dash-curve.png, id=891, 443.6575pt x 285.065pt>
+<img/chap1/sec1-3/fig1-3-dash-curve.png, id=920, 443.6575pt x 285.065pt>
 File: img/chap1/sec1-3/fig1-3-dash-curve.png Graphic file (type png)
 <use img/chap1/sec1-3/fig1-3-dash-curve.png>
 Package pdftex.def Info: img/chap1/sec1-3/fig1-3-dash-curve.png  used on input 
@@ -1441,39 +1443,39 @@ line 321.
 floatflt Message: Flt. fig. 2 set on page 27, shifted 1 par(s) forward.
 ) (./tex/chap1/sec1-4-linear.tex [27 <./img/chap1/sec1-3/fig1-3-dash.png> <./im
 g/chap1/sec1-3/fig1-3-dash-curve.png>] [28] [29]
-<img/chap1/sec1-4/image048.png, id=931, 301.125pt x 200.75pt>
+<img/chap1/sec1-4/image048.png, id=959, 301.125pt x 200.75pt>
 File: img/chap1/sec1-4/image048.png Graphic file (type png)
 <use img/chap1/sec1-4/image048.png>
 Package pdftex.def Info: img/chap1/sec1-4/image048.png  used on input line 126.
 
 (pdftex.def)             Requested size: 234.8775pt x 156.59048pt.
  [30 <./img/chap1/sec1-4/image048.png>] [31]
-<img/chap1/sec1-4/image049.png, id=947, 205.5178pt x 125.71968pt>
+<img/chap1/sec1-4/image049.png, id=976, 205.5178pt x 125.71968pt>
 File: img/chap1/sec1-4/image049.png Graphic file (type png)
 <use img/chap1/sec1-4/image049.png>
 Package pdftex.def Info: img/chap1/sec1-4/image049.png  used on input line 263.
 
 (pdftex.def)             Requested size: 234.8775pt x 143.68063pt.
  [32]
-<img/chap1/sec1-4/image050.png, id=955, 316.18124pt x 273.27094pt>
+<img/chap1/sec1-4/image050.png, id=984, 316.18124pt x 273.27094pt>
 File: img/chap1/sec1-4/image050.png Graphic file (type png)
 <use img/chap1/sec1-4/image050.png>
 Package pdftex.def Info: img/chap1/sec1-4/image050.png  used on input line 273.
 
 (pdftex.def)             Requested size: 234.8775pt x 203.0054pt.
-<img/chap1/sec1-4/image051.png, id=957, 311.66437pt x 252.945pt>
+<img/chap1/sec1-4/image051.png, id=986, 311.66437pt x 252.945pt>
 File: img/chap1/sec1-4/image051.png Graphic file (type png)
 <use img/chap1/sec1-4/image051.png>
 Package pdftex.def Info: img/chap1/sec1-4/image051.png  used on input line 282.
 
 (pdftex.def)             Requested size: 234.8775pt x 190.62688pt.
-<img/chap1/sec1-4/image052.png, id=959, 301.125pt x 200.75pt>
+<img/chap1/sec1-4/image052.png, id=988, 301.125pt x 200.75pt>
 File: img/chap1/sec1-4/image052.png Graphic file (type png)
 <use img/chap1/sec1-4/image052.png>
 Package pdftex.def Info: img/chap1/sec1-4/image052.png  used on input line 293.
 
 (pdftex.def)             Requested size: 234.8775pt x 156.59048pt.
-<img/chap1/sec1-4/image095.png, id=960, 247.67531pt x 158.84344pt>
+<img/chap1/sec1-4/image095.png, id=989, 247.67531pt x 158.84344pt>
 File: img/chap1/sec1-4/image095.png Graphic file (type png)
 <use img/chap1/sec1-4/image095.png>
 Package pdftex.def Info: img/chap1/sec1-4/image095.png  used on input line 301.
@@ -1483,7 +1485,7 @@ Package pdftex.def Info: img/chap1/sec1-4/image095.png  used on input line 301.
 Underfull \vbox (badness 1460) has occurred while \output is active []
 
  [34 <./img/chap1/sec1-4/image051.png> <./img/chap1/sec1-4/image052.png>]
-<img/chap1/sec1-4/image053.png, id=984, 401.5pt x 301.125pt>
+<img/chap1/sec1-4/image053.png, id=1012, 401.5pt x 301.125pt>
 File: img/chap1/sec1-4/image053.png Graphic file (type png)
 <use img/chap1/sec1-4/image053.png>
 Package pdftex.def Info: img/chap1/sec1-4/image053.png  used on input line 347.
@@ -1491,13 +1493,13 @@ Package pdftex.def Info: img/chap1/sec1-4/image053.png  used on input line 347.
 (pdftex.def)             Requested size: 187.89914pt x 140.92683pt.
  [35 <./img/chap1/sec1-4/image095.png>] [36 <./img/chap1/sec1-4/image053.png>] 
 [37] [38]
-<img/chap1/sec1-4/1-4-crickets-plot1.jpg, id=1021, 455.45157pt x 258.65053pt>
+<img/chap1/sec1-4/1-4-crickets-plot1.jpg, id=1050, 455.45157pt x 258.65053pt>
 File: img/chap1/sec1-4/1-4-crickets-plot1.jpg Graphic file (type jpg)
 <use img/chap1/sec1-4/1-4-crickets-plot1.jpg>
 Package pdftex.def Info: img/chap1/sec1-4/1-4-crickets-plot1.jpg  used on input
  line 533.
 (pdftex.def)             Requested size: 230.18253pt x 130.72206pt.
-<img/chap1/sec1-4/1-4-crickets-plot2.jpg, id=1022, 455.45157pt x 258.65053pt>
+<img/chap1/sec1-4/1-4-crickets-plot2.jpg, id=1051, 455.45157pt x 258.65053pt>
 File: img/chap1/sec1-4/1-4-crickets-plot2.jpg Graphic file (type jpg)
 <use img/chap1/sec1-4/1-4-crickets-plot2.jpg>
 Package pdftex.def Info: img/chap1/sec1-4/1-4-crickets-plot2.jpg  used on input
@@ -1505,7 +1507,7 @@ Package pdftex.def Info: img/chap1/sec1-4/1-4-crickets-plot2.jpg  used on input
 (pdftex.def)             Requested size: 230.18253pt x 130.72206pt.
  [39 <./img/chap1/sec1-4/1-4-crickets-plot1.jpg> <./img/chap1/sec1-4/1-4-cricke
 ts-plot2.jpg>]
-<img/chap1/sec1-4/1-4-crickets-plot-handline.jpg, id=1033, 607.26875pt x 341.27
+<img/chap1/sec1-4/1-4-crickets-plot-handline.jpg, id=1061, 607.26875pt x 341.27
 5pt>
 File: img/chap1/sec1-4/1-4-crickets-plot-handline.jpg Graphic file (type jpg)
 <use img/chap1/sec1-4/1-4-crickets-plot-handline.jpg>
@@ -1513,19 +1515,19 @@ Package pdftex.def Info: img/chap1/sec1-4/1-4-crickets-plot-handline.jpg  used
 on input line 556.
 (pdftex.def)             Requested size: 281.85587pt x 158.39961pt.
  [40 <./img/chap1/sec1-4/1-4-crickets-plot-handline.jpg>]
-<img/chap1/sec1-4/lin-reg-crickets-menu.png, id=1044, 386.44376pt x 662.475pt>
+<img/chap1/sec1-4/lin-reg-crickets-menu.png, id=1073, 386.44376pt x 662.475pt>
 File: img/chap1/sec1-4/lin-reg-crickets-menu.png Graphic file (type png)
 <use img/chap1/sec1-4/lin-reg-crickets-menu.png>
 Package pdftex.def Info: img/chap1/sec1-4/lin-reg-crickets-menu.png  used on in
 put line 615.
 (pdftex.def)             Requested size: 187.89914pt x 322.10867pt.
-<img/chap1/sec1-4/lin-reg-crickets.png, id=1046, 455.45157pt x 255.95625pt>
+<img/chap1/sec1-4/lin-reg-crickets.png, id=1075, 455.45157pt x 255.95625pt>
 File: img/chap1/sec1-4/lin-reg-crickets.png Graphic file (type png)
 <use img/chap1/sec1-4/lin-reg-crickets.png>
 Package pdftex.def Info: img/chap1/sec1-4/lin-reg-crickets.png  used on input l
 ine 622.
 (pdftex.def)             Requested size: 281.85587pt x 158.4022pt.
-<img/chap1/sec1-4/correlation_examples.png, id=1047, 401.5pt x 183.68625pt>
+<img/chap1/sec1-4/correlation_examples.png, id=1076, 401.5pt x 183.68625pt>
 File: img/chap1/sec1-4/correlation_examples.png Graphic file (type png)
 <use img/chap1/sec1-4/correlation_examples.png>
 Package pdftex.def Info: img/chap1/sec1-4/correlation_examples.png  used on inp
@@ -1533,7 +1535,7 @@ ut line 648.
 (pdftex.def)             Requested size: 281.85587pt x 128.95786pt.
  [41] [42 <./img/chap1/sec1-4/lin-reg-crickets-menu.png> <./img/chap1/sec1-4/li
 n-reg-crickets.png (PNG copy)>]
-<img/chap1/sec1-4/gas.png, id=1067, 455.45157pt x 255.95625pt>
+<img/chap1/sec1-4/gas.png, id=1095, 455.45157pt x 255.95625pt>
 File: img/chap1/sec1-4/gas.png Graphic file (type png)
 <use img/chap1/sec1-4/gas.png>
 Package pdftex.def Info: img/chap1/sec1-4/gas.png  used on input line 719.
@@ -1542,7 +1544,7 @@ Package pdftex.def Info: img/chap1/sec1-4/gas.png  used on input line 719.
 Underfull \vbox (badness 2285) has occurred while \output is active []
 
  [43 <./img/chap1/sec1-4/correlation_examples.png>]
-<img/chap1/sec1-4/gas-line.png, id=1081, 455.45157pt x 255.95625pt>
+<img/chap1/sec1-4/gas-line.png, id=1110, 455.45157pt x 255.95625pt>
 File: img/chap1/sec1-4/gas-line.png Graphic file (type png)
 <use img/chap1/sec1-4/gas-line.png>
 Package pdftex.def Info: img/chap1/sec1-4/gas-line.png  used on input line 731.
@@ -1551,28 +1553,28 @@ Package pdftex.def Info: img/chap1/sec1-4/gas-line.png  used on input line 731.
  [44 <./img/chap1/sec1-4/gas.png (PNG copy)> <./img/chap1/sec1-4/gas-line.png (
 PNG copy)>])
 (./tex/chap1/sec1-5-polynomial.tex
-<img/chap1/sec1-5/image096.png, id=1089, 189.70876pt x 124.465pt>
+<img/chap1/sec1-5/image096.png, id=1118, 189.70876pt x 124.465pt>
 File: img/chap1/sec1-5/image096.png Graphic file (type png)
 <use img/chap1/sec1-5/image096.png>
 Package pdftex.def Info: img/chap1/sec1-5/image096.png  used on input line 16.
 (pdftex.def)             Requested size: 187.89914pt x 123.2796pt.
-<img/chap1/sec1-5/image057.png, id=1090, 301.125pt x 200.75pt>
+<img/chap1/sec1-5/image057.png, id=1119, 301.125pt x 200.75pt>
 File: img/chap1/sec1-5/image057.png Graphic file (type png)
 <use img/chap1/sec1-5/image057.png>
 Package pdftex.def Info: img/chap1/sec1-5/image057.png  used on input line 38.
 (pdftex.def)             Requested size: 187.89914pt x 125.26932pt.
  [45 <./img/chap1/sec1-5/image096.png>]
-<img/chap1/sec1-5/image058.png, id=1104, 200.75pt x 200.75pt>
+<img/chap1/sec1-5/image058.png, id=1132, 200.75pt x 200.75pt>
 File: img/chap1/sec1-5/image058.png Graphic file (type png)
 <use img/chap1/sec1-5/image058.png>
 Package pdftex.def Info: img/chap1/sec1-5/image058.png  used on input line 66.
 (pdftex.def)             Requested size: 140.92793pt x 140.93756pt.
-<img/chap1/sec1-5/image059.png, id=1105, 200.75pt x 200.75pt>
+<img/chap1/sec1-5/image059.png, id=1133, 200.75pt x 200.75pt>
 File: img/chap1/sec1-5/image059.png Graphic file (type png)
 <use img/chap1/sec1-5/image059.png>
 Package pdftex.def Info: img/chap1/sec1-5/image059.png  used on input line 71.
 (pdftex.def)             Requested size: 140.92793pt x 140.93756pt.
-<img/chap1/sec1-5/image060.png, id=1106, 200.75pt x 200.75pt>
+<img/chap1/sec1-5/image060.png, id=1134, 200.75pt x 200.75pt>
 File: img/chap1/sec1-5/image060.png Graphic file (type png)
 <use img/chap1/sec1-5/image060.png>
 Package pdftex.def Info: img/chap1/sec1-5/image060.png  used on input line 76.
@@ -1580,13 +1582,13 @@ Package pdftex.def Info: img/chap1/sec1-5/image060.png  used on input line 76.
 
 [46 <./img/chap1/sec1-5/image057.png> <./img/chap1/sec1-5/image058.png> <./img/
 chap1/sec1-5/image059.png> <./img/chap1/sec1-5/image060.png>] [47]
-<img/chap1/sec1-5/image067.png, id=1127, 301.125pt x 301.125pt>
+<img/chap1/sec1-5/image067.png, id=1155, 301.125pt x 301.125pt>
 File: img/chap1/sec1-5/image067.png Graphic file (type png)
 <use img/chap1/sec1-5/image067.png>
 Package pdftex.def Info: img/chap1/sec1-5/image067.png  used on input line 183.
 
 (pdftex.def)             Requested size: 187.89914pt x 187.90399pt.
-<img/chap1/sec1-5/image068.png, id=1128, 499.11469pt x 54.2025pt>
+<img/chap1/sec1-5/image068.png, id=1156, 499.11469pt x 54.2025pt>
 File: img/chap1/sec1-5/image068.png Graphic file (type png)
 <use img/chap1/sec1-5/image068.png>
 Package pdftex.def Info: img/chap1/sec1-5/image068.png  used on input line 215.
@@ -1594,13 +1596,13 @@ Package pdftex.def Info: img/chap1/sec1-5/image068.png  used on input line 215.
 (pdftex.def)             Requested size: 187.89914pt x 20.40527pt.
  [48]
 [49 <./img/chap1/sec1-5/image067.png> <./img/chap1/sec1-5/image068.png>]
-<img/chap1/sec1-5/image070.png, id=1150, 301.125pt x 301.125pt>
+<img/chap1/sec1-5/image070.png, id=1179, 301.125pt x 301.125pt>
 File: img/chap1/sec1-5/image070.png Graphic file (type png)
 <use img/chap1/sec1-5/image070.png>
 Package pdftex.def Info: img/chap1/sec1-5/image070.png  used on input line 243.
 
 (pdftex.def)             Requested size: 187.89914pt x 187.90399pt.
-<img/chap1/sec1-5/image069.png, id=1151, 301.125pt x 301.125pt>
+<img/chap1/sec1-5/image069.png, id=1180, 301.125pt x 301.125pt>
 File: img/chap1/sec1-5/image069.png Graphic file (type png)
 <use img/chap1/sec1-5/image069.png>
 Package pdftex.def Info: img/chap1/sec1-5/image069.png  used on input line 248.
@@ -1608,7 +1610,7 @@ Package pdftex.def Info: img/chap1/sec1-5/image069.png  used on input line 248.
 (pdftex.def)             Requested size: 187.89914pt x 187.90399pt.
 
 [50 <./img/chap1/sec1-5/image070.png> <./img/chap1/sec1-5/image069.png>]
-<img/chap1/sec1-5/image071.png, id=1164, 301.125pt x 200.75pt>
+<img/chap1/sec1-5/image071.png, id=1193, 301.125pt x 200.75pt>
 File: img/chap1/sec1-5/image071.png Graphic file (type png)
 <use img/chap1/sec1-5/image071.png>
 Package pdftex.def Info: img/chap1/sec1-5/image071.png  used on input line 288.
@@ -1617,39 +1619,39 @@ Package pdftex.def Info: img/chap1/sec1-5/image071.png  used on input line 288.
 
 [51 <./img/chap1/sec1-5/image071.png>] [52]) (./tex/chap1/sec1-6-exp.tex
 [53] [54]
-<img/chap1/sec1-6/image072.png, id=1208, 225.84375pt x 150.5625pt>
+<img/chap1/sec1-6/image072.png, id=1236, 225.84375pt x 150.5625pt>
 File: img/chap1/sec1-6/image072.png Graphic file (type png)
 <use img/chap1/sec1-6/image072.png>
 Package pdftex.def Info: img/chap1/sec1-6/image072.png  used on input line 120.
 
 (pdftex.def)             Requested size: 234.8775pt x 156.59508pt.
  [55 <./img/chap1/sec1-6/image072.png>] [56] [57]
-<img/chap1/sec1-6/image073.png, id=1237, 301.125pt x 200.75pt>
+<img/chap1/sec1-6/image073.png, id=1265, 301.125pt x 200.75pt>
 File: img/chap1/sec1-6/image073.png Graphic file (type png)
 <use img/chap1/sec1-6/image073.png>
 Package pdftex.def Info: img/chap1/sec1-6/image073.png  used on input line 261.
 
 (pdftex.def)             Requested size: 234.8775pt x 156.59048pt.
-<img/chap1/sec1-6/image074.png, id=1238, 225.84375pt x 150.5625pt>
+<img/chap1/sec1-6/image074.png, id=1266, 225.84375pt x 150.5625pt>
 File: img/chap1/sec1-6/image074.png Graphic file (type png)
 <use img/chap1/sec1-6/image074.png>
 Package pdftex.def Info: img/chap1/sec1-6/image074.png  used on input line 271.
 
 (pdftex.def)             Requested size: 234.8775pt x 156.59508pt.
-<img/chap1/sec1-6/image075.png, id=1239, 225.84375pt x 150.5625pt>
+<img/chap1/sec1-6/image075.png, id=1267, 225.84375pt x 150.5625pt>
 File: img/chap1/sec1-6/image075.png Graphic file (type png)
 <use img/chap1/sec1-6/image075.png>
 Package pdftex.def Info: img/chap1/sec1-6/image075.png  used on input line 279.
 
 (pdftex.def)             Requested size: 234.8775pt x 156.59508pt.
  [58 <./img/chap1/sec1-6/image073.png>]
-<img/chap1/sec1-6/image076.png, id=1249, 301.125pt x 200.75pt>
+<img/chap1/sec1-6/image076.png, id=1277, 301.125pt x 200.75pt>
 File: img/chap1/sec1-6/image076.png Graphic file (type png)
 <use img/chap1/sec1-6/image076.png>
 Package pdftex.def Info: img/chap1/sec1-6/image076.png  used on input line 297.
 
 (pdftex.def)             Requested size: 234.8775pt x 156.59048pt.
-<img/chap1/sec1-6/image077.png, id=1250, 222.07968pt x 146.79843pt>
+<img/chap1/sec1-6/image077.png, id=1278, 222.07968pt x 146.79843pt>
 File: img/chap1/sec1-6/image077.png Graphic file (type png)
 <use img/chap1/sec1-6/image077.png>
 Package pdftex.def Info: img/chap1/sec1-6/image077.png  used on input line 304.
@@ -1659,14 +1661,14 @@ Package pdftex.def Info: img/chap1/sec1-6/image077.png  used on input line 304.
 ./img/chap1/sec1-6/image076.png> <./img/chap1/sec1-6/image077.png>]) (./tex/cha
 p1/sec1-7-logistic.tex [61]) (./tex/chap1/sec1-8-log.tex
 [62] [63]
-<img/chap1/sec1-8/image080.png, id=1342, 344.78813pt x 197.98969pt>
+<img/chap1/sec1-8/image080.png, id=1370, 344.78813pt x 197.98969pt>
 File: img/chap1/sec1-8/image080.png Graphic file (type png)
 <use img/chap1/sec1-8/image080.png>
 Package pdftex.def Info: img/chap1/sec1-8/image080.png  used on input line 155.
 
 (pdftex.def)             Requested size: 234.8775pt x 134.8759pt.
 ) (./tex/chap1/sec1-9-trig.tex [64]
-<img/chap1/sec1-9/fig1-9-oil-curve.png, id=1354, 422.57875pt x 285.065pt>
+<img/chap1/sec1-9/fig1-9-oil-curve.png, id=1382, 422.57875pt x 285.065pt>
 File: img/chap1/sec1-9/fig1-9-oil-curve.png Graphic file (type png)
 <use img/chap1/sec1-9/fig1-9-oil-curve.png>
 Package pdftex.def Info: img/chap1/sec1-9/fig1-9-oil-curve.png  used on input l
@@ -1694,7 +1696,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/cmr/m/n/10 Thou-sands of Dol-lars. Source: Coin-desk;
  []
 
-<img/chap2/image001.png, id=1370, 81.468pt x 64.7145pt>
+<img/chap2/image001.png, id=1398, 81.468pt x 64.7145pt>
 File: img/chap2/image001.png Graphic file (type png)
 <use img/chap2/image001.png>
 Package pdftex.def Info: img/chap2/image001.png  used on input line 42.
@@ -1702,36 +1704,36 @@ Package pdftex.def Info: img/chap2/image001.png  used on input line 42.
 [67
 
 ]
-<img/chap2/image002.png, id=1378, 159.59625pt x 118.4425pt>
+<img/chap2/image002.png, id=1407, 159.59625pt x 118.4425pt>
 File: img/chap2/image002.png Graphic file (type png)
 <use img/chap2/image002.png>
 Package pdftex.def Info: img/chap2/image002.png  used on input line 57.
 (pdftex.def)             Requested size: 112.74377pt x 83.67184pt.
-<img/chap2/image111.png, id=1382, 117.88724pt x 100.97298pt>
+<img/chap2/image111.png, id=1411, 117.88724pt x 100.97298pt>
 File: img/chap2/image111.png Graphic file (type png)
 <use img/chap2/image111.png>
 Package pdftex.def Info: img/chap2/image111.png  used on input line 81.
 (pdftex.def)             Requested size: 112.74377pt x 96.56932pt.
 ) (./tex/chap2/sec2-2-tangents.tex [68 <./img/chap2/image001.png> <./img/chap2/
 image002.png> <./img/chap2/image111.png>]
-<img/chap2/image112.png, id=1401, 101.9981pt x 97.3851pt>
+<img/chap2/image112.png, id=1430, 101.9981pt x 97.3851pt>
 File: img/chap2/image112.png Graphic file (type png)
 <use img/chap2/image112.png>
 Package pdftex.def Info: img/chap2/image112.png  used on input line 95.
 (pdftex.def)             Requested size: 101.99783pt x 97.38484pt.
  [69]
-<img/chap2/image005.png, id=1414, 452.69125pt x 228.855pt>
+<img/chap2/image005.png, id=1443, 452.69125pt x 228.855pt>
 File: img/chap2/image005.png Graphic file (type png)
 <use img/chap2/image005.png>
 Package pdftex.def Info: img/chap2/image005.png  used on input line 108.
 (pdftex.def)             Requested size: 281.85587pt x 142.48926pt.
  [70 <./img/chap2/image112.png> <./img/chap2/image005.png>]
-<img/chap2/image006.png, id=1425, 184.43906pt x 74.52844pt>
+<img/chap2/image006.png, id=1454, 184.43906pt x 74.52844pt>
 File: img/chap2/image006.png Graphic file (type png)
 <use img/chap2/image006.png>
 Package pdftex.def Info: img/chap2/image006.png  used on input line 128.
 (pdftex.def)             Requested size: 187.89914pt x 75.927pt.
-<img/chap2/image003.png, id=1426, 299.61937pt x 146.79843pt>
+<img/chap2/image003.png, id=1455, 299.61937pt x 146.79843pt>
 File: img/chap2/image003.png Graphic file (type png)
 <use img/chap2/image003.png>
 Package pdftex.def Info: img/chap2/image003.png  used on input line 144.
@@ -1752,64 +1754,64 @@ Overfull \hbox (18.0885pt too wide) in paragraph at lines 294--295
  []
 
 [72] [73]
-<img/chap2/image007.png, id=1456, 209.2545pt x 121.545pt>
+<img/chap2/image007.png, id=1485, 209.2545pt x 121.545pt>
 File: img/chap2/image007.png Graphic file (type png)
 <use img/chap2/image007.png>
 Package pdftex.def Info: img/chap2/image007.png  used on input line 480.
 (pdftex.def)             Requested size: 177.89928pt x 103.33412pt.
  [74]
-<img/chap2/image008.png, id=1466, 213.1965pt x 131.7285pt>
+<img/chap2/image008.png, id=1495, 213.1965pt x 131.7285pt>
 File: img/chap2/image008.png Graphic file (type png)
 <use img/chap2/image008.png>
 Package pdftex.def Info: img/chap2/image008.png  used on input line 497.
 (pdftex.def)             Requested size: 177.89928pt x 109.92354pt.
-<img/chap2/image009.png, id=1468, 195.129pt x 142.2405pt>
+<img/chap2/image009.png, id=1497, 195.129pt x 142.2405pt>
 File: img/chap2/image009.png Graphic file (type png)
 <use img/chap2/image009.png>
 Package pdftex.def Info: img/chap2/image009.png  used on input line 516.
 (pdftex.def)             Requested size: 177.89928pt x 129.68213pt.
-<img/chap2/image010.png, id=1470, 171.8055pt x 116.289pt>
+<img/chap2/image010.png, id=1499, 171.8055pt x 116.289pt>
 File: img/chap2/image010.png Graphic file (type png)
 <use img/chap2/image010.png>
 Package pdftex.def Info: img/chap2/image010.png  used on input line 534.
 (pdftex.def)             Requested size: 177.89928pt x 120.41779pt.
 ) (./tex/chap2/sec2-3-derivative.tex [75 <./img/chap2/image007.png> <./img/chap
 2/image008.png> <./img/chap2/image009.png> <./img/chap2/image010.png>]
-<img/chap2/image037.png, id=1490, 129.7575pt x 80.811pt>
+<img/chap2/image037.png, id=1518, 129.7575pt x 80.811pt>
 File: img/chap2/image037.png Graphic file (type png)
 <use img/chap2/image037.png>
 Package pdftex.def Info: img/chap2/image037.png  used on input line 32.
 (pdftex.def)             Requested size: 187.89914pt x 117.02618pt.
-<img/chap2/image038.png, id=1492, 78.5115pt x 54.8595pt>
+<img/chap2/image038.png, id=1520, 78.5115pt x 54.8595pt>
 File: img/chap2/image038.png Graphic file (type png)
 <use img/chap2/image038.png>
 Package pdftex.def Info: img/chap2/image038.png  used on input line 51.
 (pdftex.def)             Requested size: 187.89914pt x 131.31218pt.
  [76 <./img/chap2/image037.png>] [77 <./img/chap2/image038.png>]
-<img/chap2/image023.png, id=1514, 106.7625pt x 67.671pt>
+<img/chap2/image023.png, id=1542, 106.7625pt x 67.671pt>
 File: img/chap2/image023.png Graphic file (type png)
 <use img/chap2/image023.png>
 Package pdftex.def Info: img/chap2/image023.png  used on input line 89.
 (pdftex.def)             Requested size: 187.89914pt x 119.11266pt.
-<img/chap2/image024.png, id=1515, 104.1345pt x 67.9995pt>
+<img/chap2/image024.png, id=1543, 104.1345pt x 67.9995pt>
 File: img/chap2/image024.png Graphic file (type png)
 <use img/chap2/image024.png>
 Package pdftex.def Info: img/chap2/image024.png  used on input line 115.
 (pdftex.def)             Requested size: 187.89914pt x 122.70819pt.
-<img/chap2/image025.png, id=1517, 86.067pt x 57.816pt>
+<img/chap2/image025.png, id=1545, 86.067pt x 57.816pt>
 File: img/chap2/image025.png Graphic file (type png)
 <use img/chap2/image025.png>
 Package pdftex.def Info: img/chap2/image025.png  used on input line 129.
 (pdftex.def)             Requested size: 187.89914pt x 126.22778pt.
  [78 <./img/chap2/image023.png> <./img/chap2/image024.png (PNG copy)>]
-<img/chap2/image026.png, id=1528, 106.1055pt x 121.545pt>
+<img/chap2/image026.png, id=1556, 106.1055pt x 121.545pt>
 File: img/chap2/image026.png Graphic file (type png)
 <use img/chap2/image026.png>
 Package pdftex.def Info: img/chap2/image026.png  used on input line 139.
 (pdftex.def)             Requested size: 187.89914pt x 215.26259pt.
  [79 <./img/chap2/image025.png (PNG copy)> <./img/chap2/image026.png (PNG copy)
 >]
-<img/chap2/image035.png, id=1540, 147.4965pt x 77.526pt>
+<img/chap2/image035.png, id=1570, 147.4965pt x 77.526pt>
 File: img/chap2/image035.png Graphic file (type png)
 <use img/chap2/image035.png>
 Package pdftex.def Info: img/chap2/image035.png  used on input line 183.
@@ -1819,52 +1821,52 @@ Package pdftex.def Info: img/chap2/image035.png  used on input line 183.
 LaTeX Warning: Reference `sec:app-opt' on page 80 undefined on input line 194.
 
 [80 <./img/chap2/image035.png (PNG copy)>]) (./tex/chap2/sec2-4-limits.tex
-<img/chap2/image011.png, id=1550, 44.3475pt x 42.3765pt>
+<img/chap2/image011.png, id=1580, 44.3475pt x 42.3765pt>
 File: img/chap2/image011.png Graphic file (type png)
 <use img/chap2/image011.png>
 Package pdftex.def Info: img/chap2/image011.png  used on input line 9.
 (pdftex.def)             Requested size: 112.74377pt x 107.74109pt.
-<img/chap2/image012.png, id=1553, 117.9315pt x 57.816pt>
+<img/chap2/image012.png, id=1583, 117.9315pt x 57.816pt>
 File: img/chap2/image012.png Graphic file (type png)
 <use img/chap2/image012.png>
 Package pdftex.def Info: img/chap2/image012.png  used on input line 34.
 (pdftex.def)             Requested size: 187.89914pt x 92.12459pt.
 
 [81] [82 <./img/chap2/image012.png> <./img/chap2/image011.png>]
-<img/chap2/image013.png, id=1579, 72.5985pt x 61.758pt>
+<img/chap2/image013.png, id=1607, 72.5985pt x 61.758pt>
 File: img/chap2/image013.png Graphic file (type png)
 <use img/chap2/image013.png>
 Package pdftex.def Info: img/chap2/image013.png  used on input line 99.
 (pdftex.def)             Requested size: 187.89914pt x 159.85172pt.
  [83 <./img/chap2/image013.png>]
-<img/chap2/image014.png, id=1588, 102.1635pt x 58.8015pt>
+<img/chap2/image014.png, id=1616, 102.1635pt x 58.8015pt>
 File: img/chap2/image014.png Graphic file (type png)
 <use img/chap2/image014.png>
 Package pdftex.def Info: img/chap2/image014.png  used on input line 120.
 (pdftex.def)             Requested size: 187.89914pt x 108.15477pt.
-<img/chap2/image015.png, id=1590, 122.5305pt x 74.5695pt>
+<img/chap2/image015.png, id=1618, 122.5305pt x 74.5695pt>
 File: img/chap2/image015.png Graphic file (type png)
 <use img/chap2/image015.png>
 Package pdftex.def Info: img/chap2/image015.png  used on input line 148.
 (pdftex.def)             Requested size: 187.89914pt x 114.36401pt.
  [84 <./img/chap2/image014.png>]
-<img/chap2/image016.png, id=1604, 141.255pt x 84.4245pt>
+<img/chap2/image016.png, id=1632, 141.255pt x 84.4245pt>
 File: img/chap2/image016.png Graphic file (type png)
 <use img/chap2/image016.png>
 Package pdftex.def Info: img/chap2/image016.png  used on input line 205.
 (pdftex.def)             Requested size: 187.89914pt x 112.30504pt.
  [85 <./img/chap2/image015.png>]
-<img/chap2/image017.png, id=1616, 135.999pt x 91.6515pt>
+<img/chap2/image017.png, id=1645, 135.999pt x 91.6515pt>
 File: img/chap2/image017.png Graphic file (type png)
 <use img/chap2/image017.png>
 Package pdftex.def Info: img/chap2/image017.png  used on input line 217.
 (pdftex.def)             Requested size: 187.89914pt x 126.64003pt.
-<img/chap2/image018.png, id=1617, 231.921pt x 83.1105pt>
+<img/chap2/image018.png, id=1646, 231.921pt x 83.1105pt>
 File: img/chap2/image018.png Graphic file (type png)
 <use img/chap2/image018.png>
 Package pdftex.def Info: img/chap2/image018.png  used on input line 246.
 (pdftex.def)             Requested size: 187.89914pt x 67.33813pt.
-<img/chap2/image019.png, id=1618, 172.134pt x 71.2845pt>
+<img/chap2/image019.png, id=1647, 172.134pt x 71.2845pt>
 File: img/chap2/image019.png Graphic file (type png)
 <use img/chap2/image019.png>
 Package pdftex.def Info: img/chap2/image019.png  used on input line 253.
@@ -1874,7 +1876,7 @@ Package pdftex.def Info: img/chap2/image019.png  used on input line 253.
 Underfull \vbox (badness 1189) has occurred while \output is active []
 
  [87 <./img/chap2/image018.png> <./img/chap2/image019.png>] [88]
-<img/chap2/image032.png, id=1670, 217.7955pt x 131.0715pt>
+<img/chap2/image032.png, id=1699, 217.7955pt x 131.0715pt>
 File: img/chap2/image032.png Graphic file (type png)
 <use img/chap2/image032.png>
 Package pdftex.def Info: img/chap2/image032.png  used on input line 78.
@@ -1882,7 +1884,7 @@ Package pdftex.def Info: img/chap2/image032.png  used on input line 78.
 )
 (./tex/chap2/sec2-6-sumdiff.tex [89 <./img/chap2/image032.png>])
 (./tex/chap2/sec2-7-power.tex [90] [91]
-<img/chap2/image036.png, id=1716, 301.125pt x 301.125pt>
+<img/chap2/image036.png, id=1745, 301.125pt x 301.125pt>
 File: img/chap2/image036.png Graphic file (type png)
 <use img/chap2/image036.png>
 Package pdftex.def Info: img/chap2/image036.png  used on input line 128.
@@ -1901,40 +1903,45 @@ LaTeX Warning: Reference `ex-2-8-1' on page 95 undefined on input line 62.
 LaTeX Warning: Reference `ex-2-8-1' on page 95 undefined on input line 71.
 
 [95]
-<img/chap2/image113.png, id=1752, 267.0402pt x 141.46468pt>
+<img/chap2/image113.png, id=1780, 267.0402pt x 141.46468pt>
 File: img/chap2/image113.png Graphic file (type png)
 <use img/chap2/image113.png>
 Package pdftex.def Info: img/chap2/image113.png  used on input line 129.
 (pdftex.def)             Requested size: 187.89914pt x 99.54265pt.
  [96 <./img/chap2/image113.png>]) (./tex/chap2/sec2-A-chain.tex [97]
-[98] [99] [100]) (./tex/chap2/sec2-B-trig.tex [101]))
-(./tex/chap3-derivapps.tex [102]
-Chapter 3.
-) (./tex/chap4-multivariable.tex [103
+[98] [99] [100]) (./tex/chap2/sec2-B-trig.tex [101])
+(./tex/chap2/sec2-C-higherorder.tex
 
-] [104
+LaTeX Warning: Reference `sec:concavity' on page 102 undefined on input line 14
+.
+
+[102])) (./tex/chap3-derivapps.tex [103] [104
+
+]
+Chapter 3.
+) (./tex/chap4-multivariable.tex [105] [106
 
 ]
 Chapter 4.
-) (./tex/chap5-integrals.tex [105] [106
+) (./tex/chap5-integrals.tex [107] [108
 
 ]
 Chapter 5.
-) [107] [108
+) [109] [110
 
 ]
 No file OpenAppCalc.bbl.
-(./OpenAppCalc.ind [109
+(./OpenAppCalc.ind [111
 
 
-] [110])
+] [112])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
  (./OpenAppCalc.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 103.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 103.
 Package rerunfilecheck Info: File `OpenAppCalc.out' has not changed.
-(rerunfilecheck)             Checksum: 7AF60871FBC44FD694D351520E345921;6309.
+(rerunfilecheck)             Checksum: DE5E66387818CE15C3F132B163975827;6603.
 
 
 LaTeX Warning: There were undefined references.
@@ -1945,10 +1952,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 103.
  ) 
 Here is how much of TeX's memory you used:
- 35236 strings out of 482671
- 824731 string characters out of 5955617
- 1464557 words of memory out of 5000000
- 48892 multiletter control sequences out of 15000+600000
+ 35259 strings out of 482671
+ 825125 string characters out of 5955617
+ 1464671 words of memory out of 5000000
+ 48900 multiletter control sequences out of 15000+600000
  545438 words of font info for 73 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  78i,17n,136p,1532b,2224s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1982,10 +1989,10 @@ msfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
 ls/msbm10.pfb>
-Output written on OpenAppCalc.pdf (120 pages, 7416756 bytes).
+Output written on OpenAppCalc.pdf (124 pages, 7421958 bytes).
 PDF statistics:
- 2281 PDF objects out of 2487 (max. 8388607)
- 1896 compressed objects within 19 object streams
- 732 named destinations out of 1000 (max. 500000)
- 1279 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2332 PDF objects out of 2487 (max. 8388607)
+ 1942 compressed objects within 20 object streams
+ 744 named destinations out of 1000 (max. 500000)
+ 1311 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -5,6 +5,7 @@
 
   \indexspace
 
+  \item Acceleration, \hyperpage{102}
   \item Acceleraton, \hyperpage{80}
   \item Accumulation, \hyperpage{1}
   \item Amplitude, \hyperpage{65}
@@ -63,6 +64,7 @@
   \item Demand, \hyperpage{13}, \hyperpage{93}
   \item Derivative, \hyperpage{76}, \hyperpage{87}
     \subitem limit definition, \hyperpage{87}
+    \subitem second, \hyperpage{102}
   \item Derivative rules
     \subitem Constant multiple rule, \hyperpage{90}
     \subitem Power rule, \hyperpage{91}
@@ -123,10 +125,11 @@
 
   \indexspace
 
-  \item Lagrange notation, \hyperpage{98}
+  \item Lagrange notation, \hyperpage{98}, \hyperpage{102}
   \item Lagrange, Joseph-Louis, \hyperpage{77}
   \item Laws of Exponents, \hyperpage{53}
-  \item Leibniz notation, \hyperpage{77}, \hyperpage{98}
+  \item Leibniz notation, \hyperpage{77}, \hyperpage{98}, 
+		\hyperpage{102}
   \item Leibniz, Gottfried, \hyperpage{1}, \hyperpage{77}
   \item LibreOffice, \hyperpage{20}
   \item Limit, \hyperpage{81}
@@ -166,6 +169,7 @@
 
   \item P\'{o}lya, George, \hyperpage{4}
   \item Point, \hyperpage{8}
+  \item Position, \hyperpage{102}
   \item Power rule, \hyperpage{91}
   \item Principal, \hyperpage{56}
   \item Product Rule, \hyperpage{94}
@@ -197,6 +201,7 @@
 
   \item Scatter plot, \hyperpage{20}
   \item Secant line, \hyperpage{68}
+  \item Second derivative, \hyperpage{102}
   \item Shift
     \subitem horizontal, \hyperpage{65}
     \subitem vertical, \hyperpage{65}
@@ -224,7 +229,7 @@
   \item Variable
     \subitem dependent, \hyperpage{7}
     \subitem independent, \hyperpage{7}
-  \item Velocity, \hyperpage{80}
+  \item Velocity, \hyperpage{80}, \hyperpage{102}
   \item Vertex, \hyperpage{45}
   \item Vertical line test, \hyperpage{9}
 
