@@ -38,6 +38,8 @@
   \item Coefficient of determination, \hyperpage{41}
   \item Composition, \hyperpage{97}
   \item Compound interest, \hyperpage{56}
+  \item Concave down, \hyperpage{105}
+  \item Concave up, \hyperpage{105}
   \item Constant multiple rule, \hyperpage{90}
   \item Continuous, \hyperpage{84}
   \item Continuous growth, \hyperpage{57}
@@ -114,6 +116,7 @@
 
   \item Increasing, \hyperpage{29}
   \item Infinitesimal, \hyperpage{77}
+  \item Inflection point, \hyperpage{106}
   \item Initial value, \hyperpage{55}, \hyperpage{57}
   \item Intercept
     \subitem $y$, \hyperpage{28}
@@ -169,12 +172,13 @@
 
   \item P\'{o}lya, George, \hyperpage{4}
   \item Point, \hyperpage{8}
+    \subitem inflection, \hyperpage{106}
   \item Position, \hyperpage{102}
   \item Power rule, \hyperpage{91}
   \item Principal, \hyperpage{56}
   \item Product Rule, \hyperpage{94}
   \item Profit, \hyperpage{12, 13}
-  \item Profitmarginal, \hyperpage{80}
+    \subitem marginal, \hyperpage{80}
   \item Properties of logarithms, \hyperpage{62}
 
   \indexspace
