@@ -38,8 +38,8 @@
   \item Coefficient of determination, \hyperpage{41}
   \item Composition, \hyperpage{97}
   \item Compound interest, \hyperpage{56}
-  \item Concave down, \hyperpage{105}
-  \item Concave up, \hyperpage{105}
+  \item Concave down, \hyperpage{106}
+  \item Concave up, \hyperpage{106}
   \item Constant multiple rule, \hyperpage{90}
   \item Continuous, \hyperpage{84}
   \item Continuous growth, \hyperpage{57}
@@ -116,7 +116,7 @@
 
   \item Increasing, \hyperpage{29}
   \item Infinitesimal, \hyperpage{77}
-  \item Inflection point, \hyperpage{106}
+  \item Inflection point, \hyperpage{107}
   \item Initial value, \hyperpage{55}, \hyperpage{57}
   \item Intercept
     \subitem $y$, \hyperpage{28}
@@ -141,8 +141,9 @@
   \item Line
     \subitem best fit, \hyperpage{41}
     \subitem regression, \hyperpage{41}
-    \subitem secant, \hyperpage{68}
+    \subitem secant, \hyperpage{68}, \hyperpage{105}
     \subitem tangent, \hyperpage{68, 69}
+  \item Linear approximation, \hyperpage{105}
   \item Logarithm
     \subitem common, \hyperpage{62}
     \subitem natural, \hyperpage{62}
@@ -172,7 +173,7 @@
 
   \item P\'{o}lya, George, \hyperpage{4}
   \item Point, \hyperpage{8}
-    \subitem inflection, \hyperpage{106}
+    \subitem inflection, \hyperpage{107}
   \item Position, \hyperpage{102}
   \item Power rule, \hyperpage{91}
   \item Principal, \hyperpage{56}
@@ -204,7 +205,7 @@
   \indexspace
 
   \item Scatter plot, \hyperpage{20}
-  \item Secant line, \hyperpage{68}
+  \item Secant line, \hyperpage{68}, \hyperpage{105}
   \item Second derivative, \hyperpage{102}
   \item Shift
     \subitem horizontal, \hyperpage{65}
@@ -220,6 +221,7 @@
 
   \item Tangent line, \hyperpage{68, 69}
     \subitem horizontal, \hyperpage{71}
+  \item Tangent line approximation, \hyperpage{105}
   \item Term, \hyperpage{47}
     \subitem leading, \hyperpage{48}
   \item Time series, \hyperpage{20}
