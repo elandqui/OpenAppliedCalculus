@@ -98,10 +98,13 @@
 \contentsline {chapter}{\numberline {3}Applications of Derivatives}{105}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Linear Approximations}{105}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Tangent Line Approximation}{105}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Concavity and Inflection Points}{106}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Second Derivative and Concavity}{106}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Inflection Points}{107}{subsection.3.2.2}%
-\contentsline {chapter}{\numberline {4}Functions of Many Variables}{109}{chapter.4}%
-\contentsline {chapter}{\numberline {5}The Integral: Accumulation of a Rate Function}{111}{chapter.5}%
-\contentsline {chapter}{References}{113}{chapter.5}%
-\contentsline {chapter}{Index}{113}{chapter.5}%
+\contentsline {section}{\numberline {3.2}Elasticity of Demand}{106}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Elasticity}{106}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Interpretation of elasticity}{106}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Concavity and Inflection Points}{107}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Second Derivative and Concavity}{107}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Inflection Points}{108}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {4}Functions of Many Variables}{111}{chapter.4}%
+\contentsline {chapter}{\numberline {5}The Integral: Accumulation of a Rate Function}{113}{chapter.5}%
+\contentsline {chapter}{References}{115}{chapter.5}%
+\contentsline {chapter}{Index}{115}{chapter.5}%
