@@ -105,9 +105,10 @@
 \contentsline {subsection}{\numberline {3.3.1}Second Derivative and Concavity}{107}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Inflection Points}{108}{subsection.3.3.2}%
 \contentsline {section}{\numberline {3.4}Maximum and Minimum Function Values}{110}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Finding Extrema of a Function}{111}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}First and Second Derivative Tests}{112}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Global Maxima and Minima}{116}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.1}Local Maxima and Minima}{110}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Finding Extrema of a Function}{111}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}First and Second Derivative Tests}{112}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Global Maxima and Minima}{116}{subsection.3.4.4}%
 \contentsline {chapter}{\numberline {4}Functions of Many Variables}{119}{chapter.4}%
 \contentsline {chapter}{\numberline {5}The Integral: Accumulation of a Rate Function}{121}{chapter.5}%
 \contentsline {chapter}{References}{123}{chapter.5}%
