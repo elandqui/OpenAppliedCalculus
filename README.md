@@ -107,5 +107,6 @@ You can support this project in some unique ways that will be a win-win-win situ
   * **Contributers:** Thank you for material for the textbook!
     - Dr. Eric Bancroft, *Grove City College*
   * **Reviewers:** Thank you for your many helpful suggestions and reviews!
+    - Dr. Carey Childers, *Clarion University of Pennsylvania*
     - Dr. Stephen Gendler, *Clarion University of Pennsylvania*
     - Dr. Kate Overmoyer, *Clarion University of Pennsylvania*
