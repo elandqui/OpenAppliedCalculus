@@ -19,6 +19,7 @@ Read below for some unique ways that you can help [**support**](#support) this p
 
 **[MediShare:](https://bit.ly/3pP7ruB)** Members save around 50% on healthcare costs, with options for individuals, families, groups, and seniors. Medi-Share is a healthcare sharing community that believes there is a BETTER way to do healthcare.
 
+**[CryptoTab Browser:](https://cryptotabbrowser.com/16356908)** Browse the internet and mine Bitcoin!
 
 **[Brave Browswer:](https://brave.com/ela242)** Download the <a href="https://brave.com/ela242">Brave internet browser</a>, a privacy-minded browser that earns you Basic Attention Tokens (BAT) for browsing. If you have the Brave browser, you can click on the BAT icon to "tip" me in BAT.
 
