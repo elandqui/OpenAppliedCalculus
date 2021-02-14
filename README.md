@@ -13,7 +13,7 @@ Read below for some unique ways that you can help [**support**](#support) this p
 [![BlockFi](https://raw.githubusercontent.com/elandqui/OpenAppliedCalculus/master/img/support/blockFi/blockfi-banner0.png "Earn up to 8.6\% APY on your dollar-backed stablecoins and up to 6\% APY on crypto with BlockFi! Receive up to a \$250 Bitcoin bonus when you click and fund a new BlockFi account. Terms apply.")](https://blockfi.mxuy67.net/c/2612759/889697/10568)
 -->
 
-<a href="https://bit.ly/3pP7ruB"><img src="/img/support/medishare/Medi-ShareLogo.webp" border="0" alt="MediShare" width="970" height="250"/></a>
+<a href="https://bit.ly/3pP7ruB"><img src="/img/support/medishare/Medi-ShareLogo.webp" border="0" alt="MediShare" width="637" height="134"/></a>
 
 **[BlockFi:](https://blockfi.mxuy67.net/c/2612759/889697/10568")** Earn up to 8.6\% APY on your dollar-backed stablecoins and up to 6\% APY on crypto with BlockFi! Receive up to a \$250 Bitcoin bonus when you click and fund a new BlockFi account. Terms apply.
 
