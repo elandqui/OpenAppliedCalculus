@@ -55,7 +55,7 @@ The following is a rough **task list** for this project.
  * Create an **outline** for the text. (Done)
  * Complete one section on functions (1.2) in a relatively complete form. (Done)
  * Convert existing open business and applied calculus textbooks from .docx format to **LaTeX** format. (In Progress)
- * Set up means to include **advertisements** in the text or to accept donations to the project.
+ * Set up means to include **advertisements** in the text or to accept donations to the project. (Done with continuing progress.)
  * Improve the **graphics** of the textbook, e.g. graphs, tables, and figures. (In Progress)
  * Overhaul the existing text to introduce a **modeling and data-analytics** approach to calculus. (In Progress)
  * Solicit **reviewers and reviews** for this textbook. (In Progress)
