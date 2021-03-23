@@ -1,0 +1,161 @@
+\section{Partial Derivatives}
+\label{sec:derivatives}
+
+Now that you have some familiarity with functions of two variables, it's time to start applying calculus to help us solve problems with them. In Chapter 2, we learned about the derivative for functions of two variables. Derivatives told us about the shape of the function, and let us find local max and min – we want to be able to do the same thing with a function of two variables.
+
+First let's think. Imagine a surface, the graph of a function of two variables. Imagine that the surface is smooth and has some hills and some valleys. Concentrate on one point on your surface. What do we want the derivative to tell us? It ought to tell us how quickly the height of the surface changes as we move… Wait, which direction do we want to move? This is the reason that derivatives are more complicated for functions of several variables – there are so many (in fact, infinitely many) directions we could move from any point.
+
+It turns out that our idea of fixing one variable and watching what happens to the function as the other changes is the key to extending the idea of derivatives to more than one variable.
+
+Partial Derivatives
+Partial Derivatives
+Suppose that z=f(x,y) is a function of two variables.
+
+The partial derivative of f with respect to x is the derivative of the function f(x,y) where we think of x as the only variable and act as if y is a constant.
+
+The partial derivative of f with respect to y is the derivative of the function f(x,y) where we think of y as the only variable and act as if x is a constant.
+
+The with respect to x or with respect to y part is really important – you have to know and tell which variable you are thinking of as THE variable.
+
+Geometrically
+Geometrically the partial derivative with respect to x gives the slope of the curve as you travel along a cross-section, a curve on the surface parallel to the x-axis. The partial derivative with respect to y gives the slope of the cross-section parallel to the y-axis.
+
+Notation for the Partial Derivative
+The partial derivative of z=f(x,y) with respect to x is written as
+fx(x,y)
+or simply
+fxorzx.
+The Leibniz notation is
+∂f∂x
+or
+∂z∂x.
+We use an adaptation of the ∂z∂x notation to mean find the partial derivative of f(x,y) with respect to x:
+∂∂x(f(x,y))=∂f∂x
+To estimate a partial derivative from a table or contour diagram
+The partial derivative with respect to x can be approximated by looking at an average rate of change, or the slope of a secant line, over a very tiny interval in the x-direction (holding y constant). The tinier the interval, the closer this is to the true partial derivative.
+
+To compute a partial derivative from a formula
+If f(x,y) is given as a formula, you can find the partial derivative with respect to x algebraically by taking the ordinary derivative thinking of x as the only variable (holding y fixed).
+
+Of course, everything here works the same way if we're trying to find the partial derivative with respect to y – just think of y as your only variable and act as if x is constant.
+
+The idea of a partial derivative works perfectly well for a function of several variables: you focus on one variable to be THE variable and act as if all the other variables are constants.
+
+\begin{example}
+Here is a contour diagram for a function g(x,y).
+
+Contour map
+Use the diagram to answer the following questions:
+
+Estimate gx(3,5) and gy(3,5).
+Where on this diagram is gx greatest? Where is gy greatest?
+
+\begin{solution} gx(3,5) means we're thinking of x as the only variable, so we'll hold y fixed at y=5. That means we’ll be looking along the horizontal line y=5. To estimate gx, we need two function values. (3, 5) lies on the contour line, so we know that g(3,5)=0.6. The next point as we move to the right is g(4.2,5)=0.7.
+
+Now we can find the average rate of change:
+Average rate of change ====(change in output)(change in input)ΔgΔx0.7-0.64.2-3112\approx   0.083
+We can do the same thing by going to the next point we can read to the left, which is g(2.4,5)=0.5. Then the average rate of change is
+ΔgΔx=0.5-0.62.4-3=16\approx   0.167.
+Either of these would be a fine estimate of gx(3,5) given the information we have, or we could take their average. We can estimate that gx(3,5)\approx   0.125.
+
+Estimate gy(3,5) the same way, but moving on the vertical line. Using the next point up, we get the average rate of change is
+ΔgΔy=0.7-0.65.8-5=18=0.125.
+Using the next point down, we get
+ΔgΔy=0.5-0.64.5-5=15=0.2.
+Taking their average, we estimate gy(3,5)\approx   0.1625.
+
+gx means x is our only variable, and we're thinking of y as a constant. So we're thinking about moving across the diagram on horizontal lines. gx will be greatest when the contour lines are closest together, i.e., when the surface is steepest – then the denominator in ΔgΔx will be small, so ΔgΔx will be big. Scanning the graph, we can see that the contour lines are closest together when we head to the left or to the right from about (0.5, 8) and (9, 8). So gx is greatest at about (0.5, 8) and (9, 8). For gy, we want to look at vertical lines. gy is greatest at about (5, 3.8) and (5, 12).
+\end{solution}\end{example}
+
+\begin{example}
+Cold temperatures feel colder when the wind is blowing. Windchill is the perceived temperature, and it depends on both the actual temperature and the wind speed – a function of two variables! You can read more about windchill at http://www.nws.noaa.gov/om/windchill/. Below is a table that shows the perceived temperature for various temperatures and windspeeds.
+
+Windchill table
+(Table courtesy of the National Weather Service, http://www.nws.noaa.gov/om/windchill/images/windchill.gif.)
+Note that they also include the formula, but for this example we'll use the information in the table.
+
+What is the perceived temperature when the actual temperature is 25°F and the wind is blowing at 15 miles per hour?
+Suppose the actual temperature is 25°F. Use information from the table to describe how the perceived temperature would change if the wind speed increased from 15 miles per hour?
+
+\begin{solution}
+  Reading the table, we see that the perceived temperature is 13°F
+This is a question about a partial derivative. We’re holding the temperature (T) fixed at 25°F, and asking what happens as wind speed (V) increases from 15 miles per hour. We’re thinking of V as the only variable, so we want WindChillV=WV when T=25 and V=15. We'll find the average rate of change by looking in the column where T=25 and letting V increase, and use that to approximate the partial derivative.
+WV\approx   ΔWΔV=11-1320-15=-0.4
+What are the units? W is measured in °F and V is measured in mph, so the units here are °F/mph. And that lets us describe what happens: The perceived temperature would decrease by about 0.4°F for each mph increase in wind speed.
+\end{solution}\end{example}
+
+\begin{example}
+Find fx and fy at the points (0, 0) and (1, 1) if f(x,y)=x2-4xy+4y2.
+
+\begin{solution}
+  To find fx, take the ordinary derivative of f with respect to x, acting as if y is constant:
+fx(x,y)=2x-4y.
+Note that the derivative of the 4y2 term with respect to x is zero because it's a constant (as far as x is concerned).
+
+Similarly,
+fy(x,y)=-4x+8y.
+Now we can evaluate these at the points:
+
+fx(0,0)=0 and fy(0,0)=0; this tells us that the cross sections parallel to the x- and y- axes are both flat at (0,0).
+
+fx(1,1)=-2 and fy(1,1)=4; this tells us that above the point (1, 1), the surface decreases if we move to more positive x values and increases if we move to more positive y values.
+\end{solution}\end{example}
+
+\begin{example}
+Find ∂f∂x and ∂f∂y if f(x,y)=ex+yy3+y+yln(y).
+
+\begin{solution}
+  ∂f∂x means x is our only variable, we're thinking of y as a constant. Then we'll just find the ordinary derivative. From x's point of view, this is an exponential function, divided by a constant, with a constant added. The constant pulls out in front, the derivative of the exponential function is the same thing, and we need to use the chain rule, so we multiply by the derivative of that exponent (which is just 1):
+∂f∂x=1y3+yex+y.
+∂f∂y means that we're thinking of y as the variable, acting as if x is constant. From y's point of view, f is a quotient plus a product, so we'll need the quotient rule and the product rule:
+∂f∂y==( )( )-( )( )( )2+( )( )+( )( )(ex+y(1))(y3+y)-(ex+y)(3y2+1)(y3+y)2+(1)(ln(y))+(y)(1y)
+\end{solution}\end{example}
+
+\begin{example}
+Find fz if f(x,y,z,w)=35x2w-1z+yz2.
+
+\begin{solution}
+  fz means we act as if z is our only variable, so we'll act as if all the other variables (x, y, and w) are constants and take the ordinary derivative:
+fz(x,y,z,w)=1z2+2yz.
+\end{solution}\end{example}
+
+Using Partial Derivatives to Estimate Function Values
+We can use the partial derivatives to estimate values of a function. The geometry is similar to the tangent line approximation in one variable. Recall the one-variable case: if x is close enough to a known point a, then
+f(x)\approx   f(a)+f′(a)(x-a).
+In two variables, we do the same thing in both directions at once:
+
+Approximating Function Values with Partial Derivatives
+To approximate the value of f(x,y), find some point (a,b) where
+
+(x,y) and (a,b) are close, that is, x and a are close and y and b are close.
+You know the exact values of f(a,b) and both partial derivatives there.
+Then
+f(x,y)\approx   f(a,b)+fx(a,b)(x-a)+fy(a,b)(y-b).
+Notice that the total change in f is being approximated by adding the approximate changes coming from the x and y directions. Another way to look at the same formula:
+Δf\approx   fxΔx+fyΔy.
+How close is close? It depends on the shape of the graph of f. In general, the closer the better.
+
+\begin{example}
+Use partial derivatives to estimate the value of f(x,y)=x2-4xy+4y2 at (0.9, 1.1).
+
+\begin{solution}
+  Note that the point (0.9, 1.1) is close to an easy point, (1, 1). In fact, we already worked out the partial derivatives at (1, 1): fx(x,y)=2x-4y so fx(1,1)=-2, and fy(x,y)=-4x+8y so fy(1,1)=4. We also know that f(1,1)=1.
+
+So,
+f(0.9,1.1)\approx   1-2(-0.1)+4(0.1)=1.6.
+Note that in this example it would have been possible to simply compute the exact answer:
+f(0.9,1.1)=(0.9)2-4(0.9)(1.1)+4(1.1)2=1.69.
+Our estimate is not perfect, but it's pretty close.
+\end{solution}\end{example}
+
+\begin{example}
+Here is a contour diagram for a function g(x,y). Use partial derivatives to estimate the value of g(3.2,4.7).
+
+Contour map
+\begin{solution}
+  This is the same diagram from before, so we already estimated the value of the function and the partial derivatives at the nearby point (3,5). g(3,5) is 0.6, our estimate of gx(3,5)\approx   0.125, and our estimate of gy(3,5)\approx   0.1625. So
+g(3.2,4.7)\approx   0.6+(0.125)(0.2)+(0.1625)(-0.3)=0.57625.
+Note that in this example we have no way to know how close our estimate is to the actual value.
+\end{solution}\end{example}
+
+% Application: Option pricing and "the Greeks."
