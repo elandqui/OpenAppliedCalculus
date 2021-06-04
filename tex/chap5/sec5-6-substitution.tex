@@ -3,134 +3,169 @@
 % From Section 3.4
 We don't have many integration rules. For quite a few of the problems we see, the rules won't directly apply; we'll have to do some algebraic manipulation first. In practice, it is much harder to write down the antiderivative of a function than it is to find a derivative. (In fact, it's very easy to write a function that doesn't have any antiderivative you can find with algebra, although proving that it doesn't have an antiderivative is much more difficult.)
 
-The Substitution Method (also called u-Substitution) is one way of algebraically manipulating an integrand so that the rules apply. This is a way to unwind or undo the Chain Rule for derivatives. When you find the derivative of a function using the Chain Rule, you end up with a product of something like the original function times a derivative. We can reverse this to write an integral:
-ddxf(g(x))=f′(g(x))g′(x)
+The {\bf Substitution Method}\index{Substitution method}\index{Integration!substitution} (also called $u${\bf-Substitution}) is one way of algebraically manipulating an integrand so that the rules apply. This is a way to unwind or undo the Chain Rule for derivatives. When you find the derivative of a function using the Chain Rule, you end up with a product of something like the original function times a derivative. We can reverse this to write an integral:
+$$\dfrac{d}{dx}f(g(x))=f'(g(x))g'(x)$$
 so
-f(g(x))=∫f′(g(x))g′(x)dx
-With substitution, we will substitute u=g(x) (hence the name u-substitution). This means dudx=g′(x), so du=g′(x)dx. Making these substitutions, ∫f′(g(x))g′(x)dx becomes ∫f′(u)du, which will probably be easier to integrate.
+$$f(g(x))=\int f'(g(x))g'(x)dx \enspace $$
+With substitution, we will substitute $u=g(x)$ (hence the name $u$-substitution). This means $\dfrac{du}{dx}=g'(x)$, so $du=g'(x)dx$. Making these substitutions, $\int f'(g(x))g'(x)\,dx$ becomes $\int f'(u)\,du$, which will probably be easier to integrate.
 
-Try u-Substitution when you see a product in your integral, especially if you recognize one factor as the derivative of some part of the other factor.
+Try $u$-substitution when you see a product in your integral, especially if you recognize one factor as the derivative of some part of the other factor.
 
-The u-Substitution Method for Antiderivatives
-The goal is to turn ∫f(g(x))dx into ∫f(u)du, where f(u) is much less messy than f(g(x)).
-
-Let u be some part of the integrand. A good first choice is one step inside the messiest bit.
-Compute du=dudxdx.
-Translate all your x's into u's everywhere in the integral, including the dx. When you're done, you should have a new integral that is entirely in u. If you have any x's left, then that's an indication that the substitution didn't work or isn't complete; you may need to go back to step 1 and try a different choice for u.
-Integrate the new u-integral, if possible. If you still can't integrate it, go back to step 1 and try a different choice for u.
-Finally, substitute back x's for u's everywhere in your answer.
+\subsection{The $u$-Substitution Method for Antiderivatives}
+The goal is to turn $\int f(g(x))\,dx$ into $\int f(u)\,du$, where $f(u)$ is much less messy than $f(g(x))$.
+\begin{enumerate}
+  \item Let u be some part of the integrand. A good first choice is one step inside the messiest bit.
+  \item Compute du=dudxdx.
+  \item Translate all your x's into u's everywhere in the integral, including the dx. When you're done, you should have a new integral that is entirely in u. If you have any x's left, then that's an indication that the substitution didn't work or isn't complete; you may need to go back to step 1 and try a different choice for u.
+  \item Integrate the new u-integral, if possible. If you still can't integrate it, go back to step 1 and try a different choice for u.
+  \item Finally, substitute back x's for u's everywhere in your answer.
+\end{enumerate}
 \begin{example}
-Evaluate ∫x4-x2√dx.
+Evaluate $\int \dfrac{x}{\sqrt{4-x^2}}\,dx$
 
 \begin{solution}
   This integrand is more complicated than anything in our list of basic integral formulas, so we'll have to try something else. The only tool we have is substitution, so let's try that!
+  \begin{enumerate}
+    \item Let $u$ be some part of the integrand. A good first choice is one step inside the messiest bit:
+    Let $u=4-x^2$.
 
-Let u be some part of the integrand. A good first choice is one step inside the messiest bit:
+    \item Compute $du = \dfrac{du}{dx}dx$:
+    $du=-2xdx$. There is $xdx$ in the integrand, so that’s a good sign; that will be $-12du$.
 
-Let u=4-x2.
+    \item Translate all your $x$'s into $u$'s everywhere in the integral, including the $dx$:
+    \begin{align*}
+    \int \frac{x}{\sqrt{4-x^2}}\,dx &= \int \frac{1}{\sqrt{4-x^2}}(x\,dx)\\
+      &= \int \frac{1}{\sqrt{u}}\left(-\frac{1}{2}\,du\right) \\
+      &= -\frac{1}{2}\int \frac{1}{\sqrt{u}}\,du\\
+      &= -\frac{1}{2}\int u^{-1/2}\,du
+    \end{align*}
+    Alternatively, we could have solved for $dx$ and substituted that and simplified: $dx=\dfrac{du}{-2x}$, so
+    \begin{align*}
+    \int \frac{x}{\sqrt{4-x^2}}\,dx &= \int \frac{x}{\sqrt{u}}\left(\dfrac{du}{-2x}\right)\\
+      &= \int \frac{1}{\sqrt{u}}\left(-\dfrac{1}{2}\,du\right) \\
+      &= -\dfrac{1}{2}\int \frac{1}{\sqrt{u}}\,du\\
+      &= -\frac{1}{2}\int u^{-1/2}\,du
+    \end{align*}
+  \item Integrate the new $u$-integral, if possible:
 
-Compute du=dudxdx:
+  $$-\frac{1}{2}\int u^{-1/2}\,du = -\frac{1}{2}\frac{u^{1/2}}{1/2} + C = -u^{1/2}+C \enspace .$$
+  \item Finally, substitute back $x$'s for $u$'s everywhere in the answer:
 
-du=-2xdx. There is xdx in the integrand, so that’s a good sign; that will be -12du.
+  Undoing our $u=4-x^2$ substitution yields
+  $$-u^{1/2}+C = -\sqrt{4-x^2}+C \enspace .$$
+  Thus we have found
+  $$\int \frac{x}{\sqrt{4-x^2}}\,dx = -\sqrt{4-x^2}+C \enspace .$$
+\end{enumerate}
 
-Translate all your x's into u's everywhere in the integral, including the dx:
-
-∫x4-x2-----√dx====∫14-x2-----√(xdx)∫1u--√(-12du)-12∫1u--√du-12∫u-1/2du
-Alternatively, we could have solved for dx and substituted that and simplified: dx=du-2x, so
-∫x4-x2-----√dx====∫xu--√(du-2x)∫1u--√(-12du)-12∫1u--√du-12∫u-1/2du
-Integrate the new u-integral, if possible:
-
--12∫u-1/2du=-12u1/21/2+C=-u1/2+C
-Finally, substitute back x's for u's everywhere in the answer:
-
-Undoing our u=4-x2 substitution yields
--u1/2+C=-4-x2-----√+C.
-Thus we have found
-∫x4-x2-----√dx=-4-x2-----√+C
 How would we check this? By differentiating:
-ddx(-4-x2-----√+C)====ddx(-(4-x2)1/2+C)-12(4-x2)-1/2(-2x)x(4-x2)-1/2x4-x2-----√
+\begin{align*}
+\dfrac{d}{dx}\left(-\sqrt{4-x^2}+C \right) &= \dfrac{d}{dx}(-(4-x^2)^{1/2}+C)\\
+  &= -\frac{1}{2}(4-x^2)^{-1/2}(-2x) \\
+  &= x(4-x^2)^{-1/2}\\
+  &= \frac{x}{\sqrt{4-x^2}}
+\end{align*}
 \end{solution}\end{example}
 
 \begin{example}
-Evaluate ∫exdx(ex+15)3
+Evaluate $\int \dfrac{e^x\,dx}{(e^x+15)^3}$.
 
 \begin{solution}
-This integral is not in our list of building blocks. But notice that the derivative of ex+15 (which we see in the denominator) is just ex (which we see in the numerator), so substitution will be a good choice for this.
+This integral is not in our list of building blocks. But notice that the derivative of $e^x+15$ (which we see in the denominator) is just $e^x$ (which we see in the numerator), so substitution will be a good choice for this.
 
-Let u=ex+15. Then du=exdx, and this integral becomes ∫duu3=∫u-3du.
+Let $u=e^x+15$. Then $du=e^xdx$, and this integral becomes $\int \dfrac{du}{u^3} = \int u^{-3}\,du$.
 
-Luckily, that is on our list of building block formulas: ∫duu3=u-2-2+C=-12u2+C.
+Luckily, that is on our list of building block formulas: $\int u^{-3}\, du = \dfrac{u^{-2}}{-2}+C = -\dfrac{1}{2u^2} + C$.
 
 Finally, translating back:
-∫exdx(ex+15)3=-12(ex+15)2+C.
+$$\int \frac{e^x\,dx}{(e^x+15)^3} = -\frac{1}{2(e^x+15)^2}+C \enspace .$$
 \end{solution}\end{example}
 
 \begin{example}
 Evaluate
+  \begin{enumerate}[label=(\alph*)]
+    \item $\int \dfrac{x^2}{x^3+5}\,dx$
+    \begin{solution}
+      This is not a basic integral, but the composition is less obvious. Here, we can treat the denominator as the inside of the function $\dfrac{1}{x}$.
 
-∫x2x3+5dx
-∫x3+5x2dx
+      Let $u=x^3+5$. Then $du=3x^2dx$. Solving for $dx$, $dx = \dfrac{du}{3x^2}$. Substituting, we have
+      $$\int \frac{x^2}{x^3+5}\,dx = \int \frac{x^2}{u} \frac{du}{3x^2} = \int \frac{1}{u} \frac{du}{3} = \frac{1}{3} \int \frac{1}{u} \, du \enspace . $$
+      Using our basic formulas, we have
+      $$\frac{1}{3}\int \frac{1}{u}\,du = \frac{1}{3}\ln(|u|) + C \enspace .$$
+      Undoing the substitution, we conclude that
+      $$\int \frac{x^2}{x^3+5}\,dx = \frac{1}{3}\ln(∣x^3+5∣)+C \enspace .$$
+    \end{solution}
+    \item $\int \dfrac{x^3+5}{x^2}\,dx$
+    \begin{solution}
+      It is tempting to start this problem the same way we did the last, but if we try it will not work, since the numerator of this fraction is not the derivative of the denominator. Instead, we need to try a different approach. For this problem, we can use some basic algebra:
+      \begin{align*}
+      \int {x^3+5}{x^2}\,dx &= \int \left(\frac{x^3}{x^2} + \frac{5}{x^2}\right)\,dx \\
+        &= \int \left(x+5x^{-2}\right)\,dx \enspace.
+      \end{align*}
+      We can integrate this using our basic rules, without needing substitution:
+      \begin{align*}
+      \int \left(x+5x^{-2}\right)\,dx &= \frac{x^2}{2} + 5\frac{x^{-1}}{-1} + C\\
+        &= \frac{1}{2}x^2 - \frac{5}{x} + C.
+      \end{align*}
+      \end{solution}
+  \end{enumerate}
 
-\begin{solution}
-  This is not a basic integral, but the composition is less obvious. Here, we can treat the denominator as the inside of the 1x function.
+\end{example}
 
-Let u=x3+5. Then du=3x2dx. Solving for dx, dx=du3x2. Substituting,
-∫x2x3+5dx=∫x2udu3x2=∫1udu3=13∫1udu
-Using our basic formulas,
-13∫1udu=13ln|u|+C.
-Undoing the substitution,
-∫x2x3+5dx=13ln∣∣x3+5∣∣+C.
-It is tempting to start this problem the same way we did the last, but if we try it will not work, since the numerator of this fraction is not the derivative of the denominator. Instead, we need to try a different approach. For this problem, we can use some basic algebra:
-∫x3+5x2dx==∫(x3x2+5x2)dx∫(x+5x-2)dx.
-We can integrate this using our basic rules, without needing substitution:
-∫(x+5x-2)dx==x22+5x-1-1+C12x2-5x+C.
-\end{solution}\end{example}
+\subsection{Substitution and Definite Integrals}
+When you use substitution to help evaluate a definite integral, you have a choice for how to handle the limits of integration. You can do either of these, whichever seems better to you. The important thing to remember is that the original limits of integration were values of the original variable (say, $x$), not values of the new variable (say, $u$).
+  \begin{enumerate}
+    \item You can find the antiderivative as a side problem, translating back to $x$’s, and then use the antiderivative with the original limits of integration.
+    \item Or, you can substitute for the limits of integration at the same time as you’re substituting for everything inside the integral, and then skip the translate back into $x$ step.
 
-Substitution and Definite Integrals
-When you use substitution to help evaluate a definite integral, you have a choice for how to handle the limits of integration. You can do either of these, whichever seems better to you. The important thing to remember is that the original limits of integration were values of the original variable (say, x), not values of the new variable (say, u).
-
-You can solve the antiderivative as a side problem, translating back to x’s, and then use the antiderivative with the original limits of integration.
-
-Or…
-
-You can substitute for the limits of integration at the same time as you’re substituting for everything inside the integral, and then skip the translate back into x step.
-
-If the original integral had endpoints x=a and x=b, and we make the substitution u=g(x) and du=g′(x)dx, then the new integral will have endpoints u=g(a) and u=g(b) and
-∫x=bx=a(original integrand)dx
-becomes
-∫u=g(b)u=g(a)(new integrand)du.
+    If the original integral had endpoints $x=a$ and $x=b$, and we make the substitution $u=g(x)$ and $du=g'(x)dx$, then the new integral will have endpoints $u=g(a)$ and $u=g(b)$ and
+    $$\int_{x=b}^{x=a}(\text{original integrand})\,dx$$
+    becomes
+    $$\int_{u=g(b)}^{u=g(a)}(\text{new integrand})\,du \enspace .$$
+    \end{enumerate}
 Method 1 seems more straightforward for most students, but it can involve some messy algebra. Method 2 is often neater and usually involves fewer steps.
 
 \begin{example}
-Evaluate ∫01(3x-1)4dx.
+Evaluate $\int_0^1(3x-1)^4\,dx$.
 
 \begin{solution}
 We'll need substitution to find an antiderivative, so we'll need to handle the limits of integration carefully. Let's solve this example both ways.
+  \begin{enumerate}
+    \item {\bf Doing the antiderivative as a side problem:}
 
-Doing the antiderivative as a side problem:
+    Step One – find the antiderivative, using substitution:
 
-Step One – find the antiderivative, using substitution:
-
-Let u=3x-1. Then du=3dx and
-∫(3x-1)4dx=∫u4(13du)=13u55+C.
-Translating back to x:
-13u55+C=(3x-1)515+C.
+    Let $u=3x-1$. Then $du=3dx$ and
+    $$\int (3x-1)^4\,dx = \int u^4\left(\dfrac{1}{3}\,du\right) = \dfrac{1}{3}\dfrac{u^5}{5}+C \enspace .$$
+Translating back to $x$:
+  $$\dfrac{1}{3}\dfrac{u^5}{5} + C = \dfrac{(3x-1)^5}{15} + C \enspace .$$
 Step Two – evaluate the definite integral:
-∫01(3x-1)4dx=(3x-1)515]10=(3(1)-1)515-(3(0)-1)515=3215--115=3315.
-Substituting for the limits of integration:
+  $$\int_0^1(3x-1)^4\,dx = \left.\dfrac{(3x-1)^5}{15}\right|_0^1 = \dfrac{(3(1)-1)^5}{15} - \dfrac{(3(0)-1)^5}{15} = \dfrac{32}{15}-\dfrac{-1}{15} = \dfrac{33}{15} \enspace .$$
 
-Let u=3x-1. Then du=3dx and, substituting for the limits of integration, when x=0, u=-1, and when x=1, u=2.
+  \item {\bf Substituting for the limits of integration:}
+
+  Let $u=3x-1$. Then $du=3dx$ and, substituting for the limits of integration, when $x=0$, $u=-1$, and when $x=1$, $u=2$.
 
 So,
-∫x=1x=0(3x-1)4dx=====∫u=2u=-1u4(13du)u515]u=2u=-1(2)515-(-1)5153215--1153315
+  \begin{align*}
+  \int_{x=0}^{x=1}(3x-1)^4\,dx &= \int_{u=-1}^{u=2}u^4\left(\frac{1}{3}\,du\right)\\
+    &= \left\frac{u^5}{15}\right|_{u=-1}^{u=2} \\
+    &= \frac{(2)^5}{15} - \frac{(-1)^5}{15}\\
+    &= \frac{32}{15} - \frac{-1}{15} \\
+    &= \frac{33}{15} \enspace .
+\end{align*}
 \end{solution}\end{example}
 
-\begin{example} 
-Evaluate ∫210(ln(x))6xdx.
+\begin{example}
+Evaluate $\int_2^{10}\frac{(\ln(x))^6}{x}\,dx$.
 
 \begin{solution}
   I can see the derivative of ln(x) in the integrand, so I can tell that substitution is a good choice.
 
-Let u=ln(x). Then du=1xdx. When x=2, u=ln(2). When x=10, u=ln(10). So the new definite integral is
-∫x=2x=10(ln(x))6xdx===\approx   ∫u=ln(2)u=ln(10)u6duu77]u=ln(10)u=ln(2)17((ln(10))7-(ln(2))7)49.01.
+Let $u=\ln(x)$. Then $du = \dfrac{1}{x}dx$. When $x=2$, $u=\ln(2)$. When $x=10$, $u=\ln(10)$. So the new definite integral is
+  \begin{align*}
+    \int_{x=2}^{x=10}\dfrac{(\ln(x))^6}{x}\,dx &= \int_{u=\ln(2)}^{u=\ln(10)}u^6\,du \\
+    &= \left.\dfrac{u^7}{7}\right|_{u=\ln(2)}^{u=\ln(10)}\\
+    &= \frac{1}{7}\left((\ln(10))^7-(\ln(2))^7\right)\\
+    &\approx 49.01 \enspace .
+  \end{align*}
 \end{solution}\end{example}
