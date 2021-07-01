@@ -14,19 +14,19 @@ Try $u$-substitution when you see a product in your integral, especially if you 
 \subsection{The $u$-Substitution Method for Antiderivatives}
 The goal is to turn $\int f(g(x))\,dx$ into $\int f(u)\,du$, where $f(u)$ is much less messy than $f(g(x))$.
 \begin{enumerate}
-  \item Let u be some part of the integrand. A good first choice is one step inside the messiest bit.
-  \item Compute du=dudxdx.
-  \item Translate all your x's into u's everywhere in the integral, including the dx. When you're done, you should have a new integral that is entirely in u. If you have any x's left, then that's an indication that the substitution didn't work or isn't complete; you may need to go back to step 1 and try a different choice for u.
-  \item Integrate the new u-integral, if possible. If you still can't integrate it, go back to step 1 and try a different choice for u.
-  \item Finally, substitute back x's for u's everywhere in your answer.
+  \item Let $u$ be some part of the integrand. A good first choice is one step inside the messiest bit.
+  \item Compute $du=\dfrac{du}{dx}dx$.
+  \item Translate all your $x$'s into $u$'s everywhere in the integral, including the $dx$. When you're done, you should have a new integral that is entirely in terms of $u$. If you have any $x$'s left, then that's an indication that the substitution didn't work or isn't complete; you may need to go back to step 1 and try a different choice for $u$.
+  \item Integrate the new $u$-integral, if possible. If you still can't integrate it, go back to step 1 and try a different choice for $u$.
+  \item Finally, substitute back $x$'s for $u$'s everywhere in your answer.
 \end{enumerate}
 \begin{example}
-Evaluate $\int \dfrac{x}{\sqrt{4-x^2}}\,dx$
+Evaluate $\displaystyle\int \dfrac{x}{\sqrt{4-x^2}}\,dx$
 
 \begin{solution}
   This integrand is more complicated than anything in our list of basic integral formulas, so we'll have to try something else. The only tool we have is substitution, so let's try that!
   \begin{enumerate}
-    \item Let $u$ be some part of the integrand. A good first choice is one step inside the messiest bit:
+    \item Let $u$ be some part of the integrand. A good first choice is one step inside the messiest bit.
     Let $u=4-x^2$.
 
     \item Compute $du = \dfrac{du}{dx}dx$:
@@ -37,19 +37,19 @@ Evaluate $\int \dfrac{x}{\sqrt{4-x^2}}\,dx$
     \int \frac{x}{\sqrt{4-x^2}}\,dx &= \int \frac{1}{\sqrt{4-x^2}}(x\,dx)\\
       &= \int \frac{1}{\sqrt{u}}\left(-\frac{1}{2}\,du\right) \\
       &= -\frac{1}{2}\int \frac{1}{\sqrt{u}}\,du\\
-      &= -\frac{1}{2}\int u^{-1/2}\,du
+      &= -\frac{1}{2}\int u^{-1/2}\,du \enspace .
     \end{align*}
     Alternatively, we could have solved for $dx$ and substituted that and simplified: $dx=\dfrac{du}{-2x}$, so
     \begin{align*}
     \int \frac{x}{\sqrt{4-x^2}}\,dx &= \int \frac{x}{\sqrt{u}}\left(\dfrac{du}{-2x}\right)\\
       &= \int \frac{1}{\sqrt{u}}\left(-\dfrac{1}{2}\,du\right) \\
       &= -\dfrac{1}{2}\int \frac{1}{\sqrt{u}}\,du\\
-      &= -\frac{1}{2}\int u^{-1/2}\,du
+      &= -\frac{1}{2}\int u^{-1/2}\,du \enspace .
     \end{align*}
   \item Integrate the new $u$-integral, if possible:
 
   $$-\frac{1}{2}\int u^{-1/2}\,du = -\frac{1}{2}\frac{u^{1/2}}{1/2} + C = -u^{1/2}+C \enspace .$$
-  \item Finally, substitute back $x$'s for $u$'s everywhere in the answer:
+  \item Finally, substitute back $x$'s for $u$'s everywhere in the answer.
 
   Undoing our $u=4-x^2$ substitution yields
   $$-u^{1/2}+C = -\sqrt{4-x^2}+C \enspace .$$
@@ -62,28 +62,30 @@ How would we check this? By differentiating:
 \dfrac{d}{dx}\left(-\sqrt{4-x^2}+C \right) &= \dfrac{d}{dx}(-(4-x^2)^{1/2}+C)\\
   &= -\frac{1}{2}(4-x^2)^{-1/2}(-2x) \\
   &= x(4-x^2)^{-1/2}\\
-  &= \frac{x}{\sqrt{4-x^2}}
+  &= \frac{x}{\sqrt{4-x^2}} \enspace .
 \end{align*}
+This is the integrand that we started with, so the solution makes sense.
 \end{solution}\end{example}
 
 \begin{example}
-Evaluate $\int \dfrac{e^x\,dx}{(e^x+15)^3}$.
+Evaluate $\displaystyle\int \dfrac{e^x\,dx}{(e^x+15)^3}$.
 
 \begin{solution}
 This integral is not in our list of building blocks. But notice that the derivative of $e^x+15$ (which we see in the denominator) is just $e^x$ (which we see in the numerator), so substitution will be a good choice for this.
 
-Let $u=e^x+15$. Then $du=e^xdx$, and this integral becomes $\int \dfrac{du}{u^3} = \int u^{-3}\,du$.
+Let $u=e^x+15$. Then $du=e^xdx$, and this integral becomes $\displaystyle\int \dfrac{du}{u^3} = \displaystyle\int u^{-3}\,du$.
 
-Luckily, that is on our list of building block formulas: $\int u^{-3}\, du = \dfrac{u^{-2}}{-2}+C = -\dfrac{1}{2u^2} + C$.
+Luckily, that is on our list of building block formulas: $\displaystyle\int u^{-3}\, du = \dfrac{u^{-2}}{-2}+C = -\dfrac{1}{2u^2} + C$.
 
 Finally, translating back:
 $$\int \frac{e^x\,dx}{(e^x+15)^3} = -\frac{1}{2(e^x+15)^2}+C \enspace .$$
 \end{solution}\end{example}
 
 \begin{example}
-Evaluate
+Evaluate the following integrals.
   \begin{enumerate}[label=(\alph*)]
-    \item $\int \dfrac{x^2}{x^3+5}\,dx$
+    \item $\displaystyle\int \dfrac{x^2}{x^3+5}\,dx$
+
     \begin{solution}
       This is not a basic integral, but the composition is less obvious. Here, we can treat the denominator as the inside of the function $\dfrac{1}{x}$.
 
@@ -92,13 +94,14 @@ Evaluate
       Using our basic formulas, we have
       $$\frac{1}{3}\int \frac{1}{u}\,du = \frac{1}{3}\ln(|u|) + C \enspace .$$
       Undoing the substitution, we conclude that
-      $$\int \frac{x^2}{x^3+5}\,dx = \frac{1}{3}\ln(∣x^3+5∣)+C \enspace .$$
+      $$\int \frac{x^2}{x^3+5}\,dx = \frac{1}{3}\ln(|x^3+5|)+C \enspace .$$
     \end{solution}
-    \item $\int \dfrac{x^3+5}{x^2}\,dx$
+    \item $\displaystyle\int \dfrac{x^3+5}{x^2}\,dx$
+
     \begin{solution}
       It is tempting to start this problem the same way we did the last, but if we try it will not work, since the numerator of this fraction is not the derivative of the denominator. Instead, we need to try a different approach. For this problem, we can use some basic algebra:
       \begin{align*}
-      \int {x^3+5}{x^2}\,dx &= \int \left(\frac{x^3}{x^2} + \frac{5}{x^2}\right)\,dx \\
+      \int \frac{x^3+5}{x^2}\,dx &= \int \left(\frac{x^3}{x^2} + \frac{5}{x^2}\right)\,dx \\
         &= \int \left(x+5x^{-2}\right)\,dx \enspace.
       \end{align*}
       We can integrate this using our basic rules, without needing substitution:
@@ -125,38 +128,37 @@ When you use substitution to help evaluate a definite integral, you have a choic
 Method 1 seems more straightforward for most students, but it can involve some messy algebra. Method 2 is often neater and usually involves fewer steps.
 
 \begin{example}
-Evaluate $\int_0^1(3x-1)^4\,dx$.
+Evaluate $\displaystyle\int_0^1(3x-1)^4\,dx$.
 
 \begin{solution}
 We'll need substitution to find an antiderivative, so we'll need to handle the limits of integration carefully. Let's solve this example both ways.
   \begin{enumerate}
     \item {\bf Doing the antiderivative as a side problem:}
 
-    Step One – find the antiderivative, using substitution:
+    Step One -- find the antiderivative, using substitution.
 
     Let $u=3x-1$. Then $du=3dx$ and
-    $$\int (3x-1)^4\,dx = \int u^4\left(\dfrac{1}{3}\,du\right) = \dfrac{1}{3}\dfrac{u^5}{5}+C \enspace .$$
-Translating back to $x$:
-  $$\dfrac{1}{3}\dfrac{u^5}{5} + C = \dfrac{(3x-1)^5}{15} + C \enspace .$$
-Step Two – evaluate the definite integral:
+    $$\int (3x-1)^4\,dx = \int \dfrac{1}{3}u^4\,du = \dfrac{1}{3}\cdot\dfrac{u^5}{5}+C \enspace .$$
+Translating back to $x$, we have
+    $$\dfrac{1}{3}\cdot\dfrac{u^5}{5} + C = \dfrac{(3x-1)^5}{15} + C \enspace .$$
+Step Two -- evaluate the definite integral.
   $$\int_0^1(3x-1)^4\,dx = \left.\dfrac{(3x-1)^5}{15}\right|_0^1 = \dfrac{(3(1)-1)^5}{15} - \dfrac{(3(0)-1)^5}{15} = \dfrac{32}{15}-\dfrac{-1}{15} = \dfrac{33}{15} \enspace .$$
 
   \item {\bf Substituting for the limits of integration:}
 
-  Let $u=3x-1$. Then $du=3dx$ and, substituting for the limits of integration, when $x=0$, $u=-1$, and when $x=1$, $u=2$.
-
-So,
+  Let $u=3x-1$. Then $du=3dx$. Substituting for the limits of integration, when $x=0$, $u=-1$, and when $x=1$, $u=2$. So,
   \begin{align*}
-  \int_{x=0}^{x=1}(3x-1)^4\,dx &= \int_{u=-1}^{u=2}u^4\left(\frac{1}{3}\,du\right)\\
-    &= \left\frac{u^5}{15}\right|_{u=-1}^{u=2} \\
+  \int_{x=0}^{x=1}(3x-1)^4\,dx &= \int_{u=-1}^{u=2}\frac{1}{3}u^4\,du \\
+    &= \left.\frac{u^5}{15}\right|_{u=-1}^{u=2} \\
     &= \frac{(2)^5}{15} - \frac{(-1)^5}{15}\\
     &= \frac{32}{15} - \frac{-1}{15} \\
     &= \frac{33}{15} \enspace .
-\end{align*}
+  \end{align*}
+\end{enumerate}
 \end{solution}\end{example}
 
 \begin{example}
-Evaluate $\int_2^{10}\frac{(\ln(x))^6}{x}\,dx$.
+Evaluate $\displaystyle\int_2^{10}\frac{(\ln(x))^6}{x}\,dx$.
 
 \begin{solution}
   I can see the derivative of ln(x) in the integrand, so I can tell that substitution is a good choice.

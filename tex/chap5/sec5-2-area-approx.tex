@@ -42,7 +42,7 @@ Now suppose that a car travels so that its speed increases steadily from 0 to 40
 \begin{solution}
 The trouble with our old reliable distance = rate$\times$time relationship is that it only works if the rate is constant. If the rate is changing, there isn’t a good way to use this formula.
 
-But look at the graph from the last example again. Notice that distance = rate$\times$time also describes the area between the velocity graph and the $t$-axis, between $t=0$ and $t=2$ hours. The rate is the height of the rectangle, the time is the length of the rectangle, and the distance is the area of the rectangle. This is the way we can extend our simple formula to handle more complicated velocities: And this is the way we can answer the second example.
+But look at the graph from the last example again. Notice that distance = rate$\times$time also describes the area between the velocity graph and the $t$-axis, between $t=0$ and $t=2$ hours. The rate is the height of the rectangle, the time is the length of the rectangle, and the distance is the area of the rectangle. This is the way we can extend our simple formula to handle more complicated velocities. And this is the way we can answer the second example.
 
 The distance the car travels is the area between its velocity graph, the $t$-axis, $t=0$ and $t=2$. This region is a triangle, so its area is
 $$\frac{1}{2}bh = \frac{1}{2}(2 \text{ hours})(40 \text{ miles per hour}) = 40 \text{ miles}\enspace .$$
@@ -51,26 +51,36 @@ So the car travels 40 miles during its annoying trip.
 
 In our distance/velocity examples, the function represented a rate of travel (miles per hour), and the area represented the total distance traveled. This principle works more generally.
 
-For functions representing other rates such as the production of a factory (bicycles per day), or the flow of water in a river (gallons per minute) or traffic over a bridge (cars per minute), or the spread of a disease (newly sick people per week), the area will still represent the total amount of something.
+For functions representing other rates such as the production of a factory (bicycles per day), the flow of water in a river (gallons per minute), traffic over a bridge (cars per minute), or the spread of a disease (newly sick people per week), the area will still represent the total amount of something.
 
-graph
+\begin{figure}[!ht]
+  \centering
+    \includegraphics[width=0.4\textwidth]{img/chap5/image003.png}
+    \caption{Total accumulation}
+    \label{fig:5-2-accumulation}
+\end{figure}
 \begin{example}
-The graph below shows the flow rate (cubic feet per second) of water in the Skykomish river at the town of Goldbar in Washington state.
+The graph in Figure \ref{fig:5-2-river} shows the flow rate (cubic feet per second) of water in the Skykomish river at the town of Goldbar in Washington state.
 
-graph
+\begin{figure}[!ht]
+  \centering
+    \includegraphics[width=0.6\textwidth]{img/chap5/image004.png}
+    \caption{Flow rate of the Skykomish River at Goldbar, WA}
+    \label{fig:5-2-river}
+\end{figure}
 \begin{solution}
 The area of the shaded region represents the total volume (cubic feet or ft$^3$) of water flowing past the town during the month of October. We can approximate this area to approximate the total water by thinking of the shaded region as a rectangle with a triangle on top.
 \begin{align*}
 \text{Total water} &= \text{total area} \\
   &\approx \text{area of rectangle} + \text{area of the ``triangle''}\\
-  &\approx  \left(2000 \frac{\text{ft}^3}{\text{s}}\right)(30 \text{days})+12\left(1500\frac{\text{ft}^3}{\text{s}}\right)(30 \text{days})\\
-  &= \left(2570 \frac{\text{ft}^3}{\text{s}}\right)(30 \text{days})
+  &\approx  \left(2000 \frac{\text{ft}^3}{\text{s}}\right)(30 \text{ days}) + 12\left(1500\frac{\text{ft}^3}{\text{s}}\right)(30 \text{ days})\\
+  &= \left(2570 \frac{\text{ft}^3}{\text{s}}\right)(30 \text{ days})
 \end{align*}
 Note that we need to convert the units to make sense of our result:
 \begin{align*}
-\text{Total water} &\approx  \left(2570 \frac{\text{ft}^3}{\text{s}}\right)(30 \text{days}) \\
-  &=\left(2570 \frac{\text{ft}^3}{\text{s}}\right)(2592000 \text{s}) \\
-  &\approx 7.128 \cdot 10^9 \text{ft}^3
+\text{Total water} &\approx  \left(2570 \frac{\text{ft}^3}{\text{s}}\right)(30 \text{ days}) \\
+  &=\left(2570 \frac{\text{ft}^3}{\text{s}}\right)(2592000 \text{ s}) \\
+  &\approx 7.128 \cdot 10^9 \text{ ft}^3
 \end{align*}
 About 7 billion cubic feet of water flowed past Goldbar in October.
 \end{solution}\end{example}
@@ -78,16 +88,31 @@ About 7 billion cubic feet of water flowed past Goldbar in October.
 \subsection{Approximating with Rectangles}
 How do we approximate the area if the rate curve is, well, curvy? We could use rectangles and triangles, like we did in the last example. But it turns out to be more useful (and easier) to simply use rectangles. The more rectangles we use, the better our approximation is.
 
-graph
-Suppose we want to calculate the area between the graph of a positive function $f(x)$ and the $x$-axis on the interval $[a,b]$ (graphed above). The {\bf Riemann Sum method}\index{Riemann sum} builds several rectangles with bases on the interval $[a,b]$ and sides that reach up to the graph of $f(x)$ (see below). Then the areas of the rectangles can be calculated and added together to get a number called a {\bf Riemann Sum} of $f$ on $[a,b]$. The area of the region formed by the rectangles is an approximation of the area we want.
+\begin{figure}[!ht]
+  \centering
+    \includegraphics[width=0.4\textwidth]{img/chap5/image005.png}
+    \caption{Area}
+    \label{fig:5-2-area}
+\end{figure}
+Suppose we want to calculate the area between the graph of a positive function $f(x)$ and the $x$-axis on the interval $[a,b]$ (graphed in Figure \ref{fig:5-2-area}). The {\bf Riemann Sum method}\index{Riemann sum} builds several rectangles with bases on the interval $[a,b]$ and sides that reach up to the graph of $f(x)$, as in Figure \ref{fig:5-2-areaapprox}. Then the areas of the rectangles can be calculated and added together to get a number called a {\bf Riemann Sum} of $f$ on $[a,b]$. The area of the region formed by the rectangles is an approximation of the area we want.
 
-graph
+\begin{figure}[!ht]
+  \centering
+    \includegraphics[width=0.4\textwidth]{img/chap5/image006.png}
+    \caption{Area Approximation with rectangles}
+    \label{fig:5-2-areaapprox}
+\end{figure}
 \begin{example}
-Approximate the area in the graph on the left between the graph of $f$ and the $x$-axis on the interval $[2, 5]$ by adding the areas of the rectangles in the graph on the right.
+Approximate the area between the graph of $f$ and the $x$-axis on the interval $[2, 5]$ in Figure \ref{fig:5-2-areaunderf} by adding the areas of the rectangles in the graph on the right in Figure \ref{fig:5-2-areaunderf}.
 
-graph
+\begin{figure}[!ht]
+  \centering
+    \includegraphics[width=0.6\textwidth]{img/chap5/image007.png}
+    \caption{Area under $y=f(x)$}
+    \label{fig:5-2-areaunderf}
+\end{figure}
 \begin{solution}
-The total area of rectangles is
+The total area of the rectangles is
 $$(2)(3)+(1)(5)=11 \enspace .$$
 \end{solution}\end{example}
 
@@ -97,16 +122,26 @@ Let A be the region bounded by the graph of $f(x)=\frac{1}{x}$, the $x$-axis, an
 \begin{solution}
 When we make our rectangles, we have a lot of choices. We could pick any (non-overlapping) rectangles whose bottoms lie within the interval on the $x$-axis, and whose tops intersect with the curve somewhere. But it is easiest to choose rectangles that (a) have all the same width and (b) take their heights from the function at one edge. Below are graphs showing two ways to use four rectangles to approximate this area. In the first graph, we used left-endpoints; the height of each rectangle comes from the function value at its left edge. In the second graph on the next page, we used right-hand endpoints.
 
-\paragraph{Left-hand endpoints:} The area is approximately the sum of the areas of the rectangles. Each rectangle gets its height from the function $f(x)=\frac{1}{x}$ and each rectangle has a width of 1.
+\paragraph{Left-endpoint approximation:} The area is approximately the sum of the areas of the rectangles. Each rectangle gets its height from the function $f(x)=\frac{1}{x}$ and each rectangle has a width of 1.
 
-graph
+\begin{figure}[!ht]
+  \centering
+    \includegraphics[width=0.3\textwidth]{img/chap5/image008.png}
+    \caption{Left-endpoint approximation for $y=\frac{1}{x}$.}
+    \label{fig:5-2-leftex}
+\end{figure}
 You can find the area of each rectangle using area = height$\times$width. So the total area of the rectangles, the left-hand estimate of the area under the curve, is
 $$f(1) \cdot 1 + f(2) \cdot 1 + f(3) \cdot 1 + f(4) \cdot 1 = 1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} = \frac{25}{12}\approx   2.08 \enspace .$$
-Notice that because this function is decreasing, all the left endpoint rectangles stick out above the region we want – using left-hand endpoints will overestimate the area.
+Notice that because this function is decreasing, all the left endpoint rectangles stick out above the region we want -- using left-hand endpoints will overestimate the area.
 
-\paragraph{Right-hand endpoints:} The right-hand estimate of the area is
+\paragraph{Right-endpoint approximation:} The right-hand estimate of the area is
 $$f(2) \cdot 1 + f(3) \cdot 1 + f(4) \cdot 1 + f(5) \cdot 1 = \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} = \frac{77}{60} \approx   1.28 \enspace .$$
-graph
+\begin{figure}[!ht]
+  \centering
+    \includegraphics[width=0.3\textwidth]{img/chap5/image009.png}
+    \caption{Right-endpoint approximation for $y=\frac{1}{x}$.}
+    \label{fig:5-2-rightex}
+\end{figure}
 All the right-hand rectangles lie completely under the curve, so this estimate will be an underestimate.
 
 We can see that the true area is actually in between these two estimates. So we could take their average:
@@ -133,7 +168,7 @@ $$\Delta x(f(x_1)+f(x_2)+f(x_3)+\ldots +f(x_n)) \enspace .$$
 The upper-case Greek letter Sigma $\Sigma$ is used to stand for sum. {\bf Sigma notation} is a way to compactly represent a long, infinite, or arbitrarily long sum of many similar terms, such as a Riemann sum.
 
 Using the Sigma notation, the Riemann sum can be written
-$$\sum_{i=1}^n f(x_i)\Delta x \enspace .$$
+$$\sum_{i=1}^n f(x_i)\Delta x = f(x_1)\Delta x + f(x_2)\Delta x+f(x_3)\Delta x + \ldots +f(x_n)\Delta x \enspace .$$
 This is read aloud as ``the sum as $i$ goes from 1 to $n$ of $f$ of $x$ sub $i$ times $\Delta x$.'' The $i$ is a {\bf counter}\index{Counter} or {\bf index}\index{Index}, like you might have seen in a programming class. The index increases by 1 each term and must always be an integer.
 \end{definition}
 
