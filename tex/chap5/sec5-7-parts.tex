@@ -1,7 +1,7 @@
 \section{Integration by Parts}
 \label{sec:integration-by-parts}
 % Section 3.5
-\subsection{Integration By Parts}
+%\subsection{Integration By Parts}
 {\bf Integration by parts}\index{Integration by parts} is an integration method which enables us to find antiderivatives of some new functions such as $\ln(x)$ as well as antiderivatives of products of functions such as $x^2\ln(x)$ and $xe^x$.
 
 If the function we're trying to integrate can be written as a product of two functions, $u$, and $dv$, then integration by parts lets us trade out a complicated integral for hopefully simpler one.
@@ -12,40 +12,50 @@ For definite integrals:
 $$\int_a^bu\,dv = \left.uv\right|_a^b - \int_a^b v \,du$$
 \end{theorem}
 \begin{example}
-Integrate $\int xe^x\,dx$.
+Integrate $\displaystyle\int xe^x\,dx$.
 
 \begin{solution}
 To use the Integration by Parts method, we break apart the product into two parts:
-$$u=x\quad \text{and}\quad dv=e^xdx \enspace .$$
+$$u=x\quad \text{and}\quad dv=e^x\,dx \enspace .$$
 We now calculate $du$, the derivative of $u$, and $v$, the integral of $dv$:
 $$du = \left(\frac{d}{dx}x\right)\,dx \quad \text{and} \quad v = \int e^x\,dx = e^x \enspace .$$
 Using the Integration by Parts formula,
 $$\int xe^x\,dx = uv-\int v\,du = xe^x - \int e^x\,dx \enspace . $$
 Notice the remaining integral is simpler that the original, and one which we can easily evaluate:
-xex-\int exdx=xex-ex+C.
+$$xe^x-\int e^x\,dx = xe^x - e^x + C \enspace .$$
 \end{solution}\end{example}
 
-In the last example we could have chosen either x or ex as our u, but had we chosen u=ex, the second integral would have become messier, rather than simpler.
+In the last example we could have chosen either $x$ or $e^x$ as our $u$, but had we chosen $u=e^x$, the second integral would have become messier, rather than simpler.
 
-Rule of Thumb
-When selecting the u for Integration by Parts, select a logarithmic expression if one is present. If not, select an algebraic expression (like x or dx).
+\begin{note}[Rule of Thumb: LIATE]
+When selecting the $u$ for Integration by Parts, a common rule of thumb is the ``LIATE" mnemonic. Choose $u$ in the following order of preference.
+\begin{itemize}
+  \item[L:] {\bf L}ogarithmic functions
+  \item[I:] {\bf I}nverse trigonometric Functions
+  \item[A:] {\bf A}lgebraic functions (polynomials, roots, etc.)
+  \item[T:] {\bf T}rigonometic Functions
+  \item[E:] {\bf E}xponential functions
+\end{itemize}
 
-(There is a larger decision tree that can be written down for choosing u and dv, but since we're not looking at any trigonometric functions in this course the rule above is sufficient for the functions we're integrating.)
-
+\end{note}
 \begin{example}
-Integrate \int 146x2ln(x)dx.
+Integrate $\displaystyle\int_1^4 6x^2\ln(x)\,dx$.
 
 \begin{solution}
-Since this contains a logarithmic expression, we'll use it for our u:
-u=ln(x)anddv=6x2dx
-We now calculate du and v:
-du=1xdxandv=\int 6x2dx=6x33=2x3
-Using the By Parts formula:
-\int 416x2ln(x)dx=2x3ln(x)]41-\int 416x21xdx
-We can simplify the expression in the integral on the right:
-\int 416x2ln(x)dx=2x3ln(x)]41-\int 416xdx
-The remaining integral is a basic one we can now evaluate:
-\int 416x2ln(x)dx=2x3ln(x)]41-3x2]41
-Finally, we can evaluate the expressions:
-\int 416x2ln(x)dx==\approx   ((2⋅43ln(4))-(2⋅13ln(1)))-((3⋅42)-(3⋅12))128ln(4)-45132.446
+Since this contains a logarithmic expression, we'll use it for our $u$.
+$$u = \ln(x) \quad {\text and} \quad dv = 6x^2\,dx$$
+We now calculate $du$ and $v$.
+$$du = \frac{1}{x}\,dx  \quad {\text and} \quad v = \int 6x^2\,dx = 6\frac{x^3}{3} = 2x^3$$
+Using the Integration By Parts formula, we have
+$$\int_1^4 6x^2\ln(x)\,dx = \left.2x^3\ln(x)\right|^4_1-\int^4_1 6x^2 \frac{1}{x}\,dx \enspace .$$
+We can simplify the expression in the integral on the right.
+$$\int^4_1 6x^2\ln(x)\,dx = \left.2x^3\ln(x)\right|^4_1 - \int^4_1 6x\,dx$$
+The remaining integral is a basic one we can now evaluate.
+$$\int^4_1 6x^2\ln(x)\,dx = \left.2x^3\ln(x)\right|^4_1 - \left.3x^2\right|^4_1$$
+Finally, we can evaluate the expressions.
+\begin{align*}
+\int^4_1 6x^2\ln(x)\,dx &= ((2\cdot 4^3\ln(4))-(2\cdot 1^3\ln(1)))-((3\cdot 4^2)-(3\cdot 1^2)) \\
+&= 128\ln(4)-45\\
+&\approx   132.446
+\end{align*}
 \end{solution}\end{example}
