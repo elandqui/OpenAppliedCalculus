@@ -1,7 +1,7 @@
 # Open Applied Calculus
 This is an open textbook (OER) for Applied Calculus for business, education, and the social and life sciences and released under a Creative Commons Attribution Share Alike 4.0 (CC-BY-SA 4.0) license..
 
-Read below for some unique ways that you can help [**support**](#support) this project, like visiting the **affiliates** below, **advertising** with me, and **investing in Bitcoin**! There is also a <a href="https://www.gofundme.com/manage/oac-textbook">GoFundMe page to support Open Applied Calculus</a>. (And yes, due to GoFundMe's history of assault on the spirit of free speech, I am looking into a fair and reputable alternative, probably <a href="https://www.givesendgo.com/>GiveSendGo</a>.)
+Read below for some unique ways that you can help [**support**](#support) this project, like visiting the **affiliates** below, **advertising** with me, and **investing in Bitcoin**! There is also a <a href="https://www.gofundme.com/manage/oac-textbook">GoFundMe page to support Open Applied Calculus</a>. (And yes, due to GoFundMe's history of assault on the spirit of free speech, I am looking into a fair and reputable alternative, probably <a href="https://www.givesendgo.com/">GiveSendGo</a>.)
 
 ## Affiliate Partners
 <!--
