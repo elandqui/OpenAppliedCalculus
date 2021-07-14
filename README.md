@@ -15,7 +15,7 @@ Read below for some unique ways that you can help [**support**](#support) this p
 
 <a href="https://bit.ly/3pP7ruB"><img src="/img/support/medishare/Medi-ShareLogo.webp" border="0" alt="MediShare" width="637" height="134"/></a>
 
-**[BlockFi:](https://blockfi.mxuy67.net/c/2612759/889697/10568")** Earn up to 8.6\% APY on your dollar-backed stablecoins and up to 6\% APY on crypto with BlockFi! Receive up to a \$250 Bitcoin bonus when you click and fund a new BlockFi account. Terms apply.
+**[BlockFi:](https://blockfi.mxuy67.net/c/2612759/889697/10568")** Earn up to 7.5\% APY on your dollar-backed stablecoins and up to 4\% APY on Bitcoin, Ether, and other cryptos with BlockFi! Receive up to a \$250 Bitcoin bonus when you click and fund a new BlockFi account. Terms apply.
 
 **[MediShare:](https://bit.ly/3pP7ruB)** Members save around 50% on healthcare costs, with options for individuals, families, groups, and seniors. Medi-Share is a healthcare sharing community that believes there is a BETTER way to do healthcare.
 
