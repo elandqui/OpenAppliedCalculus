@@ -12,7 +12,7 @@ To get a feel for how supply and demand change as price and quantities change, c
 
 \begin{figure}[!ht]
   \centering
-    \includegraphics[width=0.3\textwidth]{img/chap5/image062.png}
+    \includegraphics[width=0.4\textwidth]{img/chap5/image062.png}
     \caption{Supply and demand curves for $q$ items.}
     \label{fig:5-8-supplyDemand}
 \end{figure}
@@ -24,7 +24,7 @@ The point where the demand and supply curve cross is called the {\bf equilibrium
 
 \begin{figure}[!ht]
   \centering
-    \includegraphics[width=0.3\textwidth]{img/chap5/image063.png}
+    \includegraphics[width=0.4\textwidth]{img/chap5/image063.png}
     \caption{Equilibrium point on supply and demand curves.}
     \label{fig:5-8-equilibrium}
 \end{figure}
@@ -68,7 +68,7 @@ The equilibrium point is where the supply and demand functions are equal. Solvin
 \end{example}
 
 \begin{example}
-Tables \ref{tab:5-8-demand} and \ref{tab:5-8-supply} below show information about the demand and supply functions for a product. For both functions, $q$ is the quantity and $p$ is the price, in dollars.
+Tables \ref{tab:5-8-demand} and \ref{tab:5-8-supply} show information about the demand and supply functions for a product. For both functions, $q$ is the quantity and $p$ is the price, in dollars.
 
 \begin{table}[ht!]
     \centering
@@ -129,9 +129,9 @@ In precalculus, you learned about compound interest\index{Compound interest}\ind
 \begin{definition}[Compound Interest Formulas]
 Let $P$ be the principal\index{Principal} (initial investment), $r$ be the annual interest rate expressed as a decimal, and $A(t)$ be the amount in the account after $t$ years.
 
-{\bf Compounding $n$ times per year:}
+\noindent{\bf Compounding $n$ times per year:}
 $$A(t)=P\left(1+\frac{r}{n}\right)^{nt}$$
-{\bf Compounded continuously:}
+\noindent{\bf Compounding continuously:}
 $$A(t)=Pe^{rt}$$
 If you're using this formula to find what an account will be worth in the future, $t>0$ and $A(t)$ is called the {|bf future value}\index{Future value}\index{Value!future}.
 
@@ -195,7 +195,7 @@ The average value of a positive function $f(x)$ has a nice geometric interpretat
 
 \begin{figure}[!ht]
   \centering
-    \includegraphics[width=0.3\textwidth]{img/chap5/image053.png}
+    \includegraphics[width=0.6\textwidth]{img/chap5/image053.png}
     \caption{Visualizing average value}
     \label{fig:5-8-liquid}
 \end{figure}
@@ -225,8 +225,8 @@ For example, Figure \ref{fig:5-8-temp} shows the graphs of a Monthly Average (ra
 
 \begin{figure}[!ht]
   \centering
-    \includegraphics[width=0.3\textwidth]{img/chap5/image054.png}
-    \caption{Image prepared by Robert A. Rohde, http://commons.wikimedia.org/wiki/File:Short\_Instrumental\_Temperature\_Record.png.}
+    \includegraphics[width=0.4\textwidth]{img/chap5/image054.png}
+    \caption{Image prepared by Robert A. Rohde,\\ http://commons.wikimedia.org/wiki/File:Short\_Instrumental\_Temperature\_Record.png.}
     \label{fig:5-8-temp}
 \end{figure}
 Typically the average function reveals the pattern much more clearly than the original data. This use of a {\bf moving average}\index{Moving average} value of noisy data (weather information, stock prices) is a very common, especially data that is a {\bf time series}\index{Time series}, data that is a function of time.
@@ -236,16 +236,16 @@ The graph in Figure \ref{fig:5-8-reservoir} shows the volume of water in a reser
 
 \begin{figure}[!ht]
   \centering
-    \includegraphics[width=0.3\textwidth]{img/chap5/image054.png}
+    \includegraphics[width=0.4\textwidth]{img/chap5/image055.png}
     \caption{Volume of water in a reservoir over a 12-hour span.}
     \label{fig:5-8-reservoir}
 \end{figure}
 \begin{solution}
-If $V(t)$ is the volume of the water (in millions of liters) after $t$ hours, then the average amount is $\dfrac{1}{12}\int_0^{12}V(t)\,dt$. In order to find the definite integral, we'll have to estimate. Let's use 6 rectangles and take the heights from their right edges (there's nothing special about using 6 rectangles or right edges -- other choices would still give you a valid estimate).
+If $V(t)$ is the volume of the water (in millions of liters) after $t$ hours, then the average amount is $\dfrac{1}{12}\displaystyle\int_0^{12}V(t)\,dt$. In order to find the definite integral, we'll have to estimate. Let's use 6 rectangles and take the heights from their right edges (there's nothing special about using 6 rectangles or right edges -- other choices would still give you a valid estimate).
 
 \begin{figure}[!ht]
   \centering
-    \includegraphics[width=0.3\textwidth]{img/chap5/image055.png}
+    \includegraphics[width=0.4\textwidth]{img/chap5/image056.png}
     \caption{Estimating the average volume of water in a reservoir.}
     \label{fig:5-8-reservoir}
 \end{figure}
@@ -258,7 +258,7 @@ In Figure \ref{fig:5-8-reservoiravg}, you can see the same graph as the one in F
 
 \begin{figure}[!ht]
   \centering
-    \includegraphics[width=0.3\textwidth]{img/chap5/image056.png}
+    \includegraphics[width=0.4\textwidth]{img/chap5/image057.png}
     \caption{Estimating the average volume of water in a reservoir.}
     \label{fig:5-8-reservoiravg}
 \end{figure}
@@ -269,11 +269,11 @@ In fact, that would be a different way to estimate the average value. We could h
 \subsection{Area Between Curves}
 We have already used integrals to find the area between the graph of a function and the horizontal axis. Integrals can also be used to find the area between two graphs.
 
-If $f(x) \geq g(x)$ for all $x \in [a,b]$, then we can approximate the area between the curves $y=f(x)$ and $y=g(x)$ between $x=a$ and $x=b$ by partitioning the interval $[a,b]$ and forming a Riemann sum, as shown in Figure \ref{fig:5-8-abc}. The height of the $i$th rectangle is top $-$ bottom, or $f(c_i)-g(c_i)$ so the area of the $i$-th rectangle is (height)$\cdot$(base) $= (f(c_i)-g(c_i))\Delta x$. Adding up these rectangles gives an approximation of the total area as $\sum_{i=1}^n(f(c_i)-g(c_i))\Delta x$, a Riemann sum.
+If $f(x) \geq g(x)$ for all $x \in [a,b]$, then we can approximate the area between the curves $y=f(x)$ and $y=g(x)$ between $x=a$ and $x=b$ by partitioning the interval $[a,b]$ and forming a Riemann sum, as shown in Figure \ref{fig:5-8-abc}. The height of the $i$th rectangle is top $-$ bottom, or $f(c_i)-g(c_i)$ so the area of the $i$-th rectangle is (height)$\cdot$(base) $= (f(c_i)-g(c_i))\Delta x$. Adding up these rectangles gives an approximation of the total area as $\displaystyle\sum_{i=1}^n(f(c_i)-g(c_i))\Delta x$, a Riemann sum.
 
 \begin{figure}[!ht]
   \centering
-    \includegraphics[width=0.3\textwidth]{img/chap5/image049.png}
+    \includegraphics[width=0.4\textwidth]{img/chap5/image049.png}
     \caption{Estimating the area between two curves.}
     \label{fig:5-8-abc}
 \end{figure}
@@ -405,6 +405,6 @@ Using the substitution $u=-2x$ and $du = -2\,dx$ we can integrate this function.
   &= \left.-\frac{1}{2}\pi e^u\right|_{x=0}^{x=1} \\
   &= \left.-\frac{1}{2}\pi e^{-2x}\right|_0^1\\
     \left(-\frac{1}{2}\pi e^{-2(1)}\right)-\left(-\frac{1}{2}\pi e^{-2(0)}\right) \\
-  &\approx 1.358 \text{cubic units}.
+  &\approx 1.358 \text{ cubic units}.
 \end{align*}
 \end{solution}\end{example}
