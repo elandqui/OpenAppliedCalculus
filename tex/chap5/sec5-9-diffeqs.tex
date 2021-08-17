@@ -1,6 +1,8 @@
 \section{Differential Equations}
 \label{sec:diff-eqs}
 % From Section 3.8
+% This section needs a lot of graphics.
+
 A {\bf differential equation}\index{Differential equation} is an equation involving the derivative of a function. They allow us to express with a simple equation the relationship between a quantity and it's rate of change.
 
 \begin{example}
@@ -37,7 +39,7 @@ A possible solution of an algebraic equation can be checked by putting the solut
 
 \begin{example}
 Verify the following.
-  \begin{enumerate}[label=\alph*]
+  \begin{enumerate}[label=(\alph*)]
     \item $y=x^2+5$ is a solution of $y''+y=x^2+7$.
 
     \begin{solution}
@@ -54,10 +56,11 @@ Verify the following.
     the result we wanted to verify.
 
     \end{solution}
+  \end{enumerate}
 \end{example}
 
 \subsection{Separable Differential Equations}
-A differential equation is called {\bf separable}\index{Differential equation!separable} if the variables can be separated algebraically so that all the $x$'s and $dx$ are one one side of the equation, and all the $y$'s and $dy$ are on the other side of the equation. In other words, the differential equation can be written in the form $f(x)dx = g(y)dy$.
+A differential equation is called {\bf separable}\index{Differential equation!separable} if the variables can be separated algebraically so that all the $x$'s and $dx$ are one one side of the equation, and all the $y$'s and $dy$ are on the other side of the equation. In other words, the differential equation can be written in the form $f(x)\,dx = g(y)\,dy$.
 
 Once separated, separable differential equations can be solved by integrating both sides of the equation.
 
@@ -114,7 +117,7 @@ Integrating the left side of this equation requires substitution. Let $u=0.02B-2
 \begin{align*}
   \int \frac{dB}{0.02B-20} &=\int \frac{du/0.02}{u} \\
     &= \int \frac{1}{u}\frac{du}{0.02} \\
-    &= \frac{1}{0.02}\int \frac{1}{u}du \\
+    &= \frac{1}{0.02}\int \frac{1}{u}\,du \\
     &= \frac{1}{0.02}\ln|u| + C_1 \\
     &= \frac{1}{0.02}\ln|0.02B-20| + C_1
 \end{align*}
@@ -126,12 +129,12 @@ Now we would like to solve for $B$. Start by multiplying by 0.02.
 
 \begin{align*}
 \ln|0.02B-20|     &= 0.02t+0.02C  \\
-\ln|0.02B-20|     &= 0.02t+D      &= \text{Let }D=0.02C\\
-e^{\ln|0.02B-20|} &= e^{0.02t+D}  &= \text{Exponentiate both sides}\\
-|0.02B-20|        &= e^{0.02t+D}  &= \text{Use the log rule: } e^{\ln(A)}=A.\\
-0.02B-20          &= e^{0.02t+D}  &= \text{The right side is positive.}\\
-0.02B-20          &= e^{0.02t}e^D &= \text{Use the rule: } e^{A+B}=e^Ae^B.\\
-0.02B-20          &= ke^{0.02t}   &= \text{Let } k=e^D\\
+\ln|0.02B-20|     &= 0.02t+D      & \text{Let }D=0.02C\\
+e^{\ln|0.02B-20|} &= e^{0.02t+D}  & \text{Exponentiate both sides}\\
+|0.02B-20|        &= e^{0.02t+D}  & \text{Use the log rule: } e^{\ln(A)}=A.\\
+0.02B-20          &= e^{0.02t+D}  & \text{The right side is positive.}\\
+0.02B-20          &= e^{0.02t}e^D & \text{Use the rule: } e^{A+B}=e^Ae^B.\\
+0.02B-20          &= ke^{0.02t}   & \text{Let } k=e^D\\
 0.02B             &= ke^{0.02t} + 20   \\
 B                 &= \frac{ke^{0.02t} + 20}{0.02} \\
 B                 &= \frac{ke^{0.02t}}{0.02} + 1000 \\
@@ -198,13 +201,13 @@ Since it was a new phone, $y(0)=0$. We also know the sales after one month, $y(1
 Solving the differential equation:
 \begin{align*}
   \frac{dy}{dt}         &= k(200-y) \\
-  \frac{dy}{200-y}      &= k\,dt  \quad \text{Separate the variables.}\\
-  \int\frac{dy}{200-y}  &= \int k\,dt  \quad \text{Integrate both sides.}\\
-  -\ln|200-y|           &= kt+C \quad \text{On the left, use the substitution } u=200-y.\\
-  e^{\ln|200-y|}        &= e^{-kt+C} \quad \text{Multiply both sides by } -1 \text{ and exponentiate both sides.} \\
-  200-y                 &= Be^{-kt} \quad \text{Simplify.}\\
-  -y                    &= Be^{-kt} - 200 \quad \text{Subtract 200.}\\
-  y                     &= Ae-kt+200 \quad \text{Divide by -1, and simplify.}
+  \frac{dy}{200-y}      &= k\,dt        & \text{Separate the variables.}\\
+  \int\frac{dy}{200-y}  &= \int k\,dt   & \text{Integrate both sides.}\\
+  -\ln|200-y|           &= kt+C         & \text{On the left, use the substitution } u=200-y.\\
+  e^{\ln|200-y|}        &= e^{-kt+C}    & \text{Multiply both sides by } -1 \text{ and exponentiate both sides.} \\
+  200-y                 &= Be^{-kt}     & \text{Simplify.}\\
+  -y                    &= Be^{-kt} - 200 & \text{Subtract 200.}\\
+  y                     &= Ae-kt+200    & \text{Divide by }-1, \text{ and simplify.}
 \end{align*}
 Using the initial condition $y(0)=0$,
 $$0=Ae^{-k(0)} + 200 \enspace ,$$
@@ -213,10 +216,10 @@ so $0=A+200$, giving $A=-200$.
 Using the value $y(1)=20$:
 \begin{align*}
   20              &= -200e^{-k\cdot 1}+200 \\
-  -180            &= -200e^{-k} \quad \text{Subtract 200.}\\
-  \frac{180}{200} &= e^{-k} \quad \text{Divide  by } -200. \\
-  \ln(0.9)        &= \ln\left(e^{-k}\right) = -k \quad \text{Take the logarithm of both sides.}\\
-  k               &= -\ln(0.9) \approx   0.105 \quad \text{Divide by } -1.
+  -180            &= -200e^{-k}             &\text{Subtract 200.}\\
+  \frac{180}{200} &= e^{-k}                 &\text{Divide by } -200. \\
+  \ln(0.9)        &= \ln\left(e^{-k}\right) = -k & \text{Take the logarithm of both sides.}\\
+  k               &= -\ln(0.9) \approx   0.105  & \text{Divide by } -1.
 \end{align*}
 As a quick sanity check, this value is positive as we would expect, indicating that the sales are growing over time. We now have the equation for the sales of phones over time:
 $$A=-200e^{-0.105t}+200 \enspace .$$
@@ -268,7 +271,7 @@ To answer the original equation, of when the rabbit population will reach 3000, 
   1+49e^{-1.1404t}                  &= \frac{5}{3}\\
   49e^{-1.1404t}                    &= \frac{5}{3} - 1\\
   e^{-1.1404t}                      &= \frac{\frac{5}{3}-1}{49} \approx  0.01361 \\
-  t                                 &= \frac{\ln(0.01361)}{-1.1404}\approx   3.77 years.
+  t                                 &= \frac{\ln(0.01361)}{-1.1404}\approx   3.77 \text{ years}.
 \end{align*}
 \end{solution}\end{example}
 
