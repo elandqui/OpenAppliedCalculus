@@ -7,7 +7,7 @@ Read below for some unique ways that you can help [**support**](#support) this p
 <!--
 <a href="https://blockfi.mxuy67.net/c/2612759/889697/10568"><img src="https://raw.githubusercontent.com/elandqui/OpenAppliedCalculus/master/img/support/blockFi/blockfi-banner0.png" border="0" alt="BlockFi" width="970" height="250"/></a>
 -->
-<a href="https://blockfi.mxuy67.net/c/2612759/889697/10568"><img src="/img/support/blockFi/blockfi-banner0.png" border="0" alt="BlockFi" width="970" height="250"/></a>
+<a href="https://blockfi.mxuy67.net/c/2612759/889697/10568"><img src="/img/support/blockFi/blockfi-banner3.png" border="0" alt="BlockFi" width="970" height="250"/></a>
 
 <!--
 [![BlockFi](https://raw.githubusercontent.com/elandqui/OpenAppliedCalculus/master/img/support/blockFi/blockfi-banner0.png "Earn up to 8.6\% APY on your dollar-backed stablecoins and up to 6\% APY on crypto with BlockFi! Receive up to a \$250 Bitcoin bonus when you click and fund a new BlockFi account. Terms apply.")](https://blockfi.mxuy67.net/c/2612759/889697/10568)
@@ -15,7 +15,7 @@ Read below for some unique ways that you can help [**support**](#support) this p
 
 <a href="https://bit.ly/3pP7ruB"><img src="/img/support/medishare/Medi-ShareLogo.webp" border="0" alt="MediShare" width="637" height="134"/></a>
 
-**[BlockFi:](https://blockfi.mxuy67.net/c/2612759/889697/10568")** Earn up to 7.5\% APY on your dollar-backed stablecoins and up to 4\% APY on Bitcoin, Ether, and other cryptos with BlockFi! Receive up to a \$250 Bitcoin bonus when you click and fund a new BlockFi account. Terms apply.
+**[BlockFi:](https://blockfi.mxuy67.net/c/2612759/889697/10568")** Earn up to 8\% APY on your dollar-backed stablecoins and up to 5\% APY on Bitcoin, Ether, and other cryptos with BlockFi! Receive up to a \$250 Bitcoin bonus when you click and fund a new BlockFi account. Terms apply.
 
 **[MediShare:](https://bit.ly/3pP7ruB)** Members save around 50% on healthcare costs, with options for individuals, families, groups, and seniors. Medi-Share is a healthcare sharing community that believes there is a BETTER way to do healthcare.
 
@@ -54,11 +54,11 @@ The **goals** of this project are to:
 The following is a rough **task list** for this project.
  * Create an **outline** for the text. (Done)
  * Complete one section on functions (1.2) in a relatively complete form. (Done)
- * Convert existing open business and applied calculus textbooks from .docx format to **LaTeX** format. (In Progress)
- * Set up means to include **advertisements** in the text or to accept donations to the project. (Done with continuing progress.)
+ * Convert existing open business and applied calculus textbooks from .docx format to **LaTeX** format. (Main content: Done; Homework problems: In Progress,)
+ * Set up means to include **advertisements** in the text or to accept donations to the project. (Done, with continuing progress.)
  * Improve the **graphics** of the textbook, e.g. graphs, tables, and figures. (In Progress)
  * Overhaul the existing text to introduce a **modeling and data-analytics** approach to calculus. (In Progress)
- * Solicit **reviewers and reviews** for this textbook. (In Progress)
+ * Solicit **reviewers and reviews** for this textbook. (Done, though constructive feedback is always welcome.)
  * When ready, organize a team of project developers for the textbook.
  * Create **new homework problems** to be used with <a href="https://www.myopenmath.com/">MyOpenMath</a> and/or <a href="http://webwork.maa.org/">WeBWorK</a>.
  * Include "Technology" sections with **spreadsheets** and/or Python and/or <a href="http://www.sagemath.org/">SageMath</a>.
@@ -73,7 +73,7 @@ The following is a rough **task list** for this project.
  * Create lecture **videos** to accompany the textbook.
 
 ## Support Open Applied Calculus <a name="support"></a>
-You can support this project in some unique ways that will be a win-win-win situation for you, students, and me. A portion will be redonated for local COVID-19 relief.
+You can support this project in some unique ways that will be a win-win-win situation for you, students, and me.
 
  * Affiliate Partners
     - **BlockFi:** <a href="https://blockfi.mxuy67.net/c/2612759/889697/10568">Earn up to 8.6\% APY on your crypto with BlockFi! Receive up to a \$250 Bitcoin bonus when you click and fund a new BlockFi account. Terms apply.</a>
