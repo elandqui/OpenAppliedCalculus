@@ -2,6 +2,54 @@
 \label{sec:linapprox}
 
 \subsection{Tangent Line Approximation}
+
+If we zoom in on a typical function far enough, it will look like a line, so we can use a tangent line of a function to approximate values of functions. This is one way to extrapolate\index{Extrapolation} values in a data set.
+
+Figure \ref{fig:3-1-linApprox} shows that the tangent line $y=L(x)$ of $y=f(x)$ is a good approximation near $x=a$: $f(a+h) \approx L(a+h)$. The approximation generally gets worse as $|h|$ increases.
+
+\begin{figure}[ht!]
+\centering
+\begin{tikzpicture}[scale=1.75,cap=round]
+\tikzset{axes/.style={}}
+%\draw[style=help lines,step=1cm, dotted] (-5.25,-5.25) grid (5.25,5.25);
+% The graphic
+\begin{scope}[style=axes]
+\draw[->] (-.5,0) -- (4.5,0) node[below] {$x$};
+\draw[->] (0,-.5)-- (0,2.5) node[left] {$y$};
+\foreach \x/\xtext in {1.5/a, 3/a+h}
+ \draw[xshift=\x cm] (0pt,2pt) -- (0pt,-2pt) 
+node[below,fill=white,font=\normalsize]
+  {$\xtext$};    
+\foreach \y/\ytext in {0.78125/f(a), 1.34375/L(a+h), 1.625/f(a+h)}
+  \draw[yshift=\y cm] (2pt,0pt) -- (-2pt,0pt) 
+  node[left,font=\normalsize]
+  {$\ytext$};
+  %%%
+ \draw[domain=.5:3.75,smooth,variable=\x,aldBlue,<->,very thick] plot ({\x},{.125*(\x)*(\x)+0.5});
+\draw[domain=.5:3.75,smooth,variable=\x,aldRed,<->,very thick] plot ({\x},{.375*(\x)+0.21875});
+  %%%
+\filldraw[black] (1.5,0.78125) circle (1pt) node[above] {$P$};
+\filldraw[black] (3,1.625) circle (1pt) node[above left] { $Q$};
+\filldraw[black] (3,1.34375) circle (1pt) node[below right] {$R$};
+%\draw[very thick,aldRed,shorten >=-.5cm,shorten <=-.5cm] (1.5,1)--(3,2.125);
+ %%%
+ %\draw[aldRed,very thick,dashed] (1.5,1)--(3,1)--(3,2.125);
+ %\draw[aldRed] (3,1.1)--(2.9,1.1)--(2.9,1);
+ %\draw[decoration={brace,mirror,raise=5pt},decorate,aldRed]
+  %  (1.5,.9850) -- node[below=6pt] {$x_{2}-x_{1}$} (3,0.985);%-.250);
+ %\draw[decoration={brace,mirror, raise=5pt},decorate,aldRed]
+ %   (3,1) -- node[right=6pt] {$f(x_{2})-f(x_{1})$} (3,2.215);
+ %%%
+\filldraw[black] (1.5,0.78125) circle (1pt) node[above] {$P$};
+\filldraw[black] (3,1.625) circle (1pt) node[above left] {$Q$};
+\node[aldBlue] (f) at (3.8, 2.5) {$y=f(x)$};
+\node[aldRed] (l) at (3.8, 1.75) {$y=L(x)$};
+\end{scope}
+\end{tikzpicture}
+\caption{Approximating $f(x)$ with $L(x)$ near $x=a$}
+\label{fig:3-1-linApprox}
+\end{figure}
+
 Back when we first thought about the derivative, we used the slope of secant lines\index{Line!secant}\index{Secant line} over tiny intervals to approximate the derivative:
 $$f'(a)\approx  \dfrac{\Delta y}{\Delta x} = \dfrac{f(x)-f(a)}{x-a} \enspace .$$
 Now that we have other ways to find derivatives, we can exploit this approximation to go the other way. Solve the expression above for $f(x)$, and you'll get the tangent line approximation.
@@ -11,6 +59,10 @@ To approximate the value of $f(x)$ using TLA, find some $a$ where $a$ and $x$ ar
 $$f(x)\approx   f(a)+f'(a)(x-a) \enspace .$$
 Another way to look at the same formula:
 $$\Delta y\approx   f'(a)\Delta x \enspace .$$
+The {\bf linearization} of $f(x)$ at $x=a$ is 
+$$L(x) = f(a) + f'(a)(x-a) \enspace .$$
+For values of $h$ near 0, $f(a+h) \approx L(a+h)$.
+
 \end{definition}
 
 How close is close? It depends on the shape of the graph of $f(x)$. In general, the closer the better.
@@ -25,3 +77,12 @@ $$g(18)\approx 5+(1.4)(18-20)=2.2 \enspace .$$
 \end{solution}\end{example}
 Note that we don't know if these approximations are close – but they're the best we can do with the limited information we have to start with. Note also that 18 and 23 are sort of close to 20, so we can hope these approximations are pretty good. We would feel more confident using this information to approximate $g(20.003)$. We would feel very unsure using this information to approximate $g(55)$.
 
+\begin{example} Approximate $e^{0.001}$ using the tangent line approximation of $y=e^x$ at $x=0$.
+\begin{solution}  Let $f(x) = e^x$. $f'(x) = e^x$, so $f(0) = f'(0) = 1$, so $L(x) = 1 + 1(x-0) = 1+x$, so $e^{0.001} \approx L(0.001) = 1.001$.
+\end{solution}
+\end{example}
+
+\begin{example} You put 0.05 bitcoin into a BlockFi bitcoin savings account, with an APR of 4.5\%, compounded monthly. Use a linear approximation to approximate the total amount of bitcoin you will have in your account in six months. (You can represent your answer in terms of {\em satoshis}; 1 bitcoin is 100{,}000{,}000 satoshis.)
+\begin{solution} $A(m) = 0.05\left(1+\frac{0.045}{12}\right)^m = 0.05\cdot 1.00375^m$ bitcoin will be in your account after $m$ months and $A(0) = 0.05$. $A'(m) = 0.05\ln(1.00375)\cdot 1.00375^m$. $A'(0) = 0.00018715$. So $A(m) \approx L(m) = 0.05 + 0.00018715m$, so $A(6) \approx L(6) = 0.0511229$ bitcoin, or 5{,}112{,}290 satoshis.
+\end{solution}
+\end{example}
