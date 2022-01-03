@@ -1,11 +1,125 @@
 \section{Exponential and Logarithmic Functions}
 \label{sec:explogderiv}
 
-\begin{theorem}
-{\bf Exponential Functions}
-$$\dfrac{d}{dx}e^x=e^x$$
-$$\dfrac{d}{dx}a^x=\ln(a)a^x$$
-{\bf Logarithmic Functions}
-$$\dfrac{d}{dx}\ln(x)=\dfrac{1}{x}$$
-$$\dfrac{d}{dx}\log_b(x)=\dfrac{1}{x\ln(b)}\enspace , b>0, b\neq 1 $$
+\subsection{Derivatives of Exponential Functions}
+Note the difference between power functions and exponential functions.
+\begin{itemize}
+    \item Power function: $f(x) = x^4$. $f'(x) = 4x^3$.
+    \item Exponential function: $f(x) = 4^x$.
+    \end{itemize}
+
+To get an intuitive idea of the derivative of an exponential function, consider this graph of $y=e^x$. What can we say about the derivative of $e^x$? When $x$ is close to 0, the derivative is small. As $x$ increases, the derivative gets rapidly bigger. If we were to sketch $y=\frac{d}{dx}e^x$ on top of the graph of $y=e^x$, they would be very similar. In fact, they are the same!
+
+\begin{figure}[ht!]
+\centering
+\begin{tikzpicture}[scale=1]
+    % grid
+    \draw[step=1, very thin, gray] (0, 0) grid (8, 6);
+
+    % axes
+    \draw[->] (-0.2,0) -- coordinate (x axis mid) (8.5,0) node[right] {$x$};
+    \draw[->] (0,-0.2) -- coordinate (y axis mid) (0, 6.5) node[above] {$y$};
+
+    % ticks
+    \foreach \x in {1, 2, ..., 4}
+     		\draw (2*\x,1pt) -- (2*\x,-3pt)
+			node[anchor=north] {\x};
+    	\foreach \y in {10, 20, ..., 60}
+     		\draw (1pt,\y/10) -- (-3pt,\y/10) 
+     			node[anchor=east] {\y}; 
+
+    % labels
+    %\node[below = 15] at (x axis mid) {Time (hours)};
+	%\node[rotate=90, above = 25] at (y axis mid) {Bacteria population (millions)};
+
+    % plot 
+    \draw[smooth, samples=1000, domain=0:8, very thick, color=aldRed] plot(\x, {exp(\x/2)/10});    
+    %\draw[samples=2, domain=0:10.2, very thick, color=aldBlue] plot(\x, {50*exp(-4) - 19*exp(-4)*(\x-8)});
+    % dy/dx = 6e^(-x/2) - (3x+1)e^(-x/2) = (-3x+5)e^(-x/2)
+
+    % points
+    %\filldraw (0, 3.7) circle [radius=3pt]; 
+    %\filldraw (8, 0.916) circle [radius=3pt]; 
+    % legend
+
+\end{tikzpicture}
+\caption{$y=e^x$}
+\label{fig:2-8-exp}
+\end{figure} 
+
+\begin{theorem}[Derivatives of Exponential Functions]
+Let $a>0$ and let $k\in\R$.
+\begin{itemize}
+    \item $\displaystyle\dfrac{d}{dx}e^x=e^x$
+    \item $\displaystyle\dfrac{d}{dx}a^x=\ln(a)a^x$
+    \item $\displaystyle\dfrac{d}{dx}e^{kx} = ke^{kx}$
+ \end{itemize}
 \end{theorem}
+
+{\bf Example: } What is the percentage rate of change of $f(x) = e^{kx}$?
+
+{\bf Solution: } Percentage rate of change is 
+$$\frac{f'(x)}{f(x)}\cdot 100\% = \frac{ke^{kx}}{e^{kx}}\cdot 100\% = k\cdot 100\% \enspace .$$
+So $k$, as a percentage is the constant percentage rate of change of $f(x) = e^{kx}$. 
+
+{\bf Example: } Suppose you invest \$1000 in a stock that grows at a constant rate of 15\% per year. At what rate is the value of your investment growing after 10 years?
+
+{\bf Solution: } Let $A(t)$ be the value of the investment after $t$ years. Then $A(t) = Pe^{rt} = 1000e^{0.15t}$. $A'(t) = 1000\cdot 0.15e^{0.15t} = 150e^{0.15t}$ dollars per year. So $A'(10) = 150e^{0.15\cdot 10} = 150e^{1.5} = \$672.25$ per year.
+
+
+
+\subsection{Derivatives of Logarithmic Functions}
+
+
+To get an intuitive idea of the derivative of a logarithmic function, consider the graph of $y=\ln(x)$ in Figure \ref{fig:2-8-log}. What can we say about the derivative of $\ln(x)$? When $x$ is close to 0, the derivative is very large. As $x$ increases, $\ln(x)$ levels off, so the derivative goes to $0$. This is like the graph of $y=\frac{1}{x}$, which is in fact, the derivative of $\ln(x)$.
+
+\begin{figure}[ht!]
+\centering
+\begin{tikzpicture}[scale=1]
+    % grid
+    \draw[step=1, very thin, gray] (0, -3) grid (15, 3);
+
+    % axes
+    \draw[->] (-0.2,0) -- coordinate (x axis mid) (15.5,0) node[right] {$x$};
+    \draw[->] (0,-3.2) -- coordinate (y axis mid) (0, 3.5) node[above] {$y$};
+
+    % ticks
+    \foreach \x in {1, 2, ..., 15}
+     		\draw (\x,1pt) -- (\x,-3pt)
+			node[anchor=north] {\x};
+    	\foreach \y in {-3, -2, ..., 3}
+     		\draw (1pt,\y) -- (-3pt,\y) 
+     			node[anchor=east] {\y}; 
+
+    % labels
+    %\node[below = 15] at (x axis mid) {Time (hours)};
+	%\node[rotate=90, above = 25] at (y axis mid) {Bacteria population (millions)};
+
+    % plot 
+    \draw[smooth, samples=1000, domain=0.05:15, very thick, color=aldRed] plot(\x, {ln(\x)});  
+    \draw[smooth, samples=1000, domain=0.32:15, very thick, color=aldBlue] plot(\x, {1/\x});  
+    %\draw[samples=2, domain=0:10.2, very thick, color=aldBlue] plot(\x, {50*exp(-4) - 19*exp(-4)*(\x-8)});
+    % dy/dx = 6e^(-x/2) - (3x+1)e^(-x/2) = (-3x+5)e^(-x/2)
+
+    % points
+    %\filldraw (0, 3.7) circle [radius=3pt]; 
+    %\filldraw (8, 0.916) circle [radius=3pt]; 
+    % legend
+
+\end{tikzpicture}
+\caption{$y=\ln(x)$ (Red) and $y=\frac{1}{x}$ (Blue)}
+\label{fig:2-8-log}
+\end{figure} 
+
+\begin{theorem}[Derivatives of Logarithmic Functions]
+    Let $b>0$, $b\neq 1$.
+\begin{itemize}
+    \item $\dfrac{d}{dx}\ln(x)=\dfrac{1}{x}$
+    \item $\dfrac{d}{dx}\log_b(x)=\dfrac{1}{x\ln(b)}$
+    \end{itemize}
+\end{theorem}
+
+\begin{example} Suppose the population of Napierville is $p(t) = 40.1 + 2.3\log(t)$ thousand people, $t$ years after 2000. Find and interpret $p'(30)$.
+
+\begin{solution} $p'(t) = 0 + 2.3\dfrac{1}{t\ln(10)} \approx 0.9989\cdot \dfrac{1}{t}$ thousand people per year, so $p'(30) = 0.9989\cdot \dfrac{1}{30} = 0.333$ thousand people per year. This means that we would expect the population of Napierville to grow at a rate of 333 people per year in the year 2030.
+\end{solution}\end{example}

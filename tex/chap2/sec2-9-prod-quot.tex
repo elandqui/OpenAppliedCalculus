@@ -1,35 +1,44 @@
 \section{The Product and Quotient Rules}
 \label{sec:prod-quot}
 
-% Dollar-cost averaging example. Invest $100 per month and price of asset goes up \$10 per month. How fast does the investment grow?
 
-The basic rules will let us tackle simple functions. But what happens if we need the derivative of a combination of these functions?
+The derivative of a sum is the sum of the derivatives, but can we say the same about the derivative of a product or the derivative of a quotient?
+
+\begin{example} Consider $f(x) = x\cdot x$. We know that $f'(x) = 2x$ and $\frac{d}{dx}x = 1$, so clearly, the derivative of a product is not the product of the derivatives. $2x \ne 1\cdot 1$.
+\end{example}
 
 \begin{example}
   \label{ex:2-8-1}
 Find the derivative of $h(x)=(4x^3-11)(x+3)$.
 
-\begin{solution} This function is not a simple sum or difference of polynomials. It's a product of polynomials. We can simply multiply it out to find its derivative:
+\begin{solution} We could simply multiply it out to find its derivative.
 \begin{align*}
 		h(x) &= \left(4x^3-11\right)(x+3)\\
 		 &= 4x^4-11x+12x^3-33\\
 		h'(x) &= 16x^3-11+36x^2
 	\end{align*}
 \end{solution}\end{example}
+For more complicated examples, this would be unwieldy.
 
-Now suppose we wanted to find the derivative of
-$$f(x)=\left(4x^5+x^3-1.5x^2-11\right)\left(x^7-7.25x^5+120x+3\right)$$)
-This function is not a simple sum or difference of polynomials. It's a product of polynomials. We could 'simply' multiply it out to find its derivative as before -- who wants to volunteer? Nobody?
+\subsection{The Product Rule}
 
-We'll need a rule for finding the derivative of a product so we don't have to multiply everything out.
+To motivate the {\bf Product Rule} for derivatives, consider an example of {\bf dollar cost averaging}. Consider units carefully, since that will help us understand the Product Rule.
 
-It would be great if we can just take the derivatives of the factors and multiply them, but unfortunately that won't give the right answer. To see that, consider finding derivative of $h(x)=(4x^3-11)(x+3)$. We already worked out the derivative, it is $h'(x)=16x^3-11+36x^2$. What if we try differentiating the factors and multiplying them? We'd get $h'(x)=(12x^2)(1)=12x^2$, which is radically different from the correct answer.
+\begin{example} Suppose you buy a share of a stock each month. When you started investing, at month 0, it was \$100 per share and the price went up at a constant rate of \$1 per month. After one year, at what rate was the value of your investment increasing?
 
-In other words, the derivative of a product is not the product of the derivatives.
+\begin{solution} Let $n(m)$ be the number of shares of stock you own after $m$ months and let $s(m)$ be the value of a share of stock after $m$ months. The total value of your investment after $m$ months is $v(m) = n(m)\cdot s(m)$. We want to know $v'(m)$ and $v'(12)$. After 12 months, $n(12) = 12$ shares and $n'(12) = 1$ share per month. $v(12) = \$120$ per share and $v'(12) = \$1$ per share per month. The units on $v'(m)$ is dollars per month. The increase in the value of your investment comes from the increase in the price of each share that you currently have plus the monthly investment of one share. This is a sum of two components.
+\begin{align*}
+v'(12) \,\frac{\text{dollars}}{\text{month}} &=  \text{ increase from share value } + \text{ increase from monthly investment } \\
+    &= \left( n'(12) \,\frac{\text{shares}}{\text{month}} \right) \left( v(12)\,\frac{\text{dollars}}{\text{share}} \right) + \left(  n(12)\, \text{ shares }\right)\left( v'(12)\, \frac{\text{dollars}}{\text{share}\cdot \text{month}} \right) \\
+&= \left( 1 \,\frac{\text{share}}{\text{month}} \right) \left( 120 \,\frac{\text{dollars}}{\text{share}} \right) + \left(  12 \,\text{ shares }\right)\left( 1\, \frac{\text{dollar}}{\text{share}\cdot \text{month}} \right) \\
+&= 120 \,\frac{\text{dollars}}{\text{month}}+ 12 \,\frac{\text{dollars}}{\text{month}}\\
+&= 132 \,\frac{\text{dollars}}{\text{month}}
+\end{align*}
+After 1 year, the value of the investment is growing at a rate of \$132 per month. 
+\end{solution}\end{example}
 
-The rules for finding derivatives of products and quotients are a little complicated, but they save us the much more complicated algebra we might face if we were to try to multiply things out. They also let us deal with products where the factors are not polynomials. We can use these rules, together with the basic rules, to find derivatives of many complicated looking functions.
+In general, we see that $v'(m) = n'(m)v(m) + n(m)v'(m)$; the units in both terms on the right are ``dollars per month'' after we cancel the unit ``shares." Without writing out a formal proof, the intuition from this example leads us to generalize this example. 
 
-\subsection{Derivative Rules: Product and Quotient Rules}
 \begin{theorem}[Product Rule\index{Product Rule}]
 If $f(x)$ and $g(x)$ are differentiable, then
 $\dfrac{d}{dx}\left( f(x)\cdot g(x) \right)=f'(x)\cdot g(x)+f(x)\cdot g'(x) \enspace .$
@@ -38,26 +47,11 @@ $\dfrac{d}{dx}\left( f(x)\cdot g(x) \right)=f'(x)\cdot g(x)+f(x)\cdot g'(x) \ens
 The derivative of the first factor times the second left alone, plus the first left alone times the derivative of the second.
 
 The Product Rule can extend to a product of several functions; the pattern continues -- take the derivative of each factor in turn, multiplied by all the other factors left alone, and add them up:
-$$\dfrac{d}{dx} f(x)\cdot g(x)\cdot h(x) = f'(x)\cdot g(x)\cdot h(x)+f(x)\cdot g'(x)\cdot h(x)+f(x)\cdot g(x)\cdot h'(x)$$
+$$\dfrac{d}{dx} f(x)\cdot g(x)\cdot h(x) = f'(x)\cdot g(x)\cdot h(x)+f(x)\cdot g'(x)\cdot h(x)+f(x)\cdot g(x)\cdot h'(x) \enspace .$$
 
-
-\begin{theorem}[Quotient Rule\index{Quotient Rule}]
-$$\dfrac{d}{dx}\dfrac{f(x)}{g(x)} = \dfrac{f'(x)\cdot g(x)-f(x)\cdot g'(x)}{g^2(x)}$$
-\end{theorem}
-An easy way to remember this is with a chant.\\
-
-``Low dee high
-
-minus high dee low
-
-over low squared
-
-it's the way to go.''
-
-The numerator of the result resembles the Product Rule, but there is a minus instead of a plus; the minus sign goes with the $g'(x)$. The denominator is simply the square of the original denominator -- no derivatives there.
 
 \begin{example}
-Find the derivative of $h(x)=(4x^3-11)(x+3)$
+Use the Product Rule to find the derivative of $h(x)=(4x^3-11)(x+3)$.
 
 \begin{solution} This is the same function we found the derivative of in Example \ref{ex:2-8-1} , but let's use the Product Rule and check to see if we get the same answer. For this first example, we will provide a lot more detail and steps than one usually actually shows when working a problem like this.
 
@@ -77,6 +71,8 @@ To check if this is equivalent to the answer we found in Example \ref{ex:2-8-1} 
 From this, we can see the answers are equivalent.
 \end{solution}\end{example}
 
+
+
 \begin{example}
 Find the derivative of $ F(t)=e^t\ln(t) $.
 
@@ -85,6 +81,23 @@ $$F'(t)=\left(e^t\right)\left(\ln(t)\right)+\left(e^t\right)\left(\dfrac{1}{t}\r
 \end{solution}\end{example}
 
 Notice that this was one we could not have done by multiplying out.
+
+
+\subsection{The Quotient Rule}
+\begin{theorem}[Quotient Rule\index{Quotient Rule}]
+$$\dfrac{d}{dx}\dfrac{f(x)}{g(x)} = \dfrac{f'(x)\cdot g(x)-f(x)\cdot g'(x)}{g^2(x)}$$
+\end{theorem}
+An easy way to remember this is with a chant.\\
+
+``Low dee high
+
+minus high dee low
+
+over low squared
+
+it's the way to go.''
+
+The numerator of the result resembles the Product Rule, but there is a minus instead of a plus; the minus sign goes with the $g'(x)$. The denominator is simply the square of the original denominator -- no derivatives there.
 
 \begin{example}
 Find the derivative of $ y=\dfrac{x^4+4^x}{3+16x^3} $.
@@ -134,13 +147,15 @@ $AR(q)$ is the slope of the line from $(0, 0)$ to $(q,R(q))$, which is the also 
 And just as we found marginal Total Cost, we can also find marginal Average Cost.
 
 \begin{example}
-The cost, in thousands of dollars, for producing $x$ thousand cellphone cases is given by $C(x)=22+x-0.004x^2$. Find
+The cost, in thousands of dollars, for producing $x$ thousand cell phone cases is given by $C(x)=22+x-0.004x^2$. Find
     \begin{enumerate}[label=(\alph*)]
     \item the Fixed Costs,
+
     \begin{solution}
     The fixed costs are the costs when no items are produced: $C(0)=22$ thousand dollars.
     \end{solution}
     \item the Average Cost when 5 thousand, 10 thousand, or 20 thousand cases are produced,
+
     \begin{solution}
     The average cost function is total cost divided by number of items, so
 $$AC(x)=\dfrac{C(x)}{x}=\dfrac{22+x-0.004x^2}{x}. $$
@@ -162,9 +177,9 @@ Notice that while the total cost increases with production, the average cost per
 					AC(x) &= \dfrac{22+x-0.004x^2}{x} \\
 					 &= \dfrac{22}{x}+\dfrac{x}{x}-\dfrac{0.004x^2}{x} \\
 					 &= \dfrac{22}{x}+1-0.004x \\
-					 &= 22
+					 &= 22x^{-1}+1-0.004x
 \end{align*}
-(Note: we haven't differentiated yet, only simplified.)
+(Note: We haven't differentiated yet, only simplified.)
 
 Taking the derivative,
 $$ AC'(x)=-22x^{-2}-0.004=-\dfrac{22}{x^2}-0.004 \enspace .$$

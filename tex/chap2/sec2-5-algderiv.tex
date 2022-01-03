@@ -3,9 +3,19 @@
 
 \subsection{Formal Limit Definition of the Derivative}
 
+Since a derivative is the slope of a tangent line and a tangent line is the limit of secant lines, we use limits and the formula for the slope of a secant line to find a formula to compute the slope of a tangent line at a point.
+
+The slope of the secant line of $f(x)$ from $x=a$ to $x=b=a+h$ is:
+$$\frac{f(b)-f(a)}{b-a}  = \frac{f(a+h)-f(a)}{a+h-a} = \frac{f(a+h)-f(a)}{h}\enspace .$$
+As we take $h$ to $0$, we get the slope of the tangent line of $y=f(x)$ at the point $(a, f(a))$.
+
 \begin{definition}[Limit Definition of the Derivative]
 \label{def:deriv}
-The {\bf derivative}\index{Derivative}\index{Derivative!limit definition} of a function $f(x)$, at any point $(x, f(x))$ where $f(x)$ is differentiable is:
+The {\bf derivative}\index{Derivative}\index{Derivative!limit definition} of a function $f(x)$, at the point $(a, f(a))$is:
+$$f'(a)=\lim_{h\to 0}\frac{f(a+h)-f(a)}{h} \enspace ,$$
+if the limit exists.
+
+The {\bf derivative} of a function $f(x)$, at any point $(x, f(x))$ where $f(x)$ is differentiable is:
 $$f'(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h} \enspace .$$
 \end{definition}
 
@@ -40,7 +50,7 @@ We will start by simplifying $f(x+h)$ by expanding:
 		&= 2(x^2+2xh+h^2)-4(x+h)-1 \\
 		&= 2x^2+4xh+2h^2-4x-4h-1
 	\end{align*}
-Now finding the limit:
+Now we find the limit as $h$ goes to 0.
 \begin{align*}
 		f'(x) &= \lim_{h\to 0}\frac{f(x+h)-f(x)}{h} \\
 		&= \lim_{h\to 0} \frac{(2x^2+4xh+2h^2-4x-4h-1)-(2x^2-4x-1)}{h} \\
