@@ -1,6 +1,36 @@
 \section{Polynomial Functions}
 \label{sec:polynomial}
 
+\begin{example} 
+Suppose you ran a pizza shop. You make pizzas in sizes small (10 inches in diameter), medium (12"), large (14"), and extra large (16"). The prices for a cheese pizza are in the table below:
+
+\begin{table}[!ht]
+	\centering
+  \begin{tabular}{lrrrr}
+    \toprule
+    {\bf Size}     & S (10") & M (12") & L (14") & XL (16")\\
+    \midrule
+    {\bf Price}    & \$7     & \$9    & \$12    & \$16    \\
+    \bottomrule
+\end{tabular}
+\end{table}
+There is demand for a ``personal size" (extra small, XS) pizza with diameter 8" and a jumbo size (J) with diameter 18". Based on the prices above, what should you price these pizzas?
+\begin{solution}
+Figure \ref{fig:1-5-pizza} plots the price data for the pizza.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.4\textwidth]{img/chap1/sec1-5/1-5-pizza.png}
+	\caption{The price of a pizza with diameter $d$.}
+    \label{fig:1-5-pizza}
+	\end{figure}
+A quick look at the data might make you think that this is linear. However, the formula for the area of a circle (the shape of a pizza) is $A = \pi r^2$, so the area of a pizza does not increase linearly. It makes the most sense to use a {\bf quadratic} model to price the pizza in order to have a relatively constant price per square inch.
+
+A {\bf best fit curve} can be used to find the best quadratic function for this data. If $d$ is the diameter of a pizza, then the price, $p(d)$ is 
+$$p(d) = 0.125 d^2 -1.75 d + 12 \text{ dollars}$$
+and fits the data perfectly. With this model, we have $p(8) = \$6$ and $p(18) = \$21$.
+\end{solution}
+\end{example}
+
 \subsection{Quadratic Functions}
 \label{ssec:quadratic}
 % From Section 1.5.
@@ -38,19 +68,28 @@ Write an equation for the quadratic graphed below as a transformation of $f(x)=x
 \includegraphics[width=0.4\textwidth]{img/chap1/sec1-5/image057.png}
 \caption{}
 \end{figure}
-\begin{solution} We can see the graph is the basic quadratic shifted to the left 2 and down 3, putting the vertex at the point $(-2,-3)$, giving a formula in the form $g(x)=a(x+2)^2-3$. By plugging in a point that falls on the grid, such as $(0,-1)$, we can solve for the stretch factor:
+\begin{solution} We can see the graph is the basic quadratic shifted to the left 2 and down 3, putting the vertex at the point $(-2,-3)$, giving an equation of the form $y=a(x+2)^2-3$. By plugging in a point that falls on the grid, such as $(0,-1)$, we can solve for the stretch factor:
 \begin{align*}
 		-1 &= a(0+2)^2-3 \\
 		2  &= 4a \\
-		a  &= \dfrac{1}{2}
+		a  &= \dfrac{1}{2} \enspace .
 	\end{align*}
 
-The equation for this formula is
-\[ g(x)=\dfrac{1}{2}(x+2)^2-3 \enspace .\]
+Therefore, the equation that describes the graph is
+\[ y = \dfrac{1}{2}(x+2)^2-3 \enspace .\]
 \end{solution}\end{example}
 
-Short run Behavior: Intercepts
-As with any function, we can find the {\bf vertical intercepts}\index{Intercept!vertical} of a quadratic by evaluating the function at an input of 0, and we can find the {\bf horizontal intercepts}\index{Intercept!horizontal} by solving for when the output will be 0. Notice that depending upon the location of the graph, we might have 0, one, or two horizontal intercepts.
+\paragraph*{Short Run Behavior: Intercepts.}
+As with any function, we can find the {\bf vertical intercepts}\index{Intercept!vertical} of a quadratic function by evaluating the function at an input of 0, and we can find the {\bf horizontal intercepts}\index{Intercept!horizontal} by determining where the output is 0.
+\begin{definition}
+	Let $f(x)$ be a function.
+	\begin{itemize}
+		\item The {\bf vertical intercept} of the graph of $f(x)$ is the point $(0, f(0))$.
+		\item A {\bf horizontal intercept} of the graph of $f(x)$ is a point $(a, 0)$ such that $f(a)=0$.
+		\item A number $a$ such that $f(a) = 0$ is called a {\bf zero}\index{Zero} or a {\bf root}\index{Root} of $f(x)$.
+	\end{itemize}
+\end{definition}
+\noindent Notice that a quadratic function can have zero, one, or two horizontal intercepts (or roots).
 \begin{figure}[!ht]
     \centering
     \begin{subfigure}[b]{0.3\textwidth}
@@ -69,49 +108,44 @@ As with any function, we can find the {\bf vertical intercepts}\index{Intercept!
     \end{subfigure}
 \end{figure}
 
-Notice that in the standard form of a quadratic, the constant term $c$ reveals the vertical intercept of the graph, since $f(0)=a(0)2+b(0)+c=c$.
+Notice that in the standard form of a quadratic, the constant term $c$ reveals the vertical intercept of the graph, since $f(0)=a(0)^2+b(0)+c=c$.
 
 \begin{example}
 Find the vertical and horizontal intercepts of the quadratic $f(x)=3x^2+5x-2$.
 
 \begin{solution} We can find the vertical intercept by evaluating the function at an input of $0$:
 $$f(0)=3(0)^2+5(0)-2=-2 \enspace .$$
-So the vertical intercept is at the point $(0,-2)$.
+So the vertical intercept is the point $(0,-2)$.
 
-For the horizontal intercepts, we find the 0es (or roots) of $f(x)$, solving $f(x) = 0$ for $x$:
+To find the horizontal intercepts of $y=f(x)$, we solve $f(x) = 0$ for $x$:
 $$0=3x^2+5x-2 \enspace .$$
 In this case, the quadratic can be factored easily, providing the simplest method for solution:
 $$0=(3x-1)(x+2) \enspace ,$$
 so either
 \begin{align*}
-		0 &= 3x-1\\
-		x &= \dfrac{1}{3}
+		0 &= 3x-1&         \mbox{or}& &0 &= x+2\\
+		x &= \dfrac{1}{3}& \mbox{or}& &x &= -2
 	\end{align*}
-or
-\begin{align*}
-		0 &= x+2\\
-		x &= -2
-\end{align*}
-So the Horizontal intercepts are at the points $\left(\dfrac{1}{3},0\right)$ and $(-2,0)$.
+So the horizontal intercepts are the points $\left(\dfrac{1}{3},0\right)$ and $(-2,0)$.
 \end{solution}\end{example}
 
 When a quadratic is not factorable or is hard to factor, we can turn to the quadratic formula.
 
 \begin{theorem}[Quadratic Formula]
-For a quadratic function given in standard form $f(x)=ax^2+bx+c$, the {\bf quadratic formula}\index{Quadratic formula} gives the horizontal intercepts of the graph of this function:
-\[ x=\dfrac{-b\pm \sqrt{b^2-4ac}}{2a} \]
+If $f(x)=ax^2+bx+c$, then the {\bf quadratic formula}\index{Quadratic formula} gives the roots of $f(x)$:
+\[ x=\dfrac{-b\pm \sqrt{b^2-4ac}}{2a} \enspace .\]
 \end{theorem}
 
 \begin{example}
-A ball is thrown upwards from the top of a 40 foot high building at a speed of 80 feet per second. The ball's height above ground can be modeled by the equation
-$$H(t)=-16t^2+80t+40 \enspace .$$
+If a ball is thrown upwards from the top of a 40 foot high building at a speed of 80 feet per second, then the ball's height above ground after $t$ seconds can be modeled by:
+$$H(t)=-16t^2+80t+40 \mbox{ feet.}$$
 When does the ball hit the ground?
 
-\begin{solution} To find when the ball hits the ground, we need to determine when the height is 0, i.e., when $H(t)=0$. While we could do this using the transformation form of the quadratic, we can also use the quadratic formula:
-\[ t=\dfrac{-80\pm \sqrt{80^2-4(-16)(40)}}{2(-16)}=\dfrac{-80\pm\sqrt{8960}}{-32} \]
-Since the square root does not simplify nicely, we can use a calculator to approximate the values of the solutions:
+\begin{solution} To find when the ball hits the ground, we need to determine when the height is 0, i.e., when $H(t)=0$. Since $H(t)$ is in standard form, with $a=-16$, $b=80$, and $c=40$, we use the quadratic formula:
+\[ t=\dfrac{-80\pm \sqrt{80^2-4(-16)(40)}}{2(-16)}=\dfrac{-80\pm\sqrt{8960}}{-32} \enspace .\]
+Since $\sqrt{8960}$ does not simplify nicely, we can use a calculator to approximate these roots.
 \[ t=\dfrac{-80-\sqrt{8960}}{-32}\approx 5.458 \quad\text{or}\quad t=\dfrac{-80+\sqrt{8960}}{-32}\approx -0.458 \]
-The second answer is outside the reasonable domain of our model, so we conclude the ball will hit the ground after about 5.458 seconds.
+The second root is outside the reasonable domain of our model, so the ball will hit the ground after about 5.458 seconds.
 \end{solution}\end{example}
 
 \subsection{Polynomial Functions}
@@ -120,19 +154,19 @@ The second answer is outside the reasonable domain of our model, so we conclude 
 
 \begin{definition}[Terminology of Polynomial Functions]
 A {\bf polynomial}\index{Function!polynomial} is a function that can be written as
-\[ f(x)=a_0+a_1 x+a_2 x^2+\ldots +a_n x^n \]
-Each of the $a_i$ constants are called {\bf coefficients}\index{Coefficient} and can be positive, negative, or 0, and be whole numbers, decimals, or fractions.
+\[ f(x)=a_0+a_1 x+a_2 x^2+\ldots +a_n x^n \enspace . \]
+Each of the $a_i$ are called {\bf coefficients}\index{Coefficient} and can be any real number.
 
-A {\bf term}\index{Term} of the polynomial is any one piece of the sum, that is any $a_ix_i$. Each individual term is a transformed power function.
+A {\bf term}\index{Term} of the polynomial is any one piece of the sum, that is any $a_ix_i$.
 
-The {\bf degree}\index{Degree} of the polynomial is the highest power of the variable that occurs in the polynomial.
+The {\bf degree}\index{Degree} of the polynomial is the highest power of the variable that occurs in the polynomial. We often write $\deg(f(x)) = n$.
 
-The {\bf leading term}\index{Term!leading} is the term containing the highest power of the variable: the term with the highest degree.
+The {\bf leading term}\index{Term!leading} is the term of highest degree: $a_n x^n$.
 
-The {\bf leading coefficient}\index{Coefficient!leading} is the coefficient of the leading term.
+The {\bf leading coefficient}\index{Coefficient!leading} is $a_n$, the coefficient of the leading term.
 
 Because of the definition of the ``leading" term we often rearrange polynomials so that the powers are descending:
-\[ f(x)=a_n x^n+a_{n-1}x^{n-1}\dots a_2 x^2+a_1 x+a_0 \]
+\[ f(x)=a_n x^n+a_{n-1}x^{n-1}\dots a_2 x^2+a_1 x+a_0 \enspace .\]
 \end{definition}
 \begin{example}
 Identify the degree, leading term, and leading coefficient of the polynomial $f(x)=3+2x^2-4x^3$.
@@ -141,17 +175,17 @@ Identify the degree, leading term, and leading coefficient of the polynomial $f(
 \end{solution}\end{example}
 
 \paragraph*{Short Run Behavior: Intercepts}
-As with any function, the {\bf vertical intercept}\index{Intercept!vertical} can be found by evaluating the function at an input of 0. Since this is evaluation, it is relatively easy to do it for a polynomial of any degree. To find {\bf horizontal intercepts}\index{Intercept!horizontal}, we need to solve for when the output will be 0. For general polynomials, this can be a challenging prospect. Consequently, we will limit ourselves to three cases:
+As with any function, the {\bf vertical intercept}\index{Intercept!vertical} of a polynomial $f(x)$ is the point $(0, f(0))$. Again, to find the {\bf horizontal intercepts}\index{Intercept!horizontal} of $f(x)$, we need to solve $f(x)=0$ for $x$. While there are formulas to find all roots for degree 3 and 4 polynomials, there is no such formula to find all roots of polynomials of degree 5 or higher. Consequently, we will limit ourselves to three cases.
 
 \begin{itemize}
-	\item The polynomial can be factored using known methods: greatest common factor and trinomial factoring.
+	\item The polynomial can be factored using known methods.
 	\item The polynomial is given in factored form.
-	\item Technology is used to determine the intercepts.
+	\item Technology is used to determine the roots.
 \end{itemize}
 \begin{example}
 Find the horizontal intercepts of $f(x)=x^6-3x^4+2x^2$.
 
-\begin{solution} We can attempt to factor this polynomial to find solutions for $f(x)=0$:
+\begin{solution} We will factor this polynomial to solve $f(x)=0$ for $x$.
 \begin{align*}
 	x^6-3x^4+2x^2    &= 0& &\\
   x^2(x^4-3x^2+2)  &= 0& &\mbox{Factor out the greatest common factor.} \\
@@ -165,7 +199,7 @@ Then we break these factors apart to find all the solutions.
 		x   &= 0 & x^2   &= 1     & x^2   &= 2 \\
     x   &= 0 & x     &= \pm 1 & x     &= \pm\sqrt{2}
 \end{align*}
-This gives us five horizontal intercepts: $x=0, \pm 1, \pm \sqrt{2}$.
+This gives us five horizontal intercepts: $(0, 0), (\pm 1, 0), \left(\pm \sqrt{2}, 0\right)$.
 \end{solution}\end{example}
 \begin{example}
 Find the horizontal intercepts of $h(t)=t^3+4t^2+t-6$.
@@ -179,7 +213,7 @@ Graphing this function, it appears there are horizontal intercepts at $t= -3, -2
 \includegraphics[width=0.4\textwidth]{img/chap1/sec1-5/image067.png}
 \caption{}
 \end{figure}
-We could check these are correct by plugging in these values for $t$ and verifying that $h(-3)=h(-2)=h(1)=0$.
+\noindent We verify that these are the roots by plugging in these values for $t$: $h(-3)=h(-2)=h(1)=0$.
 \end{solution}\end{example}
 \paragraph*{Solving Polynomial Inequalities}
 One application of our ability to find intercepts and sketch a graph of polynomials is the ability to solve polynomial inequalities. It is a very common question to ask when a function will be positive and negative, and one we will use later in this course.
@@ -189,7 +223,7 @@ Solve $(x+3)(x+1)^2(x-4)>0$.
 
 \begin{solution} As with all inequalities, we start by solving the equality $(x+3)(x+1)^2(x-4)=0$, which has solutions at $x= -3, -1$, and $4$. We know the function can only change from positive to negative at these values, so these divide the inputs into four intervals.
 
-We could choose a test value in each interval and evaluate the function $f(x)=(x+3)(x+1)^2(x-4)$ at each test value to determine if the function is positive or negative in that interval:
+We then pick a number out of each interval and evaluate the function $f(x)=(x+3)(x+1)^2(x-4)$ at each test value to determine if the function is positive or negative in that interval.
 
 \begin{table}[!ht]
 	\centering
@@ -229,64 +263,72 @@ You plan to drive 100 miles. Find a formula for the time the trip will take as a
 $$t(v)=\dfrac{100}{v}\enspace .$$
 \end{solution}\end{example}
 
-Notice that this is a transformation of the reciprocal toolkit function, $f(x)=\dfrac{1}{x}$. Several natural phenomena, such as gravitational force and volume of sound, behave in a manner inversely proportional to the square of another quantity. For example, the volume, $V$, of a sound heard at a distance $d$ from the source would be related by $V=\dfrac{k}{d^2}$ for some constant value $k$. These functions are transformations of the reciprocal squared toolkit function $f(x)=\dfrac{1}{x^2}$.
+Several natural phenomena, such as gravitational force and volume of sound, behave in a manner inversely proportional to the square of another quantity. For example, the volume, $V$, of a sound heard at a distance $d$ from the source would be related by $V=\dfrac{k}{d^2}$ for some constant value $k$.
 
-We have seen the graphs of the basic reciprocal function and the squared reciprocal function from our review of toolkit functions. These graphs have several important features.
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=0.4\textwidth]{img/chap1/sec1-5/image070.png}
-\caption{$f(x)=\dfrac{1}{x}$}
-\end{figure}
+Here are the graphs of $y=\dfrac{1}{x}$ and $y=\dfrac{1}{x^2}$. These graphs have several important features.
 
 \begin{figure}[!ht]
-\centering
-\includegraphics[width=0.4\textwidth]{img/chap1/sec1-5/image069.png}
-\caption{$f(x)=\dfrac{1}{x^2}$}
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{img/chap1/sec1-5/image070.png}
+			\caption{The graph of $f(x)=\dfrac{1}{x}$.}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{img/chap1/sec1-5/image069.png}
+			\caption{The graph of $f(x)=\dfrac{1}{x^2}$.}
+    \end{subfigure}
+		\caption{}
+		\label{fig:reciprocalgraphs}
 \end{figure}
 
-Let's begin by looking at the reciprocal function, $f(x)=\dfrac{1}{x}$. As you well know, dividing by 0 is not allowed and therefore 0 is not in the domain, and so the function is undefined at an input of 0.
+Let's begin by looking at the reciprocal function, $f(x)=\dfrac{1}{x}$. As you well know, dividing by 0 is not allowed and therefore 0 is not in the domain, so the function is undefined at an input of 0.
 
-\paragraph*{Short Run Behavior.}
-As the input values approach 0 from the left side (taking on very small, negative values), the function values become very large in the negative direction (in other words, they approach negative infinity). We write: $x\to 0^-$, $f(x)\to -\infty$.
+\paragraph*{Short Run Behavior of $\dfrac{1}{x}$.}
+As the input values approach 0 from the left side (taking on very small, negative values), the function values become very large in the negative direction (in other words, they approach negative infinity). We write: as $x\to 0^-$, $f(x)\to -\infty$.
 
 As we approach 0 from the right side (small, positive input values), the function values become very large in the positive direction (approaching infinity). We write: as $x\to 0^+$, $f(x)\to\infty$.
 
-This behavior creates a vertical asymptote. An asymptote is a line that the graph approaches. In this case the graph is approaching the vertical line $x=0$ as the input becomes close to 0.
+This behavior creates a {\bf vertical asymptote}\index{Asymptote!vertical}. An {\bf asymptote}\index{Asymptote} is a line that the graph approaches. Both graphs in Figure \ref{fig:reciprocalgraphs} approach the vertical line $x=0$ as the input becomes close to 0; $x=0$ is the vertical asymptote of $y=\dfrac{1}{x}$.
 
-\paragraph*{Long Run Behavior.}
+\paragraph*{Long Run Behavior of $\dfrac{1}{x}$.}
 As the values of $x$ approach infinity, the function values approach 0. Also, as the values of $x$ approach negative infinity, the function values approach 0. Symbolically: as $x\to\pm\infty$, $f(x)\to 0$.
 
-Based on this long run behavior and the graph we can see that the function approaches 0 but never actually reaches 0, it just ``levels off" as the inputs become large. This behavior creates a horizontal asymptote. In this case the graph is approaching the horizontal line $f(x)=0$ as the input becomes very large in the negative and positive directions.
+Based on this long run behavior and the graph, we can see that the function approaches 0 but never actually reaches 0, it just ``levels off" as the inputs become large. This behavior creates a horizontal asymptote. In this case the graph is approaching the horizontal line $y=0$ as the input becomes very large in the negative and positive directions; $y=0$ is the horizontal asymptote of $y=\dfrac{1}{x}$.
 
 \begin{definition}[Vertical and Horizontal Asymptotes]
-A {\bf vertical asymptote}\index{Asymptote!vertical} of a graph is a vertical line $x=a$ where the graph tends towards positive or negative infinity as the inputs approach $a$. As $x\to a$, $f(x)\to\pm\infty$.
+A {\bf vertical asymptote}\index{Asymptote!vertical} of a graph is a vertical line $x=a$ where the graph tends towards positive or negative infinity as the inputs approach $a$. As $x\to a$, $f(x)\to -\infty$ or $f(x) \to \infty$.
 
-A {\bf horizontal asymptote}\index{Asymptote!horizontal} of a graph is a horizontal line $y=b$ where the graph approaches the line as the inputs get large. As $x\to\pm\infty$, $f(x)\to b$.
+A {\bf horizontal asymptote}\index{Asymptote!horizontal} of a graph is a horizontal line $y=b$ where the graph approaches the line as the inputs get large. As $x\to -\infty$ or $x\to\infty$, $f(x)\to b$.
 \end{definition}
 \begin{example}
 Sketch a graph of the reciprocal function shifted two units to the left and up three units. Identify the horizontal and vertical asymptotes of the graph, if any.
 
 \begin{solution} Transforming the graph left 2 and up 3 would result in the function $f(x)=\dfrac{1}{x+2}+3$, or equivalently, by giving the terms a common denominator,
-$$f(x)=\dfrac{3x+7}{x+2} \enspace.$$
-Shifting the toolkit function would give us this graph. Notice that this equation is undefined at $x=-2$, and the graph also is showing a vertical asymptote at $x=-2$. As $x\to-2^-$, $f(x)\to-\infty$, and as $x\to-2^+$, $f(x)\to\infty$.
+\begin{align*}
+f(x) &= \dfrac{1}{x+2}+3 \\
+	   &= \dfrac{1}{x+2} + \dfrac{3(x+2)}{x+2}\\
+		 &= \dfrac{1}{x+2} + \dfrac{3x+6}{x+2}\\
+	   &= \dfrac{3x+7}{x+2} \enspace.
+	 \end{align*}
+Shifting the graph of $y = \dfrac{1}{x}$ would give us this graph. Notice that $f(x) = \dfrac{3x+7}{x+2}$ is undefined at $x=-2$, and the graph also is showing a vertical asymptote at $x=-2$. As $x\to-2^-$, $f(x)\to-\infty$, and as $x\to-2^+$, $f(x)\to\infty$.
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.4\textwidth]{img/chap1/sec1-5/image071.png}
 \caption{}
 \end{figure}
-As the inputs grow large, the graph appears to be leveling off at output values of 3, indicating a horizontal asymptote at $y=3$. As $x\to\pm\infty$, $f(x)\to 3$
-Notice that horizontal and vertical asymptotes get shifted left 2 and up 3 along with the function.
+As the inputs grow large, the graph appears to be leveling off at output values of 3, indicating a horizontal asymptote at $y=3$. As $x\to\pm\infty$, $f(x)\to 3$. Notice that horizontal and vertical asymptotes get shifted left 2 and up 3 along with the function.
 \end{solution}\end{example}
 
 \begin{example}
+	\label{ex:sugarconcentration}
 A large mixing tank currently contains 100 gallons of water, into which 5 pounds of sugar have been mixed. A tap will open pouring 10 gallons per minute of water into the tank at the same time sugar is poured into the tank at a rate of 1 pound per minute. Find the concentration (pounds per gallon) of sugar in the tank after $t$ minutes.
 
 \begin{solution} Notice that the amount of water in the tank is changing linearly, as is the amount of sugar in the tank. We can write an equation independently for each:
-$$\text{water}=100+10t \qquad \text{sugar}=5+1t \enspace .$$
-The concentration, $C$, will be the ratio of pounds of sugar to gallons of water:
-$$C(t)=\dfrac{5+t}{100+10t} \enspace .$$
+$$\text{water: } W(t)=100+10t \mbox{ gallons}\qquad \text{sugar: } S(t)=5+t \mbox{ pounds.}$$
+The concentration, $C$, will be the ratio of sugar to water:
+$$C(t)=\frac{S(t)}{W(t)} = \dfrac{5+t}{100+10t} \mbox{ pounds per gallon.}$$
 \end{solution}\end{example}
 
 \paragraph*{Vertical and Horizontal Asymptotes of Rational Functions.}
@@ -296,21 +338,21 @@ The {\bf horizontal asymptote} of a rational function, $\dfrac{P(x)}{Q(x)}$ can 
 \begin{itemize}
   \item If $\deg(Q) > \deg(P)$, then the horizontal asymptote is $y=0$.
   \item If $\deg(Q) < \deg(P)$, then there is no horizontal asymptote.
-  \item If $\deg(Q) = \deg(P)$, then the horizontal asymptote is $y=\dfrac{a_p}{b_q}$ ($p$ and $q$ are equal in this case).
+  \item If $\deg(Q) = \deg(P)$, then the horizontal asymptote is $y=\dfrac{a_p}{b_q}$ ($p = q$ in this case).
 \end{itemize}
 
 \begin{example}
-In the sugar concentration problem from earlier, we created the equation $C(t)=\dfrac{5+t}{100+10t}$. Find the horizontal asymptote and interpret it in context of the scenario.
+In Example \ref{ex:sugarconcentration}, we developed the model $C(t)=\dfrac{5+t}{100+10t}$. Find the horizontal asymptote of $y=C(t)$ and interpret it in context of the scenario.
 
-\begin{solution} Both the numerator and denominator are linear (degree 1), so since the degrees are equal, there will be a horizontal asymptote at the ratio of the leading coefficients. In the numerator, the leading term is $t$, with coefficient 1. In the denominator, the leading term is $10t$, with coefficient 10. The horizontal asymptote will be at the ratio of these values: as $t\to\infty$, $C(t)\to \dfrac{1}{10}$. This function will have a horizontal asymptote of $y=\dfrac{1}{10}$.
+\begin{solution} Both the numerator and denominator are linear (degree 1), so the horizontal asymptote will be at the ratio of the leading coefficients. In the numerator, the leading term is $t$, with coefficient 1. In the denominator, the leading term is $10t$, with coefficient 10. The horizontal asymptote will be at the ratio of these values: as $t\to\infty$, $C(t)\to \dfrac{1}{10}$. This function will have a horizontal asymptote of $y=\dfrac{1}{10}$.
 
-This tells us that as the input gets large, the output values will approach $\dfrac{1}{10}$. In context, this means that as more time goes by, the concentration of sugar in the tank will approach 0.1 lb.\ of sugar per gallon of water or $\dfrac{1}{10}$ pounds per gallon.
+This tells us that as the input gets large, the output values will approach $\dfrac{1}{10}$. In context, this means that over time, the concentration of sugar in the tank will approach 0.1 lb.\ per gallon of water or $\dfrac{1}{10}$ pounds per gallon.
 \end{solution}\end{example}
 \begin{example}
 Find the horizontal and vertical asymptotes of the function
 $$f(x) = \dfrac{(x-2)(x+3)}{(x-1)(x+2)(x-5)} \enspace.$$
 
-\begin{solution} First, note this function has no inputs that make both the numerator and denominator 0, so there are no potential holes. The function will have vertical asymptotes when the denominator is 0, causing the function to be undefined. The denominator will be 0 at $x= 1, -2$, and $5$, indicating vertical asymptotes at these values.
+\begin{solution} First, note this function has no inputs that make both the numerator and denominator 0, so there are no potential holes. The function has vertical asymptotes when the denominator is 0, causing the function to be undefined. Since the denominator is 0 at $x= 1, -2$, and $5$, the vertical asymptotes are $x=1$, $x=-2$, and $x=5$.
 
 The numerator has degree 2, while the denominator has degree 3. Since the degree of the denominator is greater than the degree of the numerator, the denominator will grow faster than the numerator, causing the outputs to tend towards 0 as the inputs get large, and so as $x\to\pm\infty$, $f(x)\to 0$. This function will have a horizontal asymptote of $y=0$.
 \end{solution}\end{example}
@@ -324,10 +366,12 @@ Find the intercepts of
 $$f(x)=\dfrac{(x-2)(x+3)}{(x-1)(x+2)(x-5)} \enspace .$$
 \begin{solution} We can find the vertical intercept by evaluating the function at 0:
 $$f(0)=\dfrac{(0-2)(0+3)}{(0-1)(0+2)(0-5)}=\dfrac{-6}{10}=\dfrac{-3}{5} \enspace .$$
+So the vertical intercept is the point $\left(0, \dfrac{-3}{5}\right)$.
 The horizontal intercepts will occur when the function is equal to 0:
 \begin{align*}
 		0 &= \dfrac{(x-2)(x+3)}{(x-1)(x+2)(x-5)} \qquad \text{(This is zero when the numerator is zero.)}\\
 		0 &= (x-2)(x+3)\\
 		x &= 2, -3.
 \end{align*}
+So the horizontal intercepts are the points $(2, 0)$ and $(-3, 0)$.
 \end{solution}\end{example}

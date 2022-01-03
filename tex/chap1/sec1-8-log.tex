@@ -123,6 +123,21 @@ Since this equation involves $e$, it makes sense to use the natural logarithm:
 
 In addition to solving exponential equations, logarithmic expressions are common in many physical situations.
 
+\begin{example} The mass of a 300 gram sample of Indium-111 is $f(t) = 300\cdot 2^{-t/2.807}$ grams after $t$ days. How long will it take the sample to decay to 100 grams?
+
+    \begin{solution} 
+    \begin{align*}    
+    100 &= 300\cdot 2^{-t/2.807}\\
+      \dfrac{1}{3} &= 2^{-t/2.807} \\
+    \log_2\left(\dfrac{1}{3}\right) &= \log_2(2^{-t/2.807}) \\
+    \log_2(3^{-1}) &= \frac{-t}{2.807} \\
+    -\log_2(3) &= \frac{-t}{2.807} \\
+    t &= 2.807\cdot\log_2(3) \\
+    &= 2.807\cdot\frac{\log(3)}{\log(2)} \approx 2.807\cdot\frac{0.477121}{0.301030}\\
+    &\approx 4.449\text{ days}
+    \end{align*}
+\end{solution}\end{example}
+
 \begin{example}
 In chemistry, $pH$ is a measure of the acidity or basicity of a liquid. The $pH$ is related to the concentration of hydrogen ions, $[H^+]$, measured in moles per liter, by the equation
 $$pH=-\log([H^+])$$
